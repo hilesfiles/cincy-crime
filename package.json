@@ -1,6 +1,6 @@
 {
   "name": "cincy-crime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A provenance-aware Cincinnati neighborhood reported-crime explorer.",
   "author": "hilesfiles",
   "main": "electron/main.cjs",
@@ -24,7 +24,7 @@
     "db:seed": "tsx scripts/db/seed.ts",
     "desktop:run": "npm run build && electron .",
     "desktop:package:dir": "npm run build && electron-builder --dir --win --x64",
-    "desktop:package": "npm run build && electron-builder --win nsis portable --x64"
+    "desktop:package": "npm run build && electron-builder --win nsis portable --x64 --publish never"
   },
   "dependencies": {
     "clsx": "^2.1.1",
