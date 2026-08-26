@@ -1,9 +1,8 @@
 {
   "name": "cincy-crime",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A provenance-aware Cincinnati neighborhood reported-crime explorer.",
   "author": "hilesfiles",
-  "main": "electron/main.cjs",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,10 +20,7 @@
     "data:refresh": "tsx scripts/data/refresh.ts",
     "data:validate": "tsx scripts/validation/validate.ts",
     "db:migrate": "tsx scripts/db/migrate.ts",
-    "db:seed": "tsx scripts/db/seed.ts",
-    "desktop:run": "npm run build && electron .",
-    "desktop:package:dir": "npm run build && electron-builder --dir --win --x64",
-    "desktop:package": "npm run build && electron-builder --win nsis portable --x64 --publish never"
+    "db:seed": "tsx scripts/db/seed.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -35,28 +31,6 @@
     "react-dom": "19.2.8",
     "recharts": "^3.10.1",
     "zod": "^4.4.3"
-  },
-  "build": {
-    "appId": "io.github.hilesfiles.cincy-crime",
-    "productName": "Cincinnati Neighborhood Crime Explorer",
-    "directories": { "output": "dist-desktop" },
-    "files": ["electron/**/*", "out/**/*", "package.json", "!node_modules{,/**/*}"],
-    "asar": true,
-    "npmRebuild": false,
-    "win": {
-      "target": [
-        { "target": "nsis", "arch": ["x64"] },
-        { "target": "portable", "arch": ["x64"] }
-      ]
-    },
-    "nsis": {
-      "artifactName": "CNCE-${version}-${arch}-setup.${ext}",
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
-    },
-    "portable": { "artifactName": "CNCE-${version}-${arch}-portable.${ext}" }
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
@@ -69,8 +43,6 @@
     "better-sqlite3": "^13.0.3",
     "drizzle-orm": "^0.45.2",
     "drizzle-kit": "^0.31.10",
-    "electron": "^44.0.0",
-    "electron-builder": "^26.15.3",
     "eslint": "^9",
     "eslint-config-next": "16.3.3",
     "prettier": "^3.9.6",

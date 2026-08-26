@@ -4,7 +4,7 @@
 
 The public application is a static Next.js export for GitHub Pages. JSON and GeoJSON are the runtime data contract. ETL, normalization, validation, and SQLite run locally or in an explicitly scheduled refresh workflow—not during a visitor request.
 
-The optional Windows distribution wraps the identical export in Electron. Its local HTTP server binds only to `127.0.0.1` on an ephemeral port; renderer Node integration is disabled, context isolation and sandboxing are enabled, and external navigation is handed to the operating-system browser.
+GitHub Pages is the sole supported runtime. The former Electron distribution was retired after v0.1.2; historical binaries are not maintained or tested.
 
 ## Layers
 

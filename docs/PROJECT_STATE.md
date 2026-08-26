@@ -9,7 +9,7 @@ Updated: 2026-08-26
 - STARS aggregates are populated with real official data through 2026-06-23.
 - PDI and STARS adapters exist; the June 2024 transition is explicit.
 - SQLite migrations and deterministic seed data are implemented.
-- Optional Electron/Chromium Windows installer and portable package configuration are implemented.
+- GitHub Pages is the sole supported runtime. Electron packaging was retired after v0.1.2; historical desktop downloads are unsupported.
 - Automated unit/data tests pass; geography and source transition remain warnings.
 
 ## Current validated facts

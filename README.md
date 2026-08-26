@@ -100,16 +100,9 @@ STARS begins on June 3, 2024. The legacy PDI dataset contains a small number of 
 
 Push `main` to `https://github.com/hilesfiles/cincy-crime`. GitHub Actions tests, builds with the `/cincy-crime` base path, uploads `out/`, enables Pages, and deploys the site to `https://hilesfiles.github.io/cincy-crime/`.
 
-## Optional Windows desktop app
+## Supported runtime
 
-The same static site and JSON can run inside a locked-down Electron/Chromium desktop shell. Node integration is disabled; content is served from the packaged files over a loopback-only ephemeral server so normal Next.js routes work offline.
-
-```bash
-npm run desktop:run
-npm run desktop:package
-```
-
-The package command creates an x64 installer and portable executable under `dist-desktop/`. A separate GitHub Actions workflow can build artifacts manually or attach them to a `v*` tagged release. The Chromium runtime is a deliberate desktop dependency only; it is not used by GitHub Pages.
+The browser application deployed through GitHub Pages is the sole supported runtime. Electron packaging was retired after v0.1.2 to keep development, testing, and releases focused on the web experience. Earlier Windows downloads remain archived as historical, unsupported artifacts.
 
 ## Historical roadmap
 
@@ -119,4 +112,4 @@ The repository includes a historical CSV template, geographic-vintage schema, qu
 
 - PDI metadata identifies the source as Public Domain.
 - Other City/CAGIS and STARS redistribution terms must be rechecked against current source metadata before downstream redistribution.
-- Application source licensing has not yet been selected; see `docs/TODO.md`.
+- Application source is licensed under Apache License 2.0; see `LICENSE`.
