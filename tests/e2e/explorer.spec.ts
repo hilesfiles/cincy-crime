@@ -1,6 +1,12 @@
 import { expect, test } from "@playwright/test";
 
 test("dashboard map and routes work", async ({ page }) => {
+  const browserErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") browserErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => browserErrors.push(error.message));
+
   await page.goto("/");
   await expect(page.getByRole("heading", { name: /clearer view/i })).toBeVisible();
   await expect(page.locator("path[data-neighborhood-id]")).toHaveCount(50);
@@ -13,4 +19,5 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Mt. Airy" })).toBeVisible();
   await page.goto("/rankings/");
   await expect(page.getByRole("heading", { name: "Neighborhood rankings" })).toBeVisible();
+  expect(browserErrors).toEqual([]);
 });

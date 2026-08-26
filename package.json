@@ -1,6 +1,6 @@
 {
   "name": "cincy-crime",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A provenance-aware Cincinnati neighborhood reported-crime explorer.",
   "author": "hilesfiles",
   "main": "electron/main.cjs",
