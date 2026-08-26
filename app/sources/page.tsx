@@ -1,11 +1,13 @@
 import geography from "@/data/manifests/geography.json";
-import summaryJson from "@/data/processed/crime/current-summary.json";
+import summaryJson from "@/data/processed/crime/cpd-neighborhood-summary.json";
 import { PageShell } from "@/components/layout/page-shell";
 import type { CrimeSummary } from "@/lib/crime/summary";
 
 const sources = [
   { system: "CAGIS", title: "Cincinnati Neighborhood — SNA 2020", id: "Cincinnati_Neighborhood/FeatureServer/0", coverage: "Modern statistical geography", url: "https://services8.arcgis.com/WQtGT9bHpwcYeBTA/ArcGIS/rest/services/Cincinnati_Neighborhood/FeatureServer/0", note: "Canonical modern geometry snapshot, requested in EPSG:4326." },
   { system: "CPD STARS", title: "Reported Crime (STARS Category Offenses) on or after 6/3/2024", id: "7aqy-xrv9", coverage: "2024-06-03 onward", url: "https://data.cincinnati-oh.gov/resource/7aqy-xrv9.json", note: "Current offense-level feed. Each row represents a STARS offense." },
+  { system: "CPD reports", title: "Neighborhood Reports", id: "cpdmobile-neighborhood-reports", coverage: "Current and prior YTD; adjacent 28-day periods", url: "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/default.html", note: "Fresher preliminary aggregate layer. The 51 civic-neighborhood PDFs are preserved separately, then combined only where the CAGIS map has a combined polygon." },
+  { system: "City Planning", title: "2020 Statistical Neighborhood Approximations", id: "planning-2020-sna-profiles", coverage: "2020 Decennial Census population", url: "https://www.cincinnati-oh.gov/planning/resources/census/2020/", note: "Official neighborhood-profile denominators for rates. Published neighborhood totals do not reconcile additively to the direct Citywide profile, so citywide rates use the direct Citywide value." },
   { system: "CPD PDI", title: "PDI (Police Data Initiative) Crime Incidents", id: "k59e-2pvf", coverage: "Legacy feed; operational transition 2024-06-02", url: "https://data.cincinnati-oh.gov/resource/k59e-2pvf.json", note: "Public Domain per City metadata. Later reported-date outliers remain flagged for review." },
   { system: "Cincinnati Open Data", title: "SNA Boundaries 2010", id: "hshk-gimb", coverage: "2010 geography vintage", url: "https://data.cincinnati-oh.gov/Thriving-Neighborhoods/Cincinnati-Statistical-Neighborhood-Approximations-/hshk-gimb", note: "Registered as a future historical boundary import." },
 ];

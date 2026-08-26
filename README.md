@@ -7,17 +7,20 @@ A local-first, provenance-aware web application for exploring reported crime acr
 ## What works
 
 - Interactive, keyboard-accessible vector map generated from the official CAGIS SNA source.
-- Real STARS offense counts, current/prior comparable YTD, and adjacent 28-day periods.
+- Fresher preliminary CPD neighborhood-report aggregates through 2026-08-22, with current/prior comparable YTD and adjacent 28-day periods.
+- STARS preserved as a separate offense-level layer through its own source cutoff.
+- Official 2020 City Planning population denominators and violent-crime rates per 1,000.
+- First validated historical full year (2025), with annual neighborhood aggregates and rates.
 - Metric switching, stable URL state, sortable rankings, up-to-four-area comparison, and 50 statically generated detail pages.
 - Explicit PDI/STARS source adapters and June 2024 transition validation.
 - Versioned offense mapping, unmapped-category report, provenance register, data-status page, SQLite schema, and automated tests.
 - GitHub Pages deployment from `.github/workflows/deploy-pages.yml`.
 
-No synthetic crime or population values are used. Rates remain unavailable until a compatible population denominator is verified.
+No synthetic crime or population values are used.
 
 ## Important geography result
 
-The official live CAGIS 2020 service returned **50 statistical polygons representing 51 named neighborhoods** on the retrieval date. Three source features are combined areas. This conflicts with the bootstrap expectation of exactly 52 polygons (whose supplied expected-name list itself contains 51 names). The raw source is preserved, the discrepancy is visible in the UI and reports, and no polygons are invented.
+The official live CAGIS 2020 service returned **50 statistical polygons representing 51 named neighborhoods**. The definitive crosswalk records the three combined features: English Woods + North Fairmount, Lower Price Hill + Queensgate, and Riverside + Sedamsville. Counts and populations are summed from separately retained civic-neighborhood source records for those map areas; no polygons are invented.
 
 ## Architecture
 
@@ -58,7 +61,7 @@ npm run data:refresh
 npm run data:validate
 ```
 
-`data:refresh` fetches aggregate—not address-level—STARS rows for the published dashboard and inspects the legacy PDI transition. Raw API responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
+`data:refresh` fetches aggregate—not address-level—STARS data, current CPD neighborhood reports, official population profiles, and the legacy PDI transition checks. Raw API responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
 
 ## Database
 
@@ -79,7 +82,7 @@ npm run test:e2e
 npm run data:validate
 ```
 
-The validation command treats source-integrity failures as fatal and the documented geography/source-transition discrepancies as visible warnings.
+The validation command treats source-integrity failures as fatal. The documented PDI transition and non-additive population-profile reconciliation remain visible warnings.
 
 ## Data methodology
 
@@ -89,6 +92,8 @@ The validation command treats source-integrity failures as fatal and the documen
 - Zero denominators display “new activity,” never infinity.
 - Part I violent is derived from STARS `type = Part 1 Violent`. Strangulation remains separately preserved pending official cross-system comparability review.
 - PDI and STARS are separate source systems and are never naively concatenated.
+- Current dashboard views use preliminary CPD neighborhood-report aggregates; STARS remains the separately labeled offense-level source.
+- Violent-crime rates use official 2020 City Planning neighborhood-profile populations. Citywide rates use the direct Citywide profile.
 
 See [docs/DATA_METHODOLOGY.md](docs/DATA_METHODOLOGY.md) and [docs/SOURCE_REGISTER.md](docs/SOURCE_REGISTER.md).
 
@@ -106,7 +111,7 @@ The browser application deployed through GitHub Pages is the sole supported runt
 
 ## Historical roadmap
 
-The repository includes a historical CSV template, geographic-vintage schema, quality fields, and coverage matrix. Next phases are archival annual-table recovery, 1994–1999 research, boundary crosswalks, and verified Census/ACS denominators. Missing years remain missing.
+The supported historical product window is **2011–present**. The machine-readable [coverage manifest](data/manifests/coverage.json) distinguishes source availability from publication readiness and defines the validation gates for enabling a year. The first validated full digital year, 2025, is published. The next phase validates the mixed-system 2024 transition, then works backward through PDI to 2011. Years before 2011 are out of scope, and missing observations are never treated as zero.
 
 ## Licensing and attribution
 

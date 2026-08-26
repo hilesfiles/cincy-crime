@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-08-26T23:50:07.147Z",
+  "status": "warning",
+  "civicProfileCount": 51,
+  "snaRegionCount": 50,
+  "civicPopulationSum": 329782,
+  "citywidePopulation": 309317,
+  "difference": 20465,
+  "additive": false,
+  "note": "The published SNA-profile totals do not reconcile additively to the direct Citywide profile. Use each neighborhood profile only as that neighborhood's published denominator; use the direct Citywide profile for citywide rates.",
+  "missingProfiles": []
+}

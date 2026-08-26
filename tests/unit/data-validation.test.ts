@@ -1,17 +1,31 @@
 import { describe, expect, it } from "vitest";
 import map from "../../data/processed/geography/neighborhood-map.json";
 import geography from "../../data/reports/geography-validation.json";
-import summary from "../../data/processed/crime/current-summary.json";
+import crosswalk from "../../data/manifests/neighborhood-crosswalk.json";
+import summary from "../../data/processed/crime/cpd-neighborhood-summary.json";
+import historical from "../../data/processed/crime/historical-annual.json";
+import cpdReports from "../../data/reports/cpd-neighborhood-validation.json";
+import population from "../../data/reports/population-validation.json";
 import unmapped from "../../data/reports/unmapped-offenses.json";
 
 describe("processed data", () => {
-  it("preserves the live official geometry count and flags the expectation mismatch", () => {
-    expect(map.regions).toHaveLength(50); expect(geography.status).toBe("warning"); expect(geography.expectedFeatureCount).toBe(52);
+  it("preserves the definitive 51-name to 50-feature crosswalk", () => {
+    expect(map.regions).toHaveLength(50); expect(geography.status).toBe("pass"); expect(crosswalk.civicNeighborhoodCount).toBe(51); expect(geography.actualCombinedRegionCount).toBe(3);
   });
   it("has unique stable ids and slugs", () => {
     expect(new Set(map.regions.map((row) => row.id)).size).toBe(map.regions.length);
     expect(new Set(map.regions.map((row) => row.slug)).size).toBe(map.regions.length);
   });
   it("resolves all published STARS categories", () => { expect(unmapped.count).toBe(0); });
-  it("has one crime summary per map region", () => { expect(summary.neighborhoods).toHaveLength(map.regions.length); expect(summary.metadata.cutoff).toMatch(/^\d{4}-\d{2}-\d{2}$/); });
+  it("has one current aggregate and population rate per map region", () => {
+    expect(cpdReports.reportCount).toBe(51); expect(summary.neighborhoods).toHaveLength(map.regions.length); expect(summary.metadata.cutoff).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(summary.neighborhoods.every((row) => row.population > 0 && typeof row.rates.violentYtdPer1000 === "number")).toBe(true);
+    expect(population.civicProfileCount).toBe(51);
+  });
+  it("publishes the first validated full digital year", () => {
+    expect(historical.metadata.validatedYears).toEqual([2025]);
+    expect(historical.years[0].status).toBe("validated_full_year_with_unassigned");
+    expect(historical.years[0].neighborhoods).toHaveLength(50);
+    expect(historical.years[0].reconciliation.status).toBe("pass");
+  });
 });

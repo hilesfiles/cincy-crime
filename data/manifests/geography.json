@@ -4,7 +4,7 @@
   "organization": "City of Cincinnati / CAGIS",
   "serviceIdentifier": "Cincinnati_Neighborhood/FeatureServer/0",
   "sourceUrl": "https://services8.arcgis.com/WQtGT9bHpwcYeBTA/ArcGIS/rest/services/Cincinnati_Neighborhood/FeatureServer/0",
-  "retrievedAt": "2026-08-26T21:59:22.588Z",
+  "retrievedAt": "2026-08-26T23:32:05.706Z",
   "geometryVersion": "SNA_2020",
   "coordinateSystem": "EPSG:4326",
   "sourceChecksumSha256": "48fe8996b255a680f0b50e9999b5dbe62a8d51e2e2c684e57ed23ef738434074",

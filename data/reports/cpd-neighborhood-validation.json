@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-08-26T23:49:20.835Z",
+  "status": "warning",
+  "reportCount": 51,
+  "expectedReportCount": 51,
+  "reportUpdatedAt": "8/24/2026",
+  "current28Period": "07/26/26|08/22/26",
+  "cutoff": "2026-08-22",
+  "missing": [],
+  "extra": [],
+  "reconciliationExceptions": [
+    {
+      "civicName": "Villages at Roll Hill",
+      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/FAY_APARTMENTS.pdf",
+      "warnings": [
+        {
+          "period": "currentYtd",
+          "note": "Published subtotal does not equal the sum of its published component rows; source values are preserved without correction."
+        },
+        {
+          "period": "priorYtd",
+          "note": "Published subtotal does not equal the sum of its published component rows; source values are preserved without correction."
+        }
+      ]
+    }
+  ],
+  "indexChecksumSha256": "f443f902b64c6469d6f4f3addd5d73ca982678bc86c93f28cf3020ba40cb281e"
+}

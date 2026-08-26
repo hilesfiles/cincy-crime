@@ -3,18 +3,27 @@ import path from "node:path";
 
 async function main() {
   const root = process.cwd();
-  const [geography, transition, summary, unmapped] = await Promise.all([
+  const [geography, crosswalk, transition, summary, starsSummary, historical, unmapped, cpdReports, population] = await Promise.all([
     readFile(path.join(root, "data/reports/geography-validation.json"), "utf8").then(JSON.parse),
+    readFile(path.join(root, "data/manifests/neighborhood-crosswalk.json"), "utf8").then(JSON.parse),
     readFile(path.join(root, "data/reports/source-transition-validation.json"), "utf8").then(JSON.parse),
+    readFile(path.join(root, "data/processed/crime/cpd-neighborhood-summary.json"), "utf8").then(JSON.parse),
     readFile(path.join(root, "data/processed/crime/current-summary.json"), "utf8").then(JSON.parse),
+    readFile(path.join(root, "data/processed/crime/historical-annual.json"), "utf8").then(JSON.parse),
     readFile(path.join(root, "data/reports/unmapped-offenses.json"), "utf8").then(JSON.parse),
+    readFile(path.join(root, "data/reports/cpd-neighborhood-validation.json"), "utf8").then(JSON.parse),
+    readFile(path.join(root, "data/reports/population-validation.json"), "utf8").then(JSON.parse),
   ]);
   const slugs = summary.neighborhoods.map((row: { slug: string }) => row.slug);
   const checks = [
-    { id: "geography-source-features", status: geography.actualFeatureCount === 50 ? "pass" : "fail", detail: `${geography.actualFeatureCount} source features` },
-    { id: "geography-bootstrap-expectation", status: geography.actualFeatureCount === 52 ? "pass" : "warning", detail: geography.note },
+    { id: "geography-source-features", status: geography.status, detail: `${geography.actualFeatureCount} polygons representing ${geography.representedNamedNeighborhoodCount} names` },
+    { id: "geography-crosswalk", status: crosswalk.sourceFeatureCount === 50 && crosswalk.civicNeighborhoodCount === 51 && geography.actualCombinedRegionCount === 3 ? "pass" : "fail", detail: "51 civic names → 50 CAGIS features; three combined features" },
     { id: "unique-region-slugs", status: new Set(slugs).size === slugs.length ? "pass" : "fail", detail: `${slugs.length} slugs` },
-    { id: "stars-cutoff", status: summary.metadata.cutoff ? "pass" : "fail", detail: summary.metadata.cutoff },
+    { id: "cpd-neighborhood-reports", status: cpdReports.status, detail: `${cpdReports.reportCount} reports through ${summary.metadata.cutoff}` },
+    { id: "cpd-map-regions", status: summary.neighborhoods.length === 50 ? "pass" : "fail", detail: `${summary.neighborhoods.length} map aggregates` },
+    { id: "population-denominators", status: summary.neighborhoods.every((row: { population?: number; rates?: { violentYtdPer1000?: number | null } }) => typeof row.population === "number" && typeof row.rates?.violentYtdPer1000 === "number") ? population.status : "fail", detail: `${population.civicProfileCount} profiles; reconciliation ${population.status}` },
+    { id: "stars-offense-detail-cutoff", status: starsSummary.metadata.cutoff ? "pass" : "fail", detail: starsSummary.metadata.cutoff },
+    { id: "historical-first-digital-year", status: !historical.metadata.validatedYears.includes(2025) || historical.years[0]?.neighborhoods.length !== 50 ? "fail" : historical.years[0].unassigned.aggregateRows ? "warning" : "pass", detail: `${historical.metadata.validatedYears.join(", ")} enabled; ${historical.years[0]?.unassigned.aggregateRows ?? 0} unassigned aggregate rows` },
     { id: "source-transition", status: transition.status, detail: transition.note },
     { id: "offense-mapping", status: unmapped.count === 0 ? "pass" : "warning", detail: `${unmapped.count} unmapped labels` },
   ];

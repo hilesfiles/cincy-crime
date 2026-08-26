@@ -1,10 +1,44 @@
 {
-  "status": "warning",
-  "expectedFeatureCount": 52,
+  "status": "pass",
+  "expectedFeatureCount": 50,
   "actualFeatureCount": 50,
   "expectedNamedNeighborhoodCount": 51,
   "representedNamedNeighborhoodCount": 51,
+  "expectedCombinedRegionCount": 3,
+  "actualCombinedRegionCount": 3,
+  "combinedRegions": [
+    {
+      "id": "CIN-SNA-013",
+      "sourceName": "English Woods_North Fairmount",
+      "snaNumber": 16,
+      "displayName": "English Woods / North Fairmount",
+      "members": [
+        "English Woods",
+        "North Fairmount"
+      ]
+    },
+    {
+      "id": "CIN-SNA-047",
+      "sourceName": "Lower Price Hill_Queensgate",
+      "snaNumber": 22,
+      "displayName": "Lower Price Hill / Queensgate",
+      "members": [
+        "Lower Price Hill",
+        "Queensgate"
+      ]
+    },
+    {
+      "id": "CIN-SNA-017",
+      "sourceName": "Riverside_Sedamsville",
+      "snaNumber": 39,
+      "displayName": "Riverside / Sedamsville",
+      "members": [
+        "Riverside",
+        "Sedamsville"
+      ]
+    }
+  ],
   "missing": [],
   "extra": [],
-  "note": "The live CAGIS 2020 SNA service currently returns 50 statistical polygons. Three polygons are explicitly combined statistical areas; the supplied expected list contains 51 names, not 52. The application preserves the source geometry and surfaces this discrepancy rather than inventing boundaries."
+  "note": "The official 2020 City Planning list contains 51 statistical neighborhood names. The live CAGIS service represents them with 50 polygons because three polygons contain two named civic neighborhoods each. The crosswalk preserves all 51 names and defines sum-of-members aggregation for those three map features."
 }

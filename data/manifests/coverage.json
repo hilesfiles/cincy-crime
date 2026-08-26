@@ -1,6 +1,140 @@
 {
-  "1994-2023": { "crime": "partial-or-missing; archival review required", "population": "missing", "geography": "historical-review-required" },
-  "2024": { "crime": "PDI-to-STARS transition; adapters registered", "population": "missing", "geography": "SNA_2020" },
-  "2025": { "crime": "STARS available", "population": "missing", "geography": "SNA_2020" },
-  "2026": { "crime": "STARS available through 2026-06-23", "population": "missing", "geography": "SNA_2020" }
+  "schemaVersion": "1.0.0",
+  "manifestId": "cincinnati-neighborhood-crime-coverage",
+  "updatedAt": "2026-08-26",
+  "scope": {
+    "startDate": "2011-01-01",
+    "endDate": "present",
+    "minimumYear": 2011,
+    "grain": ["year", "neighborhood", "offense_category"],
+    "geography": "Cincinnati statistical neighborhood approximation",
+    "beforeStartDate": "out_of_scope",
+    "statement": "The supported historical product window is 2011 through the latest available source date. Years before 2011 are not part of the acquisition or publication plan."
+  },
+  "publicationPolicy": {
+    "defaultYearState": "disabled",
+    "enableWhen": [
+      "official source rows for the requested period have been imported",
+      "neighborhood and offense mappings pass validation",
+      "the source row unit is disclosed",
+      "known gaps and source transitions are represented in metadata"
+    ],
+    "missingDataRule": "Missing or rejected observations remain null and are never converted to zero.",
+    "partialYearRule": "A partial year is labeled year-to-date and is not compared with an unmatched full calendar year."
+  },
+  "sources": {
+    "CPD_PDI": {
+      "datasetId": "k59e-2pvf",
+      "title": "PDI (Police Data Initiative) Crime Incidents",
+      "url": "https://data.cincinnati-oh.gov/resource/k59e-2pvf.json",
+      "rowUnit": "reported crime incident row",
+      "role": "historical source for 2011-01-01 through the operational cutoff on 2024-06-02",
+      "operationalStart": "2011-01-01",
+      "operationalEnd": "2024-06-02",
+      "caveat": "The dataset contains isolated dates outside the supported window and a small number of records reported after the operational cutoff. Those records do not extend the modeled PDI coverage period."
+    },
+    "CPD_STARS": {
+      "datasetId": "7aqy-xrv9",
+      "title": "Reported Crime (STARS Category Offenses) on or after 6/3/2024",
+      "url": "https://data.cincinnati-oh.gov/resource/7aqy-xrv9.json",
+      "rowUnit": "reported offense row",
+      "role": "current source beginning 2024-06-03",
+      "operationalStart": "2024-06-03",
+      "operationalEnd": "present"
+    },
+    "CPD_NEIGHBORHOOD_REPORTS": {
+      "datasetId": "cpdmobile-neighborhood-reports",
+      "title": "CPD Neighborhood Reports",
+      "url": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/default.html",
+      "rowUnit": "preliminary aggregate offense count",
+      "role": "fresher current layer for map, ranking, comparison, and profile statistics",
+      "reportCount": 51,
+      "cutoffAsOfRefresh": "2026-08-22"
+    },
+    "CITY_PLANNING_2020_SNA_PROFILES": {
+      "datasetId": "planning-2020-sna-profiles",
+      "title": "2020 Statistical Neighborhood Approximations",
+      "url": "https://www.cincinnati-oh.gov/planning/resources/census/2020/",
+      "rowUnit": "published 2020 Decennial Census total population",
+      "role": "neighborhood population denominator for violent-crime rates per 1,000",
+      "profileCount": 51,
+      "reconciliationStatus": "warning_non_additive_to_direct_citywide_profile"
+    }
+  },
+  "coveragePeriods": [
+    {
+      "id": "pdi-historical-full-years",
+      "startDate": "2011-01-01",
+      "endDate": "2023-12-31",
+      "sourceIds": ["CPD_PDI"],
+      "calendarCoverage": "full_years",
+      "sourceAvailability": "available",
+      "historicalPanelStatus": "import_and_validation_required",
+      "selectorState": "disabled_until_validated",
+      "geographyStatus": "source_neighborhood_field_requires_vintage_validation"
+    },
+    {
+      "id": "records-system-transition",
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "sourceIds": ["CPD_PDI", "CPD_STARS"],
+      "calendarCoverage": "full_year_mixed_systems",
+      "sourceAvailability": "available",
+      "historicalPanelStatus": "harmonization_and_validation_required",
+      "selectorState": "disabled_until_validated",
+      "geographyStatus": "cross_source_neighborhood_mapping_required",
+      "transition": {
+        "lastPdiOperationalDate": "2024-06-02",
+        "firstStarsDate": "2024-06-03",
+        "gapDays": 0
+      }
+    },
+    {
+      "id": "stars-complete-years",
+      "startDate": "2025-01-01",
+      "endDate": "2025-12-31",
+      "sourceIds": ["CPD_STARS"],
+      "calendarCoverage": "full_year",
+      "sourceAvailability": "available",
+      "historicalPanelStatus": "published_validated_annual_aggregate",
+      "selectorState": "enabled",
+      "geographyStatus": "modern_source_mapping_available"
+    },
+    {
+      "id": "stars-current-year",
+      "startDate": "2026-01-01",
+      "endDate": "2026-08-22",
+      "sourceIds": ["CPD_STARS", "CPD_NEIGHBORHOOD_REPORTS"],
+      "calendarCoverage": "year_to_date",
+      "sourceAvailability": "available_through_cutoff",
+      "historicalPanelStatus": "published_current_summary",
+      "selectorState": "enabled_for_ytd_views",
+      "geographyStatus": "modern_source_mapping_available",
+      "cutoffAsOfRefresh": "2026-08-22",
+      "sourceLayerNote": "CPD neighborhood reports supply the fresher aggregate cutoff; STARS remains the offense-level source through 2026-06-23."
+    }
+  ],
+  "comparisonRules": {
+    "completedYearToCompletedYear": "allowed after both years pass publication validation",
+    "currentYearToHistoricalYear": "compare January 1 through the current source cutoff month and day in both years",
+    "currentYearToFiveYearAverage": "use only validated years with the same month/day window and disclose excluded years",
+    "crossSystem": "PDI incident rows and STARS offense rows are not assumed equivalent; cross-system metrics require an explicit harmonized category definition and a visible transition annotation",
+    "percentChangeWithZeroBaseline": "represent as new_activity rather than infinity"
+  },
+  "qualityGates": [
+    "source retrieval metadata and query are recorded",
+    "raw source checksum is recorded",
+    "every offense label is mapped or reported as unmapped",
+    "every neighborhood label is mapped or reported as unmapped",
+    "annual and neighborhood totals reconcile with the processed artifact",
+    "duplicate and out-of-window records are reported",
+    "2024 PDI/STARS transition validation passes or publishes a visible warning",
+    "year completeness and data cutoff are exposed to the interface"
+  ],
+  "knownLimitations": [
+    "The current checked-in browser artifact publishes CPD neighborhood-report current/prior YTD and rolling 28-day aggregates, plus a separate STARS offense-level artifact, not the complete 2011-present annual panel.",
+    "PDI and STARS use different source row units.",
+    "Historical neighborhood geography and name mappings still require validation.",
+    "Published City Planning neighborhood-profile populations do not sum to the direct Citywide profile; neighborhood rates use each published profile and the citywide rate uses the direct Citywide population."
+  ]
 }

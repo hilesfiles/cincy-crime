@@ -35,15 +35,60 @@ const regions = geojson.features.map((feature, index) => {
 const coveredNeighborhoods = new Set(regions.flatMap((region) => region.members));
 const missing = canonicalNeighborhoods.filter((name) => !coveredNeighborhoods.has(name));
 const extra = [...coveredNeighborhoods].filter((name) => !canonicalNeighborhoods.includes(name as (typeof canonicalNeighborhoods)[number]));
+const expectedCombinedRegions = [
+  ["English Woods", "North Fairmount"],
+  ["Lower Price Hill", "Queensgate"],
+  ["Riverside", "Sedamsville"],
+];
+const combinedRegions = regions.filter((region) => region.members.length > 1);
+const combinedSignature = (members: string[]) => [...members].sort().join("|");
+const expectedCombinedSignatures = new Set(expectedCombinedRegions.map(combinedSignature));
+const actualCombinedSignatures = new Set(combinedRegions.map((region) => combinedSignature(region.members)));
+const combinedRegionsMatch = expectedCombinedSignatures.size === actualCombinedSignatures.size && [...expectedCombinedSignatures].every((signature) => actualCombinedSignatures.has(signature));
 const validation = {
-  status: regions.length === 52 && missing.length === 0 ? "pass" : "warning",
-  expectedFeatureCount: 52,
+  status: regions.length === 50 && coveredNeighborhoods.size === 51 && missing.length === 0 && extra.length === 0 && combinedRegionsMatch ? "pass" : "fail",
+  expectedFeatureCount: 50,
   actualFeatureCount: regions.length,
   expectedNamedNeighborhoodCount: canonicalNeighborhoods.length,
   representedNamedNeighborhoodCount: coveredNeighborhoods.size,
+  expectedCombinedRegionCount: expectedCombinedRegions.length,
+  actualCombinedRegionCount: combinedRegions.length,
+  combinedRegions: combinedRegions.map((region) => ({ id: region.id, sourceName: region.sourceName, snaNumber: region.number, displayName: region.name, members: region.members })),
   missing,
   extra,
-  note: "The live CAGIS 2020 SNA service currently returns 50 statistical polygons. Three polygons are explicitly combined statistical areas; the supplied expected list contains 51 names, not 52. The application preserves the source geometry and surfaces this discrepancy rather than inventing boundaries.",
+  note: "The official 2020 City Planning list contains 51 statistical neighborhood names. The live CAGIS service represents them with 50 polygons because three polygons contain two named civic neighborhoods each. The crosswalk preserves all 51 names and defines sum-of-members aggregation for those three map features.",
+};
+
+const crosswalk = {
+  schemaVersion: "1.0.0",
+  geographyVersion: "SNA_2020",
+  sourceFeatureCount: regions.length,
+  civicNeighborhoodCount: canonicalNeighborhoods.length,
+  relationship: "51 civic/statistical neighborhood names mapped to 50 CAGIS polygon features",
+  aggregationRule: "For a combined CAGIS feature, sum member civic-neighborhood counts and populations; retain each member's source record and provenance.",
+  snaFeatures: regions.map((region) => ({
+    snaFeatureId: region.id,
+    snaNumber: region.number,
+    snaSourceName: region.sourceName,
+    displayName: region.name,
+    displaySlug: region.slug,
+    relationship: region.members.length > 1 ? "combined" : "one_to_one",
+    civicMembers: region.members,
+  })),
+  civicNeighborhoods: canonicalNeighborhoods.map((name) => {
+    const region = regions.find((candidate) => candidate.members.includes(name));
+    if (!region) throw new Error(`No SNA feature found for ${name}`);
+    return {
+      civicId: `CIN-CIV-${slugify(name)}`,
+      civicName: name,
+      civicSlug: slugify(name),
+      snaFeatureId: region.id,
+      snaNumber: region.number,
+      snaSourceName: region.sourceName,
+      displayRegionName: region.name,
+      relationship: region.members.length > 1 ? "member_of_combined_sna" : "one_to_one",
+    };
+  }),
 };
 
 const processed = {
@@ -84,6 +129,8 @@ await Promise.all([
   writeFile(path.join(root, "public/data/neighborhood-map.json"), `${JSON.stringify(mapData)}\n`),
   writeFile(path.join(root, "public/maps/cincinnati-neighborhoods.svg"), svg),
   writeFile(path.join(root, "data/manifests/geography.json"), `${JSON.stringify(manifest, null, 2)}\n`),
+  writeFile(path.join(root, "data/manifests/neighborhood-crosswalk.json"), `${JSON.stringify(crosswalk, null, 2)}\n`),
+  writeFile(path.join(root, "public/data/neighborhood-crosswalk.json"), `${JSON.stringify(crosswalk)}\n`),
   writeFile(path.join(root, "data/reports/geography-validation.json"), `${JSON.stringify(validation, null, 2)}\n`),
 ]);
 

@@ -1,0 +1,4914 @@
+{
+  "metadata": {
+    "sourceSystem": "CPD_NEIGHBORHOOD_REPORTS",
+    "datasetId": "cpdmobile-neighborhood-reports",
+    "title": "CPD Neighborhood Reports",
+    "retrievedAt": "2026-08-26T23:49:20.835Z",
+    "cutoff": "2026-08-22",
+    "sourceCoverage": {
+      "min_date": "2026-01-01",
+      "max_date": "2026-08-22",
+      "count": "51"
+    },
+    "unit": "preliminary CPD aggregate offense counts",
+    "mappingVersion": "2026-08-26.2",
+    "provenanceLayer": "fresher_aggregate",
+    "reportUpdatedAt": "2026-08-24",
+    "reportCount": 51,
+    "reportQualityCaveat": "1 source report has a published subtotal/component inconsistency; source values are preserved.",
+    "population": {
+      "sourceSystem": "CITY_PLANNING_2020_SNA_PROFILES",
+      "year": 2020,
+      "citywide": 309317
+    }
+  },
+  "windows": {
+    "ytd": {
+      "comparisonStart": "2026-01-01",
+      "comparisonEnd": "2026-08-22",
+      "priorStart": "2025-01-01",
+      "priorEnd": "2025-08-22"
+    },
+    "rolling28": {
+      "currentStart": "2026-07-26",
+      "currentEnd": "2026-08-22",
+      "previousStart": "2026-06-28",
+      "previousEnd": "2026-07-25"
+    }
+  },
+  "city": {
+    "currentYtd": {
+      "violent": 1308,
+      "property": 7173,
+      "totalPart1": 8511,
+      "categories": {
+        "homicide": 37,
+        "rape": 194,
+        "robbery": 337,
+        "aggravated_assault": 473,
+        "strangulation": 275,
+        "burglary": 883,
+        "theft_from_auto": 1982,
+        "motor_vehicle_theft": 1113,
+        "personal_other_theft": 3217
+      }
+    },
+    "priorYtd": {
+      "violent": 1247,
+      "property": 7708,
+      "totalPart1": 8976,
+      "categories": {
+        "homicide": 46,
+        "rape": 118,
+        "robbery": 421,
+        "aggravated_assault": 472,
+        "strangulation": 187,
+        "burglary": 1188,
+        "theft_from_auto": 1919,
+        "motor_vehicle_theft": 1491,
+        "personal_other_theft": 3134
+      }
+    },
+    "current28": {
+      "violent": 179,
+      "property": 907,
+      "totalPart1": 1086,
+      "categories": {
+        "homicide": 3,
+        "rape": 21,
+        "robbery": 52,
+        "aggravated_assault": 65,
+        "strangulation": 38,
+        "burglary": 108,
+        "theft_from_auto": 257,
+        "motor_vehicle_theft": 164,
+        "personal_other_theft": 378
+      }
+    },
+    "previous28": {
+      "violent": 188,
+      "property": 899,
+      "totalPart1": 1087,
+      "categories": {
+        "homicide": 5,
+        "rape": 40,
+        "robbery": 41,
+        "aggravated_assault": 69,
+        "strangulation": 33,
+        "burglary": 97,
+        "theft_from_auto": 272,
+        "motor_vehicle_theft": 154,
+        "personal_other_theft": 376
+      }
+    },
+    "population": 309317,
+    "rates": {
+      "violentYtdPer1000": 4.228671557011093
+    }
+  },
+  "neighborhoods": [
+    {
+      "id": "CIN-SNA-033",
+      "slug": "avondale",
+      "name": "Avondale",
+      "sourceName": "Avondale",
+      "members": [
+        "Avondale"
+      ],
+      "currentYtd": {
+        "violent": 84,
+        "property": 233,
+        "totalPart1": 317,
+        "categories": {
+          "homicide": 2,
+          "rape": 13,
+          "robbery": 16,
+          "aggravated_assault": 39,
+          "strangulation": 14,
+          "burglary": 47,
+          "theft_from_auto": 40,
+          "motor_vehicle_theft": 52,
+          "personal_other_theft": 94
+        }
+      },
+      "priorYtd": {
+        "violent": 68,
+        "property": 195,
+        "totalPart1": 263,
+        "categories": {
+          "homicide": 2,
+          "rape": 4,
+          "robbery": 24,
+          "aggravated_assault": 24,
+          "strangulation": 14,
+          "burglary": 38,
+          "theft_from_auto": 31,
+          "motor_vehicle_theft": 42,
+          "personal_other_theft": 84
+        }
+      },
+      "current28": {
+        "violent": 14,
+        "property": 36,
+        "totalPart1": 50,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 9,
+          "strangulation": 2,
+          "burglary": 9,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 13
+        }
+      },
+      "previous28": {
+        "violent": 16,
+        "property": 40,
+        "totalPart1": 56,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 5,
+          "aggravated_assault": 6,
+          "strangulation": 2,
+          "burglary": 7,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 15
+        }
+      },
+      "population": 11345,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 7.40414279418246
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 23.52941176470588
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 19.48717948717949
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 20.53231939163498
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -12.5
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-034",
+      "slug": "bond-hill",
+      "name": "Bond Hill",
+      "sourceName": "Bond Hill",
+      "members": [
+        "Bond Hill"
+      ],
+      "currentYtd": {
+        "violent": 43,
+        "property": 112,
+        "totalPart1": 155,
+        "categories": {
+          "homicide": 2,
+          "rape": 9,
+          "robbery": 7,
+          "aggravated_assault": 19,
+          "strangulation": 6,
+          "burglary": 19,
+          "theft_from_auto": 28,
+          "motor_vehicle_theft": 19,
+          "personal_other_theft": 46
+        }
+      },
+      "priorYtd": {
+        "violent": 21,
+        "property": 168,
+        "totalPart1": 189,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 9,
+          "aggravated_assault": 7,
+          "strangulation": 3,
+          "burglary": 28,
+          "theft_from_auto": 46,
+          "motor_vehicle_theft": 37,
+          "personal_other_theft": 57
+        }
+      },
+      "current28": {
+        "violent": 4,
+        "property": 16,
+        "totalPart1": 20,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 4,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 8
+        }
+      },
+      "previous28": {
+        "violent": 7,
+        "property": 12,
+        "totalPart1": 19,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 3,
+          "strangulation": 1,
+          "burglary": 2,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 7
+        }
+      },
+      "population": 7002,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 6.14110254213082
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 104.76190476190477
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -33.33333333333333
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -17.989417989417987
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -42.857142857142854
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-024",
+      "slug": "california",
+      "name": "California",
+      "sourceName": "California",
+      "members": [
+        "California"
+      ],
+      "currentYtd": {
+        "violent": 0,
+        "property": 2,
+        "totalPart1": 2,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "priorYtd": {
+        "violent": 0,
+        "property": 7,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 0
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 0,
+        "totalPart1": 0,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 0,
+        "totalPart1": 0,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 944,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "no-change",
+          "value": 0
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -71.42857142857143
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -71.42857142857143
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-030",
+      "slug": "camp-washington",
+      "name": "Camp Washington",
+      "sourceName": "Camp Washington",
+      "members": [
+        "Camp Washington"
+      ],
+      "currentYtd": {
+        "violent": 18,
+        "property": 143,
+        "totalPart1": 161,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 7,
+          "aggravated_assault": 8,
+          "strangulation": 3,
+          "burglary": 9,
+          "theft_from_auto": 17,
+          "motor_vehicle_theft": 14,
+          "personal_other_theft": 103
+        }
+      },
+      "priorYtd": {
+        "violent": 11,
+        "property": 90,
+        "totalPart1": 101,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 3,
+          "aggravated_assault": 5,
+          "strangulation": 2,
+          "burglary": 20,
+          "theft_from_auto": 23,
+          "motor_vehicle_theft": 20,
+          "personal_other_theft": 27
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 12,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 9
+        }
+      },
+      "previous28": {
+        "violent": 4,
+        "property": 13,
+        "totalPart1": 17,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 10
+        }
+      },
+      "population": 1234,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 14.586709886547812
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 63.63636363636363
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 58.88888888888889
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 59.4059405940594
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -50
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-009",
+      "slug": "carthage",
+      "name": "Carthage",
+      "sourceName": "Carthage",
+      "members": [
+        "Carthage"
+      ],
+      "currentYtd": {
+        "violent": 17,
+        "property": 107,
+        "totalPart1": 124,
+        "categories": {
+          "homicide": 1,
+          "rape": 2,
+          "robbery": 7,
+          "aggravated_assault": 6,
+          "strangulation": 1,
+          "burglary": 21,
+          "theft_from_auto": 30,
+          "motor_vehicle_theft": 20,
+          "personal_other_theft": 36
+        }
+      },
+      "priorYtd": {
+        "violent": 21,
+        "property": 70,
+        "totalPart1": 91,
+        "categories": {
+          "homicide": 1,
+          "rape": 0,
+          "robbery": 16,
+          "aggravated_assault": 4,
+          "strangulation": 0,
+          "burglary": 13,
+          "theft_from_auto": 18,
+          "motor_vehicle_theft": 15,
+          "personal_other_theft": 24
+        }
+      },
+      "current28": {
+        "violent": 3,
+        "property": 8,
+        "totalPart1": 11,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 5
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 12,
+        "totalPart1": 15,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 6
+        }
+      },
+      "population": 2781,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 6.112909025530385
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -19.047619047619047
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 52.85714285714286
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 36.26373626373626
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-019",
+      "slug": "clifton",
+      "name": "Clifton",
+      "sourceName": "Clifton",
+      "members": [
+        "Clifton"
+      ],
+      "currentYtd": {
+        "violent": 19,
+        "property": 196,
+        "totalPart1": 215,
+        "categories": {
+          "homicide": 1,
+          "rape": 2,
+          "robbery": 6,
+          "aggravated_assault": 5,
+          "strangulation": 5,
+          "burglary": 22,
+          "theft_from_auto": 72,
+          "motor_vehicle_theft": 40,
+          "personal_other_theft": 62
+        }
+      },
+      "priorYtd": {
+        "violent": 38,
+        "property": 216,
+        "totalPart1": 254,
+        "categories": {
+          "homicide": 1,
+          "rape": 3,
+          "robbery": 15,
+          "aggravated_assault": 12,
+          "strangulation": 7,
+          "burglary": 34,
+          "theft_from_auto": 49,
+          "motor_vehicle_theft": 40,
+          "personal_other_theft": 93
+        }
+      },
+      "current28": {
+        "violent": 5,
+        "property": 15,
+        "totalPart1": 20,
+        "categories": {
+          "homicide": 1,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 2,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 4
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 45,
+        "totalPart1": 47,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 5,
+          "theft_from_auto": 19,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 11
+        }
+      },
+      "population": 8408,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 2.2597526165556614
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -50
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -9.25925925925926
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -15.354330708661418
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 150
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-041",
+      "slug": "college-hill",
+      "name": "College Hill",
+      "sourceName": "College Hill",
+      "members": [
+        "College Hill"
+      ],
+      "currentYtd": {
+        "violent": 18,
+        "property": 144,
+        "totalPart1": 162,
+        "categories": {
+          "homicide": 0,
+          "rape": 4,
+          "robbery": 6,
+          "aggravated_assault": 2,
+          "strangulation": 6,
+          "burglary": 19,
+          "theft_from_auto": 50,
+          "motor_vehicle_theft": 29,
+          "personal_other_theft": 46
+        }
+      },
+      "priorYtd": {
+        "violent": 30,
+        "property": 177,
+        "totalPart1": 207,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 10,
+          "aggravated_assault": 10,
+          "strangulation": 5,
+          "burglary": 30,
+          "theft_from_auto": 33,
+          "motor_vehicle_theft": 62,
+          "personal_other_theft": 52
+        }
+      },
+      "current28": {
+        "violent": 5,
+        "property": 19,
+        "totalPart1": 24,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 14,
+        "totalPart1": 17,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 2,
+          "burglary": 3,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 3
+        }
+      },
+      "population": 16039,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 1.1222644803291977
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -40
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -18.64406779661017
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -21.73913043478261
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 66.66666666666666
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-011",
+      "slug": "columbia-tusculum",
+      "name": "Columbia Tusculum",
+      "sourceName": "Columbia Tusculum",
+      "members": [
+        "Columbia Tusculum"
+      ],
+      "currentYtd": {
+        "violent": 0,
+        "property": 20,
+        "totalPart1": 20,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 10
+        }
+      },
+      "priorYtd": {
+        "violent": 4,
+        "property": 23,
+        "totalPart1": 27,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 8,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 4
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 1,
+        "totalPart1": 1,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 2,
+        "totalPart1": 2,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 1523,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -100
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -13.043478260869565
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -25.925925925925924
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-045",
+      "slug": "corryville",
+      "name": "Corryville",
+      "sourceName": "Corryville",
+      "members": [
+        "Corryville"
+      ],
+      "currentYtd": {
+        "violent": 22,
+        "property": 240,
+        "totalPart1": 262,
+        "categories": {
+          "homicide": 0,
+          "rape": 5,
+          "robbery": 7,
+          "aggravated_assault": 8,
+          "strangulation": 2,
+          "burglary": 20,
+          "theft_from_auto": 64,
+          "motor_vehicle_theft": 40,
+          "personal_other_theft": 116
+        }
+      },
+      "priorYtd": {
+        "violent": 37,
+        "property": 271,
+        "totalPart1": 308,
+        "categories": {
+          "homicide": 2,
+          "rape": 3,
+          "robbery": 14,
+          "aggravated_assault": 15,
+          "strangulation": 3,
+          "burglary": 30,
+          "theft_from_auto": 50,
+          "motor_vehicle_theft": 44,
+          "personal_other_theft": 147
+        }
+      },
+      "current28": {
+        "violent": 3,
+        "property": 36,
+        "totalPart1": 39,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 18
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 20,
+        "totalPart1": 22,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 9
+        }
+      },
+      "population": 4373,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 5.030871255431054
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -40.54054054054054
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -11.439114391143912
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -14.935064935064934
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 50
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-027",
+      "slug": "cuf",
+      "name": "CUF",
+      "sourceName": "CUF",
+      "members": [
+        "CUF"
+      ],
+      "currentYtd": {
+        "violent": 52,
+        "property": 386,
+        "totalPart1": 438,
+        "categories": {
+          "homicide": 1,
+          "rape": 8,
+          "robbery": 15,
+          "aggravated_assault": 14,
+          "strangulation": 14,
+          "burglary": 38,
+          "theft_from_auto": 133,
+          "motor_vehicle_theft": 88,
+          "personal_other_theft": 127
+        }
+      },
+      "priorYtd": {
+        "violent": 41,
+        "property": 467,
+        "totalPart1": 508,
+        "categories": {
+          "homicide": 3,
+          "rape": 3,
+          "robbery": 17,
+          "aggravated_assault": 15,
+          "strangulation": 3,
+          "burglary": 83,
+          "theft_from_auto": 88,
+          "motor_vehicle_theft": 78,
+          "personal_other_theft": 218
+        }
+      },
+      "current28": {
+        "violent": 6,
+        "property": 44,
+        "totalPart1": 50,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 4,
+          "burglary": 4,
+          "theft_from_auto": 18,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 10
+        }
+      },
+      "previous28": {
+        "violent": 13,
+        "property": 35,
+        "totalPart1": 48,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 2,
+          "aggravated_assault": 3,
+          "strangulation": 5,
+          "burglary": 1,
+          "theft_from_auto": 17,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 12
+        }
+      },
+      "population": 20385,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 2.550895266127054
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 26.82926829268293
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -17.34475374732334
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -13.779527559055119
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -53.84615384615385
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-018",
+      "slug": "downtown",
+      "name": "Downtown",
+      "sourceName": "Downtown",
+      "members": [
+        "Downtown"
+      ],
+      "currentYtd": {
+        "violent": 57,
+        "property": 553,
+        "totalPart1": 610,
+        "categories": {
+          "homicide": 2,
+          "rape": 6,
+          "robbery": 26,
+          "aggravated_assault": 14,
+          "strangulation": 9,
+          "burglary": 28,
+          "theft_from_auto": 234,
+          "motor_vehicle_theft": 42,
+          "personal_other_theft": 249
+        }
+      },
+      "priorYtd": {
+        "violent": 69,
+        "property": 701,
+        "totalPart1": 770,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 39,
+          "aggravated_assault": 24,
+          "strangulation": 3,
+          "burglary": 71,
+          "theft_from_auto": 339,
+          "motor_vehicle_theft": 59,
+          "personal_other_theft": 232
+        }
+      },
+      "current28": {
+        "violent": 6,
+        "property": 88,
+        "totalPart1": 94,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 4,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 6,
+          "theft_from_auto": 46,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 30
+        }
+      },
+      "previous28": {
+        "violent": 8,
+        "property": 81,
+        "totalPart1": 89,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 5,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 4,
+          "theft_from_auto": 35,
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 35
+        }
+      },
+      "population": 5835,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 9.768637532133676
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -17.391304347826086
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -21.112696148359486
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -20.77922077922078
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -25
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-038",
+      "slug": "east-end",
+      "name": "East End",
+      "sourceName": "East End",
+      "members": [
+        "East End"
+      ],
+      "currentYtd": {
+        "violent": 2,
+        "property": 46,
+        "totalPart1": 48,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 15,
+          "theft_from_auto": 10,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 17
+        }
+      },
+      "priorYtd": {
+        "violent": 0,
+        "property": 30,
+        "totalPart1": 30,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 7,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 13
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 7,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 4,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 7,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 3,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "population": 1476,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 1.3550135501355014
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "new-activity",
+          "value": null
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 53.333333333333336
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 60
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-014",
+      "slug": "east-price-hill",
+      "name": "East Price Hill",
+      "sourceName": "East Price Hill",
+      "members": [
+        "East Price Hill"
+      ],
+      "currentYtd": {
+        "violent": 67,
+        "property": 291,
+        "totalPart1": 358,
+        "categories": {
+          "homicide": 0,
+          "rape": 7,
+          "robbery": 29,
+          "aggravated_assault": 18,
+          "strangulation": 13,
+          "burglary": 43,
+          "theft_from_auto": 78,
+          "motor_vehicle_theft": 50,
+          "personal_other_theft": 120
+        }
+      },
+      "priorYtd": {
+        "violent": 68,
+        "property": 270,
+        "totalPart1": 338,
+        "categories": {
+          "homicide": 2,
+          "rape": 6,
+          "robbery": 29,
+          "aggravated_assault": 21,
+          "strangulation": 10,
+          "burglary": 50,
+          "theft_from_auto": 57,
+          "motor_vehicle_theft": 69,
+          "personal_other_theft": 94
+        }
+      },
+      "current28": {
+        "violent": 5,
+        "property": 35,
+        "totalPart1": 40,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 5,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 17
+        }
+      },
+      "previous28": {
+        "violent": 11,
+        "property": 37,
+        "totalPart1": 48,
+        "categories": {
+          "homicide": 0,
+          "rape": 5,
+          "robbery": 3,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 3,
+          "theft_from_auto": 10,
+          "motor_vehicle_theft": 9,
+          "personal_other_theft": 15
+        }
+      },
+      "population": 15241,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 4.396037005445836
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -1.4705882352941175
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 7.777777777777778
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 5.9171597633136095
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -54.54545454545454
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-043",
+      "slug": "east-walnut-hills",
+      "name": "East Walnut Hills",
+      "sourceName": "East Walnut Hills",
+      "members": [
+        "East Walnut Hills"
+      ],
+      "currentYtd": {
+        "violent": 3,
+        "property": 61,
+        "totalPart1": 64,
+        "categories": {
+          "homicide": 1,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 2,
+          "burglary": 1,
+          "theft_from_auto": 23,
+          "motor_vehicle_theft": 20,
+          "personal_other_theft": 17
+        }
+      },
+      "priorYtd": {
+        "violent": 2,
+        "property": 60,
+        "totalPart1": 62,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 13,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 13,
+          "personal_other_theft": 21
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 8,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 5,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 1
+        }
+      },
+      "population": 4103,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0.73117231294175
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 50
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 1.6666666666666667
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 3.225806451612903
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-025",
+      "slug": "east-westwood",
+      "name": "East Westwood",
+      "sourceName": "East Westwood",
+      "members": [
+        "East Westwood"
+      ],
+      "currentYtd": {
+        "violent": 30,
+        "property": 58,
+        "totalPart1": 88,
+        "categories": {
+          "homicide": 0,
+          "rape": 5,
+          "robbery": 4,
+          "aggravated_assault": 17,
+          "strangulation": 4,
+          "burglary": 9,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 9,
+          "personal_other_theft": 27
+        }
+      },
+      "priorYtd": {
+        "violent": 26,
+        "property": 75,
+        "totalPart1": 101,
+        "categories": {
+          "homicide": 3,
+          "rape": 1,
+          "robbery": 3,
+          "aggravated_assault": 12,
+          "strangulation": 7,
+          "burglary": 14,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 19,
+          "personal_other_theft": 37
+        }
+      },
+      "current28": {
+        "violent": 5,
+        "property": 6,
+        "totalPart1": 11,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 4,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 4,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "population": 2458,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 12.205044751830757
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 15.384615384615385
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -22.666666666666664
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -12.871287128712872
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 400
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-013",
+      "slug": "english-woods-north-fairmount",
+      "name": "English Woods / North Fairmount",
+      "sourceName": "English Woods_North Fairmount",
+      "members": [
+        "English Woods",
+        "North Fairmount"
+      ],
+      "currentYtd": {
+        "violent": 14,
+        "property": 34,
+        "totalPart1": 48,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 5,
+          "strangulation": 6,
+          "burglary": 7,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 9
+        }
+      },
+      "priorYtd": {
+        "violent": 11,
+        "property": 33,
+        "totalPart1": 44,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 6,
+          "strangulation": 2,
+          "burglary": 8,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 9
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 3,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 1
+        }
+      },
+      "population": 1951,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 7.1758072783188105
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 27.27272727272727
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 3.0303030303030303
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 9.090909090909092
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-040",
+      "slug": "evanston",
+      "name": "Evanston",
+      "sourceName": "Evanston",
+      "members": [
+        "Evanston"
+      ],
+      "currentYtd": {
+        "violent": 31,
+        "property": 128,
+        "totalPart1": 159,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 6,
+          "aggravated_assault": 15,
+          "strangulation": 7,
+          "burglary": 12,
+          "theft_from_auto": 45,
+          "motor_vehicle_theft": 26,
+          "personal_other_theft": 45
+        }
+      },
+      "priorYtd": {
+        "violent": 17,
+        "property": 148,
+        "totalPart1": 165,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 3,
+          "aggravated_assault": 4,
+          "strangulation": 5,
+          "burglary": 18,
+          "theft_from_auto": 31,
+          "motor_vehicle_theft": 48,
+          "personal_other_theft": 51
+        }
+      },
+      "current28": {
+        "violent": 4,
+        "property": 12,
+        "totalPart1": 16,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 3,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 7
+        }
+      },
+      "previous28": {
+        "violent": 5,
+        "property": 13,
+        "totalPart1": 18,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 4
+        }
+      },
+      "population": 8838,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 3.507580900656257
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 82.35294117647058
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -13.513513513513514
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -3.6363636363636362
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -20
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-028",
+      "slug": "hartwell",
+      "name": "Hartwell",
+      "sourceName": "Hartwell",
+      "members": [
+        "Hartwell"
+      ],
+      "currentYtd": {
+        "violent": 14,
+        "property": 70,
+        "totalPart1": 84,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 1,
+          "aggravated_assault": 4,
+          "strangulation": 4,
+          "burglary": 13,
+          "theft_from_auto": 12,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 37
+        }
+      },
+      "priorYtd": {
+        "violent": 11,
+        "property": 69,
+        "totalPart1": 80,
+        "categories": {
+          "homicide": 2,
+          "rape": 3,
+          "robbery": 2,
+          "aggravated_assault": 3,
+          "strangulation": 1,
+          "burglary": 16,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 16,
+          "personal_other_theft": 28
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 9,
+        "totalPart1": 12,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 3,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 3
+        }
+      },
+      "population": 5806,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 2.411298656562177
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 27.27272727272727
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 1.4492753623188406
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 5
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-039",
+      "slug": "hyde-park",
+      "name": "Hyde Park",
+      "sourceName": "Hyde Park",
+      "members": [
+        "Hyde Park"
+      ],
+      "currentYtd": {
+        "violent": 10,
+        "property": 61,
+        "totalPart1": 71,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 3,
+          "aggravated_assault": 2,
+          "strangulation": 4,
+          "burglary": 5,
+          "theft_from_auto": 24,
+          "motor_vehicle_theft": 13,
+          "personal_other_theft": 19
+        }
+      },
+      "priorYtd": {
+        "violent": 4,
+        "property": 135,
+        "totalPart1": 139,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 13,
+          "theft_from_auto": 43,
+          "motor_vehicle_theft": 24,
+          "personal_other_theft": 55
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 2,
+        "totalPart1": 4,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 2,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 7,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 2
+        }
+      },
+      "population": 14193,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0.7045726766715986
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 150
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -54.81481481481482
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -48.92086330935252
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-016",
+      "slug": "kennedy-heights",
+      "name": "Kennedy Heights",
+      "sourceName": "Kennedy Heights",
+      "members": [
+        "Kennedy Heights"
+      ],
+      "currentYtd": {
+        "violent": 6,
+        "property": 41,
+        "totalPart1": 47,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 3,
+          "strangulation": 0,
+          "burglary": 6,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 14
+        }
+      },
+      "priorYtd": {
+        "violent": 9,
+        "property": 69,
+        "totalPart1": 78,
+        "categories": {
+          "homicide": 0,
+          "rape": 4,
+          "robbery": 1,
+          "aggravated_assault": 3,
+          "strangulation": 1,
+          "burglary": 14,
+          "theft_from_auto": 15,
+          "motor_vehicle_theft": 18,
+          "personal_other_theft": 22
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 6,
+        "totalPart1": 6,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 4
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 3,
+        "totalPart1": 4,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 1
+        }
+      },
+      "population": 5166,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 1.1614401858304297
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -33.33333333333333
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -40.57971014492754
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -39.743589743589745
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-026",
+      "slug": "linwood",
+      "name": "Linwood",
+      "sourceName": "Linwood",
+      "members": [
+        "Linwood"
+      ],
+      "currentYtd": {
+        "violent": 0,
+        "property": 5,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "priorYtd": {
+        "violent": 0,
+        "property": 5,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 1
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 1,
+        "totalPart1": 1,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 0,
+        "totalPart1": 0,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 705,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "no-change",
+          "value": 0
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 0
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 0
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-047",
+      "slug": "lower-price-hill-queensgate",
+      "name": "Lower Price Hill / Queensgate",
+      "sourceName": "Lower Price Hill_Queensgate",
+      "members": [
+        "Lower Price Hill",
+        "Queensgate"
+      ],
+      "currentYtd": {
+        "violent": 18,
+        "property": 99,
+        "totalPart1": 117,
+        "categories": {
+          "homicide": 0,
+          "rape": 4,
+          "robbery": 1,
+          "aggravated_assault": 9,
+          "strangulation": 4,
+          "burglary": 11,
+          "theft_from_auto": 25,
+          "motor_vehicle_theft": 17,
+          "personal_other_theft": 46
+        }
+      },
+      "priorYtd": {
+        "violent": 17,
+        "property": 109,
+        "totalPart1": 126,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 5,
+          "aggravated_assault": 7,
+          "strangulation": 2,
+          "burglary": 20,
+          "theft_from_auto": 20,
+          "motor_vehicle_theft": 25,
+          "personal_other_theft": 44
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 10,
+        "totalPart1": 11,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 4
+        }
+      },
+      "population": 2140,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 8.411214953271028
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 5.88235294117647
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -9.174311926605505
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -7.142857142857142
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-031",
+      "slug": "madisonville",
+      "name": "Madisonville",
+      "sourceName": "Madisonville",
+      "members": [
+        "Madisonville"
+      ],
+      "currentYtd": {
+        "violent": 18,
+        "property": 97,
+        "totalPart1": 115,
+        "categories": {
+          "homicide": 1,
+          "rape": 5,
+          "robbery": 4,
+          "aggravated_assault": 5,
+          "strangulation": 3,
+          "burglary": 14,
+          "theft_from_auto": 24,
+          "motor_vehicle_theft": 15,
+          "personal_other_theft": 44
+        }
+      },
+      "priorYtd": {
+        "violent": 15,
+        "property": 125,
+        "totalPart1": 140,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 5,
+          "aggravated_assault": 3,
+          "strangulation": 2,
+          "burglary": 16,
+          "theft_from_auto": 35,
+          "motor_vehicle_theft": 30,
+          "personal_other_theft": 44
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 13,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 12,
+        "totalPart1": 15,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 2,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 8
+        }
+      },
+      "population": 17898,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 1.0056989607777405
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 20
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -22.400000000000002
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -17.857142857142858
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -66.66666666666666
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-006",
+      "slug": "millvale",
+      "name": "Millvale",
+      "sourceName": "Millvale",
+      "members": [
+        "Millvale"
+      ],
+      "currentYtd": {
+        "violent": 17,
+        "property": 39,
+        "totalPart1": 56,
+        "categories": {
+          "homicide": 4,
+          "rape": 1,
+          "robbery": 5,
+          "aggravated_assault": 4,
+          "strangulation": 3,
+          "burglary": 8,
+          "theft_from_auto": 10,
+          "motor_vehicle_theft": 9,
+          "personal_other_theft": 12
+        }
+      },
+      "priorYtd": {
+        "violent": 5,
+        "property": 27,
+        "totalPart1": 32,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 4,
+          "strangulation": 1,
+          "burglary": 12,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 10
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 4,
+        "totalPart1": 6,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 11,
+        "totalPart1": 12,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 4,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 1
+        }
+      },
+      "population": 1965,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 8.651399491094146
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 240
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 44.44444444444444
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 75
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-005",
+      "slug": "mt-adams",
+      "name": "Mt. Adams",
+      "sourceName": "Mt. Adams",
+      "members": [
+        "Mt. Adams"
+      ],
+      "currentYtd": {
+        "violent": 2,
+        "property": 19,
+        "totalPart1": 21,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 12,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 5
+        }
+      },
+      "priorYtd": {
+        "violent": 1,
+        "property": 13,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 5
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 1,
+        "totalPart1": 1,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 2,
+        "totalPart1": 2,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 1578,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 1.2674271229404308
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 100
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 46.15384615384615
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 50
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-023",
+      "slug": "mt-airy",
+      "name": "Mt. Airy",
+      "sourceName": "Mt. Airy",
+      "members": [
+        "Mt. Airy"
+      ],
+      "currentYtd": {
+        "violent": 40,
+        "property": 150,
+        "totalPart1": 190,
+        "categories": {
+          "homicide": 0,
+          "rape": 8,
+          "robbery": 6,
+          "aggravated_assault": 14,
+          "strangulation": 12,
+          "burglary": 22,
+          "theft_from_auto": 27,
+          "motor_vehicle_theft": 35,
+          "personal_other_theft": 66
+        }
+      },
+      "priorYtd": {
+        "violent": 26,
+        "property": 122,
+        "totalPart1": 148,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 6,
+          "aggravated_assault": 9,
+          "strangulation": 8,
+          "burglary": 18,
+          "theft_from_auto": 18,
+          "motor_vehicle_theft": 18,
+          "personal_other_theft": 68
+        }
+      },
+      "current28": {
+        "violent": 8,
+        "property": 20,
+        "totalPart1": 28,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 2,
+          "aggravated_assault": 2,
+          "strangulation": 2,
+          "burglary": 2,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 7
+        }
+      },
+      "previous28": {
+        "violent": 4,
+        "property": 15,
+        "totalPart1": 19,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 2,
+          "burglary": 3,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 7
+        }
+      },
+      "population": 9210,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 4.3431053203040175
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 53.84615384615385
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 22.950819672131146
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 28.37837837837838
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-022",
+      "slug": "mt-auburn",
+      "name": "Mt. Auburn",
+      "sourceName": "Mt. Auburn",
+      "members": [
+        "Mt. Auburn"
+      ],
+      "currentYtd": {
+        "violent": 14,
+        "property": 150,
+        "totalPart1": 164,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 5,
+          "aggravated_assault": 4,
+          "strangulation": 2,
+          "burglary": 11,
+          "theft_from_auto": 67,
+          "motor_vehicle_theft": 24,
+          "personal_other_theft": 48
+        }
+      },
+      "priorYtd": {
+        "violent": 21,
+        "property": 170,
+        "totalPart1": 191,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 5,
+          "aggravated_assault": 5,
+          "strangulation": 6,
+          "burglary": 17,
+          "theft_from_auto": 84,
+          "motor_vehicle_theft": 39,
+          "personal_other_theft": 30
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 21,
+        "totalPart1": 22,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 14,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 5
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 20,
+        "totalPart1": 22,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 6
+        }
+      },
+      "population": 5070,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 2.7613412228796843
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -33.33333333333333
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -11.76470588235294
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -14.136125654450263
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -50
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-003",
+      "slug": "mt-lookout",
+      "name": "Mt. Lookout",
+      "sourceName": "Mt. Lookout",
+      "members": [
+        "Mt. Lookout"
+      ],
+      "currentYtd": {
+        "violent": 4,
+        "property": 29,
+        "totalPart1": 33,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 12,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 10
+        }
+      },
+      "priorYtd": {
+        "violent": 2,
+        "property": 29,
+        "totalPart1": 31,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 6,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 5
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 5,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 3
+        }
+      },
+      "population": 5173,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0.7732456988208003
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 100
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 0
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 6.451612903225806
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-020",
+      "slug": "mt-washington",
+      "name": "Mt. Washington",
+      "sourceName": "Mt. Washington",
+      "members": [
+        "Mt. Washington"
+      ],
+      "currentYtd": {
+        "violent": 10,
+        "property": 63,
+        "totalPart1": 73,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 0,
+          "aggravated_assault": 3,
+          "strangulation": 4,
+          "burglary": 6,
+          "theft_from_auto": 18,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 27
+        }
+      },
+      "priorYtd": {
+        "violent": 8,
+        "property": 83,
+        "totalPart1": 91,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 3,
+          "strangulation": 3,
+          "burglary": 11,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 21,
+          "personal_other_theft": 38
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 8,
+        "totalPart1": 9,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 6,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 2
+        }
+      },
+      "population": 15357,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0.6511688480823078
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 25
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -24.096385542168676
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -19.78021978021978
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -50
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-029",
+      "slug": "north-avondale",
+      "name": "North Avondale",
+      "sourceName": "North Avondale",
+      "members": [
+        "North Avondale"
+      ],
+      "currentYtd": {
+        "violent": 52,
+        "property": 117,
+        "totalPart1": 169,
+        "categories": {
+          "homicide": 1,
+          "rape": 8,
+          "robbery": 12,
+          "aggravated_assault": 20,
+          "strangulation": 11,
+          "burglary": 29,
+          "theft_from_auto": 24,
+          "motor_vehicle_theft": 20,
+          "personal_other_theft": 44
+        }
+      },
+      "priorYtd": {
+        "violent": 41,
+        "property": 131,
+        "totalPart1": 172,
+        "categories": {
+          "homicide": 0,
+          "rape": 4,
+          "robbery": 11,
+          "aggravated_assault": 17,
+          "strangulation": 9,
+          "burglary": 35,
+          "theft_from_auto": 21,
+          "motor_vehicle_theft": 31,
+          "personal_other_theft": 44
+        }
+      },
+      "current28": {
+        "violent": 7,
+        "property": 12,
+        "totalPart1": 19,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 4,
+          "strangulation": 1,
+          "burglary": 4,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 6,
+        "property": 12,
+        "totalPart1": 18,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 3,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 6
+        }
+      },
+      "population": 3405,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 15.27165932452276
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 26.82926829268293
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -10.687022900763358
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -1.744186046511628
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 16.666666666666664
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-007",
+      "slug": "north-fairmount",
+      "name": "North Fairmount",
+      "sourceName": "North Fairmount",
+      "members": [
+        "North Fairmount"
+      ],
+      "currentYtd": {
+        "violent": 8,
+        "property": 21,
+        "totalPart1": 29,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 2,
+          "strangulation": 4,
+          "burglary": 5,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 3
+        }
+      },
+      "priorYtd": {
+        "violent": 10,
+        "property": 24,
+        "totalPart1": 34,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 5,
+          "strangulation": 2,
+          "burglary": 4,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 11,
+          "personal_other_theft": 7
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 2,
+        "totalPart1": 4,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 4,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 1590,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 5.031446540880503
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -20
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -12.5
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -14.705882352941178
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 100
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-012",
+      "slug": "northside",
+      "name": "Northside",
+      "sourceName": "Northside",
+      "members": [
+        "Northside"
+      ],
+      "currentYtd": {
+        "violent": 41,
+        "property": 209,
+        "totalPart1": 250,
+        "categories": {
+          "homicide": 4,
+          "rape": 3,
+          "robbery": 8,
+          "aggravated_assault": 15,
+          "strangulation": 11,
+          "burglary": 33,
+          "theft_from_auto": 71,
+          "motor_vehicle_theft": 43,
+          "personal_other_theft": 62
+        }
+      },
+      "priorYtd": {
+        "violent": 27,
+        "property": 191,
+        "totalPart1": 218,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 10,
+          "aggravated_assault": 11,
+          "strangulation": 4,
+          "burglary": 26,
+          "theft_from_auto": 48,
+          "motor_vehicle_theft": 55,
+          "personal_other_theft": 62
+        }
+      },
+      "current28": {
+        "violent": 6,
+        "property": 27,
+        "totalPart1": 33,
+        "categories": {
+          "homicide": 1,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 7,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 4
+        }
+      },
+      "previous28": {
+        "violent": 5,
+        "property": 28,
+        "totalPart1": 33,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 3,
+          "strangulation": 1,
+          "burglary": 6,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 9
+        }
+      },
+      "population": 8096,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 5.064229249011858
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 51.85185185185185
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 9.424083769633508
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 14.678899082568808
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 20
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-015",
+      "slug": "oakley",
+      "name": "Oakley",
+      "sourceName": "Oakley",
+      "members": [
+        "Oakley"
+      ],
+      "currentYtd": {
+        "violent": 5,
+        "property": 434,
+        "totalPart1": 439,
+        "categories": {
+          "homicide": 2,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 21,
+          "theft_from_auto": 39,
+          "motor_vehicle_theft": 19,
+          "personal_other_theft": 355
+        }
+      },
+      "priorYtd": {
+        "violent": 5,
+        "property": 349,
+        "totalPart1": 354,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 21,
+          "theft_from_auto": 39,
+          "motor_vehicle_theft": 31,
+          "personal_other_theft": 258
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 38,
+        "totalPart1": 39,
+        "categories": {
+          "homicide": 1,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 31
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 40,
+        "totalPart1": 41,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 28
+        }
+      },
+      "population": 11761,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0.4251339171839129
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 0
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 24.355300859598856
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 24.01129943502825
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-021",
+      "slug": "over-the-rhine",
+      "name": "Over-the-Rhine",
+      "sourceName": "Over-the-Rhine",
+      "members": [
+        "Over-the-Rhine"
+      ],
+      "currentYtd": {
+        "violent": 77,
+        "property": 476,
+        "totalPart1": 553,
+        "categories": {
+          "homicide": 0,
+          "rape": 11,
+          "robbery": 25,
+          "aggravated_assault": 29,
+          "strangulation": 12,
+          "burglary": 67,
+          "theft_from_auto": 248,
+          "motor_vehicle_theft": 47,
+          "personal_other_theft": 114
+        }
+      },
+      "priorYtd": {
+        "violent": 83,
+        "property": 610,
+        "totalPart1": 693,
+        "categories": {
+          "homicide": 8,
+          "rape": 4,
+          "robbery": 27,
+          "aggravated_assault": 36,
+          "strangulation": 8,
+          "burglary": 119,
+          "theft_from_auto": 269,
+          "motor_vehicle_theft": 90,
+          "personal_other_theft": 132
+        }
+      },
+      "current28": {
+        "violent": 8,
+        "property": 67,
+        "totalPart1": 75,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 3,
+          "aggravated_assault": 1,
+          "strangulation": 3,
+          "burglary": 3,
+          "theft_from_auto": 39,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 13
+        }
+      },
+      "previous28": {
+        "violent": 13,
+        "property": 69,
+        "totalPart1": 82,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 4,
+          "aggravated_assault": 6,
+          "strangulation": 0,
+          "burglary": 6,
+          "theft_from_auto": 44,
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 12
+        }
+      },
+      "population": 5622,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 13.696193525435788
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -7.228915662650602
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -21.9672131147541
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -20.2020202020202
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -38.46153846153847
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-050",
+      "slug": "paddock-hills",
+      "name": "Paddock Hills",
+      "sourceName": "Paddock Hills",
+      "members": [
+        "Paddock Hills"
+      ],
+      "currentYtd": {
+        "violent": 7,
+        "property": 27,
+        "totalPart1": 34,
+        "categories": {
+          "homicide": 0,
+          "rape": 4,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 3,
+          "burglary": 2,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 16
+        }
+      },
+      "priorYtd": {
+        "violent": 11,
+        "property": 41,
+        "totalPart1": 52,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 3,
+          "aggravated_assault": 3,
+          "strangulation": 2,
+          "burglary": 6,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 18
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 5,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 3
+        }
+      },
+      "population": 1038,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 6.74373795761079
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -36.36363636363637
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -34.146341463414636
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -34.61538461538461
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-010",
+      "slug": "pendleton",
+      "name": "Pendleton",
+      "sourceName": "Pendleton",
+      "members": [
+        "Pendleton"
+      ],
+      "currentYtd": {
+        "violent": 10,
+        "property": 37,
+        "totalPart1": 47,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 5,
+          "aggravated_assault": 3,
+          "strangulation": 2,
+          "burglary": 1,
+          "theft_from_auto": 17,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 11
+        }
+      },
+      "priorYtd": {
+        "violent": 3,
+        "property": 68,
+        "totalPart1": 71,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 9,
+          "theft_from_auto": 31,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 18
+        }
+      },
+      "current28": {
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 6,
+        "totalPart1": 6,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 1088,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 9.191176470588236
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 233.33333333333334
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -45.588235294117645
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -33.80281690140845
+        },
+        "violent28": {
+          "kind": "no-change",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-035",
+      "slug": "pleasant-ridge",
+      "name": "Pleasant Ridge",
+      "sourceName": "Pleasant Ridge",
+      "members": [
+        "Pleasant Ridge"
+      ],
+      "currentYtd": {
+        "violent": 9,
+        "property": 79,
+        "totalPart1": 88,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 5,
+          "strangulation": 1,
+          "burglary": 9,
+          "theft_from_auto": 31,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 27
+        }
+      },
+      "priorYtd": {
+        "violent": 9,
+        "property": 85,
+        "totalPart1": 94,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 4,
+          "strangulation": 3,
+          "burglary": 17,
+          "theft_from_auto": 16,
+          "motor_vehicle_theft": 29,
+          "personal_other_theft": 23
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 8,
+        "totalPart1": 9,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 9,
+        "totalPart1": 11,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 1
+        }
+      },
+      "population": 8895,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 1.011804384485666
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 0
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -7.0588235294117645
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -6.382978723404255
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -50
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-046",
+      "slug": "riverside",
+      "name": "Riverside",
+      "sourceName": "Riverside",
+      "members": [
+        "Riverside"
+      ],
+      "currentYtd": {
+        "violent": 4,
+        "property": 22,
+        "totalPart1": 26,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 3,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 11
+        }
+      },
+      "priorYtd": {
+        "violent": 3,
+        "property": 28,
+        "totalPart1": 31,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 5,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 10
+        }
+      },
+      "current28": {
+        "violent": 3,
+        "property": 7,
+        "totalPart1": 10,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 3
+        }
+      },
+      "population": 1257,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 3.182179793158314
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 33.33333333333333
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -21.428571428571427
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -16.129032258064516
+        },
+        "violent28": {
+          "kind": "new-activity",
+          "value": null
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-017",
+      "slug": "riverside-sedamsville",
+      "name": "Riverside / Sedamsville",
+      "sourceName": "Riverside_Sedamsville",
+      "members": [
+        "Riverside",
+        "Sedamsville"
+      ],
+      "currentYtd": {
+        "violent": 8,
+        "property": 53,
+        "totalPart1": 61,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 4,
+          "aggravated_assault": 0,
+          "strangulation": 2,
+          "burglary": 4,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 26
+        }
+      },
+      "priorYtd": {
+        "violent": 7,
+        "property": 51,
+        "totalPart1": 58,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 4,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 6,
+          "theft_from_auto": 10,
+          "motor_vehicle_theft": 9,
+          "personal_other_theft": 26
+        }
+      },
+      "current28": {
+        "violent": 5,
+        "property": 9,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 2,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 6,
+        "totalPart1": 6,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 4
+        }
+      },
+      "population": 2513,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 3.1834460803820135
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 14.285714285714285
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 3.9215686274509802
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 5.172413793103448
+        },
+        "violent28": {
+          "kind": "new-activity",
+          "value": null
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-002",
+      "slug": "roselawn",
+      "name": "Roselawn",
+      "sourceName": "Roselawn",
+      "members": [
+        "Roselawn"
+      ],
+      "currentYtd": {
+        "violent": 38,
+        "property": 200,
+        "totalPart1": 238,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 17,
+          "aggravated_assault": 13,
+          "strangulation": 7,
+          "burglary": 26,
+          "theft_from_auto": 23,
+          "motor_vehicle_theft": 32,
+          "personal_other_theft": 119
+        }
+      },
+      "priorYtd": {
+        "violent": 53,
+        "property": 209,
+        "totalPart1": 262,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 23,
+          "aggravated_assault": 19,
+          "strangulation": 6,
+          "burglary": 36,
+          "theft_from_auto": 37,
+          "motor_vehicle_theft": 40,
+          "personal_other_theft": 96
+        }
+      },
+      "current28": {
+        "violent": 7,
+        "property": 30,
+        "totalPart1": 37,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 5,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 25
+        }
+      },
+      "previous28": {
+        "violent": 7,
+        "property": 25,
+        "totalPart1": 32,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 5,
+          "strangulation": 1,
+          "burglary": 4,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 11
+        }
+      },
+      "population": 7039,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 5.398494104276176
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -28.30188679245283
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -4.30622009569378
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -9.16030534351145
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-008",
+      "slug": "sayler-park",
+      "name": "Sayler Park",
+      "sourceName": "Sayler Park",
+      "members": [
+        "Sayler Park"
+      ],
+      "currentYtd": {
+        "violent": 1,
+        "property": 24,
+        "totalPart1": 25,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 0,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 11,
+          "personal_other_theft": 6
+        }
+      },
+      "priorYtd": {
+        "violent": 5,
+        "property": 36,
+        "totalPart1": 41,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 4,
+          "strangulation": 0,
+          "burglary": 8,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 11
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 1,
+        "totalPart1": 1,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
+        }
+      },
+      "population": 2825,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 0.35398230088495575
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -80
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -33.33333333333333
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -39.02439024390244
+        },
+        "violent28": {
+          "kind": "new-activity",
+          "value": null
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-048",
+      "slug": "south-cumminsville",
+      "name": "South Cumminsville",
+      "sourceName": "South Cumminsville",
+      "members": [
+        "South Cumminsville"
+      ],
+      "currentYtd": {
+        "violent": 8,
+        "property": 23,
+        "totalPart1": 31,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 5,
+          "strangulation": 2,
+          "burglary": 2,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 11
+        }
+      },
+      "priorYtd": {
+        "violent": 5,
+        "property": 19,
+        "totalPart1": 24,
+        "categories": {
+          "homicide": 2,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 7,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 7
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 1,
+        "totalPart1": 2,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 4
+        }
+      },
+      "population": 702,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 11.396011396011396
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 60
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 21.052631578947366
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 29.166666666666668
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-001",
+      "slug": "south-fairmount",
+      "name": "South Fairmount",
+      "sourceName": "South Fairmount",
+      "members": [
+        "South Fairmount"
+      ],
+      "currentYtd": {
+        "violent": 22,
+        "property": 136,
+        "totalPart1": 158,
+        "categories": {
+          "homicide": 1,
+          "rape": 6,
+          "robbery": 1,
+          "aggravated_assault": 9,
+          "strangulation": 5,
+          "burglary": 24,
+          "theft_from_auto": 16,
+          "motor_vehicle_theft": 21,
+          "personal_other_theft": 75
+        }
+      },
+      "priorYtd": {
+        "violent": 19,
+        "property": 99,
+        "totalPart1": 118,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 3,
+          "aggravated_assault": 10,
+          "strangulation": 3,
+          "burglary": 29,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 25,
+          "personal_other_theft": 37
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 20,
+        "totalPart1": 22,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 4,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 9,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 15,
+        "totalPart1": 18,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 5
+        }
+      },
+      "population": 2181,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 10.087116001834021
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 15.789473684210526
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 37.37373737373738
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 33.89830508474576
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -33.33333333333333
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-042",
+      "slug": "spring-grove-village",
+      "name": "Spring Grove Village",
+      "sourceName": "Spring Grove Village",
+      "members": [
+        "Spring Grove Village"
+      ],
+      "currentYtd": {
+        "violent": 12,
+        "property": 85,
+        "totalPart1": 97,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 4,
+          "aggravated_assault": 6,
+          "strangulation": 2,
+          "burglary": 15,
+          "theft_from_auto": 22,
+          "motor_vehicle_theft": 15,
+          "personal_other_theft": 33
+        }
+      },
+      "priorYtd": {
+        "violent": 9,
+        "property": 70,
+        "totalPart1": 79,
+        "categories": {
+          "homicide": 1,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 5,
+          "strangulation": 1,
+          "burglary": 13,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 11,
+          "personal_other_theft": 33
+        }
+      },
+      "current28": {
+        "violent": 2,
+        "property": 12,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 17,
+        "totalPart1": 19,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 7
+        }
+      },
+      "population": 1916,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 6.263048016701462
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 33.33333333333333
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 21.428571428571427
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 22.78481012658228
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-049",
+      "slug": "villages-at-roll-hill",
+      "name": "Villages at Roll Hill",
+      "sourceName": "Roll Hill",
+      "members": [
+        "Villages at Roll Hill"
+      ],
+      "currentYtd": {
+        "violent": 19,
+        "property": 27,
+        "totalPart1": 76,
+        "categories": {
+          "homicide": 3,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 10,
+          "strangulation": 13,
+          "burglary": 13,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 19
+        }
+      },
+      "priorYtd": {
+        "violent": 16,
+        "property": 13,
+        "totalPart1": 50,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 8,
+          "strangulation": 3,
+          "burglary": 11,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 16
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 7,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 2,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 3,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 1
+        }
+      },
+      "population": 1918,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 9.906152241918665
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 18.75
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 107.6923076923077
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 52
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-032",
+      "slug": "walnut-hills",
+      "name": "Walnut Hills",
+      "sourceName": "Walnut Hills",
+      "members": [
+        "Walnut Hills"
+      ],
+      "currentYtd": {
+        "violent": 45,
+        "property": 270,
+        "totalPart1": 315,
+        "categories": {
+          "homicide": 3,
+          "rape": 7,
+          "robbery": 16,
+          "aggravated_assault": 15,
+          "strangulation": 4,
+          "burglary": 36,
+          "theft_from_auto": 116,
+          "motor_vehicle_theft": 36,
+          "personal_other_theft": 82
+        }
+      },
+      "priorYtd": {
+        "violent": 60,
+        "property": 243,
+        "totalPart1": 303,
+        "categories": {
+          "homicide": 4,
+          "rape": 9,
+          "robbery": 12,
+          "aggravated_assault": 31,
+          "strangulation": 4,
+          "burglary": 48,
+          "theft_from_auto": 56,
+          "motor_vehicle_theft": 52,
+          "personal_other_theft": 87
+        }
+      },
+      "current28": {
+        "violent": 12,
+        "property": 52,
+        "totalPart1": 64,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 6,
+          "aggravated_assault": 4,
+          "strangulation": 1,
+          "burglary": 5,
+          "theft_from_auto": 24,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 17
+        }
+      },
+      "previous28": {
+        "violent": 7,
+        "property": 19,
+        "totalPart1": 26,
+        "categories": {
+          "homicide": 1,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 3,
+          "strangulation": 0,
+          "burglary": 6,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 4
+        }
+      },
+      "population": 6344,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 7.093316519546027
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -25
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 11.11111111111111
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 3.9603960396039604
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 71.42857142857143
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-044",
+      "slug": "west-end",
+      "name": "West End",
+      "sourceName": "West End",
+      "members": [
+        "West End"
+      ],
+      "currentYtd": {
+        "violent": 68,
+        "property": 192,
+        "totalPart1": 260,
+        "categories": {
+          "homicide": 2,
+          "rape": 10,
+          "robbery": 18,
+          "aggravated_assault": 24,
+          "strangulation": 14,
+          "burglary": 47,
+          "theft_from_auto": 28,
+          "motor_vehicle_theft": 35,
+          "personal_other_theft": 82
+        }
+      },
+      "priorYtd": {
+        "violent": 63,
+        "property": 235,
+        "totalPart1": 298,
+        "categories": {
+          "homicide": 0,
+          "rape": 5,
+          "robbery": 13,
+          "aggravated_assault": 32,
+          "strangulation": 13,
+          "burglary": 37,
+          "theft_from_auto": 51,
+          "motor_vehicle_theft": 52,
+          "personal_other_theft": 95
+        }
+      },
+      "current28": {
+        "violent": 6,
+        "property": 29,
+        "totalPart1": 35,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 3,
+          "strangulation": 0,
+          "burglary": 7,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 16
+        }
+      },
+      "previous28": {
+        "violent": 10,
+        "property": 17,
+        "totalPart1": 27,
+        "categories": {
+          "homicide": 1,
+          "rape": 4,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 4,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 6
+        }
+      },
+      "population": 6824,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 9.964830011723329
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 7.936507936507936
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -18.29787234042553
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -12.751677852348994
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -40
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-037",
+      "slug": "west-price-hill",
+      "name": "West Price Hill",
+      "sourceName": "West Price Hill",
+      "members": [
+        "West Price Hill"
+      ],
+      "currentYtd": {
+        "violent": 79,
+        "property": 309,
+        "totalPart1": 388,
+        "categories": {
+          "homicide": 0,
+          "rape": 12,
+          "robbery": 23,
+          "aggravated_assault": 21,
+          "strangulation": 23,
+          "burglary": 46,
+          "theft_from_auto": 85,
+          "motor_vehicle_theft": 39,
+          "personal_other_theft": 139
+        }
+      },
+      "priorYtd": {
+        "violent": 84,
+        "property": 356,
+        "totalPart1": 440,
+        "categories": {
+          "homicide": 3,
+          "rape": 4,
+          "robbery": 40,
+          "aggravated_assault": 24,
+          "strangulation": 13,
+          "burglary": 62,
+          "theft_from_auto": 69,
+          "motor_vehicle_theft": 76,
+          "personal_other_theft": 149
+        }
+      },
+      "current28": {
+        "violent": 11,
+        "property": 29,
+        "totalPart1": 40,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 5,
+          "strangulation": 3,
+          "burglary": 6,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 12
+        }
+      },
+      "previous28": {
+        "violent": 14,
+        "property": 41,
+        "totalPart1": 55,
+        "categories": {
+          "homicide": 0,
+          "rape": 3,
+          "robbery": 2,
+          "aggravated_assault": 4,
+          "strangulation": 5,
+          "burglary": 3,
+          "theft_from_auto": 12,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 23
+        }
+      },
+      "population": 19960,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 3.957915831663327
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": -5.952380952380952
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -13.202247191011235
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -11.818181818181818
+        },
+        "violent28": {
+          "kind": "value",
+          "value": -21.428571428571427
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-004",
+      "slug": "westwood",
+      "name": "Westwood",
+      "sourceName": "Westwood",
+      "members": [
+        "Westwood"
+      ],
+      "currentYtd": {
+        "violent": 112,
+        "property": 775,
+        "totalPart1": 887,
+        "categories": {
+          "homicide": 2,
+          "rape": 18,
+          "robbery": 25,
+          "aggravated_assault": 44,
+          "strangulation": 23,
+          "burglary": 72,
+          "theft_from_auto": 103,
+          "motor_vehicle_theft": 117,
+          "personal_other_theft": 483
+        }
+      },
+      "priorYtd": {
+        "violent": 111,
+        "property": 846,
+        "totalPart1": 957,
+        "categories": {
+          "homicide": 3,
+          "rape": 16,
+          "robbery": 33,
+          "aggravated_assault": 36,
+          "strangulation": 23,
+          "burglary": 62,
+          "theft_from_auto": 161,
+          "motor_vehicle_theft": 142,
+          "personal_other_theft": 481
+        }
+      },
+      "current28": {
+        "violent": 17,
+        "property": 92,
+        "totalPart1": 109,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 3,
+          "aggravated_assault": 8,
+          "strangulation": 4,
+          "burglary": 9,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 16,
+          "personal_other_theft": 54
+        }
+      },
+      "previous28": {
+        "violent": 8,
+        "property": 104,
+        "totalPart1": 112,
+        "categories": {
+          "homicide": 2,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 6,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 17,
+          "personal_other_theft": 70
+        }
+      },
+      "population": 33774,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 3.316160360040268
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 0.9009009009009009
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": -8.39243498817967
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": -7.314524555903866
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 112.5
+        }
+      }
+    },
+    {
+      "id": "CIN-SNA-036",
+      "slug": "winton-hills",
+      "name": "Winton Hills",
+      "sourceName": "Winton Hills",
+      "members": [
+        "Winton Hills"
+      ],
+      "currentYtd": {
+        "violent": 65,
+        "property": 123,
+        "totalPart1": 188,
+        "categories": {
+          "homicide": 3,
+          "rape": 14,
+          "robbery": 7,
+          "aggravated_assault": 31,
+          "strangulation": 10,
+          "burglary": 23,
+          "theft_from_auto": 21,
+          "motor_vehicle_theft": 20,
+          "personal_other_theft": 59
+        }
+      },
+      "priorYtd": {
+        "violent": 53,
+        "property": 99,
+        "totalPart1": 152,
+        "categories": {
+          "homicide": 4,
+          "rape": 2,
+          "robbery": 19,
+          "aggravated_assault": 25,
+          "strangulation": 3,
+          "burglary": 23,
+          "theft_from_auto": 15,
+          "motor_vehicle_theft": 33,
+          "personal_other_theft": 28
+        }
+      },
+      "current28": {
+        "violent": 11,
+        "property": 28,
+        "totalPart1": 39,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 3,
+          "strangulation": 5,
+          "burglary": 3,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 15
+        }
+      },
+      "previous28": {
+        "violent": 10,
+        "property": 27,
+        "totalPart1": 37,
+        "categories": {
+          "homicide": 1,
+          "rape": 2,
+          "robbery": 0,
+          "aggravated_assault": 7,
+          "strangulation": 0,
+          "burglary": 5,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 12
+        }
+      },
+      "population": 5684,
+      "populationYear": 2020,
+      "rates": {
+        "violentYtdPer1000": 11.43560872624912
+      },
+      "changes": {
+        "violentYtd": {
+          "kind": "value",
+          "value": 22.641509433962266
+        },
+        "propertyYtd": {
+          "kind": "value",
+          "value": 24.242424242424242
+        },
+        "totalYtd": {
+          "kind": "value",
+          "value": 23.684210526315788
+        },
+        "violent28": {
+          "kind": "value",
+          "value": 10
+        }
+      }
+    }
+  ]
+}

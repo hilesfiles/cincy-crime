@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-26T22:30:07.561Z",
+  "generatedAt": "2026-08-26T23:56:52.151Z",
   "status": "warning",
   "checks": [
     {
       "id": "geography-source-features",
       "status": "pass",
-      "detail": "50 source features"
+      "detail": "50 polygons representing 51 names"
     },
     {
-      "id": "geography-bootstrap-expectation",
-      "status": "warning",
-      "detail": "The live CAGIS 2020 SNA service currently returns 50 statistical polygons. Three polygons are explicitly combined statistical areas; the supplied expected list contains 51 names, not 52. The application preserves the source geometry and surfaces this discrepancy rather than inventing boundaries."
+      "id": "geography-crosswalk",
+      "status": "pass",
+      "detail": "51 civic names → 50 CAGIS features; three combined features"
     },
     {
       "id": "unique-region-slugs",
@@ -18,9 +18,29 @@
       "detail": "50 slugs"
     },
     {
-      "id": "stars-cutoff",
+      "id": "cpd-neighborhood-reports",
+      "status": "warning",
+      "detail": "51 reports through 2026-08-22"
+    },
+    {
+      "id": "cpd-map-regions",
+      "status": "pass",
+      "detail": "50 map aggregates"
+    },
+    {
+      "id": "population-denominators",
+      "status": "warning",
+      "detail": "51 profiles; reconciliation warning"
+    },
+    {
+      "id": "stars-offense-detail-cutoff",
       "status": "pass",
       "detail": "2026-06-23"
+    },
+    {
+      "id": "historical-first-digital-year",
+      "status": "warning",
+      "detail": "2025 enabled; 104 unassigned aggregate rows"
     },
     {
       "id": "source-transition",

@@ -2,14 +2,16 @@ import type { PercentChange } from "../analytics/periods";
 
 export type Counts = { violent: number; property: number; totalPart1: number; categories: Partial<Record<string, number>> };
 export type Periods = { currentYtd: Counts; priorYtd: Counts; current28: Counts; previous28: Counts };
+export type Rates = { violentYtdPer1000: number | null };
 export type NeighborhoodSummary = Periods & {
   id: string; slug: string; name: string; sourceName: string;
+  members?: string[]; population?: number | null; populationYear?: number; rates?: Rates;
   changes: { violentYtd: PercentChange; propertyYtd: PercentChange; totalYtd: PercentChange; violent28: PercentChange };
 };
 export type CrimeSummary = {
-  metadata: { sourceSystem: string; datasetId: string; title: string; retrievedAt: string; cutoff: string; sourceCoverage: { min_date: string; max_date: string; count: string }; unit: string; mappingVersion: string };
+  metadata: { sourceSystem: string; datasetId: string; title: string; retrievedAt: string; cutoff: string; sourceCoverage: { min_date: string; max_date: string; count: string }; unit: string; mappingVersion: string; provenanceLayer?: string; reportUpdatedAt?: string; reportCount?: number; reportQualityCaveat?: string | null; population?: { sourceSystem: string; year: number; citywide: number } };
   windows: { ytd: { comparisonStart: string; comparisonEnd: string; priorStart: string; priorEnd: string }; rolling28: { currentStart: string; currentEnd: string; previousStart: string; previousEnd: string } };
-  city: Periods;
+  city: Periods & { population?: number; rates?: Rates };
   neighborhoods: NeighborhoodSummary[];
 };
 
