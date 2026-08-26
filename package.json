@@ -1,0 +1,82 @@
+{
+  "name": "cincy-crime",
+  "version": "0.1.0",
+  "description": "A provenance-aware Cincinnati neighborhood reported-crime explorer.",
+  "author": "hilesfiles",
+  "main": "electron/main.cjs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run tests/unit",
+    "test:watch": "vitest tests/unit",
+    "test:e2e": "playwright test",
+    "data:fetch:geography": "tsx scripts/geography/fetch.ts",
+    "data:process:geography": "tsx scripts/geography/process.ts",
+    "data:fetch:pdi": "tsx scripts/data/fetch-pdi.ts",
+    "data:fetch:stars": "tsx scripts/data/fetch-stars.ts",
+    "data:refresh": "tsx scripts/data/refresh.ts",
+    "data:validate": "tsx scripts/validation/validate.ts",
+    "db:migrate": "tsx scripts/db/migrate.ts",
+    "db:seed": "tsx scripts/db/seed.ts",
+    "desktop:run": "npm run build && electron .",
+    "desktop:package:dir": "npm run build && electron-builder --dir --win --x64",
+    "desktop:package": "npm run build && electron-builder --win nsis portable --x64"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "d3-geo": "^3.1.1",
+    "lucide-react": "^1.34.0",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "^3.10.1",
+    "zod": "^4.4.3"
+  },
+  "build": {
+    "appId": "io.github.hilesfiles.cincy-crime",
+    "productName": "Cincinnati Neighborhood Crime Explorer",
+    "directories": { "output": "dist-desktop" },
+    "files": ["electron/**/*", "out/**/*", "package.json", "!node_modules{,/**/*}"],
+    "asar": true,
+    "npmRebuild": false,
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ]
+    },
+    "nsis": {
+      "artifactName": "CNCE-${version}-${arch}-setup.${ext}",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "portable": { "artifactName": "CNCE-${version}-${arch}-portable.${ext}" }
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/d3-geo": "^3.1.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "better-sqlite3": "^13.0.3",
+    "drizzle-orm": "^0.45.2",
+    "drizzle-kit": "^0.31.10",
+    "electron": "^44.0.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3",
+    "prettier": "^3.9.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5",
+    "vitest": "^4.1.11"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-08-26T22:03:41.652Z",
+  "expectedLastPdiDate": "2024-06-02",
+  "expectedFirstStarsDate": "2024-06-03",
+  "observedPdiMaximum": "2026-01-13",
+  "observedFirstStarsDate": "2024-06-03",
+  "postTransitionPdiDates": [
+    {
+      "date": "2024-06-03T00:00:00.000",
+      "count": "39"
+    },
+    {
+      "date": "2024-07-10T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2024-10-15T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2025-06-11T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2025-08-03T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2026-01-13T00:00:00.000",
+      "count": "1"
+    }
+  ],
+  "gapDays": 0,
+  "overlapDays": 6,
+  "status": "warning",
+  "note": "STARS begins on the expected transition date. The legacy PDI feed contains a small number of post-transition reported dates, including later outliers, so its absolute maximum is not treated as the operational cutoff without review."
+}

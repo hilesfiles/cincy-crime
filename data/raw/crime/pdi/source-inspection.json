@@ -1,0 +1,3516 @@
+{
+  "sourceSystem": "CPD_PDI",
+  "datasetId": "k59e-2pvf",
+  "retrievedAt": "2026-08-26T22:03:39.870Z",
+  "metadata": {
+    "id": "k59e-2pvf",
+    "name": "PDI (Police Data Initiative) Crime Incidents",
+    "assetType": "dataset",
+    "attribution": "City of Cincinnati",
+    "averageRating": 0,
+    "category": "safety",
+    "createdAt": 1510751945,
+    "description": "Note: Due to the RMS change for CPS, this data set stops on 6/2/2024. For records beginning on 6/3/2024, please see the dataset at this link: \nhttps://data.cincinnati-oh.gov/safety/Reported-Crime-STARS-Category-Offenses-/7aqy-xrv9/about_data\n\n\nData Description: This data represents reported Crime Incidents in the City of Cincinnati. Incidents are the records, of reported crimes, collated by an agency for management. Incidents are typically housed in a Records Management System (RMS) that stores agency-wide data about law enforcement operations. This does not include police calls for service, arrest information, final case determination, or any other incident outcome data.\n \nData Creation: The Cincinnati Police Department's (CPD) records crime incidents in the City through Records Management System (RMS) that stores agency-wide data about law enforcement operations. \n\nData Created By: The source of this data is the Cincinnati Police Department.\n\nRefresh Frequency: This data is updated daily.\n\nCincyInsights: The City of Cincinnati maintains an interactive dashboard portal, CincyInsights in addition to our Open Data in an effort to increase access and usage of city data. This data set has an associated dashboard available here: https://insights.cincinnati-oh.gov/stories/s/8eaa-xrvz\n\nData Dictionary: A data dictionary providing definitions of columns and attributes is available as an attachment to this dataset.\n\nProcessing: The City of Cincinnati is committed to providing the most granular and accurate data possible. In that pursuit the Office of Performance and Data Analytics  facilitates standard processing to most raw data prior to publication. Processing includes but is not limited: address verification, geocoding, decoding attributes, and addition of administrative areas (i.e. Census, neighborhoods, police districts, etc.).\n\nData Usage: For directions on downloading and using open data please visit our How-to Guide: https://data.cincinnati-oh.gov/dataset/Open-Data-How-To-Guide/gdr9-g3ad\n\nDisclaimer: In compliance with privacy laws, all Public Safety datasets are anonymized and appropriately redacted prior to publication on the City of Cincinnati’s Open Data Portal. This means that for all public safety datasets: (1) the last two digits of all addresses have been replaced with “XX,” and in cases where there is a single digit street address, the entire address number is replaced with \"X\"; and (2) Latitude and Longitude have been randomly skewed to represent values within the same block area (but not the exact location) of the incident.",
+    "diciBackend": false,
+    "displayType": "table",
+    "downloadCount": 14669,
+    "hideFromCatalog": false,
+    "hideFromDataJson": false,
+    "licenseId": "PUBLIC_DOMAIN",
+    "locale": "en_US",
+    "locked": false,
+    "newBackend": true,
+    "numberOfComments": 0,
+    "oid": 37611529,
+    "provenance": "official",
+    "publicationAppendEnabled": true,
+    "publicationDate": 1630442186,
+    "publicationGroup": 14619252,
+    "publicationStage": "published",
+    "rowsUpdatedAt": 1787766864,
+    "rowsUpdatedBy": "wvxi-y5xi",
+    "tableId": 18426094,
+    "totalTimesRated": 0,
+    "viewCount": 94504,
+    "viewLastModified": 1787766681,
+    "viewType": "tabular",
+    "approvals": [
+      {
+        "reviewedAt": 1754069996,
+        "reviewedAutomatically": true,
+        "state": "approved",
+        "submissionId": 7021906,
+        "submissionObject": "public_audience_request",
+        "submissionOutcome": "change_audience",
+        "submittedAt": 1754069996,
+        "targetAudience": "public",
+        "workflowId": 1462,
+        "submissionDetails": {
+          "permissionType": "READ"
+        },
+        "submissionOutcomeApplication": {
+          "endedAt": 1754069996,
+          "failureCount": 0,
+          "startedAt": 1754069996,
+          "status": "success"
+        },
+        "submitter": {
+          "id": "wvxi-y5xi",
+          "displayName": "Office of Performance & Data Analytics"
+        }
+      }
+    ],
+    "clientContext": {
+      "clientContextVariables": [],
+      "inheritedVariables": {}
+    },
+    "columns": [
+      {
+        "id": 547518742,
+        "name": "INSTANCEID",
+        "dataTypeName": "text",
+        "fieldName": "instanceid",
+        "position": 1,
+        "renderTypeName": "text",
+        "tableColumnId": 56566638,
+        "width": 220,
+        "cachedContents": {
+          "non_null": "538782",
+          "largest": "FFFFEA3E-4379-476C-8407-C6D0A976717F",
+          "null": "0",
+          "top": [
+            {
+              "item": "ED44D314-3528-4AD0-96CF-F67DD90D062F",
+              "count": "136"
+            },
+            {
+              "item": "981EBB76-D90D-4156-B940-F1C8F8668057",
+              "count": "126"
+            },
+            {
+              "item": "9F1F9135-AC53-468D-9D1B-511FE4A35320",
+              "count": "90"
+            },
+            {
+              "item": "456C6412-EC72-4F59-B1B4-5980631026AD",
+              "count": "84"
+            },
+            {
+              "item": "3EFCADA0-F622-403C-9B64-50E23EC5F00F",
+              "count": "80"
+            },
+            {
+              "item": "58EBC4F4-07DE-4BC2-8301-567C20498F25",
+              "count": "72"
+            },
+            {
+              "item": "46504773-3D1B-48A2-96F6-74BD8EBE5F73",
+              "count": "64"
+            },
+            {
+              "item": "6B8BC8CF-7EEF-42FD-9F5F-0088C13E495B",
+              "count": "63"
+            },
+            {
+              "item": "1AF3B2F3-411A-4A01-A3A3-1E0F0DDAD73E",
+              "count": "60"
+            },
+            {
+              "item": "6D63C130-EDB1-466B-AF26-603A4CC426A4",
+              "count": "60"
+            },
+            {
+              "item": "383182C8-33D4-48CA-A33E-408F643BA222",
+              "count": "60"
+            },
+            {
+              "item": "DFADAD19-5AA8-461A-BD87-C6BAFE62F255",
+              "count": "57"
+            },
+            {
+              "item": "C65FF156-47D8-45DB-897F-983BFB49FE51",
+              "count": "57"
+            },
+            {
+              "item": "46539A3F-8EC5-44BC-98CE-1FB13DDD196D",
+              "count": "56"
+            },
+            {
+              "item": "79F58F77-F8A4-4A07-BFAD-D4BE6774DC0C",
+              "count": "56"
+            },
+            {
+              "item": "F3CED1F8-56CF-4447-A4B0-33FAC5E2BE96",
+              "count": "56"
+            },
+            {
+              "item": "BCF89258-A4DB-42C8-AA09-F66D509047C5",
+              "count": "54"
+            },
+            {
+              "item": "45668FA5-333E-44DC-B12A-C2867983670D",
+              "count": "50"
+            },
+            {
+              "item": "647C25B8-6325-4C14-B52E-25C314D02B5E",
+              "count": "50"
+            },
+            {
+              "item": "C99F3A8B-28C3-4916-AAFB-9FED3AD49A44",
+              "count": "50"
+            }
+          ],
+          "smallest": "00001EE0-2DC6-496C-91B0-C2D559815DD6",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518743,
+        "name": "INCIDENT_NO",
+        "dataTypeName": "text",
+        "fieldName": "incident_no",
+        "position": 2,
+        "renderTypeName": "text",
+        "tableColumnId": 56566639,
+        "width": 232,
+        "cachedContents": {
+          "non_null": "538781",
+          "largest": "S",
+          "null": "1",
+          "top": [
+            {
+              "item": "239015531",
+              "count": "136"
+            },
+            {
+              "item": "199001121",
+              "count": "126"
+            },
+            {
+              "item": "249008586",
+              "count": "90"
+            },
+            {
+              "item": "21004529",
+              "count": "84"
+            },
+            {
+              "item": "179010646",
+              "count": "80"
+            },
+            {
+              "item": "209014417",
+              "count": "72"
+            },
+            {
+              "item": "189011870",
+              "count": "64"
+            },
+            {
+              "item": "199020626",
+              "count": "63"
+            },
+            {
+              "item": "189025233",
+              "count": "60"
+            },
+            {
+              "item": "209008267",
+              "count": "60"
+            },
+            {
+              "item": "239032141",
+              "count": "60"
+            },
+            {
+              "item": "179024702",
+              "count": "57"
+            },
+            {
+              "item": "179010271",
+              "count": "57"
+            },
+            {
+              "item": "229029408",
+              "count": "56"
+            },
+            {
+              "item": "219024311",
+              "count": "56"
+            },
+            {
+              "item": "239019013",
+              "count": "56"
+            },
+            {
+              "item": "209025527",
+              "count": "54"
+            },
+            {
+              "item": "179034893",
+              "count": "50"
+            },
+            {
+              "item": "129003583",
+              "count": "50"
+            },
+            {
+              "item": "129002475",
+              "count": "50"
+            }
+          ],
+          "smallest": "1002974",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518744,
+        "name": "DATE_REPORTED",
+        "dataTypeName": "calendar_date",
+        "description": "",
+        "fieldName": "date_reported",
+        "position": 3,
+        "renderTypeName": "calendar_date",
+        "tableColumnId": 80274663,
+        "cachedContents": {
+          "non_null": "538265",
+          "largest": "2025-08-03T00:05:00.000",
+          "null": "517",
+          "top": [
+            {
+              "item": "2023-06-05T03:39:00.000",
+              "count": "136"
+            },
+            {
+              "item": "2019-01-15T09:23:00.000",
+              "count": "126"
+            },
+            {
+              "item": "2024-04-04T17:21:00.000",
+              "count": "90"
+            },
+            {
+              "item": "2010-10-12T16:20:00.000",
+              "count": "85"
+            },
+            {
+              "item": "2017-03-28T09:20:00.000",
+              "count": "80"
+            },
+            {
+              "item": "2020-07-05T21:30:00.000",
+              "count": "72"
+            },
+            {
+              "item": "2018-05-07T18:54:00.000",
+              "count": "64"
+            },
+            {
+              "item": "2019-09-07T22:52:00.000",
+              "count": "63"
+            },
+            {
+              "item": "2023-10-31T15:38:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2020-04-21T20:38:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2018-09-16T10:49:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2017-03-27T09:40:00.000",
+              "count": "57"
+            },
+            {
+              "item": "2017-06-29T04:27:27.000",
+              "count": "57"
+            },
+            {
+              "item": "2023-07-07T04:25:00.000",
+              "count": "56"
+            },
+            {
+              "item": "2022-11-02T11:02:56.000",
+              "count": "56"
+            },
+            {
+              "item": "2021-09-28T06:33:00.000",
+              "count": "56"
+            },
+            {
+              "item": "2020-11-02T02:12:00.000",
+              "count": "54"
+            },
+            {
+              "item": "2012-02-09T03:00:00.000",
+              "count": "52"
+            },
+            {
+              "item": "2012-01-29T14:20:00.000",
+              "count": "50"
+            },
+            {
+              "item": "2017-08-27T12:19:00.000",
+              "count": "50"
+            }
+          ],
+          "smallest": "1991-12-31T00:00:00.000",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518745,
+        "name": "DATE_FROM",
+        "dataTypeName": "calendar_date",
+        "description": "",
+        "fieldName": "date_from",
+        "position": 4,
+        "renderTypeName": "calendar_date",
+        "tableColumnId": 80274665,
+        "cachedContents": {
+          "non_null": "538767",
+          "largest": "2025-08-03T00:05:00.000",
+          "null": "15",
+          "top": [
+            {
+              "item": "2023-06-04T17:19:00.000",
+              "count": "136"
+            },
+            {
+              "item": "2019-01-14T21:00:00.000",
+              "count": "129"
+            },
+            {
+              "item": "2021-06-05T04:00:00.000",
+              "count": "109"
+            },
+            {
+              "item": "2024-04-04T17:16:00.000",
+              "count": "90"
+            },
+            {
+              "item": "2010-10-12T11:30:00.000",
+              "count": "85"
+            },
+            {
+              "item": "2017-03-27T18:00:00.000",
+              "count": "81"
+            },
+            {
+              "item": "2020-07-05T21:00:00.000",
+              "count": "73"
+            },
+            {
+              "item": "2014-01-01T00:00:00.000",
+              "count": "67"
+            },
+            {
+              "item": "2018-05-07T18:52:00.000",
+              "count": "64"
+            },
+            {
+              "item": "2021-01-01T00:00:00.000",
+              "count": "64"
+            },
+            {
+              "item": "2019-09-07T22:30:00.000",
+              "count": "63"
+            },
+            {
+              "item": "2018-09-16T10:30:00.000",
+              "count": "61"
+            },
+            {
+              "item": "2023-10-31T15:35:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2020-04-21T20:30:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2017-03-26T18:00:00.000",
+              "count": "58"
+            },
+            {
+              "item": "2020-01-01T00:00:00.000",
+              "count": "58"
+            },
+            {
+              "item": "2021-09-28T04:00:00.000",
+              "count": "57"
+            },
+            {
+              "item": "2022-11-02T08:30:00.000",
+              "count": "57"
+            },
+            {
+              "item": "2017-06-29T00:03:40.000",
+              "count": "57"
+            },
+            {
+              "item": "2023-07-07T04:25:00.000",
+              "count": "56"
+            }
+          ],
+          "smallest": "1981-05-24T00:00:00.000",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518746,
+        "name": "DATE_TO",
+        "dataTypeName": "calendar_date",
+        "description": "",
+        "fieldName": "date_to",
+        "position": 5,
+        "renderTypeName": "calendar_date",
+        "tableColumnId": 80274664,
+        "cachedContents": {
+          "non_null": "537361",
+          "largest": "3019-06-25T08:00:00.000",
+          "null": "1421",
+          "top": [
+            {
+              "item": "2023-06-05T00:34:00.000",
+              "count": "136"
+            },
+            {
+              "item": "2019-01-14T21:00:00.000",
+              "count": "127"
+            },
+            {
+              "item": "2021-06-05T06:00:00.000",
+              "count": "109"
+            },
+            {
+              "item": "2024-04-04T17:16:00.000",
+              "count": "90"
+            },
+            {
+              "item": "2010-10-12T15:30:00.000",
+              "count": "84"
+            },
+            {
+              "item": "2017-03-28T08:00:00.000",
+              "count": "81"
+            },
+            {
+              "item": "2020-07-05T21:10:00.000",
+              "count": "72"
+            },
+            {
+              "item": "2018-05-07T18:53:00.000",
+              "count": "64"
+            },
+            {
+              "item": "2019-09-07T22:40:00.000",
+              "count": "63"
+            },
+            {
+              "item": "2018-09-16T10:45:00.000",
+              "count": "61"
+            },
+            {
+              "item": "2020-04-21T20:35:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2023-10-31T15:38:00.000",
+              "count": "60"
+            },
+            {
+              "item": "2017-03-27T08:00:00.000",
+              "count": "58"
+            },
+            {
+              "item": "2017-06-29T04:04:12.000",
+              "count": "57"
+            },
+            {
+              "item": "2022-11-02T09:53:00.000",
+              "count": "56"
+            },
+            {
+              "item": "2023-07-07T04:25:00.000",
+              "count": "56"
+            },
+            {
+              "item": "2021-09-28T06:00:00.000",
+              "count": "56"
+            },
+            {
+              "item": "2020-11-02T02:10:00.000",
+              "count": "54"
+            },
+            {
+              "item": "2012-01-29T14:05:00.000",
+              "count": "50"
+            },
+            {
+              "item": "2017-08-27T12:22:00.000",
+              "count": "50"
+            }
+          ],
+          "smallest": "1755-01-01T00:00:00.000",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518747,
+        "name": "CLSD",
+        "dataTypeName": "text",
+        "fieldName": "clsd",
+        "position": 6,
+        "renderTypeName": "text",
+        "tableColumnId": 56566643,
+        "width": 148,
+        "cachedContents": {
+          "non_null": "537680",
+          "largest": "Z--EARLY CLOSED",
+          "null": "1102",
+          "top": [
+            {
+              "item": "Z--EARLY CLOSED",
+              "count": "165097"
+            },
+            {
+              "item": "J--CLOSED",
+              "count": "151911"
+            },
+            {
+              "item": "F--CLEARED BY ARREST - ADULT",
+              "count": "117131"
+            },
+            {
+              "item": "D--VICTIM REFUSED TO COOPERATE",
+              "count": "41129"
+            },
+            {
+              "item": "H--WARRANT ISSUED",
+              "count": "19461"
+            },
+            {
+              "item": "K--UNFOUNDED",
+              "count": "16447"
+            },
+            {
+              "item": "G--CLEARED BY ARREST - JUVENILE",
+              "count": "16155"
+            },
+            {
+              "item": "I--INVESTIGATION PENDING",
+              "count": "5339"
+            },
+            {
+              "item": "B--PROSECUTION DECLINED",
+              "count": "3477"
+            },
+            {
+              "item": "E--JUVENILE/NO CUSTODY",
+              "count": "880"
+            },
+            {
+              "item": "A--DEATH OF OFFENDER",
+              "count": "613"
+            },
+            {
+              "item": "U--UNKNOWN",
+              "count": "22"
+            },
+            {
+              "item": "C--EXTRADITION DENIED",
+              "count": "17"
+            },
+            {
+              "item": "COMPLETE CAD INFO SECTION",
+              "count": "1"
+            }
+          ],
+          "smallest": "A--DEATH OF OFFENDER",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518820,
+        "name": "UCR",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "ucr",
+        "position": 7,
+        "renderTypeName": "text",
+        "tableColumnId": 139199533,
+        "width": 136,
+        "cachedContents": {
+          "non_null": "538176",
+          "largest": "920",
+          "null": "606",
+          "top": [
+            {
+              "item": "600",
+              "count": "184000"
+            },
+            {
+              "item": "1493",
+              "count": "71463"
+            },
+            {
+              "item": "810",
+              "count": "57915"
+            },
+            {
+              "item": "551",
+              "count": "35994"
+            },
+            {
+              "item": "862",
+              "count": "25966"
+            },
+            {
+              "item": "303",
+              "count": "24303"
+            },
+            {
+              "item": "552",
+              "count": "22740"
+            },
+            {
+              "item": "401",
+              "count": "19447"
+            },
+            {
+              "item": "802",
+              "count": "15408"
+            },
+            {
+              "item": "2430",
+              "count": "12187"
+            },
+            {
+              "item": "301",
+              "count": "11545"
+            },
+            {
+              "item": "803",
+              "count": "10645"
+            },
+            {
+              "item": "1151",
+              "count": "5805"
+            },
+            {
+              "item": "550",
+              "count": "5646"
+            },
+            {
+              "item": "201",
+              "count": "4901"
+            },
+            {
+              "item": "1521",
+              "count": "3690"
+            },
+            {
+              "item": "701",
+              "count": "3654"
+            },
+            {
+              "item": "2709",
+              "count": "3111"
+            },
+            {
+              "item": "1001",
+              "count": "2054"
+            },
+            {
+              "item": "2024",
+              "count": "1573"
+            }
+          ],
+          "smallest": "0",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518749,
+        "name": "DST",
+        "dataTypeName": "text",
+        "fieldName": "dst",
+        "position": 8,
+        "renderTypeName": "text",
+        "tableColumnId": 56566645,
+        "width": 136,
+        "cachedContents": {
+          "non_null": "538223",
+          "largest": "OTHER",
+          "null": "559",
+          "top": [
+            {
+              "item": "3",
+              "count": "169522"
+            },
+            {
+              "item": "4",
+              "count": "118062"
+            },
+            {
+              "item": "5",
+              "count": "96093"
+            },
+            {
+              "item": "2",
+              "count": "73724"
+            },
+            {
+              "item": "1",
+              "count": "62657"
+            },
+            {
+              "item": "CENTRAL BUSINESS",
+              "count": "17971"
+            },
+            {
+              "item": "OTHER",
+              "count": "194"
+            }
+          ],
+          "smallest": "1",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518750,
+        "name": "BEAT",
+        "dataTypeName": "text",
+        "fieldName": "beat",
+        "position": 9,
+        "renderTypeName": "text",
+        "tableColumnId": 56566646,
+        "width": 148,
+        "cachedContents": {
+          "non_null": "537256",
+          "largest": "PCW",
+          "null": "1526",
+          "top": [
+            {
+              "item": "3",
+              "count": "157385"
+            },
+            {
+              "item": "2",
+              "count": "150248"
+            },
+            {
+              "item": "1",
+              "count": "100235"
+            },
+            {
+              "item": "4",
+              "count": "72723"
+            },
+            {
+              "item": "5",
+              "count": "41551"
+            },
+            {
+              "item": "6",
+              "count": "15067"
+            },
+            {
+              "item": "CENTRAL BUSINESS SECTION",
+              "count": "45"
+            },
+            {
+              "item": "PCW",
+              "count": "2"
+            }
+          ],
+          "smallest": "1",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518751,
+        "name": "OFFENSE",
+        "dataTypeName": "text",
+        "fieldName": "offense",
+        "position": 10,
+        "renderTypeName": "text",
+        "tableColumnId": 56566647,
+        "width": 184,
+        "cachedContents": {
+          "non_null": "538194",
+          "largest": "WIRE FRAUD",
+          "null": "588",
+          "top": [
+            {
+              "item": "THEFT",
+              "count": "183813"
+            },
+            {
+              "item": "CRIMINAL DAMAGING/ENDANGERING",
+              "count": "71463"
+            },
+            {
+              "item": "ASSAULT",
+              "count": "57842"
+            },
+            {
+              "item": "BURGLARY",
+              "count": "35983"
+            },
+            {
+              "item": "DOMESTIC VIOLENCE",
+              "count": "25905"
+            },
+            {
+              "item": "AGGRAVATED ROBBERY",
+              "count": "24005"
+            },
+            {
+              "item": "BREAKING AND ENTERING",
+              "count": "22724"
+            },
+            {
+              "item": "FELONIOUS ASSAULT",
+              "count": "19343"
+            },
+            {
+              "item": "AGGRAVATED MENACING",
+              "count": "15408"
+            },
+            {
+              "item": "TELEPHONE HARASSMENT",
+              "count": "12153"
+            },
+            {
+              "item": "ROBBERY",
+              "count": "11545"
+            },
+            {
+              "item": "MENACING",
+              "count": "10645"
+            },
+            {
+              "item": "TAKING THE IDENTITY OF ANOTHER",
+              "count": "5805"
+            },
+            {
+              "item": "AGGRAVATED BURGLARY",
+              "count": "5620"
+            },
+            {
+              "item": "RAPE",
+              "count": "4892"
+            },
+            {
+              "item": "IMPROPERLY DISCHARGING FIREARM AT/INTO HABITATION/SCHOOL",
+              "count": "3673"
+            },
+            {
+              "item": "UNAUTHORIZED USE OF MOTOR VEHICLE",
+              "count": "3647"
+            },
+            {
+              "item": "VIOLATE PROTECTION ORDER/CONSENT AGREEMENT",
+              "count": "3100"
+            },
+            {
+              "item": "FORGERY",
+              "count": "2006"
+            },
+            {
+              "item": "ENDANGERING CHILDREN",
+              "count": "1547"
+            }
+          ],
+          "smallest": "ABDUCTION",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518752,
+        "name": "LOCATION",
+        "dataTypeName": "text",
+        "fieldName": "location",
+        "position": 11,
+        "renderTypeName": "text",
+        "tableColumnId": 56566648,
+        "width": 196,
+        "cachedContents": {
+          "non_null": "538762",
+          "largest": "S",
+          "null": "20",
+          "top": [
+            {
+              "item": "47-STREET",
+              "count": "126020"
+            },
+            {
+              "item": "48-PARKING LOT",
+              "count": "64638"
+            },
+            {
+              "item": "02-MULTI FAMILY APARTMENT",
+              "count": "61289"
+            },
+            {
+              "item": "01-SINGLE FAMILY HOME",
+              "count": "47269"
+            },
+            {
+              "item": "02-MULTI FAMILY",
+              "count": "46856"
+            },
+            {
+              "item": "01-SINGLE FAMILY 2 STORY",
+              "count": "31721"
+            },
+            {
+              "item": "43-YARD",
+              "count": "12968"
+            },
+            {
+              "item": "38-VARIETY/CONVENIENCE STORE",
+              "count": "10419"
+            },
+            {
+              "item": "37-GROCERY/SUPERMARKET",
+              "count": "8345"
+            },
+            {
+              "item": "29-GAS STATION",
+              "count": "8037"
+            },
+            {
+              "item": "39-DEPARTMENT/DISCOUNT STORE",
+              "count": "7453"
+            },
+            {
+              "item": "28-RESTAURANT",
+              "count": "6817"
+            },
+            {
+              "item": "52-OTHER OUTSIDE LOCATION",
+              "count": "6746"
+            },
+            {
+              "item": "40-OTHER RETAIL STORE",
+              "count": "6403"
+            },
+            {
+              "item": "08-SCHOOL",
+              "count": "5787"
+            },
+            {
+              "item": "02-MULTI FAMILY 4 PLEX",
+              "count": "5472"
+            },
+            {
+              "item": "77-OTHER",
+              "count": "5031"
+            },
+            {
+              "item": "26-BAR",
+              "count": "5006"
+            },
+            {
+              "item": "02-MULTI FAMILY DUPLEX",
+              "count": "4710"
+            },
+            {
+              "item": "03-RESIDENTIAL FACILITY",
+              "count": "4435"
+            }
+          ],
+          "smallest": "01-SINGLE FAMILY 2 STORY",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518753,
+        "name": "THEFT_CODE",
+        "dataTypeName": "text",
+        "fieldName": "theft_code",
+        "position": 12,
+        "renderTypeName": "text",
+        "tableColumnId": 56566649,
+        "width": 220,
+        "cachedContents": {
+          "non_null": "183968",
+          "largest": "24O-MOTOR VEHICLE THEFT",
+          "null": "354814",
+          "top": [
+            {
+              "item": "23F-THEFT FROM MOTOR VEHICLE",
+              "count": "54331"
+            },
+            {
+              "item": "23H-ALL OTHER LARCENY",
+              "count": "44904"
+            },
+            {
+              "item": "24O-MOTOR VEHICLE THEFT",
+              "count": "26189"
+            },
+            {
+              "item": "23C-SHOPLIFTING",
+              "count": "23835"
+            },
+            {
+              "item": "23D-THEFT FROM BUILDING",
+              "count": "23560"
+            },
+            {
+              "item": "23G-THEFT OF MOTOR VEHICLE PARTS OR ACCESSORIES",
+              "count": "4090"
+            },
+            {
+              "item": "24I-THEFT OF LICENSE PLATE",
+              "count": "3928"
+            },
+            {
+              "item": "23A-POCKET-PICKING",
+              "count": "1443"
+            },
+            {
+              "item": "23B-PURSE-SNATCHING",
+              "count": "1215"
+            },
+            {
+              "item": "23E-THEFT FROM COIN-OPERATED MACHINE OR DEVICE",
+              "count": "473"
+            }
+          ],
+          "smallest": "23A-POCKET-PICKING",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518754,
+        "name": "FLOOR",
+        "dataTypeName": "text",
+        "fieldName": "floor",
+        "position": 13,
+        "renderTypeName": "text",
+        "tableColumnId": 56566650,
+        "width": 160,
+        "cachedContents": {
+          "non_null": "17711",
+          "largest": "5-UNKNOWN",
+          "null": "521071",
+          "top": [
+            {
+              "item": "2-FIRST FLOOR",
+              "count": "9945"
+            },
+            {
+              "item": "1-BASEMENT",
+              "count": "2224"
+            },
+            {
+              "item": "4-OTHER",
+              "count": "1999"
+            },
+            {
+              "item": "2 - FIRST FLOOR",
+              "count": "1484"
+            },
+            {
+              "item": "3-SECOND FLOOR",
+              "count": "1296"
+            },
+            {
+              "item": "1 - BASEMENT",
+              "count": "275"
+            },
+            {
+              "item": "3 - SECOND FLOOR",
+              "count": "202"
+            },
+            {
+              "item": "4 - OTHER",
+              "count": "200"
+            },
+            {
+              "item": "5-UNKNOWN",
+              "count": "63"
+            },
+            {
+              "item": "5 - UNKNOWN",
+              "count": "23"
+            }
+          ],
+          "smallest": "1 - BASEMENT",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518755,
+        "name": "SIDE",
+        "dataTypeName": "text",
+        "fieldName": "side",
+        "position": 14,
+        "renderTypeName": "text",
+        "tableColumnId": 56566651,
+        "width": 148,
+        "cachedContents": {
+          "non_null": "17364",
+          "largest": "6-UNKNOWN",
+          "null": "521418",
+          "top": [
+            {
+              "item": "1-FRONT",
+              "count": "5600"
+            },
+            {
+              "item": "3-REAR",
+              "count": "5349"
+            },
+            {
+              "item": "2-SIDE",
+              "count": "3120"
+            },
+            {
+              "item": "5-OTHER",
+              "count": "919"
+            },
+            {
+              "item": "1 - FRONT",
+              "count": "787"
+            },
+            {
+              "item": "3 - REAR",
+              "count": "776"
+            },
+            {
+              "item": "2 - SIDE",
+              "count": "460"
+            },
+            {
+              "item": "6-UNKNOWN",
+              "count": "171"
+            },
+            {
+              "item": "5 - OTHER",
+              "count": "100"
+            },
+            {
+              "item": "4-ROOF",
+              "count": "64"
+            },
+            {
+              "item": "6 - UNKNOWN",
+              "count": "11"
+            },
+            {
+              "item": "4 - ROOF",
+              "count": "7"
+            }
+          ],
+          "smallest": "1 - FRONT",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518756,
+        "name": "OPENING",
+        "dataTypeName": "text",
+        "fieldName": "opening",
+        "position": 15,
+        "renderTypeName": "text",
+        "tableColumnId": 56566652,
+        "width": 184,
+        "cachedContents": {
+          "non_null": "17500",
+          "largest": "6-UNKNOWN",
+          "null": "521282",
+          "top": [
+            {
+              "item": "1-DOOR",
+              "count": "8931"
+            },
+            {
+              "item": "2-WINDOW",
+              "count": "4673"
+            },
+            {
+              "item": "1 - DOOR",
+              "count": "1217"
+            },
+            {
+              "item": "5-OTHER",
+              "count": "1192"
+            },
+            {
+              "item": "2 - WINDOW",
+              "count": "721"
+            },
+            {
+              "item": "3-GARAGE",
+              "count": "421"
+            },
+            {
+              "item": "5 - OTHER",
+              "count": "139"
+            },
+            {
+              "item": "6-UNKNOWN",
+              "count": "115"
+            },
+            {
+              "item": "3 - GARAGE",
+              "count": "58"
+            },
+            {
+              "item": "4-SKYLIGHT",
+              "count": "29"
+            },
+            {
+              "item": "6 - UNKNOWN",
+              "count": "3"
+            },
+            {
+              "item": "4 - SKYLIGHT",
+              "count": "1"
+            }
+          ],
+          "smallest": "1 - DOOR",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518757,
+        "name": "HATE_BIAS",
+        "dataTypeName": "text",
+        "fieldName": "hate_bias",
+        "position": 16,
+        "renderTypeName": "text",
+        "tableColumnId": 56566653,
+        "width": 208,
+        "cachedContents": {
+          "non_null": "509839",
+          "largest": "N--NO BIAS/NOT APPLICABLE",
+          "null": "28943",
+          "top": [
+            {
+              "item": "N--NO BIAS/NOT APPLICABLE",
+              "count": "477955"
+            },
+            {
+              "item": "88--DOMESTIC VIOLENCE",
+              "count": "31086"
+            },
+            {
+              "item": "89--GANG RELATED",
+              "count": "221"
+            },
+            {
+              "item": "11--ANTI-WHITE",
+              "count": "146"
+            },
+            {
+              "item": "12--ANTI-BLACK",
+              "count": "123"
+            },
+            {
+              "item": "33--ANTI-OTHER ETHNICITY/NATIONAL ORIGIN",
+              "count": "63"
+            },
+            {
+              "item": "41--ANTI-MALE HOMOSEXUAL (GAY)",
+              "count": "55"
+            },
+            {
+              "item": "13--ANTI-AMERICAN INDIAN/ALASKAN NATIVE",
+              "count": "43"
+            },
+            {
+              "item": "50--OTHER BIAS INCIDENT (E.G. ANTI-AIDS VICTIM)",
+              "count": "32"
+            },
+            {
+              "item": "43--ANTI-HOMOSEXUAL (GAY AND LESBIAN)",
+              "count": "26"
+            },
+            {
+              "item": "32--ANTI-HISPANIC",
+              "count": "25"
+            },
+            {
+              "item": "21--ANTI-JEWISH",
+              "count": "12"
+            },
+            {
+              "item": "52--ANTI-MENTAL DISABILITY",
+              "count": "10"
+            },
+            {
+              "item": "15--ANTI-MULTI RACIAL GROUP",
+              "count": "7"
+            },
+            {
+              "item": "14--ANTI-ORIENTAL/PACIFIC ISLANDER",
+              "count": "6"
+            },
+            {
+              "item": "26--ANTI-MULTI RELIGIOUS GROUP",
+              "count": "5"
+            },
+            {
+              "item": "51--ANTI-PHYSICAL DISABILITY",
+              "count": "5"
+            },
+            {
+              "item": "22--ANTI-CATHOLIC",
+              "count": "4"
+            },
+            {
+              "item": "42--ANTI-FEMALE HOMOSEXUAL (LESBIAN)",
+              "count": "3"
+            },
+            {
+              "item": "24--ANTI-ISLAMIC (MOSLEM)",
+              "count": "3"
+            }
+          ],
+          "smallest": "11--ANTI-WHITE",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518758,
+        "name": "DAYOFWEEK",
+        "dataTypeName": "text",
+        "fieldName": "dayofweek",
+        "position": 17,
+        "renderTypeName": "text",
+        "tableColumnId": 56566654,
+        "width": 208,
+        "cachedContents": {
+          "non_null": "415730",
+          "largest": "WEDNESDAY",
+          "null": "123052",
+          "top": [
+            {
+              "item": "SATURDAY",
+              "count": "62166"
+            },
+            {
+              "item": "FRIDAY",
+              "count": "60752"
+            },
+            {
+              "item": "SUNDAY",
+              "count": "60553"
+            },
+            {
+              "item": "MONDAY",
+              "count": "59271"
+            },
+            {
+              "item": "TUESDAY",
+              "count": "58411"
+            },
+            {
+              "item": "WEDNESDAY",
+              "count": "57583"
+            },
+            {
+              "item": "THURSDAY",
+              "count": "56994"
+            }
+          ],
+          "smallest": "FRIDAY",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518759,
+        "name": "RPT_AREA",
+        "dataTypeName": "text",
+        "fieldName": "rpt_area",
+        "position": 18,
+        "renderTypeName": "text",
+        "tableColumnId": 56566655,
+        "width": 196,
+        "cachedContents": {
+          "non_null": "421683",
+          "largest": "TCRU",
+          "null": "117099",
+          "top": [
+            {
+              "item": "271",
+              "count": "7801"
+            },
+            {
+              "item": "427",
+              "count": "5363"
+            },
+            {
+              "item": "285",
+              "count": "5192"
+            },
+            {
+              "item": "416",
+              "count": "4850"
+            },
+            {
+              "item": "310",
+              "count": "4559"
+            },
+            {
+              "item": "358",
+              "count": "4163"
+            },
+            {
+              "item": "319",
+              "count": "3999"
+            },
+            {
+              "item": "22",
+              "count": "3787"
+            },
+            {
+              "item": "308",
+              "count": "3703"
+            },
+            {
+              "item": "235",
+              "count": "3528"
+            },
+            {
+              "item": "132",
+              "count": "3411"
+            },
+            {
+              "item": "10",
+              "count": "3283"
+            },
+            {
+              "item": "320",
+              "count": "3209"
+            },
+            {
+              "item": "223",
+              "count": "3183"
+            },
+            {
+              "item": "229",
+              "count": "2889"
+            },
+            {
+              "item": "55",
+              "count": "2880"
+            },
+            {
+              "item": "253",
+              "count": "2840"
+            },
+            {
+              "item": "276",
+              "count": "2835"
+            },
+            {
+              "item": "479",
+              "count": "2823"
+            },
+            {
+              "item": "225",
+              "count": "2779"
+            }
+          ],
+          "smallest": "0",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518760,
+        "name": "CPD_NEIGHBORHOOD",
+        "dataTypeName": "text",
+        "fieldName": "cpd_neighborhood",
+        "position": 19,
+        "renderTypeName": "text",
+        "tableColumnId": 61521441,
+        "width": 100,
+        "cachedContents": {
+          "non_null": "421475",
+          "largest": "WINTON HILLS",
+          "null": "117307",
+          "top": [
+            {
+              "item": "WESTWOOD",
+              "count": "44296"
+            },
+            {
+              "item": "WEST PRICE HILL",
+              "count": "26831"
+            },
+            {
+              "item": "EAST PRICE HILL",
+              "count": "23908"
+            },
+            {
+              "item": "OVER-THE-RHINE",
+              "count": "20592"
+            },
+            {
+              "item": "C. B. D. / RIVERFRONT",
+              "count": "19664"
+            },
+            {
+              "item": "AVONDALE",
+              "count": "19124"
+            },
+            {
+              "item": "WALNUT HILLS",
+              "count": "15972"
+            },
+            {
+              "item": "WEST  END",
+              "count": "14545"
+            },
+            {
+              "item": "COLLEGE  HILL",
+              "count": "12264"
+            },
+            {
+              "item": "MOUNT AIRY",
+              "count": "11452"
+            },
+            {
+              "item": "ROSELAWN",
+              "count": "11105"
+            },
+            {
+              "item": "NORTHSIDE",
+              "count": "10752"
+            },
+            {
+              "item": "FAIRVIEW",
+              "count": "9662"
+            },
+            {
+              "item": "WINTON HILLS",
+              "count": "9643"
+            },
+            {
+              "item": "SOUTH  FAIRMOUNT",
+              "count": "9373"
+            },
+            {
+              "item": "OAKLEY",
+              "count": "9347"
+            },
+            {
+              "item": "BONDHILL",
+              "count": "9184"
+            },
+            {
+              "item": "CORRYVILLE",
+              "count": "9132"
+            },
+            {
+              "item": "EVANSTON",
+              "count": "9032"
+            },
+            {
+              "item": "CLIFTON",
+              "count": "8912"
+            }
+          ],
+          "smallest": "AVONDALE",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518761,
+        "name": "WEAPONS",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "weapons",
+        "position": 20,
+        "renderTypeName": "text",
+        "tableColumnId": 56566657,
+        "width": 184,
+        "cachedContents": {
+          "non_null": "538732",
+          "largest": "U--UNKNOWN",
+          "null": "50",
+          "top": [
+            {
+              "item": "99 - NONE",
+              "count": "239215"
+            },
+            {
+              "item": "40 - PERSONAL WEAPONS (HANDS, FEET, TEETH, ETC.)",
+              "count": "74944"
+            },
+            {
+              "item": "99--NONE",
+              "count": "70818"
+            },
+            {
+              "item": "U - UNKNOWN",
+              "count": "43714"
+            },
+            {
+              "item": "12 - HANDGUN",
+              "count": "27584"
+            },
+            {
+              "item": "40--PERSONAL WEAPONS (HANDS, FEET, TEETH, ETC.)",
+              "count": "16914"
+            },
+            {
+              "item": "11 - FIREARM (TYPE NOT STATED)",
+              "count": "12495"
+            },
+            {
+              "item": "30 - BLUNT OBJECT (CLUB, HAMMER, ETC.)",
+              "count": "9532"
+            },
+            {
+              "item": "80 - OTHER WEAPON",
+              "count": "6732"
+            },
+            {
+              "item": "NONE",
+              "count": "6618"
+            },
+            {
+              "item": "20 - KNIFE/CUTTING INSTRUMENT (ICEPICK, AX, ETC.)",
+              "count": "6537"
+            },
+            {
+              "item": "11--FIREARM (TYPE NOT STATED)",
+              "count": "5047"
+            },
+            {
+              "item": "12--HANDGUN",
+              "count": "4237"
+            },
+            {
+              "item": "35 - MOTOR VEHICLE (WHEN USED AS WEAPON)",
+              "count": "1823"
+            },
+            {
+              "item": "20--KNIFE/CUTTING INSTRUMENT (ICEPICK, AX, ETC.)",
+              "count": "1425"
+            },
+            {
+              "item": "PERSONAL WEAPONS (HANDS, FEET, TEETH, ETC.)",
+              "count": "1414"
+            },
+            {
+              "item": "30--BLUNT OBJECT (CLUB, HAMMER, ETC.)",
+              "count": "1205"
+            },
+            {
+              "item": "18 - BB AND PELLET GUNS",
+              "count": "952"
+            },
+            {
+              "item": "12A - AUTOMATIC HANDGUN",
+              "count": "925"
+            },
+            {
+              "item": "80 - OTHER WEAPON (LONG BOWS, CROSSBOWS, STUN GUNS, DART GUN, ETC.)",
+              "count": "889"
+            }
+          ],
+          "smallest": "11 - FIREARM (TYPE NOT STATED)",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518762,
+        "name": "DATE_OF_CLEARANCE",
+        "dataTypeName": "calendar_date",
+        "description": "",
+        "fieldName": "date_of_clearance",
+        "position": 21,
+        "renderTypeName": "calendar_date",
+        "tableColumnId": 80274666,
+        "cachedContents": {
+          "non_null": "532308",
+          "largest": "2025-12-30T00:00:00.000",
+          "null": "6474",
+          "top": [
+            {
+              "item": "2023-08-02T00:00:00.000",
+              "count": "469"
+            },
+            {
+              "item": "2023-01-09T00:00:00.000",
+              "count": "406"
+            },
+            {
+              "item": "2011-11-07T00:00:00.000",
+              "count": "377"
+            },
+            {
+              "item": "2018-01-30T00:00:00.000",
+              "count": "357"
+            },
+            {
+              "item": "2011-11-10T00:00:00.000",
+              "count": "356"
+            },
+            {
+              "item": "2018-01-29T00:00:00.000",
+              "count": "340"
+            },
+            {
+              "item": "2018-01-31T00:00:00.000",
+              "count": "338"
+            },
+            {
+              "item": "2011-04-20T00:00:00.000",
+              "count": "331"
+            },
+            {
+              "item": "2011-11-08T00:00:00.000",
+              "count": "325"
+            },
+            {
+              "item": "2012-04-19T00:00:00.000",
+              "count": "320"
+            },
+            {
+              "item": "2011-10-10T00:00:00.000",
+              "count": "313"
+            },
+            {
+              "item": "2023-01-10T00:00:00.000",
+              "count": "307"
+            },
+            {
+              "item": "2010-12-28T00:00:00.000",
+              "count": "302"
+            },
+            {
+              "item": "2023-07-25T00:00:00.000",
+              "count": "297"
+            },
+            {
+              "item": "2012-07-11T00:00:00.000",
+              "count": "294"
+            },
+            {
+              "item": "2018-02-01T00:00:00.000",
+              "count": "291"
+            },
+            {
+              "item": "2023-08-28T00:00:00.000",
+              "count": "289"
+            },
+            {
+              "item": "2011-11-09T00:00:00.000",
+              "count": "288"
+            },
+            {
+              "item": "2010-11-29T00:00:00.000",
+              "count": "286"
+            },
+            {
+              "item": "2011-04-18T00:00:00.000",
+              "count": "282"
+            }
+          ],
+          "smallest": "2009-04-23T00:00:00.000",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518763,
+        "name": "HOUR_FROM",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "hour_from",
+        "position": 22,
+        "renderTypeName": "text",
+        "tableColumnId": 56566659,
+        "width": 208,
+        "cachedContents": {
+          "non_null": "538775",
+          "largest": "99",
+          "null": "7",
+          "top": [
+            {
+              "item": "00",
+              "count": "20147"
+            },
+            {
+              "item": "120",
+              "count": "16869"
+            },
+            {
+              "item": "230",
+              "count": "14850"
+            },
+            {
+              "item": "220",
+              "count": "13487"
+            },
+            {
+              "item": "180",
+              "count": "13160"
+            },
+            {
+              "item": "210",
+              "count": "13057"
+            },
+            {
+              "item": "170",
+              "count": "12344"
+            },
+            {
+              "item": "200",
+              "count": "11936"
+            },
+            {
+              "item": "130",
+              "count": "11455"
+            },
+            {
+              "item": "150",
+              "count": "11430"
+            },
+            {
+              "item": "190",
+              "count": "10781"
+            },
+            {
+              "item": "160",
+              "count": "10349"
+            },
+            {
+              "item": "80",
+              "count": "9513"
+            },
+            {
+              "item": "140",
+              "count": "9314"
+            },
+            {
+              "item": "90",
+              "count": "8186"
+            },
+            {
+              "item": "10",
+              "count": "7905"
+            },
+            {
+              "item": "110",
+              "count": "7107"
+            },
+            {
+              "item": "100",
+              "count": "6802"
+            },
+            {
+              "item": "20",
+              "count": "6409"
+            },
+            {
+              "item": "2130",
+              "count": "5717"
+            }
+          ],
+          "smallest": "00",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518764,
+        "name": "HOUR_TO",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "hour_to",
+        "position": 23,
+        "renderTypeName": "text",
+        "tableColumnId": 56566660,
+        "width": 184,
+        "cachedContents": {
+          "non_null": "537395",
+          "largest": "99",
+          "null": "1387",
+          "top": [
+            {
+              "item": "120",
+              "count": "10775"
+            },
+            {
+              "item": "80",
+              "count": "10228"
+            },
+            {
+              "item": "90",
+              "count": "8729"
+            },
+            {
+              "item": "130",
+              "count": "8720"
+            },
+            {
+              "item": "00",
+              "count": "8283"
+            },
+            {
+              "item": "150",
+              "count": "7930"
+            },
+            {
+              "item": "70",
+              "count": "7654"
+            },
+            {
+              "item": "100",
+              "count": "7653"
+            },
+            {
+              "item": "170",
+              "count": "7463"
+            },
+            {
+              "item": "230",
+              "count": "7391"
+            },
+            {
+              "item": "160",
+              "count": "7320"
+            },
+            {
+              "item": "140",
+              "count": "7051"
+            },
+            {
+              "item": "110",
+              "count": "6939"
+            },
+            {
+              "item": "180",
+              "count": "6557"
+            },
+            {
+              "item": "210",
+              "count": "5892"
+            },
+            {
+              "item": "60",
+              "count": "5886"
+            },
+            {
+              "item": "220",
+              "count": "5426"
+            },
+            {
+              "item": "200",
+              "count": "5412"
+            },
+            {
+              "item": "190",
+              "count": "5072"
+            },
+            {
+              "item": "730",
+              "count": "3931"
+            }
+          ],
+          "smallest": "00",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518765,
+        "name": "ADDRESS_X",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "address_x",
+        "position": 24,
+        "renderTypeName": "text",
+        "tableColumnId": 56566661,
+        "width": 208,
+        "cachedContents": {
+          "non_null": "446690",
+          "largest": "XX W UNIVERSITY AV",
+          "null": "92092",
+          "top": [
+            {
+              "item": "23XX FERGUSON RD",
+              "count": "4756"
+            },
+            {
+              "item": "61XX GLENWAY AV",
+              "count": "2962"
+            },
+            {
+              "item": "36XX WARSAW AV",
+              "count": "2064"
+            },
+            {
+              "item": "35XX READING RD",
+              "count": "1815"
+            },
+            {
+              "item": "5XX VINE ST",
+              "count": "1369"
+            },
+            {
+              "item": "27XX EAST TOWER DR",
+              "count": "1346"
+            },
+            {
+              "item": "24XX HARRISON AV",
+              "count": "1337"
+            },
+            {
+              "item": "X W CORRY ST",
+              "count": "1313"
+            },
+            {
+              "item": "2XX CALHOUN ST",
+              "count": "1285"
+            },
+            {
+              "item": "60XX GLENWAY AV",
+              "count": "1268"
+            },
+            {
+              "item": "76XX READING RD",
+              "count": "1219"
+            },
+            {
+              "item": "34XX WARSAW AV",
+              "count": "1215"
+            },
+            {
+              "item": "47XX KENARD AV",
+              "count": "1126"
+            },
+            {
+              "item": "4XX W 9TH ST",
+              "count": "1117"
+            },
+            {
+              "item": "37XX WESTMONT DR",
+              "count": "1034"
+            },
+            {
+              "item": "77XX READING RD",
+              "count": "1023"
+            },
+            {
+              "item": "14XX VINE ST",
+              "count": "977"
+            },
+            {
+              "item": "21XX FERGUSON RD",
+              "count": "960"
+            },
+            {
+              "item": "36XX READING RD",
+              "count": "860"
+            },
+            {
+              "item": "28XX HARRISON AV",
+              "count": "839"
+            }
+          ],
+          "smallest": "100XX CONSTITUTION DR",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518819,
+        "name": "LONGITUDE_X",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "longitude_x",
+        "position": 25,
+        "renderTypeName": "text",
+        "tableColumnId": 139199532,
+        "width": 232,
+        "cachedContents": {
+          "non_null": "440626",
+          "largest": "-84.7099267",
+          "null": "98156",
+          "top": [
+            {
+              "item": "-84.59758062",
+              "count": "27"
+            },
+            {
+              "item": "-84.59711062",
+              "count": "27"
+            },
+            {
+              "item": "-84.59618062",
+              "count": "27"
+            },
+            {
+              "item": "-84.59646062",
+              "count": "26"
+            },
+            {
+              "item": "-84.59803062",
+              "count": "26"
+            },
+            {
+              "item": "-84.59742062",
+              "count": "26"
+            },
+            {
+              "item": "-84.59782062",
+              "count": "26"
+            },
+            {
+              "item": "-84.59702062",
+              "count": "26"
+            },
+            {
+              "item": "-84.59797062",
+              "count": "26"
+            },
+            {
+              "item": "-84.59815062",
+              "count": "25"
+            },
+            {
+              "item": "-84.59796062",
+              "count": "25"
+            },
+            {
+              "item": "-84.59812062",
+              "count": "25"
+            },
+            {
+              "item": "-84.59784062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59725062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59790062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59807062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59638062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59768062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59781062",
+              "count": "24"
+            },
+            {
+              "item": "-84.59745062",
+              "count": "23"
+            }
+          ],
+          "smallest": "-84.36964198",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518818,
+        "name": "LATITUDE_X",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "latitude_x",
+        "position": 26,
+        "renderTypeName": "text",
+        "tableColumnId": 139199531,
+        "width": 220,
+        "cachedContents": {
+          "non_null": "440626",
+          "largest": "39.2215097700596",
+          "null": "98156",
+          "top": [
+            {
+              "item": "39.1275925200598",
+              "count": "30"
+            },
+            {
+              "item": "39.1278325200598",
+              "count": "28"
+            },
+            {
+              "item": "39.1284825200598",
+              "count": "27"
+            },
+            {
+              "item": "39.1282925200598",
+              "count": "27"
+            },
+            {
+              "item": "39.1286225200598",
+              "count": "26"
+            },
+            {
+              "item": "39.1282125200598",
+              "count": "26"
+            },
+            {
+              "item": "39.1284225200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1278125200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1286925200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1279325200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1277625200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1275325200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1287725200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1281025200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1275425200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1289625200598",
+              "count": "24"
+            },
+            {
+              "item": "39.1277225200598",
+              "count": "23"
+            },
+            {
+              "item": "39.1274725200598",
+              "count": "23"
+            },
+            {
+              "item": "39.1291325200598",
+              "count": "23"
+            },
+            {
+              "item": "39.1281225200598",
+              "count": "23"
+            }
+          ],
+          "smallest": "39.0573281600598",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518768,
+        "name": "VICTIM_AGE",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "victim_age",
+        "position": 27,
+        "renderTypeName": "text",
+        "tableColumnId": 56566664,
+        "width": 220,
+        "cachedContents": {
+          "non_null": "538780",
+          "largest": "UNKNOWN",
+          "null": "2",
+          "top": [
+            {
+              "item": "18-25",
+              "count": "106171"
+            },
+            {
+              "item": "31-40",
+              "count": "93508"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "84759"
+            },
+            {
+              "item": "41-50",
+              "count": "65735"
+            },
+            {
+              "item": "26-30",
+              "count": "64347"
+            },
+            {
+              "item": "51-60",
+              "count": "54024"
+            },
+            {
+              "item": "61-70",
+              "count": "26564"
+            },
+            {
+              "item": "UNDER 18",
+              "count": "26011"
+            },
+            {
+              "item": "OVER 70",
+              "count": "12735"
+            },
+            {
+              "item": "ADULT (18+)",
+              "count": "3139"
+            },
+            {
+              "item": "JUVENILE (UNDER 18)",
+              "count": "1774"
+            },
+            {
+              "item": "00",
+              "count": "13"
+            }
+          ],
+          "smallest": "00",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518769,
+        "name": "VICTIM_RACE",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "victim_race",
+        "position": 28,
+        "renderTypeName": "text",
+        "tableColumnId": 56566665,
+        "width": 232,
+        "cachedContents": {
+          "non_null": "98226",
+          "largest": "WHITE",
+          "null": "440556",
+          "top": [
+            {
+              "item": "BLACK",
+              "count": "51541"
+            },
+            {
+              "item": "WHITE",
+              "count": "43297"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "2546"
+            },
+            {
+              "item": "ASIAN OR PACIFIC ISL",
+              "count": "585"
+            },
+            {
+              "item": "AMERICAN INDIAN/ALAS",
+              "count": "121"
+            },
+            {
+              "item": "ASIAN/PACIFIC ISLAND",
+              "count": "106"
+            },
+            {
+              "item": "HISPANIC",
+              "count": "29"
+            },
+            {
+              "item": "AMERICAN IINDIAN/ALA",
+              "count": "1"
+            }
+          ],
+          "smallest": "AMERICAN IINDIAN/ALA",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518770,
+        "name": "VICTIM_ETHNICITY",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "victim_ethnicity",
+        "position": 29,
+        "renderTypeName": "text",
+        "tableColumnId": 56566666,
+        "width": 292,
+        "cachedContents": {
+          "non_null": "434966",
+          "largest": "WHITE NOT OF HISPANI",
+          "null": "103816",
+          "top": [
+            {
+              "item": "NOT OF HISPANIC ORIG",
+              "count": "389851"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "34427"
+            },
+            {
+              "item": "HISPANIC ORIGIN",
+              "count": "8892"
+            },
+            {
+              "item": "AFRICAN AMERICAN",
+              "count": "818"
+            },
+            {
+              "item": "WHITE AMERICAN",
+              "count": "760"
+            },
+            {
+              "item": "WHITE NOT OF HISPANI",
+              "count": "103"
+            },
+            {
+              "item": "BLACK NOT OF HISPANI",
+              "count": "85"
+            },
+            {
+              "item": "AFRICAN",
+              "count": "7"
+            },
+            {
+              "item": "ASIAN INDIAN",
+              "count": "6"
+            },
+            {
+              "item": "AMERICAN INDIAN",
+              "count": "6"
+            },
+            {
+              "item": "WHITE HISPANIC ORIGI",
+              "count": "4"
+            },
+            {
+              "item": "PAKASTANI",
+              "count": "2"
+            },
+            {
+              "item": "EUROPEAN",
+              "count": "1"
+            },
+            {
+              "item": "ALASKA NATIVE",
+              "count": "1"
+            },
+            {
+              "item": "CHINESE",
+              "count": "1"
+            },
+            {
+              "item": "INDONESIAN",
+              "count": "1"
+            },
+            {
+              "item": "BLACK HISPANIC ORIGI",
+              "count": "1"
+            }
+          ],
+          "smallest": "AFRICAN",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518771,
+        "name": "VICTIM_GENDER",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "victim_gender",
+        "position": 30,
+        "renderTypeName": "text",
+        "tableColumnId": 56566667,
+        "width": 256,
+        "cachedContents": {
+          "non_null": "458258",
+          "largest": "UNKNOWN",
+          "null": "80524",
+          "top": [
+            {
+              "item": "FEMALE",
+              "count": "252644"
+            },
+            {
+              "item": "MALE",
+              "count": "205058"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "435"
+            },
+            {
+              "item": "NON-PERSON (BUSINESS",
+              "count": "66"
+            },
+            {
+              "item": "F - FEMALE",
+              "count": "31"
+            },
+            {
+              "item": "M - MALE",
+              "count": "24"
+            }
+          ],
+          "smallest": "FEMALE",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518772,
+        "name": "SUSPECT_AGE",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "suspect_age",
+        "position": 31,
+        "renderTypeName": "text",
+        "tableColumnId": 56566668,
+        "width": 232,
+        "cachedContents": {
+          "non_null": "538782",
+          "largest": "UNKNOWN",
+          "null": "0",
+          "top": [
+            {
+              "item": "UNKNOWN",
+              "count": "347613"
+            },
+            {
+              "item": "18-25",
+              "count": "60942"
+            },
+            {
+              "item": "31-40",
+              "count": "40565"
+            },
+            {
+              "item": "26-30",
+              "count": "33737"
+            },
+            {
+              "item": "UNDER 18",
+              "count": "22329"
+            },
+            {
+              "item": "41-50",
+              "count": "20568"
+            },
+            {
+              "item": "51-60",
+              "count": "9986"
+            },
+            {
+              "item": "61-70",
+              "count": "2571"
+            },
+            {
+              "item": "OVER 70",
+              "count": "471"
+            }
+          ],
+          "smallest": "18-25",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518773,
+        "name": "SUSPECT_RACE",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "suspect_race",
+        "position": 32,
+        "renderTypeName": "text",
+        "tableColumnId": 56566669,
+        "width": 244,
+        "cachedContents": {
+          "non_null": "54347",
+          "largest": "WHITE",
+          "null": "484435",
+          "top": [
+            {
+              "item": "BLACK",
+              "count": "40560"
+            },
+            {
+              "item": "WHITE",
+              "count": "11153"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "2561"
+            },
+            {
+              "item": "ASIAN OR PACIFIC ISL",
+              "count": "43"
+            },
+            {
+              "item": "AMERICAN INDIAN/ALAS",
+              "count": "22"
+            },
+            {
+              "item": "ASIAN/PACIFIC ISLAND",
+              "count": "4"
+            },
+            {
+              "item": "HISPANIC",
+              "count": "4"
+            }
+          ],
+          "smallest": "AMERICAN INDIAN/ALAS",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518774,
+        "name": "SUSPECT_ETHNICITY",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "suspect_ethnicity",
+        "position": 33,
+        "renderTypeName": "text",
+        "tableColumnId": 56566670,
+        "width": 304,
+        "cachedContents": {
+          "non_null": "244670",
+          "largest": "WHITE NOT OF HISPANI",
+          "null": "294112",
+          "top": [
+            {
+              "item": "NOT OF HISPANIC ORIG",
+              "count": "202949"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "38495"
+            },
+            {
+              "item": "HISPANIC ORIGIN",
+              "count": "2334"
+            },
+            {
+              "item": "AFRICAN AMERICAN",
+              "count": "592"
+            },
+            {
+              "item": "WHITE AMERICAN",
+              "count": "210"
+            },
+            {
+              "item": "BLACK NOT OF HISPANI",
+              "count": "65"
+            },
+            {
+              "item": "WHITE NOT OF HISPANI",
+              "count": "15"
+            },
+            {
+              "item": "BLACK HISPANIC ORIGI",
+              "count": "4"
+            },
+            {
+              "item": "AMERICAN INDIAN",
+              "count": "2"
+            },
+            {
+              "item": "WHITE HISPANIC ORIGI",
+              "count": "2"
+            },
+            {
+              "item": "AFRICAN",
+              "count": "2"
+            }
+          ],
+          "smallest": "AFRICAN",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518775,
+        "name": "SUSPECT_GENDER",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "suspect_gender",
+        "position": 34,
+        "renderTypeName": "text",
+        "tableColumnId": 56566671,
+        "width": 268,
+        "cachedContents": {
+          "non_null": "259875",
+          "largest": "UNKNOWN",
+          "null": "278907",
+          "top": [
+            {
+              "item": "MALE",
+              "count": "183762"
+            },
+            {
+              "item": "FEMALE",
+              "count": "64090"
+            },
+            {
+              "item": "UNKNOWN",
+              "count": "11944"
+            },
+            {
+              "item": "NON-PERSON (BUSINESS",
+              "count": "63"
+            },
+            {
+              "item": "M - MALE",
+              "count": "12"
+            },
+            {
+              "item": "<SEALED>",
+              "count": "2"
+            },
+            {
+              "item": "F - FEMALE",
+              "count": "2"
+            }
+          ],
+          "smallest": "FEMALE",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518776,
+        "name": "TOTALNUMBERVICTIMS",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "totalnumbervictims",
+        "position": 35,
+        "renderTypeName": "text",
+        "tableColumnId": 56566672,
+        "width": 316,
+        "cachedContents": {
+          "non_null": "511035",
+          "largest": "9",
+          "null": "27747",
+          "top": [
+            {
+              "item": "1",
+              "count": "413064"
+            },
+            {
+              "item": "2",
+              "count": "63401"
+            },
+            {
+              "item": "3",
+              "count": "17227"
+            },
+            {
+              "item": "4",
+              "count": "7112"
+            },
+            {
+              "item": "5",
+              "count": "3530"
+            },
+            {
+              "item": "6",
+              "count": "2158"
+            },
+            {
+              "item": "7",
+              "count": "1122"
+            },
+            {
+              "item": "8",
+              "count": "786"
+            },
+            {
+              "item": "9",
+              "count": "393"
+            },
+            {
+              "item": "11",
+              "count": "297"
+            },
+            {
+              "item": "18",
+              "count": "216"
+            },
+            {
+              "item": "12",
+              "count": "204"
+            },
+            {
+              "item": "15",
+              "count": "180"
+            },
+            {
+              "item": "17",
+              "count": "170"
+            },
+            {
+              "item": "14",
+              "count": "168"
+            },
+            {
+              "item": "10",
+              "count": "160"
+            },
+            {
+              "item": "16",
+              "count": "128"
+            },
+            {
+              "item": "126",
+              "count": "126"
+            },
+            {
+              "item": "57",
+              "count": "114"
+            },
+            {
+              "item": "80",
+              "count": "80"
+            }
+          ],
+          "smallest": "1",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518777,
+        "name": "TOTALSUSPECTS",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "totalsuspects",
+        "position": 36,
+        "renderTypeName": "text",
+        "tableColumnId": 56566673,
+        "width": 256,
+        "cachedContents": {
+          "non_null": "244422",
+          "largest": "9",
+          "null": "294360",
+          "top": [
+            {
+              "item": "1",
+              "count": "159841"
+            },
+            {
+              "item": "2",
+              "count": "46262"
+            },
+            {
+              "item": "3",
+              "count": "22622"
+            },
+            {
+              "item": "4",
+              "count": "9351"
+            },
+            {
+              "item": "5",
+              "count": "3441"
+            },
+            {
+              "item": "6",
+              "count": "1431"
+            },
+            {
+              "item": "7",
+              "count": "693"
+            },
+            {
+              "item": "8",
+              "count": "224"
+            },
+            {
+              "item": "9",
+              "count": "170"
+            },
+            {
+              "item": "10",
+              "count": "170"
+            },
+            {
+              "item": "12",
+              "count": "60"
+            },
+            {
+              "item": "11",
+              "count": "33"
+            },
+            {
+              "item": "16",
+              "count": "32"
+            },
+            {
+              "item": "24",
+              "count": "24"
+            },
+            {
+              "item": "19",
+              "count": "19"
+            },
+            {
+              "item": "18",
+              "count": "18"
+            },
+            {
+              "item": "17",
+              "count": "17"
+            },
+            {
+              "item": "14",
+              "count": "14"
+            }
+          ],
+          "smallest": "1",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518778,
+        "name": "UCR_GROUP",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "ucr_group",
+        "position": 37,
+        "renderTypeName": "text",
+        "tableColumnId": 56566674,
+        "width": 208,
+        "cachedContents": {
+          "non_null": "538164",
+          "largest": "UNAUTHORIZED USE",
+          "null": "618",
+          "top": [
+            {
+              "item": "PART 2 MINOR",
+              "count": "222850"
+            },
+            {
+              "item": "THEFT",
+              "count": "184654"
+            },
+            {
+              "item": "BURGLARY/BREAKING ENTERING",
+              "count": "64380"
+            },
+            {
+              "item": "ROBBERY",
+              "count": "35878"
+            },
+            {
+              "item": "AGGRAVATED ASSAULTS",
+              "count": "20203"
+            },
+            {
+              "item": "RAPE",
+              "count": "4928"
+            },
+            {
+              "item": "UNAUTHORIZED USE",
+              "count": "3654"
+            },
+            {
+              "item": "HOMICIDE",
+              "count": "1617"
+            }
+          ],
+          "smallest": "AGGRAVATED ASSAULTS",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518780,
+        "name": "ZIP",
+        "dataTypeName": "number",
+        "description": "",
+        "fieldName": "zip",
+        "position": 38,
+        "renderTypeName": "number",
+        "tableColumnId": 73726483,
+        "cachedContents": {
+          "non_null": "423540",
+          "largest": "4522045220",
+          "null": "115242",
+          "top": [
+            {
+              "item": "45202",
+              "count": "47111"
+            },
+            {
+              "item": "45205",
+              "count": "35583"
+            },
+            {
+              "item": "45211",
+              "count": "30585"
+            },
+            {
+              "item": "45219",
+              "count": "26287"
+            },
+            {
+              "item": "45238",
+              "count": "26036"
+            },
+            {
+              "item": "45229",
+              "count": "24462"
+            },
+            {
+              "item": "45214",
+              "count": "22592"
+            },
+            {
+              "item": "45225",
+              "count": "20708"
+            },
+            {
+              "item": "45206",
+              "count": "20491"
+            },
+            {
+              "item": "45237",
+              "count": "19598"
+            },
+            {
+              "item": "45223",
+              "count": "18299"
+            },
+            {
+              "item": "45232",
+              "count": "14088"
+            },
+            {
+              "item": "45220",
+              "count": "13334"
+            },
+            {
+              "item": "45224",
+              "count": "12153"
+            },
+            {
+              "item": "45204",
+              "count": "10623"
+            },
+            {
+              "item": "45209",
+              "count": "9090"
+            },
+            {
+              "item": "45216",
+              "count": "8856"
+            },
+            {
+              "item": "45207",
+              "count": "8207"
+            },
+            {
+              "item": "45227",
+              "count": "8187"
+            },
+            {
+              "item": "45203",
+              "count": "7003"
+            }
+          ],
+          "smallest": "33",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {
+          "noCommas": "true"
+        }
+      },
+      {
+        "id": 547518779,
+        "name": "COMMUNITY_COUNCIL_NEIGHBORHOOD",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "community_council_neighborhood",
+        "position": 39,
+        "renderTypeName": "text",
+        "tableColumnId": 61844902,
+        "width": 100,
+        "cachedContents": {
+          "non_null": "538782",
+          "largest": "WINTON HILLS",
+          "null": "0",
+          "top": [
+            {
+              "item": "N/A",
+              "count": "94203"
+            },
+            {
+              "item": "WESTWOOD",
+              "count": "48287"
+            },
+            {
+              "item": "WEST PRICE HILL",
+              "count": "30915"
+            },
+            {
+              "item": "EAST PRICE HILL",
+              "count": "27506"
+            },
+            {
+              "item": "AVONDALE",
+              "count": "20788"
+            },
+            {
+              "item": "OTR",
+              "count": "20322"
+            },
+            {
+              "item": "DOWNTOWN",
+              "count": "16040"
+            },
+            {
+              "item": "WALNUT HILLS",
+              "count": "15852"
+            },
+            {
+              "item": "WEST END",
+              "count": "15735"
+            },
+            {
+              "item": "COLLEGE HILL",
+              "count": "13588"
+            },
+            {
+              "item": "CUF",
+              "count": "12340"
+            },
+            {
+              "item": "NORTHSIDE",
+              "count": "11795"
+            },
+            {
+              "item": "MOUNT AUBURN",
+              "count": "10886"
+            },
+            {
+              "item": "WINTON HILLS",
+              "count": "10740"
+            },
+            {
+              "item": "ROSELAWN",
+              "count": "10632"
+            },
+            {
+              "item": "EVANSTON",
+              "count": "10532"
+            },
+            {
+              "item": "MOUNT AIRY",
+              "count": "9403"
+            },
+            {
+              "item": "SOUTH FAIRMOUNT",
+              "count": "9264"
+            },
+            {
+              "item": "MADISONVILLE",
+              "count": "9098"
+            },
+            {
+              "item": "OAKLEY",
+              "count": "8961"
+            }
+          ],
+          "smallest": "AVONDALE",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      },
+      {
+        "id": 547518781,
+        "name": "SNA_NEIGHBORHOOD",
+        "dataTypeName": "text",
+        "description": "",
+        "fieldName": "sna_neighborhood",
+        "position": 40,
+        "renderTypeName": "text",
+        "tableColumnId": 139198731,
+        "cachedContents": {
+          "non_null": "538782",
+          "largest": "WINTON HILLS",
+          "null": "0",
+          "top": [
+            {
+              "item": "N/A",
+              "count": "94220"
+            },
+            {
+              "item": "WESTWOOD",
+              "count": "47734"
+            },
+            {
+              "item": "EAST PRICE HILL",
+              "count": "34999"
+            },
+            {
+              "item": "WEST PRICE HILL",
+              "count": "27458"
+            },
+            {
+              "item": "AVONDALE",
+              "count": "26932"
+            },
+            {
+              "item": "CUF",
+              "count": "20559"
+            },
+            {
+              "item": "OVER-THE-RHINE",
+              "count": "20242"
+            },
+            {
+              "item": "DOWNTOWN",
+              "count": "17152"
+            },
+            {
+              "item": "WALNUT HILLS",
+              "count": "15282"
+            },
+            {
+              "item": "COLLEGE HILL",
+              "count": "14842"
+            },
+            {
+              "item": "WEST END",
+              "count": "14171"
+            },
+            {
+              "item": "WINTON HILLS",
+              "count": "11611"
+            },
+            {
+              "item": "ROSELAWN",
+              "count": "11227"
+            },
+            {
+              "item": "EVANSTON",
+              "count": "10888"
+            },
+            {
+              "item": "NORTHSIDE",
+              "count": "10218"
+            },
+            {
+              "item": "MT. AIRY",
+              "count": "10094"
+            },
+            {
+              "item": "OAKLEY",
+              "count": "9361"
+            },
+            {
+              "item": "MADISONVILLE",
+              "count": "9109"
+            },
+            {
+              "item": "CORRYVILLE",
+              "count": "8745"
+            },
+            {
+              "item": "MT. AUBURN",
+              "count": "8493"
+            }
+          ],
+          "smallest": "AVONDALE",
+          "count": "538782",
+          "cardinality": "538782"
+        },
+        "format": {}
+      }
+    ],
+    "grants": [
+      {
+        "inherited": false,
+        "type": "viewer",
+        "flags": [
+          "public"
+        ]
+      }
+    ],
+    "license": {
+      "name": "Public Domain"
+    },
+    "metadata": {
+      "attachments": [
+        {
+          "filename": "Crime Incidents_Data Dictionary - Data Dictionary.pdf",
+          "assetId": "f0cfc9ac-a3db-4093-8480-af7512839a08",
+          "name": "Crime Incidents_Data Dictionary - Data Dictionary.pdf"
+        }
+      ],
+      "availableDisplayTypes": [
+        "table",
+        "fatrow",
+        "page"
+      ]
+    },
+    "owner": {
+      "id": "wvxi-y5xi",
+      "displayName": "Office of Performance & Data Analytics",
+      "screenName": "Office of Performance & Data Analytics",
+      "type": "interactive",
+      "flags": [
+        "acceptedEula",
+        "mayBeStoriesCoOwner"
+      ]
+    },
+    "query": {},
+    "rights": [
+      "read"
+    ],
+    "tableAuthor": {
+      "id": "wvxi-y5xi",
+      "displayName": "Office of Performance & Data Analytics",
+      "screenName": "Office of Performance & Data Analytics",
+      "type": "interactive",
+      "flags": [
+        "acceptedEula",
+        "mayBeStoriesCoOwner"
+      ]
+    },
+    "tags": [
+      "pdi",
+      "crime",
+      "incidents",
+      "anonymized"
+    ],
+    "flags": [
+      "default",
+      "ownerMayBeContacted",
+      "restorable",
+      "restorePossibleForType"
+    ]
+  },
+  "coverage": {
+    "min_date": "1991-12-31T00:00:00.000",
+    "max_date": "2026-01-13T14:14:00.000",
+    "count": "538745"
+  },
+  "postTransition": [
+    {
+      "date": "2024-06-03T00:00:00.000",
+      "count": "39"
+    },
+    {
+      "date": "2024-07-10T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2024-10-15T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2025-06-11T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2025-08-03T00:00:00.000",
+      "count": "1"
+    },
+    {
+      "date": "2026-01-13T00:00:00.000",
+      "count": "1"
+    }
+  ]
+}

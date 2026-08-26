@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-08-26T22:30:07.561Z",
+  "status": "warning",
+  "checks": [
+    {
+      "id": "geography-source-features",
+      "status": "pass",
+      "detail": "50 source features"
+    },
+    {
+      "id": "geography-bootstrap-expectation",
+      "status": "warning",
+      "detail": "The live CAGIS 2020 SNA service currently returns 50 statistical polygons. Three polygons are explicitly combined statistical areas; the supplied expected list contains 51 names, not 52. The application preserves the source geometry and surfaces this discrepancy rather than inventing boundaries."
+    },
+    {
+      "id": "unique-region-slugs",
+      "status": "pass",
+      "detail": "50 slugs"
+    },
+    {
+      "id": "stars-cutoff",
+      "status": "pass",
+      "detail": "2026-06-23"
+    },
+    {
+      "id": "source-transition",
+      "status": "warning",
+      "detail": "STARS begins on the expected transition date. The legacy PDI feed contains a small number of post-transition reported dates, including later outliers, so its absolute maximum is not treated as the operational cutoff without review."
+    },
+    {
+      "id": "offense-mapping",
+      "status": "pass",
+      "detail": "0 unmapped labels"
+    }
+  ]
+}

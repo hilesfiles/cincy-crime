@@ -1,0 +1,6 @@
+{
+  "1994-2023": { "crime": "partial-or-missing; archival review required", "population": "missing", "geography": "historical-review-required" },
+  "2024": { "crime": "PDI-to-STARS transition; adapters registered", "population": "missing", "geography": "SNA_2020" },
+  "2025": { "crime": "STARS available", "population": "missing", "geography": "SNA_2020" },
+  "2026": { "crime": "STARS available through 2026-06-23", "population": "missing", "geography": "SNA_2020" }
+}

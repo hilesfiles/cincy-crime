@@ -1,0 +1,32 @@
+name: Package Windows desktop app
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run desktop:package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cnce-windows-x64
+          path: dist-desktop/*.exe
+      - name: Attach executables to tagged release
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist-desktop/*.exe --generate-notes --title "$GITHUB_REF_NAME"
