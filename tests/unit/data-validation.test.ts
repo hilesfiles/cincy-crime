@@ -7,6 +7,8 @@ import historical from "../../data/processed/crime/historical-annual.json";
 import cpdReports from "../../data/reports/cpd-neighborhood-validation.json";
 import population from "../../data/reports/population-validation.json";
 import unmapped from "../../data/reports/unmapped-offenses.json";
+import budget from "../../data/processed/budget/police-budget.json";
+import budgetValidation from "../../data/reports/budget-validation.json";
 
 describe("processed data", () => {
   it("preserves the definitive 51-name to 50-feature crosswalk", () => {
@@ -27,5 +29,12 @@ describe("processed data", () => {
     expect(historical.metadata.sameDateYtdYears.at(-1)).toBe(2026);
     expect(historical.periods.annual).toHaveLength(15);
     expect(historical.periods.annual.every((period) => period.neighborhoods.length === 50 && period.reconciliation.status === "pass")).toBe(true);
+  });
+  it("publishes a reconciled fiscal-year police budget allocation panel", () => {
+    expect(budget.budgets.find((row) => row.fiscalYear === 2013)?.status).toBe("transition_stub");
+    expect(budget.budgets.find((row) => row.fiscalYear === 2005)?.total).toBeNull();
+    expect(budget.crimePeriods).toHaveLength(12);
+    expect(budgetValidation.reconciledPeriods).toBe(budget.crimePeriods.length);
+    expect(budget.crimePeriods.every((period) => period.neighborhoods.length === 50)).toBe(true);
   });
 });

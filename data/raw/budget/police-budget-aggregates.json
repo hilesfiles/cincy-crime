@@ -1,0 +1,660 @@
+{
+  "generatedAt": "2026-08-27T05:22:38.805Z",
+  "query": "select fiscal_year, department_name, object_category_group, sum(current_budget) as amount where fiscal_year between 2004 and 2027 and department_name in ('Department Of Police','Police - Administration','Police - Investigations','Police - Resource Bureau','Police - Support') group by fiscal_year, department_name, object_category_group order by fiscal_year, department_name",
+  "rows": [
+    {
+      "fiscal_year": "2004",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "11571280"
+    },
+    {
+      "fiscal_year": "2004",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "79358790"
+    },
+    {
+      "fiscal_year": "2004",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2005",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2005",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2006",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "12481450"
+    },
+    {
+      "fiscal_year": "2006",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "83784954"
+    },
+    {
+      "fiscal_year": "2007",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "14340050"
+    },
+    {
+      "fiscal_year": "2007",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "90607533"
+    },
+    {
+      "fiscal_year": "2008",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "15115650"
+    },
+    {
+      "fiscal_year": "2008",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "90852370"
+    },
+    {
+      "fiscal_year": "2009",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "13519660"
+    },
+    {
+      "fiscal_year": "2009",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "85862034"
+    },
+    {
+      "fiscal_year": "2010",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "14894310.00"
+    },
+    {
+      "fiscal_year": "2010",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "91244580"
+    },
+    {
+      "fiscal_year": "2011",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "14166721"
+    },
+    {
+      "fiscal_year": "2011",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "93006260"
+    },
+    {
+      "fiscal_year": "2012",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "13428940"
+    },
+    {
+      "fiscal_year": "2012",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "111392880"
+    },
+    {
+      "fiscal_year": "2013",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "6937820"
+    },
+    {
+      "fiscal_year": "2013",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "56305000"
+    },
+    {
+      "fiscal_year": "2014",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "14516980"
+    },
+    {
+      "fiscal_year": "2014",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "111547160"
+    },
+    {
+      "fiscal_year": "2015",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "14194110"
+    },
+    {
+      "fiscal_year": "2015",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "116168580"
+    },
+    {
+      "fiscal_year": "2016",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "14431670"
+    },
+    {
+      "fiscal_year": "2016",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "119528610"
+    },
+    {
+      "fiscal_year": "2017",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "13438590.00"
+    },
+    {
+      "fiscal_year": "2017",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "125679337.49"
+    },
+    {
+      "fiscal_year": "2018",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "15234107"
+    },
+    {
+      "fiscal_year": "2018",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "125723396"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "8024299"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "96246072.00"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2994818"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "11070416"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "1845319"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "18394172"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2955172"
+    },
+    {
+      "fiscal_year": "2019",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "9186555"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "7887500"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "102099899.2"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2776870"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "11558041"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "1928040"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "19304838"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "4167360"
+    },
+    {
+      "fiscal_year": "2020",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "11382074"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "8572010"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "103383077"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "1453290"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "9728137"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2497310"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "21154477"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Resource Bureau",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "353820"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Resource Bureau",
+      "object_category_group": "PERSONNEL",
+      "amount": "6340560"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "7723560"
+    },
+    {
+      "fiscal_year": "2021",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "9395978"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "8306807.39"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "104548021"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "4350601.12"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "11595940"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2712619"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "18947830"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Resource Bureau",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Resource Bureau",
+      "object_category_group": "PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "4959140"
+    },
+    {
+      "fiscal_year": "2022",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "17293700"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "7275500"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "106078770"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "5793270.00"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "11613930"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2609230"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "19688230"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Resource Bureau",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Resource Bureau",
+      "object_category_group": "PERSONNEL",
+      "amount": "0"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "4180760"
+    },
+    {
+      "fiscal_year": "2023",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "15382020"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "8359220.0"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "113202405"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "5824019.2"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "12803910"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2246900"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "19704480"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "5361804"
+    },
+    {
+      "fiscal_year": "2024",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "16957496"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "8995589"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "120500928"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "6046148"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "20178236"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2550290"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "21135813"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "4498760"
+    },
+    {
+      "fiscal_year": "2025",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "12465953"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "7351320"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "121055329"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "15370310.0"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "28427700"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "2606910"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "27298520"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "1729030"
+    },
+    {
+      "fiscal_year": "2026",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "15119420"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Department Of Police",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "7529660"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Department Of Police",
+      "object_category_group": "PERSONNEL",
+      "amount": "118291850"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Police - Administration",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "12001000"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Police - Administration",
+      "object_category_group": "PERSONNEL",
+      "amount": "34383740"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Police - Investigations",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "5238040"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Police - Investigations",
+      "object_category_group": "PERSONNEL",
+      "amount": "26341180"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Police - Support",
+      "object_category_group": "NON-PERSONNEL",
+      "amount": "932200"
+    },
+    {
+      "fiscal_year": "2027",
+      "department_name": "Police - Support",
+      "object_category_group": "PERSONNEL",
+      "amount": "14022870"
+    }
+  ]
+}

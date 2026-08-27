@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import electionDataJson from "../../data/processed/elections/neighborhood-elections.json";
 import type { ElectionsData } from "../../lib/elections";
-import { countColors, electionFill, quantileThresholds, rateColors, sequentialColor, signedChangeColor } from "../../lib/map-colors";
+import { decreaseColors, electionFill, increaseColors, neutralChangeColor, quantileThresholds, signedChangeColor, signedMagnitudeColor } from "../../lib/map-colors";
 
 describe("directional map palettes", () => {
   it("reserves gray for exact zero and directs every nonzero crime change", () => {
@@ -18,14 +18,14 @@ describe("directional map palettes", () => {
     expect(new Set(values.map((value) => signedChangeColor(-value))).size).toBe(values.length);
   });
 
-  it("builds distinct sequential scales for reported count and rate", () => {
+  it("keeps signed count and rate magnitudes on the red-green directional scale", () => {
     const thresholds = quantileThresholds([0, 5, 10, 15, 20, 25, 30, 35, 40]);
     expect(thresholds).toHaveLength(7);
-    expect(sequentialColor(0, thresholds, countColors)).toBe(countColors[0]);
-    expect(sequentialColor(40, thresholds, countColors)).toBe(countColors.at(-1));
-    expect(sequentialColor(40, thresholds, rateColors)).toBe(rateColors.at(-1));
-    expect(sequentialColor(20, thresholds, countColors)).not.toBe(sequentialColor(20, thresholds, rateColors));
-    expect(sequentialColor(null, thresholds, countColors)).toContain("missing-data-hatch");
+    expect(signedMagnitudeColor(0, thresholds)).toBe(neutralChangeColor);
+    expect(signedMagnitudeColor(40, thresholds)).toBe(increaseColors.at(-1));
+    expect(signedMagnitudeColor(-40, thresholds)).toBe(decreaseColors.at(-1));
+    expect(signedMagnitudeColor(20, thresholds)).not.toBe(signedMagnitudeColor(-20, thresholds));
+    expect(signedMagnitudeColor(null, thresholds)).toContain("missing-data-hatch");
   });
 
   it("centers election margin at purple and separates party directions", () => {

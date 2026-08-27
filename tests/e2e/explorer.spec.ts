@@ -28,16 +28,20 @@ test("dashboard map and routes work", async ({ page }) => {
   expect(fills.some((fill) => increaseColors.includes(fill ?? ""))).toBe(true);
   const changeFills = await page.locator("path[data-neighborhood-id]").evaluateAll((paths) => paths.map((path) => path.getAttribute("fill")));
   await page.getByLabel("Map measure").selectOption("count");
-  await expect(page.getByLabel("Reported count color legend")).toContainText("neighborhood quantiles");
+  await expect(page.getByLabel("Reported count color legend")).toContainText(/signed count change/i);
   const countFills = await page.locator("path[data-neighborhood-id]").evaluateAll((paths) => paths.map((path) => path.getAttribute("fill")));
   expect(countFills).not.toEqual(changeFills);
-  await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /YTD: \d+; Change from prior YTD:/);
+  expect(countFills.some((fill) => decreaseColors.includes(fill ?? ""))).toBe(true);
+  expect(countFills.some((fill) => increaseColors.includes(fill ?? ""))).toBe(true);
+  await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /YTD: \d+; Count change from prior YTD: [+-]?\d+ offenses/);
   await page.getByLabel("Map measure").selectOption("rate");
-  await expect(page.getByLabel("Rate per 1,000 color legend")).toContainText("neighborhood quantiles");
+  await expect(page.getByLabel("Rate per 1,000 color legend")).toContainText(/signed rate change per 1,000/i);
   const rateFills = await page.locator("path[data-neighborhood-id]").evaluateAll((paths) => paths.map((path) => path.getAttribute("fill")));
   expect(rateFills).not.toEqual(countFills);
+  expect(rateFills.some((fill) => decreaseColors.includes(fill ?? ""))).toBe(true);
+  expect(rateFills.some((fill) => increaseColors.includes(fill ?? ""))).toBe(true);
   await expect(page).toHaveURL(/measure=rate/);
-  await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /per 1,000: .*Change from prior YTD:/);
+  await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /per 1,000: .*Rate change from prior YTD: [+-]?\d+\.\d per 1,000/);
   await page.getByRole("button", { name: "Calendar year" }).click();
   await page.getByLabel("Calendar year").selectOption("2011");
   await expect(page).toHaveURL(/period=annual/);
@@ -68,7 +72,18 @@ test("dashboard map and routes work", async ({ page }) => {
   await page.goto("/data-status/");
   await expect(page.getByRole("row", { name: /Historical same-date YTD/i })).toBeVisible();
   await expect(page.getByRole("row", { name: /General-election canvasses/i })).toBeVisible();
+  await expect(page.getByRole("row", { name: /Police budget ledger/i })).toBeVisible();
   await expect(page.getByText(/Latest generated artifact/i)).toBeVisible();
+
+  await page.goto("/budget/");
+  await expect(page.getByRole("heading", { name: "Police budget and neighborhood allocation" })).toBeVisible();
+  await expect(page.getByLabel("Budget fiscal year")).toHaveValue("2025");
+  await page.getByLabel("Budget fiscal year").selectOption("2024");
+  await page.getByLabel("Budget crime allocation basis").selectOption("violent");
+  await page.getByLabel("Budget selected area").selectOption("westwood");
+  await expect(page.getByText("Selected neighborhood", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Westwood" })).toBeVisible();
+  await expect(page.getByText(/Modeled allocation—not actual spending/i)).toBeVisible();
 
   await page.goto("/elections/");
   await expect(page.getByRole("heading", { name: "Neighborhood elections explorer" })).toBeVisible();

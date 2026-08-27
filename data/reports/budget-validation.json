@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-27T05:22:38.805Z",
+  "status": "warning",
+  "budgetYears": 23,
+  "unavailableBudgetYears": [
+    2005
+  ],
+  "crimeFiscalYears": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "reconciledPeriods": 12,
+  "warning": "Neighborhood values are crime-share attributed budget, not actual police spending, staffing, service delivery, or district allocations."
+}

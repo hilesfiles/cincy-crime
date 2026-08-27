@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const links = [["Explore", "/"], ["Rankings", "/rankings"], ["Compare", "/compare"], ["Trends", "/trends"], ["Demographics", "/demographics"], ["Elections", "/elections"], ["Methodology", "/methodology"], ["Data status", "/data-status"]] as const;
+const links = [["Explore", "/"], ["Rankings", "/rankings"], ["Compare", "/compare"], ["Trends", "/trends"], ["Demographics", "/demographics"], ["Elections", "/elections"], ["Budget", "/budget"], ["Methodology", "/methodology"], ["Data status", "/data-status"]] as const;
 
 export function SiteHeader() {
   return (

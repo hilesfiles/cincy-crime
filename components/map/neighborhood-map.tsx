@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { countColors, crimeLegendSteps, quantileThresholds, rateColors, sequentialColor, signedChangeColor } from "@/lib/map-colors";
+import { crimeLegendSteps, decreaseColors, increaseColors, neutralChangeColor, quantileThresholds, signedChangeColor, signedMagnitudeColor } from "@/lib/map-colors";
 
 export type MapRegion = { id: string; slug: string; name: string; sourceName: string; number: number; members: string[]; path: string };
 type MapData = { viewBox: string; sourceFeatureCount: number; regions: MapRegion[] };
@@ -14,11 +14,10 @@ export function NeighborhoodMap({ data, metricValues, colorValues = metricValues
   const [selected, setSelected] = useState<MapRegion | null>(null);
   const active = hovered ?? selected;
   const availableValues = useMemo(() => Object.values(colorValues ?? {}).filter((value) => value !== null && value !== undefined), [colorValues]);
-  const thresholds = useMemo(() => quantileThresholds(availableValues.filter((value): value is number => typeof value === "number")), [availableValues]);
-  const palette = colorMode === "count" ? countColors : rateColors;
+  const thresholds = useMemo(() => quantileThresholds(availableValues.filter((value): value is number => typeof value === "number").map(Math.abs)), [availableValues]);
   const colorFor = (region: MapRegion) => {
     const value = colorValues?.[region.sourceName] ?? null;
-    return colorMode === "change" ? signedChangeColor(value) : sequentialColor(typeof value === "number" ? value : null, thresholds, palette);
+    return colorMode === "change" ? signedChangeColor(value) : signedMagnitudeColor(typeof value === "number" ? value : null, thresholds);
   };
   return (
     <div className="relative min-h-[480px] overflow-hidden rounded-sm bg-[#eef3f2] lg:min-h-[650px]">
@@ -42,9 +41,10 @@ export function NeighborhoodMap({ data, metricValues, colorValues = metricValues
 
 function MapLegend({ mode, thresholds, availableCount }: { mode: MapColorMode; thresholds: number[]; availableCount: number }) {
   if (mode === "change") return <div className="absolute left-1/2 top-4 z-10 w-[min(940px,calc(100%-2rem))] -translate-x-1/2 rounded-sm border border-[#d0dcda] bg-white/95 px-3 py-2 shadow-sm" aria-label="Change-rate color legend"><p className="text-center text-[0.6rem] font-black uppercase tracking-[0.09em] text-[#536970]">Decrease ← signed change (%) → increase</p><div className="mt-1 grid grid-cols-[repeat(17,minmax(0,1fr))] gap-px">{crimeLegendSteps.map((step, index) => <div key={`${step.label}-${index}`} className="min-w-0 text-center"><span className="block h-3" style={{ backgroundColor: step.color }} aria-hidden="true"/><span className="mt-0.5 block text-[0.48rem] font-bold text-[#536970] tabular sm:text-[0.56rem]">{index < 8 ? `−${step.label}` : index > 8 ? `+${step.label}` : step.label}</span></div>)}</div><p className="mt-1 text-center text-[0.56rem] text-[#68797e]">Only exact 0% is gray; hatching is unavailable. New activity uses strongest red. {availableCount} areas have a comparison.</p></div>;
-  const palette = mode === "count" ? countColors : rateColors;
   const formatThreshold = (value: number) => mode === "count" ? Math.round(value).toLocaleString() : value.toFixed(1);
-  const title = mode === "count" ? "Reported count · neighborhood quantiles" : "Rate per 1,000 · neighborhood quantiles";
+  const bandLabels = [...thresholds.map(formatThreshold), thresholds.length ? `${formatThreshold(thresholds.at(-1)!)}+` : "—"];
+  const steps = [...decreaseColors.map((color, index) => ({ color, label: `−${bandLabels[index] ?? "—"}` })).reverse(), { color: neutralChangeColor, label: "0" }, ...increaseColors.map((color, index) => ({ color, label: `+${bandLabels[index] ?? "—"}` }))];
+  const title = mode === "count" ? "Decrease ← signed count change → increase" : "Decrease ← signed rate change per 1,000 → increase";
   const ariaLabel = mode === "count" ? "Reported count color legend" : "Rate per 1,000 color legend";
-  return <div className="absolute left-1/2 top-4 z-10 w-[min(720px,calc(100%-2rem))] -translate-x-1/2 rounded-sm border border-[#d0dcda] bg-white/95 px-3 py-2 shadow-sm" aria-label={ariaLabel}><p className="text-center text-[0.6rem] font-black uppercase tracking-[0.09em] text-[#536970]">{title}</p><div className="mt-1 grid grid-cols-8 gap-px">{palette.map((color, index) => <div key={color} className="min-w-0 text-center"><span className="block h-3" style={{ backgroundColor: color }} aria-hidden="true"/><span className="mt-0.5 block text-[0.5rem] font-bold text-[#536970] tabular sm:text-[0.58rem]">{index < thresholds.length ? `≤${formatThreshold(thresholds[index])}` : thresholds.length ? `>${formatThreshold(thresholds.at(-1)!)}` : "—"}</span></div>)}</div><p className="mt-1 text-center text-[0.56rem] text-[#68797e]">Darker shades indicate higher values among available neighborhoods; hatching is unavailable. {availableCount} areas shown.</p></div>;
+  return <div className="absolute left-1/2 top-4 z-10 w-[min(940px,calc(100%-2rem))] -translate-x-1/2 rounded-sm border border-[#d0dcda] bg-white/95 px-3 py-2 shadow-sm" aria-label={ariaLabel}><p className="text-center text-[0.6rem] font-black uppercase tracking-[0.09em] text-[#536970]">{title}</p><div className="mt-1 grid grid-cols-[repeat(17,minmax(0,1fr))] gap-px">{steps.map((step, index) => <div key={`${step.label}-${index}`} className="min-w-0 text-center"><span className="block h-3" style={{ backgroundColor: step.color }} aria-hidden="true"/><span className="mt-0.5 block text-[0.46rem] font-bold text-[#536970] tabular sm:text-[0.54rem]">{step.label}</span></div>)}</div><p className="mt-1 text-center text-[0.56rem] text-[#68797e]">Green is a decrease, red is an increase, and exact zero is gray. Bands are based on available neighborhood change magnitudes; hatching is unavailable. {availableCount} areas have a comparison.</p></div>;
 }

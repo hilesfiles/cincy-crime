@@ -23,6 +23,7 @@
     "data:fetch:historical": "tsx scripts/data/fetch-historical.ts",
     "data:build:historical": "tsx scripts/data/build-historical.ts",
     "data:build:elections": "tsx scripts/data/build-elections.ts",
+    "data:fetch:budget": "tsx scripts/data/fetch-budget.ts",
     "data:refresh": "tsx scripts/data/refresh.ts",
     "data:validate": "tsx scripts/validation/validate.ts",
     "db:migrate": "tsx scripts/db/migrate.ts",
