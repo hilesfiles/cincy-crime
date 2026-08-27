@@ -12,10 +12,11 @@ import type { CrimeSummary } from "@/lib/crime/summary";
 import type { HistoricalData } from "@/lib/crime/historical";
 import type { DemographicsData } from "@/lib/demographics";
 import type { ElectionsData } from "@/lib/elections";
+import { socialImageAlt, socialImageUrl } from "@/lib/site-metadata";
 
 const summary = summaryJson as CrimeSummary;
 export function generateStaticParams() { return summary.neighborhoods.map((row) => ({ slug: row.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const row = summary.neighborhoods.find((item) => item.slug === slug); return row ? { title: row.name, description: `${row.name} current and annual reported-crime statistics from 2011–present.`, openGraph: { title: `${row.name} · Cincinnati Crime Explorer`, description: `Current and historical reported-crime statistics for ${row.name}.`, images: [] }, twitter: { title: `${row.name} · Cincinnati Crime Explorer`, description: `Current and historical reported-crime statistics for ${row.name}.`, images: [] } } : {}; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const row = summary.neighborhoods.find((item) => item.slug === slug); return row ? { title: row.name, description: `${row.name} current and annual reported-crime statistics from 2011–present.`, openGraph: { title: `${row.name} · Cincinnati Neighborhood Crime Explorer`, description: `Current and historical reported-crime statistics for ${row.name}.`, images: [{ url: socialImageUrl, width: 1878, height: 1442, alt: socialImageAlt }] }, twitter: { card: "summary_large_image", title: `${row.name} · Cincinnati Neighborhood Crime Explorer`, description: `Current and historical reported-crime statistics for ${row.name}.`, images: [{ url: socialImageUrl, alt: socialImageAlt }] } } : {}; }
 export default async function NeighborhoodPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const row = summary.neighborhoods.find((item) => item.slug === slug);

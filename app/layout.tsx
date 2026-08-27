@@ -1,21 +1,27 @@
 import type { Metadata } from "next";
+import { siteDescription, siteTitle, siteUrl, socialImageAlt, socialImageUrl } from "@/lib/site-metadata";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hilesfiles.github.io/cincy-crime/"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Cincinnati Neighborhood Crime Explorer",
-    template: "%s · Cincinnati Crime Explorer",
+    default: siteTitle,
+    template: `%s · ${siteTitle}`,
   },
-  description:
-    "Auditable neighborhood-level reported-crime trends for Cincinnati, built from official City data.",
+  description: siteDescription,
   openGraph: {
-    title: "Cincinnati Neighborhood Crime Explorer",
-    description:
-      "Explore current reported-crime burden and change across Cincinnati statistical neighborhoods.",
-    url: "https://hilesfiles.github.io/cincy-crime/",
-    siteName: "Cincinnati Neighborhood Crime Explorer",
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: siteTitle,
     type: "website",
+    images: [{ url: socialImageUrl, width: 1878, height: 1442, alt: socialImageAlt }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [{ url: socialImageUrl, alt: socialImageAlt }],
   },
 };
 
