@@ -19,6 +19,7 @@
 /.next/
 /out/
 /dist-desktop/
+/tmp/
 
 # production
 /build

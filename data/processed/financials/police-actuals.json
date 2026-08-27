@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "generatedAt": "2026-08-27T06:13:46.000Z",
+    "coverage": { "firstFiscalYear": 2014, "lastFiscalYear": 2024 },
+    "headlineDefinition": "Audited General Fund expenditures for the Division of Police on the GAAP basis reported in Cincinnati's Annual Comprehensive Financial Reports.",
+    "budgetBasisDefinition": "The ACFR General Fund budgetary schedule's original budget, final budget, and actual on the City's non-GAAP budgetary basis.",
+    "scopeNote": "The comparable series excludes Emergency Communications when it was displayed inside the Department of Police. Capital projects, Safety Fund activity, and other funds are not added to the General Fund headline.",
+    "allocationWarning": "Neighborhood values are crime-share attributions of the audited citywide Police actual, not observed neighborhood expenditures, staffing, calls for service, or district allocations.",
+    "latestAvailableNote": "FY2024 is the latest City ACFR located and verified for this build. FY2025 remains unavailable rather than estimated."
+  },
+  "years": [
+    { "fiscalYear": 2014, "gaapActual": 123783000, "originalBudget": 125169000, "finalBudget": 125251000, "budgetBasisActual": 123601000, "budgetBasisVariance": 1650000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2014-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 156, "gaapStatementPdfPage": 162 },
+    { "fiscalYear": 2015, "gaapActual": 131603000, "originalBudget": 126099000, "finalBudget": 130187000, "budgetBasisActual": 130163000, "budgetBasisVariance": 24000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2015-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 176, "gaapStatementPdfPage": 182 },
+    { "fiscalYear": 2016, "gaapActual": 133219000, "originalBudget": 132932000, "finalBudget": 133498000, "budgetBasisActual": 133497000, "budgetBasisVariance": 1000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2016-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 180, "gaapStatementPdfPage": 186 },
+    { "fiscalYear": 2017, "gaapActual": 136782000, "originalBudget": 135165000, "finalBudget": 138293000, "budgetBasisActual": 137417000, "budgetBasisVariance": 876000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2017-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 172, "gaapStatementPdfPage": 178 },
+    { "fiscalYear": 2018, "gaapActual": 142611000, "originalBudget": 140271000, "finalBudget": 139084000, "budgetBasisActual": 139082000, "budgetBasisVariance": 2000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2018-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 180, "gaapStatementPdfPage": 186 },
+    { "fiscalYear": 2019, "gaapActual": 150774000, "originalBudget": 147448000, "finalBudget": 148357000, "budgetBasisActual": 148356000, "budgetBasisVariance": 1000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2019-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 197, "gaapStatementPdfPage": 203 },
+    { "fiscalYear": 2020, "gaapActual": 160250000, "originalBudget": 151957000, "finalBudget": 158415000, "budgetBasisActual": 158261000, "budgetBasisVariance": 154000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2020-comprehensive-annual-financial-report", "budgetSchedulePdfPage": 199, "gaapStatementPdfPage": 205 },
+    { "fiscalYear": 2021, "gaapActual": 152359000, "originalBudget": 152642000, "finalBudget": 167913000, "budgetBasisActual": 162626000, "budgetBasisVariance": 5287000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2021-annual-comprehensive-financial-report", "budgetSchedulePdfPage": 189, "gaapStatementPdfPage": 195 },
+    { "fiscalYear": 2022, "gaapActual": 161221000, "originalBudget": 166002000, "finalBudget": 169677000, "budgetBasisActual": 162999000, "budgetBasisVariance": 6678000, "sourceUrl": "https://www.cincinnati-oh.gov/finance/financial-reports/2022-annual-comprehensive-financial-report", "budgetSchedulePdfPage": 189, "gaapStatementPdfPage": 195 },
+    { "fiscalYear": 2023, "gaapActual": 168933000, "originalBudget": 169110000, "finalBudget": 171090000, "budgetBasisActual": 167140000, "budgetBasisVariance": 3950000, "sourceUrl": "https://www.cincinnati-oh.gov/sites/retirement/assets/GASB%20Reports/City_of_Cincinnati_2023_Hamilton_FINAL.pdf", "budgetSchedulePdfPage": 191, "gaapStatementPdfPage": 197 },
+    { "fiscalYear": 2024, "gaapActual": 177505000, "originalBudget": 180511000, "finalBudget": 182908000, "budgetBasisActual": 176662000, "budgetBasisVariance": 6246000, "sourceUrl": "https://www.cincinnati-oh.gov/sites/retirement/assets/GASB%20Reports/City_of_Cincinnati_24_Hamilton.pdf", "budgetSchedulePdfPage": 207, "gaapStatementPdfPage": 213 }
+  ]
+}

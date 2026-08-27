@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-27T06:13:46.000Z",
+  "status": "warning",
+  "actuals": {
+    "status": "pass",
+    "fiscalYears": 11,
+    "firstFiscalYear": 2014,
+    "lastFiscalYear": 2024,
+    "consecutiveYears": true,
+    "sameBasisVarianceReconciles": true,
+    "scope": "General Fund Division of Police; Emergency Communications excluded"
+  },
+  "initiatives": {
+    "status": "warning",
+    "records": 66,
+    "programs": 4,
+    "publishedAmount": 3776800,
+    "neighborhoodAllocatedAmount": 371100,
+    "outsideCityAmount": 35000,
+    "unallocatedCincinnatiAmount": 3370700,
+    "allWeightedRecordsReconcile": true,
+    "warning": "Most published initiative dollars lack record-level neighborhood allocations and remain unallocated. The initiative ledger is not additive to Police ACFR actuals."
+  }
+}

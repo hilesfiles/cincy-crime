@@ -85,6 +85,24 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Westwood" })).toBeVisible();
   await expect(page.getByText(/Modeled allocation—not actual spending/i)).toBeVisible();
 
+  await page.goto("/actuals/");
+  await expect(page.getByRole("heading", { name: "Police actual expenditures" })).toBeVisible();
+  await expect(page.getByLabel("Actual fiscal year")).toHaveValue("2024");
+  await page.getByLabel("Actual fiscal year").selectOption("2018");
+  await page.getByLabel("Actual crime attribution basis").selectOption("violent");
+  await page.getByLabel("Actual selected area").selectOption("west-end");
+  await expect(page.getByText("Selected neighborhood", { exact: true })).toBeVisible();
+  await expect(page.getByText(/Audited city total; modeled neighborhood shares/i)).toBeVisible();
+
+  await page.goto("/initiatives/");
+  await expect(page.getByRole("heading", { name: "Public-safety initiatives by neighborhood" })).toBeVisible();
+  await page.getByLabel("Initiative selected neighborhood").selectOption("lower-price-hill-queensgate");
+  await expect(page.getByRole("heading", { name: "Lower Price Hill / Queensgate" }).first()).toBeVisible();
+  await expect(page.getByText("$109K", { exact: true })).toBeVisible();
+  await page.getByLabel("Initiative selected neighborhood").selectOption("avondale");
+  await expect(page.getByText("Named, no split", { exact: true })).toBeVisible();
+  await expect(page.getByText("Separate, non-additive ledger", { exact: true })).toBeVisible();
+
   await page.goto("/elections/");
   await expect(page.getByRole("heading", { name: "Neighborhood elections explorer" })).toBeVisible();
   await expect(page.getByLabel("Election and contest")).toHaveValue("2024-president");
