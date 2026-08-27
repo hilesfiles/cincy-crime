@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { decreaseColors, increaseColors, neutralChangeColor } from "../../lib/map-colors";
 
 test("dashboard map and routes work", async ({ page }) => {
   const browserErrors: string[] = [];
@@ -10,8 +11,11 @@ test("dashboard map and routes work", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: /clearer view/i })).toBeVisible();
   await expect(page.getByText(/Geography crosswalk resolved/i)).toHaveCount(0);
+  await expect(page.getByText("Map preview", { exact: true })).toHaveCount(0);
   await expect(page.locator("path[data-neighborhood-id]")).toHaveCount(50);
-  await expect(page.getByText(/Fill: decrease.*signed change.*increase/i)).toBeVisible();
+  await expect(page.getByText(/Decrease.*signed change.*increase/i)).toBeVisible();
+  await expect(page.getByLabel("Change-rate color legend")).toContainText("−2.5");
+  await expect(page.getByLabel("Change-rate color legend")).toContainText("+50+");
   await expect(page.getByLabel("Map measure")).toHaveValue("change");
   await page.getByLabel("Crime type").selectOption("robbery");
   await expect(page).toHaveURL(/crime=robbery/);
@@ -19,9 +23,9 @@ test("dashboard map and routes work", async ({ page }) => {
   await mountAiry.dispatchEvent("click");
   await expect(page.getByRole("heading", { name: "Mt. Airy" })).toBeVisible();
   const fills = await page.locator("path[data-neighborhood-id]").evaluateAll((paths) => [...new Set(paths.map((path) => path.getAttribute("fill")))]);
-  expect(fills).toContain("#087a4f");
-  expect(fills).toContain("#aeb5b3");
-  expect(fills.some((fill) => fill === "#e24d43" || fill === "#b51f2e" || fill === "#f0a08f")).toBe(true);
+  expect(fills).toContain(neutralChangeColor);
+  expect(fills.some((fill) => decreaseColors.includes(fill ?? ""))).toBe(true);
+  expect(fills.some((fill) => increaseColors.includes(fill ?? ""))).toBe(true);
   await page.getByLabel("Map measure").selectOption("count");
   await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /YTD: \d+; Change from prior YTD:/);
   await page.getByLabel("Map measure").selectOption("rate");
@@ -56,6 +60,22 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByText(/official SNA profile is image-only/i)).toBeVisible();
   await page.goto("/data-status/");
   await expect(page.getByRole("row", { name: /Historical same-date YTD/i })).toBeVisible();
+  await expect(page.getByRole("row", { name: /Presidential precinct canvasses/i })).toBeVisible();
   await expect(page.getByText(/Latest generated artifact/i)).toBeVisible();
+
+  await page.goto("/elections/");
+  await expect(page.getByRole("heading", { name: "Neighborhood elections explorer" })).toBeVisible();
+  await expect(page.getByLabel("Election year")).toHaveValue("2024");
+  await expect(page.getByLabel("2024 Cincinnati neighborhood election map").locator("path[role='button']")).toHaveCount(50);
+  await page.getByLabel("Election map measure").selectOption("democratic");
+  await expect(page.getByText("Democratic ticket share (%)")).toBeVisible();
+  await page.getByLabel("Election year").selectOption("2016");
+  await expect(page.getByText("2016 neighborhood estimates")).toBeVisible();
+  await page.getByLabel("Election area").selectOption("mt-airy");
+  await expect(page.getByRole("heading", { name: "Mt. Airy voting trend" })).toBeVisible();
+
+  await page.goto("/neighborhood/mt-airy/");
+  await expect(page.getByRole("heading", { name: "Presidential voting" })).toBeVisible();
+  await expect(page.getByLabel("Neighborhood election year")).toHaveValue("2024");
   expect(browserErrors).toEqual([]);
 });

@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "generatedAt": "2026-08-27T04:25:38.102Z",
+  "electionYears": [
+    {
+      "year": 2016,
+      "resultPrecincts": 185,
+      "matchedReferencePrecincts": 185,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywidePresidentialVotes": 135713,
+      "neighborhoodAllocatedPresidentialVotes": 135712.99,
+      "voteShareSum": 100
+    },
+    {
+      "year": 2020,
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywidePresidentialVotes": 138020,
+      "neighborhoodAllocatedPresidentialVotes": 138019.99,
+      "voteShareSum": 100
+    },
+    {
+      "year": 2024,
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywidePresidentialVotes": 126966,
+      "neighborhoodAllocatedPresidentialVotes": 126966,
+      "voteShareSum": 100
+    }
+  ],
+  "precinctReferenceCount": 190,
+  "splitPrecinctReferenceCount": 62,
+  "sourceReports": [
+    {
+      "year": 2016,
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2020/02/Gen16OffCanvass.xlsx",
+      "localFile": "Gen16OffCanvass.xlsx",
+      "worksheet": "Sheet1",
+      "checksumSha256": "3f2812d153d892d0b72d92cc2da2f6194e7e8c93a0b9f8b32d4c51f5e111eb25",
+      "resultPrecincts": 185,
+      "matchedReferencePrecincts": 185
+    },
+    {
+      "year": 2020,
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2021/04/G20_Official_Canvass.xlsx",
+      "localFile": "G20_Official_Canvass.xlsx",
+      "worksheet": "Candidates",
+      "checksumSha256": "ea0e54fe813d392639435535f15a0aba1d4c1dbfe46f829d10e124df98fa87e3",
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190
+    },
+    {
+      "year": 2024,
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2025/04/G24OfficialCanvass.xlsx",
+      "localFile": "G24OfficialCanvass.xlsx",
+      "worksheet": "G24 Contests Only",
+      "checksumSha256": "d7743c31a03cc1962f1c2892820d6a80873388b6309cab96a268f7062a05f535",
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190
+    }
+  ],
+  "warnings": [
+    "Neighborhood results use an area-weighted current-precinct reconstruction for all years.",
+    "Historical year-specific machine-readable precinct boundaries remain unavailable in the official results archive; precinct lines are not rendered in the public map."
+  ]
+}

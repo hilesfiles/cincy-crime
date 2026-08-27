@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T03:25:41.489Z",
+  "generatedAt": "2026-08-27T04:26:33.836Z",
   "status": "warning",
   "checks": [
     {
@@ -36,6 +36,11 @@
       "id": "annual-population-series",
       "status": "warning",
       "detail": "51 2010 profiles + 51 2020 profiles; 48/50 regions with ACS/MOE"
+    },
+    {
+      "id": "presidential-election-panel",
+      "status": "pass",
+      "detail": "3 presidential elections; 190 precinct reference polygons; 2016 100% ID coverage, 2020 100% ID coverage, 2024 100% ID coverage"
     },
     {
       "id": "stars-offense-detail-cutoff",

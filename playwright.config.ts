@@ -3,5 +3,7 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "./tests/e2e",
   use: { baseURL: "http://localhost:3000", trace: "retain-on-failure" },
-  webServer: { command: "npm run dev", url: "http://localhost:3000", reuseExistingServer: true, timeout: 120_000 },
+  // Webpack keeps JSON-heavy static route navigation stable in the browser suite;
+  // Turbopack can retain a stale JSON module factory after visiting many routes.
+  webServer: { command: "npm run dev -- --webpack", url: "http://localhost:3000", reuseExistingServer: true, timeout: 120_000 },
 });

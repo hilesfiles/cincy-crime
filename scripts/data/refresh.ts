@@ -7,6 +7,7 @@ import { fetchDemographics } from "./fetch-demographics";
 import { fetchCpdNeighborhoodReports } from "./fetch-cpd-neighborhood-reports";
 import { buildHistorical } from "./build-historical";
 import { fetchHistoricalSources } from "./fetch-historical";
+import { buildElections } from "./build-elections";
 
 async function main() {
   const startedAt = new Date().toISOString();
@@ -18,6 +19,7 @@ async function main() {
   await fetchCpdNeighborhoodReports();
   await fetchHistoricalSources();
   await buildHistorical();
+  await buildElections();
   const firstStarsDate = String(stars.metadata.sourceCoverage.min_date).slice(0, 10);
   const transition = {
     generatedAt: new Date().toISOString(), expectedLastPdiDate: "2024-06-02", expectedFirstStarsDate: "2024-06-03",
