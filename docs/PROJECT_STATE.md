@@ -9,7 +9,9 @@ Updated: 2026-08-26
 - Current views use all 51 preliminary CPD neighborhood reports through 2026-08-22; reports were updated 2026-08-24.
 - STARS offense-level aggregates remain separate and available through 2026-06-23.
 - Official 2020 population profiles and violent-crime rates per 1,000 are implemented.
-- The first historical annual artifact publishes validated 2025 STARS neighborhood aggregates and rates, with source rows lacking an SNA retained in an explicit unassigned bucket.
+- The historical artifact publishes 15 complete calendar years (2011–2025) and 16 same-date YTD periods (2011–2026), with unresolved neighborhood rows retained explicitly.
+- Period/year switchers are implemented on the explorer, rankings, comparisons, and all neighborhood profiles.
+- The trends page provides area, metric, period-basis, count/rate, and year-over-year analysis with an annotated 2024 source transition.
 - PDI and STARS adapters exist; the June 2024 transition is explicit.
 - SQLite migrations and deterministic seed data are implemented.
 - GitHub Pages is the sole supported runtime. Electron packaging was retired after v0.1.2; historical desktop downloads are unsupported.
@@ -22,7 +24,7 @@ Updated: 2026-08-26
 - Dashboard cutoff: 2026-08-22 from the fresher CPD aggregate reports.
 - Unmapped STARS categories: 0.
 - Published population rates: available using 2020 City Planning profiles; the non-additive citywide reconciliation is disclosed.
-- Historical annual panel: 2025 enabled; mixed-system 2024 and PDI years 2011–2023 remain gated, with no fabricated observations.
+- Historical annual panel: 2011–2025 enabled; comparable YTD series extends through the current 2026 aggregate.
 
 ## Local commands
 
@@ -32,4 +34,4 @@ Database location: `data/cnce.sqlite` by default (ignored by Git).
 
 ## Major caveats
 
-The 51 published neighborhood-profile populations sum to 329,782 while the direct Citywide profile is 309,317. Neighborhood rates use each published profile, and the city rate uses the direct Citywide value. Legacy PDI also includes six post-transition reported dates. Both caveats are preserved and visible.
+The 51 published neighborhood-profile populations sum to 329,782 while the direct Citywide profile is 309,317. Neighborhood rates use each published profile, and the city rate uses the direct Citywide value. Historical rows unresolved after the three-field geography fallback remain unassigned, especially in 2011–2012. Legacy PDI also contains post-transition outliers. All caveats are preserved and visible.

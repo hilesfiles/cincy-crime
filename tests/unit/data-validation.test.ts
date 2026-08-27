@@ -22,10 +22,10 @@ describe("processed data", () => {
     expect(summary.neighborhoods.every((row) => row.population > 0 && typeof row.rates.violentYtdPer1000 === "number")).toBe(true);
     expect(population.civicProfileCount).toBe(51);
   });
-  it("publishes the first validated full digital year", () => {
-    expect(historical.metadata.validatedYears).toEqual([2025]);
-    expect(historical.years[0].status).toBe("validated_full_year_with_unassigned");
-    expect(historical.years[0].neighborhoods).toHaveLength(50);
-    expect(historical.years[0].reconciliation.status).toBe("pass");
+  it("publishes validated annual and same-date historical periods", () => {
+    expect(historical.metadata.annualYears).toEqual(Array.from({ length: 15 }, (_, index) => 2011 + index));
+    expect(historical.metadata.sameDateYtdYears.at(-1)).toBe(2026);
+    expect(historical.periods.annual).toHaveLength(15);
+    expect(historical.periods.annual.every((period) => period.neighborhoods.length === 50 && period.reconciliation.status === "pass")).toBe(true);
   });
 });

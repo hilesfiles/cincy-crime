@@ -69,9 +69,10 @@
       "sourceIds": ["CPD_PDI"],
       "calendarCoverage": "full_years",
       "sourceAvailability": "available",
-      "historicalPanelStatus": "import_and_validation_required",
-      "selectorState": "disabled_until_validated",
-      "geographyStatus": "source_neighborhood_field_requires_vintage_validation"
+      "historicalPanelStatus": "published_validated_with_reported_gaps",
+      "selectorState": "enabled",
+      "geographyStatus": "current_2020_proxy_crosswalk_with_unassigned_bucket",
+      "note": "SNA, CPD-neighborhood, and community-council fields are resolved in that order. Remaining unresolved source rows stay citywide and are not allocated to neighborhoods."
     },
     {
       "id": "records-system-transition",
@@ -80,9 +81,9 @@
       "sourceIds": ["CPD_PDI", "CPD_STARS"],
       "calendarCoverage": "full_year_mixed_systems",
       "sourceAvailability": "available",
-      "historicalPanelStatus": "harmonization_and_validation_required",
-      "selectorState": "disabled_until_validated",
-      "geographyStatus": "cross_source_neighborhood_mapping_required",
+      "historicalPanelStatus": "published_validated_mixed_system_transition",
+      "selectorState": "enabled_with_transition_annotation",
+      "geographyStatus": "current_2020_proxy_crosswalk_with_unassigned_bucket",
       "transition": {
         "lastPdiOperationalDate": "2024-06-02",
         "firstStarsDate": "2024-06-03",
@@ -132,9 +133,9 @@
     "year completeness and data cutoff are exposed to the interface"
   ],
   "knownLimitations": [
-    "The current checked-in browser artifact publishes CPD neighborhood-report current/prior YTD and rolling 28-day aggregates, plus a separate STARS offense-level artifact, not the complete 2011-present annual panel.",
+    "The browser artifact publishes calendar-year history for 2011–2025 and comparable January 1–August 22 windows for 2011–2026.",
     "PDI and STARS use different source row units.",
-    "Historical neighborhood geography and name mappings still require validation.",
+    "Historical observations are displayed on the current 2020 SNA proxy. Unresolved PDI neighborhood rows remain in an explicit citywide unassigned bucket, with the largest gaps in 2011 and 2012.",
     "Published City Planning neighborhood-profile populations do not sum to the direct Citywide profile; neighborhood rates use each published profile and the citywide rate uses the direct Citywide population."
   ]
 }

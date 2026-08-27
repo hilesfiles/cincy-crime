@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T23:56:52.151Z",
+  "generatedAt": "2026-08-27T01:38:04.476Z",
   "status": "warning",
   "checks": [
     {
@@ -38,9 +38,14 @@
       "detail": "2026-06-23"
     },
     {
-      "id": "historical-first-digital-year",
+      "id": "historical-periods",
+      "status": "pass",
+      "detail": "15 annual periods; 16 same-date YTD periods"
+    },
+    {
+      "id": "historical-unassigned-and-taxonomy",
       "status": "warning",
-      "detail": "2025 enabled; 104 unassigned aggregate rows"
+      "detail": "54 period/label geography exceptions; 27 period/label taxonomy exceptions"
     },
     {
       "id": "source-transition",

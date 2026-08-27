@@ -12,6 +12,8 @@ The current aggregate view uses each report's published `Part 1 Violent`, `Part 
 
 Every source label must map or appear in `data/reports/unmapped-offenses.json`.
 
+For historical PDI, Homicide, Rape, Robbery, and Aggravated Assaults map to violent crime; Burglary/Breaking Entering and Theft map to property crime. Unauthorized Use and Part 2 Minor remain outside Part I. Blank PDI UCR groups are retained in the historical validation report and excluded from Part I totals.
+
 ## Periods
 
 - YTD: January 1 through the current CPD neighborhood-report cutoff.
@@ -40,4 +42,6 @@ Source URLs, retrieval times, checksums, queries, mapping version, and validatio
 
 ## Historical publication order
 
-The first enabled full digital year is 2025 from STARS. Rows without an SNA name remain in an explicit unassigned bucket; assigned neighborhood totals plus that bucket reconcile to the city total. The next gate is the mixed PDI/STARS year 2024, followed by PDI years moving backward through 2011.
+Complete calendar years 2011–2025 are published. Comparable YTD trends use January 1–August 22 for 2011–2026, so a partial current year is never compared with a full historical year. PDI supplies 2011 through June 2, 2024; STARS begins June 3, 2024. The mixed 2024 year is annotated in charts and tables.
+
+PDI geography resolves the source SNA field first, then the CPD-neighborhood and community-council fields. Historical values are displayed on current 2020 SNA geography as a proxy. Rows still lacking a resolvable neighborhood remain in an explicit citywide unassigned bucket; assigned neighborhood totals plus that bucket reconcile to city totals. The gaps are largest in 2011 and 2012.

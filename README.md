@@ -10,7 +10,9 @@ A local-first, provenance-aware web application for exploring reported crime acr
 - Fresher preliminary CPD neighborhood-report aggregates through 2026-08-22, with current/prior comparable YTD and adjacent 28-day periods.
 - STARS preserved as a separate offense-level layer through its own source cutoff.
 - Official 2020 City Planning population denominators and violent-crime rates per 1,000.
-- First validated historical full year (2025), with annual neighborhood aggregates and rates.
+- Calendar-year history for 2011–2025, plus same-date YTD comparisons through 2026.
+- Shared period/year controls across the map, rankings, comparisons, and neighborhood profiles.
+- Interactive citywide and neighborhood trend analysis with counts, fixed-2020 rates, year-over-year change, and a marked 2024 source transition.
 - Metric switching, stable URL state, sortable rankings, up-to-four-area comparison, and 50 statically generated detail pages.
 - Explicit PDI/STARS source adapters and June 2024 transition validation.
 - Versioned offense mapping, unmapped-category report, provenance register, data-status page, SQLite schema, and automated tests.
@@ -61,7 +63,7 @@ npm run data:refresh
 npm run data:validate
 ```
 
-`data:refresh` fetches aggregate—not address-level—STARS data, current CPD neighborhood reports, official population profiles, and the legacy PDI transition checks. Raw API responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
+`data:refresh` fetches aggregate—not address-level—STARS data, current CPD neighborhood reports, official population profiles, PDI/STARS annual history, same-date YTD history, and transition checks. Raw aggregate responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
 
 ## Database
 
@@ -111,7 +113,7 @@ The browser application deployed through GitHub Pages is the sole supported runt
 
 ## Historical roadmap
 
-The supported historical product window is **2011–present**. The machine-readable [coverage manifest](data/manifests/coverage.json) distinguishes source availability from publication readiness and defines the validation gates for enabling a year. The first validated full digital year, 2025, is published. The next phase validates the mixed-system 2024 transition, then works backward through PDI to 2011. Years before 2011 are out of scope, and missing observations are never treated as zero.
+The supported historical product window is **2011–present**. Complete calendar years 2011–2025 are enabled, and the trends view also compares January 1–August 22 across 2011–2026. The 2024 PDI/STARS transition is visibly marked. Historical observations use current 2020 SNA geography as a proxy; unresolved source rows remain citywide and unassigned rather than being fabricated or treated as zero. Years before 2011 are out of scope.
 
 ## Licensing and attribution
 

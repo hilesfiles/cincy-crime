@@ -6,8 +6,7 @@
 - Determine official treatment of the separate STARS Strangulation category.
 - Investigate the documented non-additive City Planning population-profile totals and evaluate a future exact Census-block spatial allocation without replacing the verified published denominators silently.
 - Implement idempotent incident-level full ingestion when needed; current public build uses aggregate JSON.
-- Import SNA 2010 and validate its use for the 2011–2023 PDI series.
-- Build the historical panel from the easiest recent digital years first, validate 2024's mixed-system boundary, then ingest and validate PDI annual neighborhood aggregates backward through 2011.
-- Harmonize the PDI/STARS category and neighborhood mappings across the June 2024 transition.
-- Add monthly/annual trend charts and enable each year only after its coverage gates pass.
+- Import SNA 2010 and evaluate native-vintage display as an alternative to the current 2020 proxy.
+- Investigate whether unresolved 2011–2012 PDI neighborhood rows can be recovered from an authoritative aggregate crosswalk without using or publishing address-level data.
+- Add monthly trends only after monthly coverage and transition validation are defined; annual and same-date YTD trends are now enabled.
 - Add a scheduled data-refresh workflow only after source update cadence and review gates are agreed.

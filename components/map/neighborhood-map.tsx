@@ -7,7 +7,7 @@ export type MapRegion = { id: string; slug: string; name: string; sourceName: st
 type MapData = { viewBox: string; sourceFeatureCount: number; regions: MapRegion[] };
 const palette = ["#e7efed", "#c7ded9", "#89bcb4", "#3e948b", "#08766e"];
 
-export function NeighborhoodMap({ data, metricValues, metricLabel = "Selected metric", formatValue = (value) => value?.toLocaleString() ?? "Unavailable", diverging = false, onSelect }: { data: MapData; metricValues?: Record<string, number | null>; metricLabel?: string; formatValue?: (value: number | null) => string; diverging?: boolean; onSelect?: (region: MapRegion) => void }) {
+export function NeighborhoodMap({ data, metricValues, metricLabel = "Selected metric", formatValue = (value) => value?.toLocaleString() ?? "Unavailable", diverging = false, profileQuery = "", onSelect }: { data: MapData; metricValues?: Record<string, number | null>; metricLabel?: string; formatValue?: (value: number | null) => string; diverging?: boolean; profileQuery?: string; onSelect?: (region: MapRegion) => void }) {
   const [hovered, setHovered] = useState<MapRegion | null>(null);
   const [selected, setSelected] = useState<MapRegion | null>(null);
   const active = hovered ?? selected;
@@ -31,7 +31,7 @@ export function NeighborhoodMap({ data, metricValues, metricLabel = "Selected me
         })}
       </svg>
       <div className="absolute bottom-4 left-4 right-4 flex min-h-[84px] items-center justify-between gap-4 rounded-sm border border-[#c9d7d5] bg-white/95 px-4 py-3 shadow-md sm:left-auto sm:w-[330px]" aria-live="polite">
-        {active ? <><div><p className="eyebrow">{metricLabel}</p><p className="mt-1 text-base font-bold text-[#143a4a]">{active.name}</p><p className="mt-0.5 text-sm font-black text-[#0a766e] tabular">{formatValue(metricValues?.[active.sourceName] ?? null)}</p>{active.members.length > 1 && <p className="mt-1 text-xs text-[#68797e]">Represents {active.members.join(" + ")}</p>}</div><Link href={`/neighborhood/${active.slug}`} className="shrink-0 rounded-sm bg-[#0a766e] px-3 py-2 text-xs font-bold text-white hover:bg-[#075f59]">Open profile →</Link></> : <div><p className="eyebrow">Explore the map</p><p className="mt-1 text-sm font-semibold text-[#53666d]">Hover, focus, or select any area</p></div>}
+        {active ? <><div><p className="eyebrow">{metricLabel}</p><p className="mt-1 text-base font-bold text-[#143a4a]">{active.name}</p><p className="mt-0.5 text-sm font-black text-[#0a766e] tabular">{formatValue(metricValues?.[active.sourceName] ?? null)}</p>{active.members.length > 1 && <p className="mt-1 text-xs text-[#68797e]">Represents {active.members.join(" + ")}</p>}</div><Link href={`/neighborhood/${active.slug}${profileQuery}`} className="shrink-0 rounded-sm bg-[#0a766e] px-3 py-2 text-xs font-bold text-white hover:bg-[#075f59]">Open profile →</Link></> : <div><p className="eyebrow">Explore the map</p><p className="mt-1 text-sm font-semibold text-[#53666d]">Hover, focus, or select any area</p></div>}
       </div>
     </div>
   );

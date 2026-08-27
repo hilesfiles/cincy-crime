@@ -1,0 +1,531 @@
+{
+  "generatedAt": "2026-08-27T01:34:56.360Z",
+  "status": "warning",
+  "annualYears": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "sameDateYtdYears": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "periodCount": 31,
+  "reconciledPeriods": 31,
+  "unmappedNeighborhoods": [
+    {
+      "periodType": "calendar_year",
+      "year": 2011,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 10920
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2012,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2012,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 7300
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2013,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 12
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2013,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 37
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2014,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2014,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 57
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2015,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 7
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2015,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 49
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2016,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 7
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2016,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 64
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2017,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 3
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2017,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 156
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2018,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2018,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 168
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2019,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 6
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2019,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 73
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2020,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2020,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 80
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2021,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2021,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 87
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2022,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2022,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 123
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2023,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2023,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 76
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2024,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2024,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 48
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2024,
+      "label": "CPD_STARS:(blank)",
+      "count": 105
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2025,
+      "label": "CPD_STARS:(blank)",
+      "count": 109
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2011,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 7296
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2012,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 4953
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2013,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 5
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2013,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 14
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2014,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 23
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2015,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 6
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2015,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 23
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2016,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 3
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2016,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 21
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2017,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 3
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2017,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 93
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2018,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 93
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2019,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 4
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2019,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 57
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2020,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 1
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2020,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 35
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2021,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2021,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 47
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2022,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 77
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2023,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 1
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2023,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 56
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2024,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2024,
+      "label": "CPD_PDI:N/A | N/A",
+      "count": 48
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2024,
+      "label": "CPD_STARS:(blank)",
+      "count": 50
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2025,
+      "label": "CPD_STARS:(blank)",
+      "count": 63
+    }
+  ],
+  "unmappedOffenses": [
+    {
+      "periodType": "calendar_year",
+      "year": 2011,
+      "label": "CPD_PDI:(blank)",
+      "count": 12
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2012,
+      "label": "CPD_PDI:(blank)",
+      "count": 27
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2013,
+      "label": "CPD_PDI:(blank)",
+      "count": 10
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2014,
+      "label": "CPD_PDI:(blank)",
+      "count": 6
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2015,
+      "label": "CPD_PDI:(blank)",
+      "count": 7
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2016,
+      "label": "CPD_PDI:(blank)",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2017,
+      "label": "CPD_PDI:(blank)",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2018,
+      "label": "CPD_PDI:(blank)",
+      "count": 1
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2019,
+      "label": "CPD_PDI:(blank)",
+      "count": 2
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2020,
+      "label": "CPD_PDI:(blank)",
+      "count": 16
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2021,
+      "label": "CPD_PDI:(blank)",
+      "count": 33
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2022,
+      "label": "CPD_PDI:(blank)",
+      "count": 24
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2023,
+      "label": "CPD_PDI:(blank)",
+      "count": 320
+    },
+    {
+      "periodType": "calendar_year",
+      "year": 2024,
+      "label": "CPD_PDI:(blank)",
+      "count": 148
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2011,
+      "label": "CPD_PDI:(blank)",
+      "count": 9
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2012,
+      "label": "CPD_PDI:(blank)",
+      "count": 12
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2013,
+      "label": "CPD_PDI:(blank)",
+      "count": 10
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2014,
+      "label": "CPD_PDI:(blank)",
+      "count": 5
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2015,
+      "label": "CPD_PDI:(blank)",
+      "count": 7
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2016,
+      "label": "CPD_PDI:(blank)",
+      "count": 1
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2017,
+      "label": "CPD_PDI:(blank)",
+      "count": 1
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2018,
+      "label": "CPD_PDI:(blank)",
+      "count": 1
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2020,
+      "label": "CPD_PDI:(blank)",
+      "count": 10
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2021,
+      "label": "CPD_PDI:(blank)",
+      "count": 13
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2022,
+      "label": "CPD_PDI:(blank)",
+      "count": 13
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2023,
+      "label": "CPD_PDI:(blank)",
+      "count": 168
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2024,
+      "label": "CPD_PDI:(blank)",
+      "count": 148
+    }
+  ]
+}
