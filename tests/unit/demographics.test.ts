@@ -16,4 +16,9 @@ describe("demographic denominator and uncertainty helpers", () => {
     expect(aggregateMarginOfError([{ weight: 1, marginOfError: null }])).toBeNull();
     expect(ratioMarginOfError({ estimate: 20, marginOfError: null }, { estimate: 100, marginOfError: 10 })).toBeNull();
   });
+
+  it("uses the Census proportion-MOE approximation for subset percentages", () => {
+    expect(ratioMarginOfError({ estimate: 20, marginOfError: 4 }, { estimate: 100, marginOfError: 10 })).toBeCloseTo(Math.sqrt(12), 6);
+    expect(ratioMarginOfError({ estimate: 90, marginOfError: 1 }, { estimate: 100, marginOfError: 10 })).toBeCloseTo(Math.sqrt(82), 6);
+  });
 });

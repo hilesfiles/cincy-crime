@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T04:41:39.141Z",
+  "generatedAt": "2026-08-27T07:05:04.083Z",
   "status": "warning",
   "checks": [
     {
@@ -34,8 +34,8 @@
     },
     {
       "id": "annual-population-series",
-      "status": "warning",
-      "detail": "51 2010 profiles + 51 2020 profiles; 48/50 regions with ACS/MOE"
+      "status": "pass",
+      "detail": "51 2010 profiles + 51 2020 profiles; 50/50 regions with ACS/MOE"
     },
     {
       "id": "election-panel",

@@ -69,7 +69,8 @@ test("dashboard map and routes work", async ({ page }) => {
   await page.getByLabel("Demographic area").selectOption("avondale");
   await expect(page.getByText(/Estimates with 90% margins of error/i)).toBeVisible();
   await page.getByLabel("Demographic area").selectOption("westwood");
-  await expect(page.getByText(/official SNA profile is image-only/i)).toBeVisible();
+  await expect(page.getByText("32,831", { exact: true })).toBeVisible();
+  await expect(page.getByText(/official SNA profile is image-only/i)).toHaveCount(0);
   await page.goto("/data-status/");
   await expect(page.getByRole("row", { name: /Historical same-date YTD/i })).toBeVisible();
   await expect(page.getByRole("row", { name: /General-election canvasses/i })).toBeVisible();

@@ -9,6 +9,8 @@ import population from "../../data/reports/population-validation.json";
 import unmapped from "../../data/reports/unmapped-offenses.json";
 import budget from "../../data/processed/budget/police-budget.json";
 import budgetValidation from "../../data/reports/budget-validation.json";
+import demographics from "../../data/processed/demographics/neighborhood-demographics.json";
+import demographicsValidation from "../../data/reports/demographics-validation.json";
 
 describe("processed data", () => {
   it("preserves the definitive 51-name to 50-feature crosswalk", () => {
@@ -23,6 +25,21 @@ describe("processed data", () => {
     expect(cpdReports.reportCount).toBe(51); expect(summary.neighborhoods).toHaveLength(map.regions.length); expect(summary.metadata.cutoff).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     expect(summary.neighborhoods.every((row) => row.population > 0 && typeof row.rates.violentYtdPer1000 === "number")).toBe(true);
     expect(population.civicProfileCount).toBe(51);
+  });
+  it("publishes complete ACS profiles with reconciled demographic universes", () => {
+    expect(demographicsValidation.status).toBe("pass");
+    expect(demographicsValidation.neighborhoodsWithAcs).toBe(50);
+    expect(demographicsValidation.invalidRatios).toEqual([]);
+    expect(demographicsValidation.housingIdentityFailures).toEqual([]);
+    expect(demographicsValidation.householdIdentityFailures).toEqual([]);
+    expect(demographics.neighborhoods.every((row) => row.latestAcs && row.latestAcs.measures.ownerOccupiedHousing.estimate + row.latestAcs.measures.renterOccupiedHousing.estimate === row.latestAcs.measures.occupiedHousingUnits.estimate)).toBe(true);
+    const byName = new Map(demographics.neighborhoods.map((row) => [row.name, row.latestAcs!.measures]));
+    expect(byName.get("Avondale")!.familiesBelowPoverty).toEqual({ estimate: 725, marginOfError: 221 });
+    expect(byName.get("CUF")!.familyHouseholds).toEqual({ estimate: 989, marginOfError: 194 });
+    expect(byName.get("CUF")!.bachelorsDegree).toEqual({ estimate: 1224, marginOfError: 256 });
+    expect(byName.get("Mt. Washington")!.graduateDegree).toEqual({ estimate: 1698, marginOfError: 280 });
+    expect(byName.get("West Price Hill")!.occupiedHousingUnits).toEqual({ estimate: 8108, marginOfError: 482 });
+    expect(byName.get("Westwood")!.acsPopulation).toEqual({ estimate: 32831, marginOfError: 2642 });
   });
   it("publishes validated annual and same-date historical periods", () => {
     expect(historical.metadata.annualYears).toEqual(Array.from({ length: 15 }, (_, index) => 2011 + index));

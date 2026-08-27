@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Visually transcribed 2016-2020 ACS estimate/MOE pairs for official City Planning SNA profiles whose table pages contain no extractable text. Values were independently checked against the cited PDF pages and remain separate from automated text extraction.",
+  "profiles": [
+    {
+      "name": "Sedamsville",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/planning/assets/Census/2020/Sedamsville.pdf",
+      "pageReferences": {
+        "acsPopulation": 4,
+        "households": 4,
+        "education25Plus": 5,
+        "bachelorsDegree": 5,
+        "graduateDegree": 5,
+        "familyHouseholds": 4,
+        "familiesBelowPoverty": 8,
+        "householdsNoVehicle": 8,
+        "occupiedHousingUnits": 9,
+        "ownerOccupiedHousing": 9,
+        "renterOccupiedHousing": 9,
+        "internetSubscription": 10
+      },
+      "measures": {
+        "acsPopulation": { "estimate": 1460, "marginOfError": 438 },
+        "households": { "estimate": 674, "marginOfError": 244 },
+        "education25Plus": { "estimate": 1078, "marginOfError": 390 },
+        "bachelorsDegree": { "estimate": 57, "marginOfError": 47 },
+        "graduateDegree": { "estimate": 22, "marginOfError": 27 },
+        "familyHouseholds": { "estimate": 423, "marginOfError": 245 },
+        "familiesBelowPoverty": { "estimate": 87, "marginOfError": 47 },
+        "householdsNoVehicle": { "estimate": 63, "marginOfError": 38 },
+        "occupiedHousingUnits": { "estimate": 674, "marginOfError": 244 },
+        "ownerOccupiedHousing": { "estimate": 215, "marginOfError": 71 },
+        "renterOccupiedHousing": { "estimate": 459, "marginOfError": 247 },
+        "internetSubscription": { "estimate": 434, "marginOfError": 87 }
+      }
+    },
+    {
+      "name": "Westwood",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/planning/assets/Census/2020/Westwood.pdf",
+      "pageReferences": {
+        "acsPopulation": 5,
+        "households": 6,
+        "education25Plus": 6,
+        "bachelorsDegree": 7,
+        "graduateDegree": 7,
+        "familyHouseholds": 6,
+        "familiesBelowPoverty": 11,
+        "householdsNoVehicle": 12,
+        "occupiedHousingUnits": 13,
+        "ownerOccupiedHousing": 13,
+        "renterOccupiedHousing": 13,
+        "internetSubscription": 14
+      },
+      "measures": {
+        "acsPopulation": { "estimate": 32831, "marginOfError": 2642 },
+        "households": { "estimate": 14435, "marginOfError": 994 },
+        "education25Plus": { "estimate": 21306, "marginOfError": 1474 },
+        "bachelorsDegree": { "estimate": 3487, "marginOfError": 642 },
+        "graduateDegree": { "estimate": 1600, "marginOfError": 384 },
+        "familyHouseholds": { "estimate": 6948, "marginOfError": 676 },
+        "familiesBelowPoverty": { "estimate": 1296, "marginOfError": 368 },
+        "householdsNoVehicle": { "estimate": 2726, "marginOfError": 578 },
+        "occupiedHousingUnits": { "estimate": 14435, "marginOfError": 994 },
+        "ownerOccupiedHousing": { "estimate": 4975, "marginOfError": 511 },
+        "renterOccupiedHousing": { "estimate": 9460, "marginOfError": 898 },
+        "internetSubscription": { "estimate": 12303, "marginOfError": 1010 }
+      }
+    }
+  ]
+}

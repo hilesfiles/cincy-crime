@@ -3,6 +3,7 @@ import path from "node:path";
 import { canonicalNeighborhoods, slugify } from "../../lib/geography/names";
 import { aggregateMarginOfError, interpolatePopulation, type DemographicEstimate, type DemographicsData, type PopulationObservation } from "../../lib/demographics";
 import { fetchBytes, mapWithConcurrency, pdfAllLines, pdfPageTokens, sha256 } from "./pdf-text";
+import imageProfileOverrides from "../../data/manifests/demographic-image-profile-overrides.json";
 
 type MapRegion = { id: string; slug: string; name: string; sourceName: string; number: number; members: string[] };
 type MapData = { regions: MapRegion[] };
@@ -54,30 +55,107 @@ function parsePopulation(tokens: string[], name: string) {
   return total;
 }
 
-function numericEstimate(lines: string[], label: string, occurrence = 0): DemographicEstimate {
+type EstimateCandidate = { value: DemographicEstimate; score: number };
+
+function parseEstimateLine(text: string): DemographicEstimate | null {
+  const values = [...text.matchAll(/(?<![$\d])\d[\d,]*/g)].map((match) => Number(match[0].replaceAll(",", "")));
+  const percent = /\d[\d,]*%/.test(text);
+  if (percent && values.length >= 3) return { estimate: values.at(-3)!, marginOfError: values.at(-2)! };
+  if (/\s-\s*$/.test(text) && values.length >= 2) return { estimate: values.at(-2)!, marginOfError: values.at(-1)! };
+  return null;
+}
+
+function numericEstimateCandidates(lines: string[], label: string, occurrence = 0): EstimateCandidate[] {
   const indexes = lines.map((line, index) => ({ line, index })).filter(({ line }) => line.toLowerCase().includes(label.toLowerCase()));
   const start = indexes[occurrence]?.index;
   if (start === undefined) throw new Error(`ACS profile row not found: ${label}`);
-  const parse = (text: string) => {
-    const values = [...text.matchAll(/(?<![$\d])\d[\d,]*/g)].map((match) => Number(match[0].replaceAll(",", "")));
-    const percent = /\d[\d,]*%/.test(text);
-    if (percent && values.length >= 3) return { estimate: values.at(-3)!, marginOfError: values.at(-2)! };
-    if (/\s-\s*$/.test(text) && values.length >= 2) return { estimate: values.at(-2)!, marginOfError: values.at(-1)! };
-    return null;
-  };
-  const previous = lines[start - 1] ?? "";
-  const candidates = [lines[start], ...(!/[A-Za-z]/.test(previous) ? [previous] : []), ...lines.slice(start + 1, start + 9)];
-  for (const candidate of candidates) {
-    const parsed = parse(candidate);
-    if (parsed) return parsed;
+  // The Planning PDFs do not have one stable text order. A wrapped table row can put
+  // its values on the label line, after the label, or immediately before it. Retain
+  // every nearby possibility and let the published table identities select the row.
+  const offsets = [0, 1, 2, 3, 4, 5, 6, 7, 8, -1, -2, -3, -4];
+  const preferImmediateBackward = new Set(["bachelor's degree", "graduate or professional", "total family households"]).has(label.toLowerCase());
+  const candidates = new Map<string, EstimateCandidate>();
+  for (const offset of offsets) {
+    const parsed = parseEstimateLine(lines[start + offset] ?? "");
+    if (!parsed) continue;
+    // These three rows are the known places where the PDF generator commonly emits
+    // the values immediately before the label. A forward value at the same distance
+    // still wins a tie, which preserves profiles whose text order is conventional.
+    const score = offset >= 0 ? offset : preferImmediateBackward ? Math.abs(offset) : 20 + Math.abs(offset);
+    const key = `${parsed.estimate}:${parsed.marginOfError}`;
+    const existing = candidates.get(key);
+    if (!existing || score < existing.score) candidates.set(key, { value: parsed, score });
   }
+  if (candidates.size) return [...candidates.values()].sort((a, b) => a.score - b.score);
   throw new Error(`ACS profile values not parsed: ${label}`);
 }
 
-function sectionEstimate(lines: string[], section: string, label: string) {
+function sectionEstimateCandidates(lines: string[], section: string, label: string) {
   const sectionIndex = lines.findIndex((line) => line.toLowerCase().includes(section.toLowerCase()));
   if (sectionIndex < 0) throw new Error(`ACS profile section not found: ${section}`);
-  return numericEstimate(lines.slice(sectionIndex, sectionIndex + 140), label);
+  return numericEstimateCandidates(lines.slice(sectionIndex, sectionIndex + 140), label);
+}
+
+function firstCandidate(candidates: EstimateCandidate[]) {
+  return candidates[0].value;
+}
+
+function subsetCandidate(candidates: EstimateCandidate[], denominator: number) {
+  return (candidates.find((candidate) => candidate.value.estimate <= denominator) ?? candidates[0]).value;
+}
+
+function resolveTextProfileMeasures(lines: string[]) {
+  const candidates = {
+    acsPopulation: sectionEstimateCandidates(lines, "HOUSEHOLD BY RELATIONSHIP", "Total"),
+    households: sectionEstimateCandidates(lines, "INCOME", "Total Households"),
+    education25Plus: sectionEstimateCandidates(lines, "EDUCATIONAL ATTAINMENT", "Total"),
+    bachelorsDegree: sectionEstimateCandidates(lines, "EDUCATIONAL ATTAINMENT", "Bachelor's degree"),
+    graduateDegree: sectionEstimateCandidates(lines, "EDUCATIONAL ATTAINMENT", "Graduate or professional"),
+    familyHouseholds: sectionEstimateCandidates(lines, "POVERTY STATUS", "Total family households"),
+    familiesBelowPoverty: sectionEstimateCandidates(lines, "POVERTY STATUS", "Family households with income"),
+    householdsNoVehicle: sectionEstimateCandidates(lines, "VEHICLES AVAILABLE", "No vehicle available"),
+    occupiedHousingUnits: sectionEstimateCandidates(lines, "HOUSING TENURE", "Total Occupied Housing Units"),
+    ownerOccupiedHousing: sectionEstimateCandidates(lines, "HOUSING TENURE", "Owner Occupied"),
+    renterOccupiedHousing: sectionEstimateCandidates(lines, "HOUSING TENURE", "Renter Occupied"),
+    internetSubscription: sectionEstimateCandidates(lines, "INTERNET SUBSCRIPTIONS IN", "With an internet subscription"),
+  };
+
+  let bestHousing: { score: number; households: DemographicEstimate; occupied: DemographicEstimate; owner: DemographicEstimate; renter: DemographicEstimate } | null = null;
+  for (const households of candidates.households) for (const occupied of candidates.occupiedHousingUnits) {
+    if (households.value.estimate !== occupied.value.estimate) continue;
+    for (const owner of candidates.ownerOccupiedHousing) for (const renter of candidates.renterOccupiedHousing) {
+      if (owner.value.estimate + renter.value.estimate !== occupied.value.estimate) continue;
+      const score = households.score + occupied.score + owner.score + renter.score;
+      if (!bestHousing || score < bestHousing.score) bestHousing = { score, households: households.value, occupied: occupied.value, owner: owner.value, renter: renter.value };
+    }
+  }
+  if (!bestHousing) throw new Error("ACS housing rows do not reconcile: households = occupied = owner + renter");
+
+  const acsPopulation = firstCandidate(candidates.acsPopulation);
+  const educationTotals = candidates.education25Plus.filter((candidate) => candidate.value.estimate <= acsPopulation.estimate);
+  let bestEducation: { score: number; total: DemographicEstimate; bachelors: DemographicEstimate; graduate: DemographicEstimate } | null = null;
+  for (const total of educationTotals) for (const bachelors of candidates.bachelorsDegree) for (const graduate of candidates.graduateDegree) {
+    if (bachelors.value.estimate + graduate.value.estimate > total.value.estimate) continue;
+    const score = total.score + bachelors.score + graduate.score;
+    if (!bestEducation || score < bestEducation.score) bestEducation = { score, total: total.value, bachelors: bachelors.value, graduate: graduate.value };
+  }
+  if (!bestEducation) throw new Error("ACS education rows do not reconcile: bachelor's + graduate must not exceed population age 25+");
+
+  const familyHouseholds = subsetCandidate(candidates.familyHouseholds, bestHousing.households.estimate);
+  return {
+    acsPopulation,
+    households: bestHousing.households,
+    education25Plus: bestEducation.total,
+    bachelorsDegree: bestEducation.bachelors,
+    graduateDegree: bestEducation.graduate,
+    familyHouseholds,
+    familiesBelowPoverty: subsetCandidate(candidates.familiesBelowPoverty, familyHouseholds.estimate),
+    householdsNoVehicle: subsetCandidate(candidates.householdsNoVehicle, bestHousing.households.estimate),
+    occupiedHousingUnits: bestHousing.occupied,
+    ownerOccupiedHousing: bestHousing.owner,
+    renterOccupiedHousing: bestHousing.renter,
+    internetSubscription: subsetCandidate(candidates.internetSubscription, bestHousing.households.estimate),
+  };
 }
 
 async function fetchOfficialSnaAcsProfiles(population2020: Population2020) {
@@ -85,27 +163,24 @@ async function fetchOfficialSnaAcsProfiles(population2020: Population2020) {
   const links = [{ name: "Citywide", sourceUrl: citywideUrl }, ...population2020.civicNeighborhoods.map(({ name, sourceUrl }) => ({ name, sourceUrl }))];
   const profiles = await mapWithConcurrency(links, 5, async (link) => {
     const bytes = await fetchBytes(link.sourceUrl);
-    const lines = await pdfAllLines(bytes, 2);
+    const manual = imageProfileOverrides.profiles.find((profile) => profile.name === link.name);
     let measures: Record<string, DemographicEstimate>;
-    try { measures = {
-      acsPopulation: sectionEstimate(lines, "HOUSEHOLD BY RELATIONSHIP", "Total"),
-      households: sectionEstimate(lines, "INCOME", "Total Households"),
-      education25Plus: sectionEstimate(lines, "EDUCATIONAL ATTAINMENT", "Total"),
-      bachelorsDegree: sectionEstimate(lines, "EDUCATIONAL ATTAINMENT", "Bachelor's degree"),
-      graduateDegree: sectionEstimate(lines, "EDUCATIONAL ATTAINMENT", "Graduate or professional"),
-      familyHouseholds: sectionEstimate(lines, "POVERTY STATUS", "Total family households"),
-      familiesBelowPoverty: sectionEstimate(lines, "POVERTY STATUS", "Family households with income"),
-      householdsNoVehicle: sectionEstimate(lines, "VEHICLES AVAILABLE", "No vehicle available"),
-      occupiedHousingUnits: sectionEstimate(lines, "HOUSING TENURE", "Total Occupied Housing Units"),
-      ownerOccupiedHousing: sectionEstimate(lines, "HOUSING TENURE", "Owner Occupied"),
-      renterOccupiedHousing: sectionEstimate(lines, "HOUSING TENURE", "Renter Occupied"),
-      internetSubscription: sectionEstimate(lines, "INTERNET SUBSCRIPTIONS IN", "With an internet subscription"),
-    }; } catch (error) {
-      if (["Sedamsville", "Westwood"].includes(link.name)) return { name: link.name, sourceUrl: link.sourceUrl, checksumSha256: sha256(bytes), measures: null, extractionNote: "The official table is image-only; ACS values remain unavailable rather than being inferred." };
-      throw new Error(`${link.name}: ${error instanceof Error ? error.message : String(error)}`);
+    let extractionMethod: string;
+    let pageReferences: Record<string, number> | undefined;
+    if (manual) {
+      if (manual.sourceUrl !== link.sourceUrl) throw new Error(`${link.name}: manual profile source URL does not match the fetched official PDF`);
+      measures = Object.fromEntries(Object.entries(manual.measures).map(([key, value]) => [key, { estimate: value.estimate, marginOfError: value.marginOfError }]));
+      extractionMethod = "manual_visual_transcription_double_checked";
+      pageReferences = manual.pageReferences;
+    } else {
+      const lines = await pdfAllLines(bytes, 2);
+      try { measures = resolveTextProfileMeasures(lines); } catch (error) {
+        throw new Error(`${link.name}: ${error instanceof Error ? error.message : String(error)}`);
+      }
+      extractionMethod = "pdf_text_row_candidates_reconciled";
     }
     measures.bachelorsOrHigher = { estimate: measures.bachelorsDegree.estimate + measures.graduateDegree.estimate, marginOfError: aggregateMarginOfError([{ weight: 1, marginOfError: measures.bachelorsDegree.marginOfError }, { weight: 1, marginOfError: measures.graduateDegree.marginOfError }]) };
-    return { name: link.name, sourceUrl: link.sourceUrl, checksumSha256: sha256(bytes), measures };
+    return { name: link.name, sourceUrl: link.sourceUrl, checksumSha256: sha256(bytes), measures, extractionMethod, pageReferences };
   });
   return profiles;
 }
@@ -172,8 +247,8 @@ export async function fetchDemographics() {
   const output: DemographicsData = {
     metadata: {
       generatedAt, geographyVersion: "SNA_2020", decennialAnchors: [2010, 2020], acsYears: [2020], latestAcsYear: latestYear, currentPopulationYear: latestYear, currentPopulationMethod: "decennial_carry_forward",
-      allocationMethod: "The City Planning SNA profiles publish tract-level 2016-2020 ACS estimates already aggregated to each neighborhood approximation. Combined map regions sum their civic-member estimates.",
-      marginOfErrorMethod: "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares; these derived margins are approximate.",
+      allocationMethod: "The City Planning SNA profiles publish 2016-2020 ACS estimates already aggregated to each neighborhood approximation, including documented partial-tract and block-group components. Combined map regions sum their civic-member estimates. The annual population denominator series is not presented as annual ACS: 2011-2019 is a documented interpolation between Decennial Census anchors and 2021 onward carries the 2020 anchor forward.",
+      marginOfErrorMethod: "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares. Derived percentages use the Census proportion approximation (subtraction for a subset numerator, with the ratio formula only when the subtraction would be negative).",
       measures: Object.fromEntries(Object.entries(profileMeasures).map(([key, value]) => [key, { label: value.label, universe: value.universe, kind: "count" as const }])),
       sources: [{ label: "Cincinnati City Planning 2010 SNA profiles", url: planning2010 }, { label: "Cincinnati City Planning 2020 SNA profiles", url: "https://www.cincinnati-oh.gov/planning/resources/census/2020/" }, { label: "Census ACS 5-year program", url: "https://www.census.gov/programs-surveys/acs/data.html" }],
     },
@@ -181,12 +256,28 @@ export async function fetchDemographics() {
     neighborhoods,
   };
   const subsetPairs = [["bachelorsOrHigher", "education25Plus"], ["familiesBelowPoverty", "familyHouseholds"], ["householdsNoVehicle", "households"], ["ownerOccupiedHousing", "occupiedHousingUnits"], ["renterOccupiedHousing", "occupiedHousingUnits"], ["internetSubscription", "households"]] as const;
-  const invalidRatios = neighborhoods.flatMap((row) => row.latestAcs ? subsetPairs.filter(([numerator, denominator]) => row.latestAcs!.measures[numerator].estimate > row.latestAcs!.measures[denominator].estimate * 1.02).map(([numerator, denominator]) => ({ neighborhood: row.name, numerator, denominator })) : []);
+  const invalidRatios = neighborhoods.flatMap((row) => row.latestAcs ? subsetPairs.filter(([numerator, denominator]) => row.latestAcs!.measures[numerator].estimate > row.latestAcs!.measures[denominator].estimate).map(([numerator, denominator]) => ({ neighborhood: row.name, numerator, denominator })) : []);
+  const housingIdentityFailures = neighborhoods.flatMap((row) => {
+    if (!row.latestAcs) return [];
+    const measures = row.latestAcs.measures;
+    const difference = measures.ownerOccupiedHousing.estimate + measures.renterOccupiedHousing.estimate - measures.occupiedHousingUnits.estimate;
+    return difference === 0 ? [] : [{ neighborhood: row.name, difference }];
+  });
+  const householdIdentityFailures = neighborhoods.flatMap((row) => {
+    if (!row.latestAcs) return [];
+    const measures = row.latestAcs.measures;
+    const difference = measures.households.estimate - measures.occupiedHousingUnits.estimate;
+    return difference === 0 ? [] : [{ neighborhood: row.name, difference }];
+  });
+  const coverageComplete = neighborhoods.length === 50 && neighborhoods.every((row) => row.latestAcs && row.population.length >= 17 && row.population.every((item) => item.estimate > 0));
   const validation = {
-    generatedAt, status: neighborhoods.length === 50 && neighborhoods.every((row) => row.population.length >= 17 && row.population.every((item) => item.estimate > 0)) && invalidRatios.length === 0 ? neighborhoods.every((row) => row.latestAcs) ? "pass" : "warning" : "fail",
+    generatedAt, status: coverageComplete && invalidRatios.length === 0 && housingIdentityFailures.length === 0 && householdIdentityFailures.length === 0 ? "pass" : "fail",
     census2010Profiles: population2010.civicNeighborhoods.length, census2020Profiles: population2020.civicNeighborhoods.length, snaRegions: neighborhoods.length, officialAcsProfiles: officialAcsProfiles.length,
     acsYears: [2020], latestAcsYear: latestYear,
-    neighborhoodsWithAcs: neighborhoods.filter((row) => row.latestAcs).length, unavailableAcsNeighborhoods: neighborhoods.filter((row) => !row.latestAcs).map((row) => row.name), invalidRatios, allocationMethod: output.metadata.allocationMethod, marginOfErrorMethod: output.metadata.marginOfErrorMethod,
+    neighborhoodsWithAcs: neighborhoods.filter((row) => row.latestAcs).length, unavailableAcsNeighborhoods: neighborhoods.filter((row) => !row.latestAcs).map((row) => row.name),
+    automatedTextProfiles: officialAcsProfiles.filter((row) => row.extractionMethod === "pdf_text_row_candidates_reconciled").length,
+    manuallyTranscribedProfiles: officialAcsProfiles.filter((row) => row.extractionMethod === "manual_visual_transcription_double_checked").map((row) => row.name),
+    invalidRatios, housingIdentityFailures, householdIdentityFailures, allocationMethod: output.metadata.allocationMethod, marginOfErrorMethod: output.metadata.marginOfErrorMethod,
   };
   await Promise.all([mkdir(path.join(root, "data/processed/demographics"), { recursive: true }), mkdir(path.join(root, "public/data"), { recursive: true }), mkdir(path.join(root, "data/reports"), { recursive: true })]);
   await Promise.all([

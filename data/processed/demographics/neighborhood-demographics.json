@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-27T03:25:31.038Z",
+    "generatedAt": "2026-08-27T07:03:11.901Z",
     "geographyVersion": "SNA_2020",
     "decennialAnchors": [
       2010,
@@ -12,8 +12,8 @@
     "latestAcsYear": 2020,
     "currentPopulationYear": 2020,
     "currentPopulationMethod": "decennial_carry_forward",
-    "allocationMethod": "The City Planning SNA profiles publish tract-level 2016-2020 ACS estimates already aggregated to each neighborhood approximation. Combined map regions sum their civic-member estimates.",
-    "marginOfErrorMethod": "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares; these derived margins are approximate.",
+    "allocationMethod": "The City Planning SNA profiles publish 2016-2020 ACS estimates already aggregated to each neighborhood approximation, including documented partial-tract and block-group components. Combined map regions sum their civic-member estimates. The annual population denominator series is not presented as annual ACS: 2011-2019 is a documented interpolation between Decennial Census anchors and 2021 onward carries the 2020 anchor forward.",
+    "marginOfErrorMethod": "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares. Derived percentages use the Census proportion approximation (subtraction for a subset numerator, with the ratio formula only when the subtraction would be negative).",
     "measures": {
       "acsPopulation": {
         "label": "ACS population estimate",
@@ -222,8 +222,8 @@
       "year": 2020,
       "measures": {
         "acsPopulation": {
-          "estimate": 302687,
-          "marginOfError": 84
+          "estimate": 289567,
+          "marginOfError": 993
         },
         "households": {
           "estimate": 138696,
@@ -438,8 +438,8 @@
             "marginOfError": 319
           },
           "familiesBelowPoverty": {
-            "estimate": 2222,
-            "marginOfError": 319
+            "estimate": 725,
+            "marginOfError": 221
           },
           "householdsNoVehicle": {
             "estimate": 2608,
@@ -597,8 +597,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 7276,
-            "marginOfError": 782
+            "estimate": 7118,
+            "marginOfError": 774
           },
           "households": {
             "estimate": 3243,
@@ -971,16 +971,16 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 1128,
-            "marginOfError": 221
+            "estimate": 782,
+            "marginOfError": 166
           },
           "households": {
             "estimate": 412,
             "marginOfError": 108
           },
           "education25Plus": {
-            "estimate": 895,
-            "marginOfError": 171
+            "estimate": 286,
+            "marginOfError": 86
           },
           "bachelorsDegree": {
             "estimate": 130,
@@ -999,8 +999,8 @@
             "marginOfError": 50
           },
           "familiesBelowPoverty": {
-            "estimate": 179,
-            "marginOfError": 50
+            "estimate": 31,
+            "marginOfError": 31
           },
           "householdsNoVehicle": {
             "estimate": 38,
@@ -1158,7 +1158,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 3021,
+            "estimate": 3013,
             "marginOfError": 569
           },
           "households": {
@@ -1174,12 +1174,12 @@
             "marginOfError": 96
           },
           "graduateDegree": {
-            "estimate": 166,
-            "marginOfError": 96
+            "estimate": 46,
+            "marginOfError": 34
           },
           "bachelorsOrHigher": {
-            "estimate": 332,
-            "marginOfError": 136
+            "estimate": 212,
+            "marginOfError": 102
           },
           "familyHouseholds": {
             "estimate": 712,
@@ -1198,12 +1198,12 @@
             "marginOfError": 165
           },
           "ownerOccupiedHousing": {
-            "estimate": 1040,
-            "marginOfError": 165
-          },
-          "renterOccupiedHousing": {
             "estimate": 521,
             "marginOfError": 173
+          },
+          "renterOccupiedHousing": {
+            "estimate": 519,
+            "marginOfError": 137
           },
           "internetSubscription": {
             "estimate": 866,
@@ -1357,24 +1357,24 @@
             "marginOfError": 457
           },
           "bachelorsDegree": {
-            "estimate": 303,
-            "marginOfError": 133
-          },
-          "graduateDegree": {
             "estimate": 1744,
             "marginOfError": 268
           },
+          "graduateDegree": {
+            "estimate": 2217,
+            "marginOfError": 281
+          },
           "bachelorsOrHigher": {
-            "estimate": 2047,
-            "marginOfError": 299
+            "estimate": 3961,
+            "marginOfError": 388
           },
           "familyHouseholds": {
             "estimate": 1655,
             "marginOfError": 229
           },
           "familiesBelowPoverty": {
-            "estimate": 1655,
-            "marginOfError": 229
+            "estimate": 87,
+            "marginOfError": 55
           },
           "householdsNoVehicle": {
             "estimate": 532,
@@ -1385,12 +1385,12 @@
             "marginOfError": 320
           },
           "ownerOccupiedHousing": {
-            "estimate": 4118,
-            "marginOfError": 320
-          },
-          "renterOccupiedHousing": {
             "estimate": 1427,
             "marginOfError": 170
+          },
+          "renterOccupiedHousing": {
+            "estimate": 2691,
+            "marginOfError": 304
           },
           "internetSubscription": {
             "estimate": 3627,
@@ -1544,24 +1544,24 @@
             "marginOfError": 862
           },
           "bachelorsDegree": {
-            "estimate": 1014,
-            "marginOfError": 214
-          },
-          "graduateDegree": {
             "estimate": 1971,
             "marginOfError": 378
           },
+          "graduateDegree": {
+            "estimate": 1219,
+            "marginOfError": 236
+          },
           "bachelorsOrHigher": {
-            "estimate": 2985,
-            "marginOfError": 434
+            "estimate": 3190,
+            "marginOfError": 446
           },
           "familyHouseholds": {
             "estimate": 3928,
             "marginOfError": 383
           },
           "familiesBelowPoverty": {
-            "estimate": 3928,
-            "marginOfError": 383
+            "estimate": 472,
+            "marginOfError": 173
           },
           "householdsNoVehicle": {
             "estimate": 914,
@@ -1572,12 +1572,12 @@
             "marginOfError": 448
           },
           "ownerOccupiedHousing": {
-            "estimate": 7263,
-            "marginOfError": 448
-          },
-          "renterOccupiedHousing": {
             "estimate": 4168,
             "marginOfError": 414
+          },
+          "renterOccupiedHousing": {
+            "estimate": 3095,
+            "marginOfError": 312
           },
           "internetSubscription": {
             "estimate": 5943,
@@ -1747,8 +1747,8 @@
             "marginOfError": 64
           },
           "familiesBelowPoverty": {
-            "estimate": 275,
-            "marginOfError": 64
+            "estimate": 0,
+            "marginOfError": 12
           },
           "householdsNoVehicle": {
             "estimate": 7,
@@ -1759,8 +1759,8 @@
             "marginOfError": 95
           },
           "ownerOccupiedHousing": {
-            "estimate": 684,
-            "marginOfError": 95
+            "estimate": 428,
+            "marginOfError": 80
           },
           "renterOccupiedHousing": {
             "estimate": 256,
@@ -1906,7 +1906,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 4310,
+            "estimate": 4197,
             "marginOfError": 558
           },
           "households": {
@@ -1922,12 +1922,12 @@
             "marginOfError": 111
           },
           "graduateDegree": {
-            "estimate": 373,
-            "marginOfError": 111
+            "estimate": 287,
+            "marginOfError": 77
           },
           "bachelorsOrHigher": {
-            "estimate": 746,
-            "marginOfError": 157
+            "estimate": 660,
+            "marginOfError": 135
           },
           "familyHouseholds": {
             "estimate": 225,
@@ -2093,8 +2093,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 16792,
-            "marginOfError": 1050
+            "estimate": 11870,
+            "marginOfError": 944
           },
           "households": {
             "estimate": 5439,
@@ -2280,8 +2280,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 3906,
-            "marginOfError": 492
+            "estimate": 3793,
+            "marginOfError": 491
           },
           "households": {
             "estimate": 2639,
@@ -2320,12 +2320,12 @@
             "marginOfError": 273
           },
           "ownerOccupiedHousing": {
-            "estimate": 2639,
-            "marginOfError": 273
-          },
-          "renterOccupiedHousing": {
             "estimate": 266,
             "marginOfError": 74
+          },
+          "renterOccupiedHousing": {
+            "estimate": 2373,
+            "marginOfError": 268
           },
           "internetSubscription": {
             "estimate": 2521,
@@ -2467,7 +2467,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 1462,
+            "estimate": 1447,
             "marginOfError": 184
           },
           "households": {
@@ -2666,24 +2666,24 @@
             "marginOfError": 1618
           },
           "bachelorsDegree": {
-            "estimate": 606,
-            "marginOfError": 182
-          },
-          "graduateDegree": {
             "estimate": 953,
             "marginOfError": 216
           },
+          "graduateDegree": {
+            "estimate": 445,
+            "marginOfError": 116
+          },
           "bachelorsOrHigher": {
-            "estimate": 1559,
-            "marginOfError": 282
+            "estimate": 1398,
+            "marginOfError": 245
           },
           "familyHouseholds": {
             "estimate": 3502,
             "marginOfError": 825
           },
           "familiesBelowPoverty": {
-            "estimate": 3502,
-            "marginOfError": 825
+            "estimate": 940,
+            "marginOfError": 223
           },
           "householdsNoVehicle": {
             "estimate": 1263,
@@ -2694,12 +2694,12 @@
             "marginOfError": 862
           },
           "ownerOccupiedHousing": {
-            "estimate": 6063,
-            "marginOfError": 862
-          },
-          "renterOccupiedHousing": {
             "estimate": 2471,
             "marginOfError": 838
+          },
+          "renterOccupiedHousing": {
+            "estimate": 3592,
+            "marginOfError": 383
           },
           "internetSubscription": {
             "estimate": 5078,
@@ -2841,8 +2841,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 3859,
-            "marginOfError": 344
+            "estimate": 3699,
+            "marginOfError": 337
           },
           "households": {
             "estimate": 2364,
@@ -2873,8 +2873,8 @@
             "marginOfError": 28
           },
           "householdsNoVehicle": {
-            "estimate": 243,
-            "marginOfError": 78
+            "estimate": 1191,
+            "marginOfError": 148
           },
           "occupiedHousingUnits": {
             "estimate": 2364,
@@ -3028,8 +3028,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 2961,
-            "marginOfError": 773
+            "estimate": 2954,
+            "marginOfError": 776
           },
           "households": {
             "estimate": 1431,
@@ -3040,16 +3040,16 @@
             "marginOfError": 357
           },
           "bachelorsDegree": {
-            "estimate": 188,
-            "marginOfError": 104
-          },
-          "graduateDegree": {
             "estimate": 39,
             "marginOfError": 38
           },
+          "graduateDegree": {
+            "estimate": 25,
+            "marginOfError": 28
+          },
           "bachelorsOrHigher": {
-            "estimate": 227,
-            "marginOfError": 111
+            "estimate": 64,
+            "marginOfError": 47
           },
           "familyHouseholds": {
             "estimate": 807,
@@ -3216,8 +3216,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 1998,
-            "marginOfError": 413
+            "estimate": 1945,
+            "marginOfError": 410
           },
           "households": {
             "estimate": 960,
@@ -3415,24 +3415,24 @@
             "marginOfError": 451
           },
           "bachelorsDegree": {
-            "estimate": 283,
-            "marginOfError": 97
-          },
-          "graduateDegree": {
             "estimate": 874,
             "marginOfError": 157
           },
+          "graduateDegree": {
+            "estimate": 436,
+            "marginOfError": 108
+          },
           "bachelorsOrHigher": {
-            "estimate": 1157,
-            "marginOfError": 185
+            "estimate": 1310,
+            "marginOfError": 191
           },
           "familyHouseholds": {
             "estimate": 1360,
             "marginOfError": 263
           },
           "familiesBelowPoverty": {
-            "estimate": 1360,
-            "marginOfError": 263
+            "estimate": 143,
+            "marginOfError": 116
           },
           "householdsNoVehicle": {
             "estimate": 714,
@@ -3443,12 +3443,12 @@
             "marginOfError": 299
           },
           "ownerOccupiedHousing": {
-            "estimate": 2971,
-            "marginOfError": 299
-          },
-          "renterOccupiedHousing": {
             "estimate": 1528,
             "marginOfError": 251
+          },
+          "renterOccupiedHousing": {
+            "estimate": 1443,
+            "marginOfError": 193
           },
           "internetSubscription": {
             "estimate": 2378,
@@ -3590,8 +3590,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 5213,
-            "marginOfError": 843
+            "estimate": 5057,
+            "marginOfError": 842
           },
           "households": {
             "estimate": 2384,
@@ -3789,24 +3789,24 @@
             "marginOfError": 825
           },
           "bachelorsDegree": {
-            "estimate": 331,
-            "marginOfError": 123
-          },
-          "graduateDegree": {
             "estimate": 4047,
             "marginOfError": 469
           },
+          "graduateDegree": {
+            "estimate": 4094,
+            "marginOfError": 500
+          },
           "bachelorsOrHigher": {
-            "estimate": 4378,
-            "marginOfError": 485
+            "estimate": 8141,
+            "marginOfError": 686
           },
           "familyHouseholds": {
             "estimate": 3200,
             "marginOfError": 326
           },
           "familiesBelowPoverty": {
-            "estimate": 3200,
-            "marginOfError": 326
+            "estimate": 90,
+            "marginOfError": 94
           },
           "householdsNoVehicle": {
             "estimate": 196,
@@ -3817,12 +3817,12 @@
             "marginOfError": 430
           },
           "ownerOccupiedHousing": {
-            "estimate": 6632,
-            "marginOfError": 430
-          },
-          "renterOccupiedHousing": {
             "estimate": 3989,
             "marginOfError": 372
+          },
+          "renterOccupiedHousing": {
+            "estimate": 2643,
+            "marginOfError": 315
           },
           "internetSubscription": {
             "estimate": 6315,
@@ -3964,8 +3964,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 5020,
-            "marginOfError": 727
+            "estimate": 4994,
+            "marginOfError": 726
           },
           "households": {
             "estimate": 2564,
@@ -4339,8 +4339,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 2264,
-            "marginOfError": 495
+            "estimate": 1698,
+            "marginOfError": 310
           },
           "households": {
             "estimate": 738,
@@ -4526,8 +4526,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 17964,
-            "marginOfError": 1175
+            "estimate": 17715,
+            "marginOfError": 1170
           },
           "households": {
             "estimate": 8366,
@@ -4713,8 +4713,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 2263,
-            "marginOfError": 541
+            "estimate": 2251,
+            "marginOfError": 542
           },
           "households": {
             "estimate": 893,
@@ -5087,7 +5087,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 8802,
+            "estimate": 8752,
             "marginOfError": 1170
           },
           "households": {
@@ -5119,8 +5119,8 @@
             "marginOfError": 238
           },
           "householdsNoVehicle": {
-            "estimate": 861,
-            "marginOfError": 238
+            "estimate": 1431,
+            "marginOfError": 311
           },
           "occupiedHousingUnits": {
             "estimate": 3739,
@@ -5274,8 +5274,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 4632,
-            "marginOfError": 514
+            "estimate": 4266,
+            "marginOfError": 505
           },
           "households": {
             "estimate": 2374,
@@ -5461,8 +5461,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 5280,
-            "marginOfError": 688
+            "estimate": 5275,
+            "marginOfError": 687
           },
           "households": {
             "estimate": 2266,
@@ -5473,16 +5473,16 @@
             "marginOfError": 424
           },
           "bachelorsDegree": {
-            "estimate": 257,
-            "marginOfError": 292
+            "estimate": 1439,
+            "marginOfError": 242
           },
           "graduateDegree": {
             "estimate": 1420,
             "marginOfError": 264
           },
           "bachelorsOrHigher": {
-            "estimate": 1677,
-            "marginOfError": 394
+            "estimate": 2859,
+            "marginOfError": 358
           },
           "familyHouseholds": {
             "estimate": 1424,
@@ -5660,24 +5660,24 @@
             "marginOfError": 797
           },
           "bachelorsDegree": {
-            "estimate": 844,
-            "marginOfError": 201
+            "estimate": 3233,
+            "marginOfError": 528
           },
           "graduateDegree": {
             "estimate": 1698,
             "marginOfError": 280
           },
           "bachelorsOrHigher": {
-            "estimate": 2542,
-            "marginOfError": 345
+            "estimate": 4931,
+            "marginOfError": 598
           },
           "familyHouseholds": {
             "estimate": 3806,
             "marginOfError": 439
           },
           "familiesBelowPoverty": {
-            "estimate": 3806,
-            "marginOfError": 439
+            "estimate": 300,
+            "marginOfError": 157
           },
           "householdsNoVehicle": {
             "estimate": 586,
@@ -5688,12 +5688,12 @@
             "marginOfError": 464
           },
           "ownerOccupiedHousing": {
-            "estimate": 7165,
-            "marginOfError": 464
-          },
-          "renterOccupiedHousing": {
             "estimate": 4466,
             "marginOfError": 424
+          },
+          "renterOccupiedHousing": {
+            "estimate": 2699,
+            "marginOfError": 324
           },
           "internetSubscription": {
             "estimate": 6416,
@@ -5835,7 +5835,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 3373,
+            "estimate": 3352,
             "marginOfError": 918
           },
           "households": {
@@ -6022,8 +6022,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 1554,
-            "marginOfError": 380
+            "estimate": 1501,
+            "marginOfError": 377
           },
           "households": {
             "estimate": 709,
@@ -6209,7 +6209,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 7789,
+            "estimate": 7772,
             "marginOfError": 583
           },
           "households": {
@@ -6396,7 +6396,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 11753,
+            "estimate": 11515,
             "marginOfError": 836
           },
           "households": {
@@ -6583,8 +6583,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 5407,
-            "marginOfError": 537
+            "estimate": 4822,
+            "marginOfError": 430
           },
           "households": {
             "estimate": 2800,
@@ -7144,8 +7144,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 8166,
-            "marginOfError": 820
+            "estimate": 8003,
+            "marginOfError": 819
           },
           "households": {
             "estimate": 4162,
@@ -7371,8 +7371,8 @@
             "marginOfError": 60
           },
           "ownerOccupiedHousing": {
-            "estimate": 506,
-            "marginOfError": 60
+            "estimate": 182,
+            "marginOfError": 49
           },
           "renterOccupiedHousing": {
             "estimate": 324,
@@ -7515,7 +7515,63 @@
           "sourceVintage": 2020
         }
       ],
-      "latestAcs": null
+      "latestAcs": {
+        "year": 2020,
+        "measures": {
+          "acsPopulation": {
+            "estimate": 2363,
+            "marginOfError": 475
+          },
+          "households": {
+            "estimate": 1180,
+            "marginOfError": 251
+          },
+          "education25Plus": {
+            "estimate": 1807,
+            "marginOfError": 415
+          },
+          "bachelorsDegree": {
+            "estimate": 154,
+            "marginOfError": 64
+          },
+          "graduateDegree": {
+            "estimate": 74,
+            "marginOfError": 40
+          },
+          "bachelorsOrHigher": {
+            "estimate": 228,
+            "marginOfError": 76
+          },
+          "familyHouseholds": {
+            "estimate": 636,
+            "marginOfError": 253
+          },
+          "familiesBelowPoverty": {
+            "estimate": 89,
+            "marginOfError": 47
+          },
+          "householdsNoVehicle": {
+            "estimate": 71,
+            "marginOfError": 40
+          },
+          "occupiedHousingUnits": {
+            "estimate": 1180,
+            "marginOfError": 251
+          },
+          "ownerOccupiedHousing": {
+            "estimate": 397,
+            "marginOfError": 86
+          },
+          "renterOccupiedHousing": {
+            "estimate": 783,
+            "marginOfError": 256
+          },
+          "internetSubscription": {
+            "estimate": 857,
+            "marginOfError": 116
+          }
+        }
+      }
     },
     {
       "id": "CIN-SNA-002",
@@ -7650,8 +7706,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 8119,
-            "marginOfError": 1050
+            "estimate": 7705,
+            "marginOfError": 1035
           },
           "households": {
             "estimate": 3692,
@@ -7666,12 +7722,12 @@
             "marginOfError": 269
           },
           "graduateDegree": {
-            "estimate": 679,
-            "marginOfError": 269
+            "estimate": 212,
+            "marginOfError": 127
           },
           "bachelorsOrHigher": {
-            "estimate": 1358,
-            "marginOfError": 380
+            "estimate": 891,
+            "marginOfError": 297
           },
           "familyHouseholds": {
             "estimate": 1836,
@@ -7837,7 +7893,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 2993,
+            "estimate": 2988,
             "marginOfError": 432
           },
           "households": {
@@ -7853,12 +7909,12 @@
             "marginOfError": 123
           },
           "graduateDegree": {
-            "estimate": 297,
-            "marginOfError": 123
+            "estimate": 195,
+            "marginOfError": 64
           },
           "bachelorsOrHigher": {
-            "estimate": 594,
-            "marginOfError": 174
+            "estimate": 492,
+            "marginOfError": 139
           },
           "familyHouseholds": {
             "estimate": 871,
@@ -8211,8 +8267,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 1843,
-            "marginOfError": 397
+            "estimate": 1657,
+            "marginOfError": 384
           },
           "households": {
             "estimate": 853,
@@ -8398,7 +8454,7 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 2239,
+            "estimate": 2229,
             "marginOfError": 460
           },
           "households": {
@@ -8772,8 +8828,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 6382,
-            "marginOfError": 721
+            "estimate": 6174,
+            "marginOfError": 710
           },
           "households": {
             "estimate": 3777,
@@ -8959,8 +9015,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 7723,
-            "marginOfError": 1265
+            "estimate": 7648,
+            "marginOfError": 1266
           },
           "households": {
             "estimate": 3512,
@@ -9146,8 +9202,8 @@
         "year": 2020,
         "measures": {
           "acsPopulation": {
-            "estimate": 19408,
-            "marginOfError": 1558
+            "estimate": 19287,
+            "marginOfError": 1556
           },
           "households": {
             "estimate": 8108,
@@ -9329,7 +9385,63 @@
           "sourceVintage": 2020
         }
       ],
-      "latestAcs": null
+      "latestAcs": {
+        "year": 2020,
+        "measures": {
+          "acsPopulation": {
+            "estimate": 32831,
+            "marginOfError": 2642
+          },
+          "households": {
+            "estimate": 14435,
+            "marginOfError": 994
+          },
+          "education25Plus": {
+            "estimate": 21306,
+            "marginOfError": 1474
+          },
+          "bachelorsDegree": {
+            "estimate": 3487,
+            "marginOfError": 642
+          },
+          "graduateDegree": {
+            "estimate": 1600,
+            "marginOfError": 384
+          },
+          "bachelorsOrHigher": {
+            "estimate": 5087,
+            "marginOfError": 748
+          },
+          "familyHouseholds": {
+            "estimate": 6948,
+            "marginOfError": 676
+          },
+          "familiesBelowPoverty": {
+            "estimate": 1296,
+            "marginOfError": 368
+          },
+          "householdsNoVehicle": {
+            "estimate": 2726,
+            "marginOfError": 578
+          },
+          "occupiedHousingUnits": {
+            "estimate": 14435,
+            "marginOfError": 994
+          },
+          "ownerOccupiedHousing": {
+            "estimate": 4975,
+            "marginOfError": 511
+          },
+          "renterOccupiedHousing": {
+            "estimate": 9460,
+            "marginOfError": 898
+          },
+          "internetSubscription": {
+            "estimate": 12303,
+            "marginOfError": 1010
+          }
+        }
+      }
     },
     {
       "id": "CIN-SNA-036",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-27T03:25:31.038Z",
-  "status": "warning",
+  "generatedAt": "2026-08-27T07:03:11.901Z",
+  "status": "pass",
   "census2010Profiles": 51,
   "census2020Profiles": 51,
   "snaRegions": 50,
@@ -9,12 +9,16 @@
     2020
   ],
   "latestAcsYear": 2020,
-  "neighborhoodsWithAcs": 48,
-  "unavailableAcsNeighborhoods": [
-    "Riverside / Sedamsville",
+  "neighborhoodsWithAcs": 50,
+  "unavailableAcsNeighborhoods": [],
+  "automatedTextProfiles": 50,
+  "manuallyTranscribedProfiles": [
+    "Sedamsville",
     "Westwood"
   ],
   "invalidRatios": [],
-  "allocationMethod": "The City Planning SNA profiles publish tract-level 2016-2020 ACS estimates already aggregated to each neighborhood approximation. Combined map regions sum their civic-member estimates.",
-  "marginOfErrorMethod": "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares; these derived margins are approximate."
+  "housingIdentityFailures": [],
+  "householdIdentityFailures": [],
+  "allocationMethod": "The City Planning SNA profiles publish 2016-2020 ACS estimates already aggregated to each neighborhood approximation, including documented partial-tract and block-group components. Combined map regions sum their civic-member estimates. The annual population denominator series is not presented as annual ACS: 2011-2019 is a documented interpolation between Decennial Census anchors and 2021 onward carries the 2020 anchor forward.",
+  "marginOfErrorMethod": "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares. Derived percentages use the Census proportion approximation (subtraction for a subset numerator, with the ratio formula only when the subtraction would be negative)."
 }

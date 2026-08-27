@@ -51,8 +51,15 @@ export function aggregateMarginOfError(parts: Array<{ weight: number; marginOfEr
 export function ratioMarginOfError(numerator: DemographicEstimate, denominator: DemographicEstimate) {
   if (numerator.marginOfError === null || denominator.marginOfError === null || denominator.estimate <= 0) return null;
   const ratio = numerator.estimate / denominator.estimate;
-  const variance = (numerator.marginOfError / denominator.estimate) ** 2 + (ratio * denominator.marginOfError / denominator.estimate) ** 2;
-  return Math.sqrt(variance) * 100;
+  // Every percentage displayed by the demographic cards is a proportion: the
+  // numerator is a subset of the denominator. Census guidance uses subtraction
+  // to approximate its variance. If covariance makes that term negative, Census
+  // directs users to fall back to the general ratio (addition) formula.
+  const numeratorVariance = numerator.marginOfError ** 2;
+  const denominatorVariance = (ratio * denominator.marginOfError) ** 2;
+  const variance = numeratorVariance - denominatorVariance;
+  const adjustedVariance = variance >= 0 ? variance : numeratorVariance + denominatorVariance;
+  return Math.sqrt(adjustedVariance) / denominator.estimate * 100;
 }
 
 export function populationForYear(data: DemographicsData, regionId: string | "citywide", year: number) {
