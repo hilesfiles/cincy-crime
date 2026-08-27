@@ -5,13 +5,16 @@ Updated: 2026-08-26
 ## Application status
 
 - Static Next.js dashboard builds successfully for GitHub Pages.
-- Official vector map, five map metrics, selection, stable URL state, rankings, comparison, detail, methodology, source, trends, and data-status routes are implemented.
+- Official vector map, signed change/count/rate measures, selection, stable URL state, rankings, comparison, detail, methodology, source, trends, and data-status routes are implemented.
 - Current views use all 51 preliminary CPD neighborhood reports through 2026-08-22; reports were updated 2026-08-24.
 - STARS offense-level aggregates remain separate and available through 2026-06-23.
 - Official 2020 population profiles and violent-crime rates per 1,000 are implemented.
 - The historical artifact publishes 15 complete calendar years (2011–2025) and 16 same-date YTD periods (2011–2026), with unresolved neighborhood rows retained explicitly.
 - Period/year switchers are implemented on the explorer, rankings, comparisons, and all neighborhood profiles.
-- The trends page provides area, metric, period-basis, count/rate, and year-over-year analysis with an annotated 2024 source transition.
+- A shared crime-type selector drives the explorer, rankings, comparisons, profiles, and trends; long-running discrete categories begin in 2011 and source-specific categories remain unavailable before 2024.
+- The trends page provides area, crime type, period-basis, count/rate, and year-over-year analysis with an annotated 2024 source transition.
+- Change maps use a consistent zero-centered green-decrease/red-increase severity lattice and exact signed values.
+- Data Status reads coverage dates, counts, validation timestamps, and warnings from generated manifests and reports.
 - PDI and STARS adapters exist; the June 2024 transition is explicit.
 - SQLite migrations and deterministic seed data are implemented.
 - GitHub Pages is the sole supported runtime. Electron packaging was retired after v0.1.2; historical desktop downloads are unsupported.

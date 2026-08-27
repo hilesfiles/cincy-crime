@@ -12,7 +12,9 @@ A local-first, provenance-aware web application for exploring reported crime acr
 - Official 2020 City Planning population denominators and violent-crime rates per 1,000.
 - Calendar-year history for 2011–2025, plus same-date YTD comparisons through 2026.
 - Shared period/year controls across the map, rankings, comparisons, and neighborhood profiles.
+- Shared crime-type controls for Part I totals, violent/property groupings, and discrete offenses across every analysis route.
 - Interactive citywide and neighborhood trend analysis with counts, fixed-2020 rates, year-over-year change, and a marked 2024 source transition.
+- Zero-centered change choropleth with green decreases, red increases, exact signed tooltips, and a graduated severity legend.
 - Metric switching, stable URL state, sortable rankings, up-to-four-area comparison, and 50 statically generated detail pages.
 - Explicit PDI/STARS source adapters and June 2024 transition validation.
 - Versioned offense mapping, unmapped-category report, provenance register, data-status page, SQLite schema, and automated tests.
@@ -113,7 +115,7 @@ The browser application deployed through GitHub Pages is the sole supported runt
 
 ## Historical roadmap
 
-The supported historical product window is **2011–present**. Complete calendar years 2011–2025 are enabled, and the trends view also compares January 1–August 22 across 2011–2026. The 2024 PDI/STARS transition is visibly marked. Historical observations use current 2020 SNA geography as a proxy; unresolved source rows remain citywide and unassigned rather than being fabricated or treated as zero. Years before 2011 are out of scope.
+The supported historical product window is **2011–present**. Complete calendar years 2011–2025 are enabled, and the trends view also compares January 1–August 22 across 2011–2026. Long-running discrete categories begin in 2011; motor-vehicle theft and Strangulation are separately selectable only from the 2024 source transition onward. Earlier unsupported values remain unavailable, not zero. The 2024 PDI/STARS transition is visibly marked. Historical observations use current 2020 SNA geography as a proxy; unresolved source rows remain citywide and unassigned rather than being fabricated or treated as zero. Years before 2011 are out of scope.
 
 ## Licensing and attribution
 

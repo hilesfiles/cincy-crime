@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="border-b border-[#cfe0dd] bg-[#f0f8f6]"><div className="mx-auto flex max-w-[1480px] items-start gap-3 px-5 py-3 text-xs leading-5 text-[#315e59] lg:px-9"><span className="mt-1 size-2 shrink-0 rounded-full bg-[#087e74]" /><p><strong>Geography crosswalk resolved:</strong> 51 civic-neighborhood reports map to 50 CAGIS polygons. Three combined polygons sum their member neighborhoods; source records remain separate and traceable.</p></div></div>
+        <div className="h-12 border-b border-[#cfe0dd] bg-[#f0f8f6]" aria-hidden="true" />
         <ExplorerDashboard mapData={mapData} currentSummary={summary} starsSummary={offenseDetail} historical={historical} />
       </main>
       <SiteFooter />

@@ -19,5 +19,5 @@ export default async function NeighborhoodPage({ params }: { params: Promise<{ s
   const historical = JSON.parse(await readFile(path.join(process.cwd(), "data/processed/crime/historical-annual-ui.json"), "utf8")) as HistoricalData;
   const neighborhoodSummary = { ...summary, neighborhoods: [row] };
   const neighborhoodHistorical = { ...historical, periods: { annual: historical.periods.annual.map((period) => ({ ...period, neighborhoods: period.neighborhoods.filter((item) => item.slug === slug) })), sameDateYtd: [] } };
-  return <PageShell eyebrow="Statistical area profile" title={row.name} description="Switch between the fresher current YTD aggregate and validated calendar-year history from 2011–2025."><NeighborhoodProfile slug={slug} currentSummary={neighborhoodSummary} historical={neighborhoodHistorical} mapData={mapData} /></PageShell>;
+  return <PageShell eyebrow="Statistical area profile" title={row.name} description="Explore aggregate and discrete offense types in the fresher current YTD layer or validated calendar-year history from 2011–2025."><NeighborhoodProfile slug={slug} currentSummary={neighborhoodSummary} historical={neighborhoodHistorical} mapData={mapData} /></PageShell>;
 }

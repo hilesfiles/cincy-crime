@@ -8,7 +8,7 @@ The current Villages at Roll Hill source PDF (published under the legacy report 
 
 ## Taxonomy
 
-The current aggregate view uses each report's published `Part 1 Violent`, `Part 1 Property`, and `Part 1 Total` values. Component categories remain traceable. STARS mappings preserve homicide, rape, robbery, aggravated assault, property categories, and Strangulation as its own source category until official cross-system comparability is established.
+The current aggregate view uses each report's published `Part 1 Violent`, `Part 1 Property`, and `Part 1 Total` values. Component categories remain traceable and selectable sitewide. Larceny/theft combines the current report's Theft from Auto and Personal/Other Theft components so it aligns with the canonical STARS category; motor-vehicle theft remains separate. STARS mappings preserve homicide, rape, robbery, aggravated assault, property categories, and Strangulation as its own source category until official cross-system comparability is established.
 
 Every source label must map or appear in `data/reports/unmapped-offenses.json`.
 
@@ -26,7 +26,7 @@ Counts, absolute change, percent change, and rates stay distinguishable.
 
 ## Population and rates
 
-Violent crime per 1,000 is `current YTD Part 1 Violent / 2020 population × 1,000`. Denominators come from the official City Planning 2020 neighborhood profiles. For combined map regions, member report counts and member profile populations are summed. The 51 published neighborhood totals do not reconcile to the direct published Citywide total; therefore neighborhood rates use each neighborhood profile while the citywide rate uses the direct Citywide population. That reconciliation remains a published warning.
+Any selected crime-type rate per 1,000 is `selected-period count / 2020 population × 1,000`. Denominators come from the official City Planning 2020 neighborhood profiles. For combined map regions, member report counts and member profile populations are summed. The 51 published neighborhood totals do not reconcile to the direct published Citywide total; therefore neighborhood rates use each neighborhood profile while the citywide rate uses the direct Citywide population. That reconciliation remains a published warning.
 
 ## June 2024 transition
 
@@ -43,5 +43,7 @@ Source URLs, retrieval times, checksums, queries, mapping version, and validatio
 ## Historical publication order
 
 Complete calendar years 2011–2025 are published. Comparable YTD trends use January 1–August 22 for 2011–2026, so a partial current year is never compared with a full historical year. PDI supplies 2011 through June 2, 2024; STARS begins June 3, 2024. The mixed 2024 year is annotated in charts and tables.
+
+Homicide, rape, robbery, aggravated assault, burglary, and larceny/theft are available across the 2011–present panel. Motor-vehicle theft and Strangulation become separately available with the 2024 STARS transition. Unsupported earlier observations remain null/unavailable and are never converted to zero. Change maps use fixed signed rate bands centered on zero: green indicates decreases and red indicates increases, with stronger saturation for larger absolute changes.
 
 PDI geography resolves the source SNA field first, then the CPD-neighborhood and community-council fields. Historical values are displayed on current 2020 SNA geography as a proxy. Rows still lacking a resolvable neighborhood remain in an explicit citywide unassigned bucket; assigned neighborhood totals plus that bucket reconcile to city totals. The gaps are largest in 2011 and 2012.
