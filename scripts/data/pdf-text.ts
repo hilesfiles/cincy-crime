@@ -23,6 +23,41 @@ export async function pdfPageTokens(bytes: Uint8Array, pageNumber = 1) {
     .filter(Boolean);
 }
 
+export async function pdfPageLines(bytes: Uint8Array, pageNumber = 1) {
+  const document = await getDocument({ data: bytes.slice(), useSystemFonts: true }).promise;
+  if (pageNumber > document.numPages) throw new Error(`PDF has ${document.numPages} pages; requested page ${pageNumber}`);
+  const page = await document.getPage(pageNumber);
+  const content = await page.getTextContent();
+  const rows = new Map<number, Array<{ x: number; text: string }>>();
+  for (const item of content.items) {
+    if (!("str" in item) || !item.str.trim() || !("transform" in item)) continue;
+    const y = Math.round(item.transform[5] * 2) / 2;
+    const row = rows.get(y) ?? [];
+    row.push({ x: item.transform[4], text: item.str.trim() });
+    rows.set(y, row);
+  }
+  return [...rows.entries()].sort((a, b) => b[0] - a[0]).map(([, row]) => row.sort((a, b) => a.x - b.x).map((item) => item.text).join(" ").replace(/\s+/g, " ").trim());
+}
+
+export async function pdfAllLines(bytes: Uint8Array, startPage = 1) {
+  const document = await getDocument({ data: bytes.slice(), useSystemFonts: true }).promise;
+  const output: string[] = [];
+  for (let pageNumber = Math.max(1, startPage); pageNumber <= document.numPages; pageNumber++) {
+    const page = await document.getPage(pageNumber);
+    const content = await page.getTextContent();
+    const rows = new Map<number, Array<{ x: number; text: string }>>();
+    for (const item of content.items) {
+      if (!("str" in item) || !item.str.trim() || !("transform" in item)) continue;
+      const y = Math.round(item.transform[5] * 2) / 2;
+      const row = rows.get(y) ?? [];
+      row.push({ x: item.transform[4], text: item.str.trim() });
+      rows.set(y, row);
+    }
+    output.push(...[...rows.entries()].sort((a, b) => b[0] - a[0]).map(([, row]) => row.sort((a, b) => a.x - b.x).map((item) => item.text).join(" ").replace(/\s+/g, " ").trim()));
+  }
+  return output;
+}
+
 export async function mapWithConcurrency<T, R>(items: T[], concurrency: number, fn: (item: T, index: number) => Promise<R>) {
   const results = new Array<R>(items.length);
   let cursor = 0;

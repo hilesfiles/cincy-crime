@@ -9,18 +9,19 @@ A local-first, provenance-aware web application for exploring reported crime acr
 - Interactive, keyboard-accessible vector map generated from the official CAGIS SNA source.
 - Fresher preliminary CPD neighborhood-report aggregates through 2026-08-22, with current/prior comparable YTD and adjacent 28-day periods.
 - STARS preserved as a separate offense-level layer through its own source cutoff.
-- Official 2020 City Planning population denominators and violent-crime rates per 1,000.
+- Official 2010/2020 City Planning population anchors, a documented annual denominator series, and crime rates per 1,000.
+- Neighborhood demographics with official 2016–2020 ACS 5-year estimates and published 90% margins of error.
 - Calendar-year history for 2011–2025, plus same-date YTD comparisons through 2026.
 - Shared period/year controls across the map, rankings, comparisons, and neighborhood profiles.
 - Shared crime-type controls for Part I totals, violent/property groupings, and discrete offenses across every analysis route.
-- Interactive citywide and neighborhood trend analysis with counts, fixed-2020 rates, year-over-year change, and a marked 2024 source transition.
-- Zero-centered change choropleth with green decreases, red increases, exact signed tooltips, and a graduated severity legend.
+- Interactive citywide and neighborhood trend analysis with counts, annual-denominator rates, year-over-year change, and a marked 2024 source transition.
+- Zero-centered directional choropleth for every map measure: green decreases, red increases, gray near-zero values, hatched unavailable values, exact signed tooltips, and a graduated severity legend.
 - Metric switching, stable URL state, sortable rankings, up-to-four-area comparison, and 50 statically generated detail pages.
 - Explicit PDI/STARS source adapters and June 2024 transition validation.
 - Versioned offense mapping, unmapped-category report, provenance register, data-status page, SQLite schema, and automated tests.
 - GitHub Pages deployment from `.github/workflows/deploy-pages.yml`.
 
-No synthetic crime or population values are used.
+No crime values are fabricated. Modeled population values are limited to the explicitly labeled 2011–2019 linear interpolation and post-2020 carry-forward.
 
 ## Important geography result
 
@@ -65,7 +66,7 @@ npm run data:refresh
 npm run data:validate
 ```
 
-`data:refresh` fetches aggregate—not address-level—STARS data, current CPD neighborhood reports, official population profiles, PDI/STARS annual history, same-date YTD history, and transition checks. Raw aggregate responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
+`data:refresh` fetches aggregate—not address-level—STARS data, current CPD neighborhood reports, official 2010/2020 population and ACS profiles, PDI/STARS annual history, same-date YTD history, and transition checks. Raw aggregate responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
 
 ## Database
 
@@ -97,7 +98,8 @@ The validation command treats source-integrity failures as fatal. The documented
 - Part I violent is derived from STARS `type = Part 1 Violent`. Strangulation remains separately preserved pending official cross-system comparability review.
 - PDI and STARS are separate source systems and are never naively concatenated.
 - Current dashboard views use preliminary CPD neighborhood-report aggregates; STARS remains the separately labeled offense-level source.
-- Violent-crime rates use official 2020 City Planning neighborhood-profile populations. Citywide rates use the direct Citywide profile.
+- Historical rates use the selected year’s denominator: official 2010/2020 Census anchors, linear interpolation for 2011–2019, and a clearly labeled 2020 carry-forward afterward. Citywide rates use direct Citywide anchors.
+- ACS demographic cards retain published 90% MOEs. Derived percentage and combined-region MOEs are visibly labeled approximate.
 
 See [docs/DATA_METHODOLOGY.md](docs/DATA_METHODOLOGY.md) and [docs/SOURCE_REGISTER.md](docs/SOURCE_REGISTER.md).
 

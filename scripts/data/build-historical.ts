@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { sourceOffenseMappings } from "../../config/crime-taxonomy";
 import { ratePer1000 } from "../../lib/analytics/periods";
+import type { DemographicsData, PopulationObservation } from "../../lib/demographics";
 
 type PdiRow = { year: string; sna_neighborhood?: string; cpd_neighborhood?: string; community_council_neighborhood?: string; ucr_group?: string; count: string };
 type StarsRow = { year: string; sna_neighborhood?: string; stars_category?: string; type?: string; count: string };
@@ -9,7 +10,6 @@ type PeriodRows<T> = { period: "same_date_ytd"; year: number; start: string; end
 type RawHistorical = { metadata: { retrievedAt: string; comparisonMonthDay: string }; annual: { pdiRows: PdiRow[]; starsRows: StarsRow[] }; sameDateYtd: { pdiPeriods: Array<PeriodRows<PdiRow>>; starsPeriods: Array<PeriodRows<StarsRow>> } };
 type MapRegion = { id: string; slug: string; name: string; sourceName: string; members: string[] };
 type MapData = { regions: MapRegion[] };
-type PopulationData = { metadata: { populationYear: number; citywidePopulation: number }; snaRegions: Array<{ id: string; population: number }> };
 type Counts = { violent: number; property: number; totalPart1: number; categories: Record<string, number> };
 type CpdSummary = { metadata: { cutoff: string; retrievedAt: string }; city: { currentYtd: Counts; population: number; rates: { violentYtdPer1000: number | null } }; neighborhoods: Array<{ id: string; slug: string; name: string; sourceName: string; members: string[]; currentYtd: Counts; population: number; populationYear: number; rates: { violentYtdPer1000: number | null } }> };
 
@@ -71,8 +71,8 @@ function regionLookup(regions: MapRegion[]) {
   return lookup;
 }
 
-function buildPeriod(options: { year: number; periodType: "calendar_year" | "same_date_ytd"; start: string; end: string; pdiRows: PdiRow[]; starsRows: StarsRow[]; regions: MapRegion[]; populationByRegion: Map<string, number>; populationYear: number }) {
-  const { year, periodType, start, end, pdiRows, starsRows, regions, populationByRegion, populationYear } = options;
+function buildPeriod(options: { year: number; periodType: "calendar_year" | "same_date_ytd"; start: string; end: string; pdiRows: PdiRow[]; starsRows: StarsRow[]; regions: MapRegion[]; populationByRegion: Map<string, PopulationObservation>; cityPopulation: PopulationObservation }) {
+  const { year, periodType, start, end, pdiRows, starsRows, regions, populationByRegion, cityPopulation } = options;
   const lookup = regionLookup(regions);
   const byRegion = new Map(regions.map((region) => [region.id, emptyCounts()]));
   const city = emptyCounts();
@@ -96,8 +96,9 @@ function buildPeriod(options: { year: number; periodType: "calendar_year" | "sam
   starsRows.forEach((row) => process("CPD_STARS", row));
   const neighborhoods = regions.map((region) => {
     const counts = byRegion.get(region.id)!;
-    const population = populationByRegion.get(region.id) ?? null;
-    return { id: region.id, slug: region.slug, name: region.name, sourceName: region.sourceName, members: region.members, counts, population, populationYear, rates: { violentPer1000: ratePer1000(counts.violent, population) } };
+    const denominator = populationByRegion.get(region.id) ?? null;
+    const population = denominator?.estimate ?? null;
+    return { id: region.id, slug: region.slug, name: region.name, sourceName: region.sourceName, members: region.members, counts, population, populationYear: denominator?.year ?? year, populationMarginOfError: denominator?.marginOfError ?? null, populationMethod: denominator?.method ?? "unavailable", rates: { violentPer1000: ratePer1000(counts.violent, population) } };
   });
   const assigned = emptyCounts();
   neighborhoods.forEach((row) => mergeCounts(assigned, row.counts));
@@ -109,8 +110,8 @@ function buildPeriod(options: { year: number; periodType: "calendar_year" | "sam
     status: sourceSystems.length > 1 ? "validated_mixed_system_transition" : unmappedNeighborhoods.size || unmappedOffenses.size ? "validated_with_reported_gaps" : "validated",
     sourceSystems,
     sourceGrain: sourceSystems.length > 1 ? "mixed incident and offense rows" : sourceSystems[0] === "CPD_PDI" ? "reported crime incident rows" : "STARS offense rows",
-    city, assignedNeighborhoodTotal: assigned, unassigned, populationYear,
-    rates: { violentPer1000: null as number | null },
+    city, assignedNeighborhoodTotal: assigned, unassigned, populationYear: cityPopulation.year, cityPopulation: cityPopulation.estimate, populationMarginOfError: cityPopulation.marginOfError, populationMethod: cityPopulation.method,
+    rates: { violentPer1000: ratePer1000(city.violent, cityPopulation.estimate) },
     reconciliation: { status: "pass", rule: "assigned neighborhood totals plus unassigned rows equal city totals" },
     unmappedNeighborhoods: [...unmappedNeighborhoods].map(([label, count]) => ({ label, count })),
     unmappedOffenses: [...unmappedOffenses].map(([label, count]) => ({ label, count })),
@@ -121,33 +122,34 @@ function buildPeriod(options: { year: number; periodType: "calendar_year" | "sam
 export async function buildHistorical() {
   const root = process.cwd();
   const generatedAt = new Date().toISOString();
-  const [raw, map, population, cpd] = await Promise.all([
+  const [raw, map, demographics, cpd] = await Promise.all([
     readFile(path.join(root, "data/raw/crime/historical/annual-source-aggregates.json"), "utf8").then(JSON.parse) as Promise<RawHistorical>,
     readFile(path.join(root, "data/processed/geography/neighborhood-map.json"), "utf8").then(JSON.parse) as Promise<MapData>,
-    readFile(path.join(root, "data/processed/demographics/population-2020.json"), "utf8").then(JSON.parse) as Promise<PopulationData>,
+    readFile(path.join(root, "data/processed/demographics/neighborhood-demographics.json"), "utf8").then(JSON.parse) as Promise<DemographicsData>,
     readFile(path.join(root, "data/processed/crime/cpd-neighborhood-summary.json"), "utf8").then(JSON.parse) as Promise<CpdSummary>,
   ]);
-  const populationByRegion = new Map(population.snaRegions.map((row) => [row.id, row.population]));
-  const annual = Array.from({ length: 15 }, (_, index) => 2011 + index).map((year) => buildPeriod({ year, periodType: "calendar_year", start: `${year}-01-01`, end: `${year}-12-31`, regions: map.regions, populationByRegion, populationYear: population.metadata.populationYear, pdiRows: raw.annual.pdiRows.filter((row) => Number(row.year) === year), starsRows: raw.annual.starsRows.filter((row) => Number(row.year) === year) }));
+  const denominators = (year: number) => ({ populationByRegion: new Map(demographics.neighborhoods.map((row) => [row.id, row.population.find((item) => item.year === year)!])), cityPopulation: demographics.citywide.population.find((item) => item.year === year)! });
+  const annual = Array.from({ length: 15 }, (_, index) => 2011 + index).map((year) => buildPeriod({ year, periodType: "calendar_year", start: `${year}-01-01`, end: `${year}-12-31`, regions: map.regions, ...denominators(year), pdiRows: raw.annual.pdiRows.filter((row) => Number(row.year) === year), starsRows: raw.annual.starsRows.filter((row) => Number(row.year) === year) }));
   const sameDateYtd = Array.from({ length: 15 }, (_, index) => 2011 + index).map((year) => {
     const pdi = raw.sameDateYtd.pdiPeriods.find((period) => period.year === year);
     const stars = raw.sameDateYtd.starsPeriods.find((period) => period.year === year);
-    return buildPeriod({ year, periodType: "same_date_ytd", start: `${year}-01-01`, end: `${year}-${raw.metadata.comparisonMonthDay}`, regions: map.regions, populationByRegion, populationYear: population.metadata.populationYear, pdiRows: pdi?.rows ?? [], starsRows: stars?.rows ?? [] });
+    return buildPeriod({ year, periodType: "same_date_ytd", start: `${year}-01-01`, end: `${year}-${raw.metadata.comparisonMonthDay}`, regions: map.regions, ...denominators(year), pdiRows: pdi?.rows ?? [], starsRows: stars?.rows ?? [] });
   });
+  const currentYear = Number(cpd.metadata.cutoff.slice(0, 4));
+  const currentDenominators = denominators(currentYear);
   sameDateYtd.push({
-    year: Number(cpd.metadata.cutoff.slice(0, 4)), periodType: "same_date_ytd", start: `${cpd.metadata.cutoff.slice(0, 4)}-01-01`, end: cpd.metadata.cutoff, status: "validated_fresher_aggregate", sourceSystems: ["CPD_NEIGHBORHOOD_REPORTS"], sourceGrain: "preliminary CPD aggregate offense counts",
-    city: cloneCounts(cpd.city.currentYtd), assignedNeighborhoodTotal: cloneCounts(cpd.city.currentYtd), unassigned: emptyCounts(), populationYear: population.metadata.populationYear, rates: { violentPer1000: ratePer1000(cpd.city.currentYtd.violent, population.metadata.citywidePopulation) },
-    reconciliation: { status: "pass", rule: "51 civic reports aggregate to 50 mapped regions and city totals" }, unmappedNeighborhoods: [], unmappedOffenses: [], neighborhoods: cpd.neighborhoods.map((row) => ({ id: row.id, slug: row.slug, name: row.name, sourceName: row.sourceName, members: row.members, counts: cloneCounts(row.currentYtd), population: row.population, populationYear: row.populationYear, rates: { violentPer1000: row.rates.violentYtdPer1000 } })),
+    year: currentYear, periodType: "same_date_ytd", start: `${currentYear}-01-01`, end: cpd.metadata.cutoff, status: "validated_fresher_aggregate", sourceSystems: ["CPD_NEIGHBORHOOD_REPORTS"], sourceGrain: "preliminary CPD aggregate offense counts",
+    city: cloneCounts(cpd.city.currentYtd), assignedNeighborhoodTotal: cloneCounts(cpd.city.currentYtd), unassigned: emptyCounts(), populationYear: currentDenominators.cityPopulation.year, cityPopulation: currentDenominators.cityPopulation.estimate, populationMarginOfError: currentDenominators.cityPopulation.marginOfError, populationMethod: currentDenominators.cityPopulation.method, rates: { violentPer1000: ratePer1000(cpd.city.currentYtd.violent, currentDenominators.cityPopulation.estimate) },
+    reconciliation: { status: "pass", rule: "51 civic reports aggregate to 50 mapped regions and city totals" }, unmappedNeighborhoods: [], unmappedOffenses: [], neighborhoods: cpd.neighborhoods.map((row) => { const denominator = currentDenominators.populationByRegion.get(row.id); return { id: row.id, slug: row.slug, name: row.name, sourceName: row.sourceName, members: row.members, counts: cloneCounts(row.currentYtd), population: denominator?.estimate ?? null, populationYear: denominator?.year ?? currentYear, populationMarginOfError: denominator?.marginOfError ?? null, populationMethod: denominator?.method ?? "unavailable", rates: { violentPer1000: ratePer1000(row.currentYtd.violent, denominator?.estimate ?? null) } }; }),
   });
-  for (const period of [...annual, ...sameDateYtd]) period.rates.violentPer1000 = ratePer1000(period.city.violent, population.metadata.citywidePopulation);
   const output = {
-    metadata: { generatedAt, sourceRetrievedAt: raw.metadata.retrievedAt, geographyVersion: "SNA_2020", populationYear: population.metadata.populationYear, annualYears: annual.map((row) => row.year), sameDateYtdYears: sameDateYtd.map((row) => row.year), sameDateCutoff: raw.metadata.comparisonMonthDay, transition: { date: "2024-06-03", note: "PDI incident rows end operationally on June 2, 2024; STARS offense rows begin June 3, 2024. The mixed year is visibly annotated and not represented as a source-continuous series." }, rateNote: "All historical rates use the fixed official 2020 City Planning profile population." },
+    metadata: { generatedAt, sourceRetrievedAt: raw.metadata.retrievedAt, geographyVersion: "SNA_2020", populationYear: demographics.metadata.currentPopulationYear, annualYears: annual.map((row) => row.year), sameDateYtdYears: sameDateYtd.map((row) => row.year), sameDateCutoff: raw.metadata.comparisonMonthDay, transition: { date: "2024-06-03", note: "PDI incident rows end operationally on June 2, 2024; STARS offense rows begin June 3, 2024. The mixed year is visibly annotated and not represented as a source-continuous series." }, rateNote: "Rates use annual denominators: linear interpolation between official 2010 and 2020 Census SNA anchors, then a clearly labeled 2020 carry-forward after the latest decennial anchor." },
     periods: { annual, sameDateYtd },
   };
   const allUnmappedNeighborhoods = [...annual, ...sameDateYtd].flatMap((period) => period.unmappedNeighborhoods.map((row) => ({ periodType: period.periodType, year: period.year, ...row })));
   const allUnmappedOffenses = [...annual, ...sameDateYtd].flatMap((period) => period.unmappedOffenses.map((row) => ({ periodType: period.periodType, year: period.year, ...row })));
   const validation = { generatedAt, status: allUnmappedOffenses.length ? "warning" : "pass", annualYears: annual.map((row) => row.year), sameDateYtdYears: sameDateYtd.map((row) => row.year), periodCount: annual.length + sameDateYtd.length, reconciledPeriods: [...annual, ...sameDateYtd].filter((row) => row.reconciliation.status === "pass").length, unmappedNeighborhoods: allUnmappedNeighborhoods, unmappedOffenses: allUnmappedOffenses };
-  const compactPeriod = (period: (typeof annual)[number] | (typeof sameDateYtd)[number]) => ({ year: period.year, periodType: period.periodType, start: period.start, end: period.end, status: period.status, sourceSystems: period.sourceSystems, sourceGrain: period.sourceGrain, city: period.city, unassigned: period.unassigned, populationYear: period.populationYear, rates: period.rates, reconciliation: period.reconciliation, unmappedNeighborhoods: [], unmappedOffenses: [], neighborhoods: period.neighborhoods });
+  const compactPeriod = (period: (typeof annual)[number] | (typeof sameDateYtd)[number]) => ({ year: period.year, periodType: period.periodType, start: period.start, end: period.end, status: period.status, sourceSystems: period.sourceSystems, sourceGrain: period.sourceGrain, city: period.city, unassigned: period.unassigned, populationYear: period.populationYear, cityPopulation: period.cityPopulation, populationMarginOfError: period.populationMarginOfError, populationMethod: period.populationMethod, rates: period.rates, reconciliation: period.reconciliation, unmappedNeighborhoods: [], unmappedOffenses: [], neighborhoods: period.neighborhoods });
   const uiOutput = { metadata: output.metadata, periods: { annual: annual.map(compactPeriod), sameDateYtd: sameDateYtd.map(compactPeriod) } };
   const annualUiOutput = { metadata: output.metadata, periods: { annual: uiOutput.periods.annual, sameDateYtd: [] } };
   await Promise.all([mkdir(path.join(root, "data/processed/crime"), { recursive: true }), mkdir(path.join(root, "public/data"), { recursive: true }), mkdir(path.join(root, "data/reports"), { recursive: true })]);

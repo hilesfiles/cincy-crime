@@ -45,6 +45,7 @@ export function ExplorerDashboard({ mapData, currentSummary, starsSummary, histo
     return hasPrior ? changeForMap(row.currentYtd, row.priorYtd) : null;
   };
   const values = Object.fromEntries(summary.neighborhoods.map((row) => [row.sourceName, valueFor(row)]));
+  const colorValues = Object.fromEntries(summary.neighborhoods.map((row) => [row.sourceName, !available ? null : effectiveMeasure === "recent-change" ? changeForMap(row.current28, row.previous28) : hasPrior ? changeForMap(row.currentYtd, row.priorYtd) : null]));
   const isChange = effectiveMeasure === "change" || effectiveMeasure === "recent-change";
   const periodWord = period.mode === "annual" ? `${period.year}` : effectiveMeasure === "recent-change" ? "28-day" : "YTD";
   const metricLabel = `${definition.label} ${periodWord}${isChange ? " change" : effectiveMeasure === "rate" ? " per 1,000" : ""}`;
@@ -68,7 +69,7 @@ export function ExplorerDashboard({ mapData, currentSummary, starsSummary, histo
     </div>
     {definition.note ? <p className="mb-4 border-l-4 border-[#d77b33] bg-[#fff8ef] px-4 py-3 text-xs leading-5 text-[#6e4c2f]"><strong>{definition.label}:</strong> {definition.note}</p> : null}
     <div className="grid gap-5 lg:grid-cols-[minmax(0,1.62fr)_minmax(340px,0.78fr)]">
-      <NeighborhoodMap data={mapData} metricValues={values} metricLabel={metricLabel} formatValue={formatValue} diverging={isChange} profileQuery={`?${profileQuery}`} onSelect={(region) => setSelected(region.sourceName)}/>
+      <NeighborhoodMap data={mapData} metricValues={values} colorValues={colorValues} metricLabel={metricLabel} changeLabel={effectiveMeasure === "recent-change" ? "Latest 28-day change" : period.mode === "annual" ? "Change from prior year" : "Change from prior YTD"} formatValue={formatValue} profileQuery={`?${profileQuery}`} onSelect={(region) => setSelected(region.sourceName)}/>
       <aside className="flex flex-col gap-4">
         {selectedRow ? <AreaPanel title={selectedRow.name} context={period.mode === "annual" ? String(period.year) : "current YTD"} counts={selectedRow} population={selectedRow.population} populationYear={selectedRow.populationYear} metric={crime.crime} label={definition.label} available={available} hasPrior={hasPrior} annual={period.mode === "annual"}/> : <div className="border-t-4 border-[#0a766e] bg-white p-5 shadow-sm"><p className="eyebrow">Citywide snapshot</p><h2 className="mt-2 text-xl font-black text-[#143a4a]">{definition.label}</h2><p className="mt-2 text-sm leading-6 text-[#5b6d73]">Select a map area for its count, rate, and signed change from the comparable prior period.</p></div>}
         <AreaPanel title="Citywide" context={period.mode === "annual" ? String(period.year) : "current YTD"} counts={summary.city} population={summary.city.population} populationYear={summary.metadata.population?.year ?? 2020} metric={crime.crime} label={definition.label} available={available} hasPrior={hasPrior} annual={period.mode === "annual"}/>

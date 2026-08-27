@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T02:22:49.870Z",
+  "generatedAt": "2026-08-27T03:25:41.489Z",
   "status": "warning",
   "checks": [
     {
@@ -31,6 +31,11 @@
       "id": "population-denominators",
       "status": "warning",
       "detail": "51 profiles; reconciliation warning"
+    },
+    {
+      "id": "annual-population-series",
+      "status": "warning",
+      "detail": "51 2010 profiles + 51 2020 profiles; 48/50 regions with ACS/MOE"
     },
     {
       "id": "stars-offense-detail-cutoff",

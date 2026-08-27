@@ -18,6 +18,7 @@
     "data:fetch:pdi": "tsx scripts/data/fetch-pdi.ts",
     "data:fetch:stars": "tsx scripts/data/fetch-stars.ts",
     "data:fetch:population": "tsx scripts/data/fetch-population.ts",
+    "data:fetch:demographics": "tsx scripts/data/fetch-demographics.ts",
     "data:fetch:cpd-reports": "tsx scripts/data/fetch-cpd-neighborhood-reports.ts",
     "data:fetch:historical": "tsx scripts/data/fetch-historical.ts",
     "data:build:historical": "tsx scripts/data/build-historical.ts",

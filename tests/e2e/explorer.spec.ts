@@ -11,7 +11,7 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByRole("heading", { name: /clearer view/i })).toBeVisible();
   await expect(page.getByText(/Geography crosswalk resolved/i)).toHaveCount(0);
   await expect(page.locator("path[data-neighborhood-id]")).toHaveCount(50);
-  await expect(page.getByText(/Decrease.*change rate.*increase/i)).toBeVisible();
+  await expect(page.getByText(/Fill: decrease.*signed change.*increase/i)).toBeVisible();
   await expect(page.getByLabel("Map measure")).toHaveValue("change");
   await page.getByLabel("Crime type").selectOption("robbery");
   await expect(page).toHaveURL(/crime=robbery/);
@@ -20,9 +20,13 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Mt. Airy" })).toBeVisible();
   const fills = await page.locator("path[data-neighborhood-id]").evaluateAll((paths) => [...new Set(paths.map((path) => path.getAttribute("fill")))]);
   expect(fills).toContain("#087a4f");
-  expect(fills.some((fill) => fill === "#e45145" || fill === "#b51f2e" || fill === "#f1a08f")).toBe(true);
+  expect(fills).toContain("#aeb5b3");
+  expect(fills.some((fill) => fill === "#e24d43" || fill === "#b51f2e" || fill === "#f0a08f")).toBe(true);
+  await page.getByLabel("Map measure").selectOption("count");
+  await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /YTD: \d+; Change from prior YTD:/);
   await page.getByLabel("Map measure").selectOption("rate");
   await expect(page).toHaveURL(/measure=rate/);
+  await expect(page.locator("#neighborhood-mt-airy")).toHaveAttribute("aria-label", /per 1,000: .*Change from prior YTD:/);
   await page.getByRole("button", { name: "Calendar year" }).click();
   await page.getByLabel("Calendar year").selectOption("2011");
   await expect(page).toHaveURL(/period=annual/);
@@ -44,6 +48,12 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByRole("heading", { name: /Citywide · Motor vehicle theft/i })).toBeVisible();
   await page.getByLabel("Series").selectOption("sameDateYtd");
   await expect(page.getByRole("cell", { name: "2026" })).toBeVisible();
+  await page.goto("/demographics/");
+  await expect(page.getByRole("heading", { name: "Neighborhood demographics" })).toBeVisible();
+  await page.getByLabel("Demographic area").selectOption("avondale");
+  await expect(page.getByText(/Estimates with 90% margins of error/i)).toBeVisible();
+  await page.getByLabel("Demographic area").selectOption("westwood");
+  await expect(page.getByText(/official SNA profile is image-only/i)).toBeVisible();
   await page.goto("/data-status/");
   await expect(page.getByRole("row", { name: /Historical same-date YTD/i })).toBeVisible();
   await expect(page.getByText(/Latest generated artifact/i)).toBeVisible();

@@ -4,10 +4,12 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import mapData from "@/data/processed/geography/neighborhood-map.json";
 import summaryJson from "@/data/processed/crime/cpd-neighborhood-summary.json";
+import demographicsJson from "@/data/processed/demographics/neighborhood-demographics.json";
 import { PageShell } from "@/components/layout/page-shell";
 import { NeighborhoodProfile } from "@/components/neighborhood/neighborhood-profile";
 import type { CrimeSummary } from "@/lib/crime/summary";
 import type { HistoricalData } from "@/lib/crime/historical";
+import type { DemographicsData } from "@/lib/demographics";
 
 const summary = summaryJson as CrimeSummary;
 export function generateStaticParams() { return summary.neighborhoods.map((row) => ({ slug: row.slug })); }
@@ -19,5 +21,7 @@ export default async function NeighborhoodPage({ params }: { params: Promise<{ s
   const historical = JSON.parse(await readFile(path.join(process.cwd(), "data/processed/crime/historical-annual-ui.json"), "utf8")) as HistoricalData;
   const neighborhoodSummary = { ...summary, neighborhoods: [row] };
   const neighborhoodHistorical = { ...historical, periods: { annual: historical.periods.annual.map((period) => ({ ...period, neighborhoods: period.neighborhoods.filter((item) => item.slug === slug) })), sameDateYtd: [] } };
-  return <PageShell eyebrow="Statistical area profile" title={row.name} description="Explore aggregate and discrete offense types in the fresher current YTD layer or validated calendar-year history from 2011–2025."><NeighborhoodProfile slug={slug} currentSummary={neighborhoodSummary} historical={neighborhoodHistorical} mapData={mapData} /></PageShell>;
+  const demographics = demographicsJson as DemographicsData;
+  const neighborhoodDemographics = { ...demographics, neighborhoods: demographics.neighborhoods.filter((item) => item.slug === slug) };
+  return <PageShell eyebrow="Statistical area profile" title={row.name} description="Explore aggregate and discrete offense types, annual population denominators, and neighborhood ACS estimates with visible uncertainty."><NeighborhoodProfile slug={slug} currentSummary={neighborhoodSummary} historical={neighborhoodHistorical} mapData={mapData} demographics={neighborhoodDemographics} /></PageShell>;
 }

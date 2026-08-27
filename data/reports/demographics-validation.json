@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-27T03:25:31.038Z",
+  "status": "warning",
+  "census2010Profiles": 51,
+  "census2020Profiles": 51,
+  "snaRegions": 50,
+  "officialAcsProfiles": 52,
+  "acsYears": [
+    2020
+  ],
+  "latestAcsYear": 2020,
+  "neighborhoodsWithAcs": 48,
+  "unavailableAcsNeighborhoods": [
+    "Riverside / Sedamsville",
+    "Westwood"
+  ],
+  "invalidRatios": [],
+  "allocationMethod": "The City Planning SNA profiles publish tract-level 2016-2020 ACS estimates already aggregated to each neighborhood approximation. Combined map regions sum their civic-member estimates.",
+  "marginOfErrorMethod": "Published 90% ACS margins of error are retained directly. For combined map regions and composite education measures they are combined by root-sum-of-squares; these derived margins are approximate."
+}

@@ -3,6 +3,7 @@ import path from "node:path";
 import { fetchPdi } from "./fetch-pdi";
 import { fetchStars } from "./fetch-stars";
 import { fetchPopulation } from "./fetch-population";
+import { fetchDemographics } from "./fetch-demographics";
 import { fetchCpdNeighborhoodReports } from "./fetch-cpd-neighborhood-reports";
 import { buildHistorical } from "./build-historical";
 import { fetchHistoricalSources } from "./fetch-historical";
@@ -13,6 +14,7 @@ async function main() {
   const pdi = await fetchPdi();
   const stars = await fetchStars();
   await fetchPopulation();
+  await fetchDemographics();
   await fetchCpdNeighborhoodReports();
   await fetchHistoricalSources();
   await buildHistorical();
