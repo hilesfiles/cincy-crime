@@ -22,6 +22,7 @@ test("dashboard map and routes work", async ({ page }) => {
   const mountAiry = page.locator("#neighborhood-mt-airy");
   await mountAiry.dispatchEvent("click");
   await expect(page.getByRole("heading", { name: "Mt. Airy" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Open profile →" })).toHaveCSS("color", "rgb(255, 255, 255)");
   const fills = await page.locator("path[data-neighborhood-id]").evaluateAll((paths) => [...new Set(paths.map((path) => path.getAttribute("fill")))]);
   expect(fills).toContain(neutralChangeColor);
   expect(fills.some((fill) => decreaseColors.includes(fill ?? ""))).toBe(true);
@@ -77,6 +78,7 @@ test("dashboard map and routes work", async ({ page }) => {
 
   await page.goto("/budget/");
   await expect(page.getByRole("heading", { name: "Police budget and neighborhood allocation" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Budget authority" })).toHaveCSS("color", "rgb(255, 255, 255)");
   await expect(page.getByLabel("Budget fiscal year")).toHaveValue("2025");
   await page.getByLabel("Budget fiscal year").selectOption("2024");
   await page.getByLabel("Budget crime allocation basis").selectOption("violent");
@@ -87,6 +89,7 @@ test("dashboard map and routes work", async ({ page }) => {
 
   await page.goto("/actuals/");
   await expect(page.getByRole("heading", { name: "Police actual expenditures" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Audited actuals" })).toHaveCSS("color", "rgb(255, 255, 255)");
   await expect(page.getByLabel("Actual fiscal year")).toHaveValue("2024");
   await page.getByLabel("Actual fiscal year").selectOption("2018");
   await page.getByLabel("Actual crime attribution basis").selectOption("violent");
@@ -96,6 +99,7 @@ test("dashboard map and routes work", async ({ page }) => {
 
   await page.goto("/initiatives/");
   await expect(page.getByRole("heading", { name: "Public-safety initiatives by neighborhood" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Initiative ledger" })).toHaveCSS("color", "rgb(255, 255, 255)");
   await page.getByLabel("Initiative selected neighborhood").selectOption("lower-price-hill-queensgate");
   await expect(page.getByRole("heading", { name: "Lower Price Hill / Queensgate" }).first()).toBeVisible();
   await expect(page.getByText("$109K", { exact: true })).toBeVisible();
