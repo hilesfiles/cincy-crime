@@ -11,7 +11,7 @@ import validationSummary from "@/data/reports/validation-summary.json";
 import summaryJson from "@/data/processed/crime/cpd-neighborhood-summary.json";
 import starsJson from "@/data/processed/crime/current-summary.json";
 import historicalJson from "@/data/processed/crime/historical-ui.json";
-import electionsJson from "@/data/processed/elections/presidential-neighborhoods.json";
+import electionsJson from "@/data/processed/elections/neighborhood-elections.json";
 import { PageShell } from "@/components/layout/page-shell";
 import { crimeMetrics } from "@/lib/crime/metrics";
 import type { HistoricalData } from "@/lib/crime/historical";
@@ -42,7 +42,7 @@ export default function DataStatusPage() {
     ["Historical same-date YTD", `${ytdStart}–${ytdEnd} through ${historical.metadata.sameDateCutoff}`, historicalValidation.status, dateOnly(historical.metadata.generatedAt), `${historical.metadata.sameDateYtdYears.length} comparable YTD periods, including the current preliminary aggregate`],
     ["Population denominators", "2010–2026 annual series", demographics.status, dateOnly(demographics.generatedAt), `${demographics.census2010Profiles} official 2010 and ${demographics.census2020Profiles} official 2020 profiles; 2011–2019 interpolated, 2021 onward transparently carries the 2020 anchor`],
     ["Neighborhood ACS profiles", "2016–2020 ACS 5-year", demographics.status, dateOnly(demographics.generatedAt), `${demographics.neighborhoodsWithAcs}/${demographics.snaRegions} map regions with estimate/MOE pairs; ${demographics.unavailableAcsNeighborhoods.length} image-only exceptions remain unavailable`],
-    ["Presidential precinct canvasses", "2016, 2020, 2024", electionsValidation.status, dateOnly(elections.metadata.generatedAt), `${elections.elections.length} official presidential elections; ${electionsValidation.electionYears.every((row) => row.matchedBallotsPercent === 100) ? "100%" : "partial"} precinct-ID ballot coverage against the current CAGIS reference`],
+    ["General-election canvasses", "2016–2024 presidential + midterm", electionsValidation.status, dateOnly(elections.metadata.generatedAt), `${elections.elections.length} official contest results across ${elections.metadata.electionYears.length} election years; ${electionsValidation.electionResults.every((row) => row.matchedBallotsPercent === 100) ? "100%" : "partial"} precinct-ID ballot coverage against the current CAGIS reference`],
     ["Election neighborhood allocation", "SNA 2020 modeled estimates", "warning", dateOnly(elections.metadata.generatedAt), `${electionsValidation.precinctReferenceCount} current reference precincts used internally; ${electionsValidation.splitPrecinctReferenceCount} cross one or more SNA boundaries; public map displays neighborhood averages only`],
   ];
 

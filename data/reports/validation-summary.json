@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T04:26:33.836Z",
+  "generatedAt": "2026-08-27T04:41:39.141Z",
   "status": "warning",
   "checks": [
     {
@@ -38,9 +38,9 @@
       "detail": "51 2010 profiles + 51 2020 profiles; 48/50 regions with ACS/MOE"
     },
     {
-      "id": "presidential-election-panel",
+      "id": "election-panel",
       "status": "pass",
-      "detail": "3 presidential elections; 190 precinct reference polygons; 2016 100% ID coverage, 2020 100% ID coverage, 2024 100% ID coverage"
+      "detail": "7 contest results across 5 election years; 190 precinct reference polygons; 2016-president 100% ID coverage, 2018-governor 100% ID coverage, 2018-us_senate 100% ID coverage, 2020-president 100% ID coverage, 2022-governor 100% ID coverage, 2022-us_senate 100% ID coverage, 2024-president 100% ID coverage"
     },
     {
       "id": "stars-offense-detail-cutoff",

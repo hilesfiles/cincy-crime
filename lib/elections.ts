@@ -1,4 +1,6 @@
 export type ElectionMeasure = "margin" | "turnout" | "democratic" | "republican" | "other";
+export type ElectionContestId = "president" | "governor" | "us_senate";
+export type ElectionCycle = "presidential" | "midterm";
 
 export type ElectionAreaResult = {
   id: string;
@@ -6,7 +8,7 @@ export type ElectionAreaResult = {
   name: string;
   registeredVoters: number;
   ballotsCast: number;
-  presidentialVotes: number;
+  contestVotes: number;
   democraticVotes: number;
   republicanVotes: number;
   otherVotes: number;
@@ -21,10 +23,13 @@ export type ElectionAreaResult = {
   estimateStatus: "area_weighted_current_precinct_reference" | "official_citywide";
 };
 
-export type ElectionYear = {
+export type ElectionResult = {
+  id: string;
   year: number;
+  cycle: ElectionCycle;
   date: string;
-  contest: "President and Vice President";
+  contestId: ElectionContestId;
+  contest: string;
   democraticTicket: string;
   republicanTicket: string;
   citywide: ElectionAreaResult;
@@ -53,7 +58,7 @@ export type ElectionsData = {
     presentationNote: string;
     sources: Array<{ label: string; url: string }>;
   };
-  elections: ElectionYear[];
+  elections: ElectionResult[];
 };
 
 export function percentage(numerator: number, denominator: number) {
@@ -68,12 +73,16 @@ export function electionMetric(area: ElectionAreaResult, measure: ElectionMeasur
   return area.marginPoints;
 }
 
+export function electionOptionLabel(election: ElectionResult) {
+  return `${election.year} ${election.contest}`;
+}
+
 export function formatElectionPercent(value: number | null, signed = false) {
   if (value === null) return "Unavailable";
   return `${signed && value > 0 ? "+" : ""}${value.toFixed(1)}%`;
 }
 
-export function presidentialShareTotal(area: ElectionAreaResult) {
+export function electionShareTotal(area: ElectionAreaResult) {
   return area.democraticPercent === null || area.republicanPercent === null || area.otherPercent === null
     ? null
     : area.democraticPercent + area.republicanPercent + area.otherPercent;

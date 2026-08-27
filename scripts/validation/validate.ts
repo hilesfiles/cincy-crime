@@ -15,7 +15,7 @@ async function main() {
     readFile(path.join(root, "data/reports/cpd-neighborhood-validation.json"), "utf8").then(JSON.parse),
     readFile(path.join(root, "data/reports/population-validation.json"), "utf8").then(JSON.parse),
     readFile(path.join(root, "data/reports/demographics-validation.json"), "utf8").then(JSON.parse),
-    readFile(path.join(root, "data/processed/elections/presidential-neighborhoods.json"), "utf8").then(JSON.parse),
+    readFile(path.join(root, "data/processed/elections/neighborhood-elections.json"), "utf8").then(JSON.parse),
     readFile(path.join(root, "data/reports/elections-validation.json"), "utf8").then(JSON.parse),
   ]);
   const slugs = summary.neighborhoods.map((row: { slug: string }) => row.slug);
@@ -27,7 +27,7 @@ async function main() {
     { id: "cpd-map-regions", status: summary.neighborhoods.length === 50 ? "pass" : "fail", detail: `${summary.neighborhoods.length} map aggregates` },
     { id: "population-denominators", status: summary.neighborhoods.every((row: { population?: number; rates?: { violentYtdPer1000?: number | null } }) => typeof row.population === "number" && typeof row.rates?.violentYtdPer1000 === "number") ? population.status : "fail", detail: `${population.civicProfileCount} profiles; reconciliation ${population.status}` },
     { id: "annual-population-series", status: demographics.status, detail: `${demographics.census2010Profiles} 2010 profiles + ${demographics.census2020Profiles} 2020 profiles; ${demographics.neighborhoodsWithAcs}/${demographics.snaRegions} regions with ACS/MOE` },
-    { id: "presidential-election-panel", status: electionsValidation.status, detail: `${elections.elections.length} presidential elections; ${electionsValidation.precinctReferenceCount} precinct reference polygons; ${electionsValidation.electionYears.map((row: { year: number; matchedBallotsPercent: number }) => `${row.year} ${row.matchedBallotsPercent.toFixed(0)}% ID coverage`).join(", ")}` },
+    { id: "election-panel", status: electionsValidation.status, detail: `${elections.elections.length} contest results across ${elections.metadata.electionYears.length} election years; ${electionsValidation.precinctReferenceCount} precinct reference polygons; ${electionsValidation.electionResults.map((row: { id: string; matchedBallotsPercent: number }) => `${row.id} ${row.matchedBallotsPercent.toFixed(0)}% ID coverage`).join(", ")}` },
     { id: "stars-offense-detail-cutoff", status: starsSummary.metadata.cutoff ? "pass" : "fail", detail: starsSummary.metadata.cutoff },
     { id: "historical-periods", status: historical.periods.annual.length === 15 && historical.periods.sameDateYtd.length === 16 && [...historical.periods.annual, ...historical.periods.sameDateYtd].every((period: { neighborhoods: unknown[]; reconciliation: { status: string } }) => period.neighborhoods.length === 50 && period.reconciliation.status === "pass") ? "pass" : "fail", detail: `${historical.periods.annual.length} annual periods; ${historical.periods.sameDateYtd.length} same-date YTD periods` },
     { id: "historical-unassigned-and-taxonomy", status: historicalValidation.status, detail: `${historicalValidation.unmappedNeighborhoods.length} period/label geography exceptions; ${historicalValidation.unmappedOffenses.length} period/label taxonomy exceptions` },

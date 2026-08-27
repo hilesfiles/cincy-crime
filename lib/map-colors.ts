@@ -4,6 +4,8 @@ export type ElectionColorMeasure = "margin" | "turnout" | "democratic" | "republ
 export const decreaseColors = ["#d8f0df", "#b9e2c5", "#96d2a7", "#70bd88", "#48a66d", "#258c57", "#0d7447", "#005c38"];
 export const increaseColors = ["#fde1de", "#f9c5bf", "#f4a79e", "#ec8278", "#e25f56", "#d43f3e", "#bd2832", "#9f1627"];
 export const neutralChangeColor = "#9ba3a1";
+export const countColors = ["#e1efec", "#c5dfda", "#a4cec7", "#7dbab1", "#55a399", "#338b82", "#197269", "#07554f"];
+export const rateColors = ["#eee8f4", "#ddd0ea", "#c8b4dd", "#ae91ce", "#916bbb", "#744ba4", "#5b358a", "#41246b"];
 export const magnitudeLabels = ["<2.5", "2.5", "5", "7.5", "15", "20", "25", "50+"];
 export const crimeLegendSteps = [
   ...decreaseColors.map((color, index) => ({ label: magnitudeLabels[index], color })).reverse(),
@@ -28,6 +30,24 @@ export function signedChangeColor(value: SignedChangeValue) {
   if (value === "new-activity") return increaseColors.at(-1)!;
   if (value === 0) return neutralChangeColor;
   return value < 0 ? decreaseColors[intensityIndex(value)] : increaseColors[intensityIndex(value)];
+}
+
+export function quantileThresholds(values: Array<number | null | undefined>, bands = 8) {
+  const sorted = values.filter((value): value is number => typeof value === "number" && Number.isFinite(value)).sort((a, b) => a - b);
+  if (!sorted.length || bands < 2) return [];
+  return Array.from({ length: bands - 1 }, (_, index) => {
+    const position = ((index + 1) * (sorted.length - 1)) / bands;
+    const lower = Math.floor(position);
+    const upper = Math.ceil(position);
+    const weight = position - lower;
+    return sorted[lower] + (sorted[upper] - sorted[lower]) * weight;
+  });
+}
+
+export function sequentialColor(value: number | null | undefined, thresholds: number[], palette: string[]) {
+  if (value === null || value === undefined || !Number.isFinite(value)) return "url(#missing-data-hatch)";
+  const index = thresholds.findIndex((threshold) => value <= threshold);
+  return palette[index === -1 ? palette.length - 1 : Math.min(index, palette.length - 1)];
 }
 
 export function electionFill(value: number | null, measure: ElectionColorMeasure) {

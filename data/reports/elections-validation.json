@@ -1,35 +1,89 @@
 {
   "status": "pass",
-  "generatedAt": "2026-08-27T04:25:38.102Z",
-  "electionYears": [
+  "generatedAt": "2026-08-27T04:37:56.937Z",
+  "electionResults": [
     {
+      "id": "2016-president",
       "year": 2016,
+      "contest": "President",
       "resultPrecincts": 185,
       "matchedReferencePrecincts": 185,
       "unmatchedResultPrecincts": 0,
       "matchedBallotsPercent": 100,
-      "citywidePresidentialVotes": 135713,
-      "neighborhoodAllocatedPresidentialVotes": 135712.99,
+      "citywideContestVotes": 135713,
+      "neighborhoodAllocatedContestVotes": 135712.99,
       "voteShareSum": 100
     },
     {
+      "id": "2018-governor",
+      "year": 2018,
+      "contest": "Governor",
+      "resultPrecincts": 188,
+      "matchedReferencePrecincts": 188,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywideContestVotes": 110356,
+      "neighborhoodAllocatedContestVotes": 110355.99,
+      "voteShareSum": 100
+    },
+    {
+      "id": "2018-us_senate",
+      "year": 2018,
+      "contest": "U.S. Senate",
+      "resultPrecincts": 188,
+      "matchedReferencePrecincts": 188,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywideContestVotes": 109822,
+      "neighborhoodAllocatedContestVotes": 109821.97,
+      "voteShareSum": 100
+    },
+    {
+      "id": "2020-president",
       "year": 2020,
+      "contest": "President",
       "resultPrecincts": 190,
       "matchedReferencePrecincts": 190,
       "unmatchedResultPrecincts": 0,
       "matchedBallotsPercent": 100,
-      "citywidePresidentialVotes": 138020,
-      "neighborhoodAllocatedPresidentialVotes": 138019.99,
+      "citywideContestVotes": 138020,
+      "neighborhoodAllocatedContestVotes": 138019.99,
       "voteShareSum": 100
     },
     {
-      "year": 2024,
+      "id": "2022-governor",
+      "year": 2022,
+      "contest": "Governor",
       "resultPrecincts": 190,
       "matchedReferencePrecincts": 190,
       "unmatchedResultPrecincts": 0,
       "matchedBallotsPercent": 100,
-      "citywidePresidentialVotes": 126966,
-      "neighborhoodAllocatedPresidentialVotes": 126966,
+      "citywideContestVotes": 91464,
+      "neighborhoodAllocatedContestVotes": 91463.98,
+      "voteShareSum": 100
+    },
+    {
+      "id": "2022-us_senate",
+      "year": 2022,
+      "contest": "U.S. Senate",
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywideContestVotes": 91176,
+      "neighborhoodAllocatedContestVotes": 91176,
+      "voteShareSum": 100
+    },
+    {
+      "id": "2024-president",
+      "year": 2024,
+      "contest": "President",
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190,
+      "unmatchedResultPrecincts": 0,
+      "matchedBallotsPercent": 100,
+      "citywideContestVotes": 126966,
+      "neighborhoodAllocatedContestVotes": 126966,
       "voteShareSum": 100
     }
   ],
@@ -37,7 +91,9 @@
   "splitPrecinctReferenceCount": 62,
   "sourceReports": [
     {
+      "id": "2016-president",
       "year": 2016,
+      "contest": "President",
       "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2020/02/Gen16OffCanvass.xlsx",
       "localFile": "Gen16OffCanvass.xlsx",
       "worksheet": "Sheet1",
@@ -46,7 +102,31 @@
       "matchedReferencePrecincts": 185
     },
     {
+      "id": "2018-governor",
+      "year": 2018,
+      "contest": "Governor",
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2020/02/G18_Official_Amended_Canvass.xlsx",
+      "localFile": "G18_Official_Amended_Canvass.xlsx",
+      "worksheet": "ALL",
+      "checksumSha256": "3714bc948030d54cf31dd5f304ee4eb0c2e0d9b5909bce78b6aedf2a94a186b6",
+      "resultPrecincts": 188,
+      "matchedReferencePrecincts": 188
+    },
+    {
+      "id": "2018-us_senate",
+      "year": 2018,
+      "contest": "U.S. Senate",
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2020/02/G18_Official_Amended_Canvass.xlsx",
+      "localFile": "G18_Official_Amended_Canvass.xlsx",
+      "worksheet": "ALL",
+      "checksumSha256": "3714bc948030d54cf31dd5f304ee4eb0c2e0d9b5909bce78b6aedf2a94a186b6",
+      "resultPrecincts": 188,
+      "matchedReferencePrecincts": 188
+    },
+    {
+      "id": "2020-president",
       "year": 2020,
+      "contest": "President",
       "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2021/04/G20_Official_Canvass.xlsx",
       "localFile": "G20_Official_Canvass.xlsx",
       "worksheet": "Candidates",
@@ -55,7 +135,31 @@
       "matchedReferencePrecincts": 190
     },
     {
+      "id": "2022-governor",
+      "year": 2022,
+      "contest": "Governor",
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2023/04/G22_Official_Canvass.xlsx",
+      "localFile": "G22_Official_Canvass.xlsx",
+      "worksheet": "G22 Official Canvass",
+      "checksumSha256": "fc9544ee5f2f008f6ccd823bf476120736fad03f1186f2bbfc4ad50873bb8b0c",
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190
+    },
+    {
+      "id": "2022-us_senate",
+      "year": 2022,
+      "contest": "U.S. Senate",
+      "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2023/04/G22_Official_Canvass.xlsx",
+      "localFile": "G22_Official_Canvass.xlsx",
+      "worksheet": "G22 Official Canvass",
+      "checksumSha256": "fc9544ee5f2f008f6ccd823bf476120736fad03f1186f2bbfc4ad50873bb8b0c",
+      "resultPrecincts": 190,
+      "matchedReferencePrecincts": 190
+    },
+    {
+      "id": "2024-president",
       "year": 2024,
+      "contest": "President",
       "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2025/04/G24OfficialCanvass.xlsx",
       "localFile": "G24OfficialCanvass.xlsx",
       "worksheet": "G24 Contests Only",

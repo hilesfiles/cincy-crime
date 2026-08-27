@@ -13,7 +13,7 @@ export function ElectionPageClient() {
   useEffect(() => {
     const controller = new AbortController();
     Promise.all([
-      fetch("../data/presidential-neighborhoods.json", { signal: controller.signal }).then((response) => {
+      fetch("../data/neighborhood-elections.json", { signal: controller.signal }).then((response) => {
         if (!response.ok) throw new Error(`Election data request failed: ${response.status}`);
         return response.json() as Promise<ElectionsData>;
       }),
