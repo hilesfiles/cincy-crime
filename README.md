@@ -1,63 +1,144 @@
 # Cincinnati Neighborhood Crime Explorer
 
-A local-first, provenance-aware web application for exploring reported crime across Cincinnati statistical neighborhoods. The public site is a static Next.js export backed by audited JSON artifacts; local refresh jobs retain SQLite as the canonical analytical-store path.
+[View the live site](https://hilesfiles.github.io/cincy-crime/)
 
-> This is an independent analytical project, not an official Cincinnati Police Department publication.
+A provenance-aware static web application for exploring reported crime, demographics, elections, and public-safety finances across Cincinnati statistical neighborhoods.
 
-## What works
+> This is an independent analytical project, not an official publication of the City of Cincinnati, Cincinnati Police Department, or Hamilton County Board of Elections.
 
-- Interactive, keyboard-accessible vector map generated from the official CAGIS SNA source.
-- Fresher preliminary CPD neighborhood-report aggregates through 2026-08-22, with current/prior comparable YTD and adjacent 28-day periods.
-- STARS preserved as a separate offense-level layer through its own source cutoff.
-- Official 2010/2020 City Planning population anchors, a documented annual denominator series, and crime rates per 1,000.
-- Neighborhood demographics with official 2016–2020 ACS 5-year estimates and published 90% margins of error.
-- Calendar-year history for 2011–2025, plus same-date YTD comparisons through 2026.
-- Shared period/year controls across the map, rankings, comparisons, and neighborhood profiles.
-- Shared crime-type controls for Part I totals, violent/property groupings, and discrete offenses across every analysis route.
-- Interactive citywide and neighborhood trend analysis with counts, annual-denominator rates, year-over-year change, and a marked 2024 source transition.
-- Zero-centered directional choropleth for every map measure: green decreases, red increases, gray near-zero values, hatched unavailable values, exact signed tooltips, and a graduated severity legend.
-- Metric switching, stable URL state, sortable rankings, up-to-four-area comparison, and 50 statically generated detail pages.
-- Explicit PDI/STARS source adapters and June 2024 transition validation.
-- Versioned offense mapping, unmapped-category report, provenance register, data-status page, SQLite schema, and automated tests.
-- GitHub Pages deployment from `.github/workflows/deploy-pages.yml`.
+## Current product
 
-No crime values are fabricated. Modeled population values are limited to the explicitly labeled 2011–2019 linear interpolation and post-2020 carry-forward.
+The supported product is the browser application deployed through GitHub Pages. It is a static Next.js export: source retrieval, normalization, geographic allocation, and validation happen before deployment, and the browser loads checked-in JSON artifacts. There is no production server, runtime database, or Electron client.
 
-## Important geography result
+Current checked-in coverage:
 
-The official live CAGIS 2020 service returned **50 statistical polygons representing 51 named neighborhoods**. The definitive crosswalk records the three combined features: English Woods + North Fairmount, Lower Price Hill + Queensgate, and Riverside + Sedamsville. Counts and populations are summed from separately retained civic-neighborhood source records for those map areas; no polygons are invented.
+- Preliminary CPD neighborhood-report aggregates through **August 22, 2026**.
+- **52,500** STARS offense rows in the source feed through **June 23, 2026**; the application retains grouped statistics rather than address-level records.
+- Complete calendar-year crime history for **2011–2025** and same-date YTD comparisons for **2011–2026**.
+- **50** map regions representing **51** civic-neighborhood names.
+- Official 2010 and 2020 population anchors plus complete 2016–2020 ACS profiles for all 50 map regions.
+- Seven official election contest results across **2016, 2018, 2020, 2022, and 2024**.
+- Police budget authority for FY2004–FY2027, with FY2005 unavailable in the published ledger.
+- Audited General Fund Police actuals for FY2014–FY2024.
+- A separate 66-record public-safety initiative ledger covering four published programs.
+
+Dates and counts above describe the committed artifacts. The in-app **Data status** page is the authoritative build-specific inventory.
+
+## Application sections
+
+| Route | Purpose |
+| --- | --- |
+| `/` | Interactive crime map with current YTD and calendar-year controls |
+| `/rankings` | Sortable neighborhood rankings |
+| `/compare` | Comparison of up to four areas |
+| `/trends` | Citywide and neighborhood annual and same-date YTD trends |
+| `/neighborhood/[slug]` | 50 statically generated neighborhood profiles |
+| `/demographics` | Annual population denominator series and ACS estimate/MOE cards |
+| `/elections` | Modeled neighborhood turnout and candidate-party vote shares |
+| `/budget` | Police budget authority and crime-share neighborhood attribution |
+| `/actuals` | Audited citywide Police actuals and modeled neighborhood attribution |
+| `/initiatives` | Curated, non-additive public-safety program and award ledger |
+| `/methodology` | Definitions and interpretation rules |
+| `/data-status` | Artifact coverage, validation results, and active warnings |
+| `/sources` | Official sources and provenance |
+
+The root metadata includes a social preview image, Open Graph tags, and a Twitter/X large-image card.
+
+## Crime explorer
+
+- Keyboard-accessible vector map built from the official CAGIS 2020 SNA source.
+- Current YTD, prior comparable YTD, adjacent 28-day periods, and complete calendar years.
+- Site-wide crime selection for Part I totals, violent/property groupings, and supported discrete offenses.
+- Counts, population rates, signed period changes, stable URL state, rankings, comparisons, and trends.
+- Directional map colors across count, rate, and percentage-change measures: green for decreases, red for increases, gray only for exact zero, and hatching for unavailable values.
+- Graduated signed legends from ±2.5% through ±50%+, exact tooltips, and visible 2024 source-transition markers.
+- Current CPD reports and offense-level STARS are preserved as separate, labeled layers.
+
+STARS rows are offenses, not necessarily unique incidents, victims, calls for service, arrests, or adjudicated outcomes. The public STARS source contains anonymized block-level addresses and displaced coordinates, but the current pipeline deliberately queries grouped daily/neighborhood/category statistics and does not publish individual locations.
+
+## Geography
+
+The live CAGIS source contains **50 statistical polygons for 51 civic-neighborhood names**. The definitive crosswalk records three combined map features:
+
+- English Woods + North Fairmount
+- Lower Price Hill + Queensgate
+- Riverside + Sedamsville
+
+Source records remain separate and traceable. Counts, population, demographics, and other neighborhood values are combined only when displayed on one of these map polygons; no replacement polygons are invented.
+
+Historical crime is displayed on current 2020 SNA geography as an explicit proxy. Source rows that cannot be assigned remain in a citywide unassigned bucket rather than being distributed or treated as zero.
+
+## Demographics and population
+
+- Population anchors come from official City Planning 2010 and 2020 neighborhood profiles.
+- Values for 2011–2019 are a documented linear interpolation between those Decennial Census anchors.
+- Values after 2020 carry the 2020 anchor forward until a defensible newer neighborhood estimate is available.
+- The annual line is therefore **not** presented as annual ACS data.
+- Neighborhood cards use official City Planning 2016–2020 ACS 5-year estimates and published 90% margins of error.
+- Westwood and Sedamsville’s image-only tables are separately transcribed with page-level provenance; the other 50 source profiles are text-extracted.
+- Wrapped PDF rows are reconciled using housing accounting identities and subset checks. The current demographic validation has no coverage, housing-identity, household-identity, or invalid-ratio failures.
+- Percentage MOEs use the Census subset-proportion approximation; combined regions and composite counts combine MOEs by root-sum-of-squares.
+
+Published neighborhood profile populations do not add exactly to the direct Citywide profile. Neighborhood rates use each neighborhood’s published denominator, while citywide rates use the direct Citywide value.
+
+## Elections
+
+The elections page contains official Hamilton County precinct canvass totals for:
+
+- President: 2016, 2020, and 2024
+- Governor and U.S. Senate: 2018 and 2022
+
+All source precinct IDs and ballots in the current panel match the current 190-precinct CAGIS reference. Neighborhood figures are nevertheless **modeled estimates**, not official neighborhood election results: current precinct polygons are intersected with 2020 SNA polygons and split precincts are allocated by area. Historical year-specific machine-readable precinct boundaries are not available in the official results archive, so the current precinct reference is used for every election year and precinct lines are not displayed publicly.
+
+Democratic and Republican percentages describe candidate or ticket vote shares, not voter registration or identity. “Other” includes minor-party, nonparty, and write-in candidates.
+
+## Financial views
+
+The financial section intentionally keeps three concepts separate:
+
+1. **Budget authority** aggregates published Cincinnati Financial System `CURRENT_BUDGET` Police department and bureau rows. FY2013 is a six-month transition stub. Neighborhood values for FY2014–FY2025 are modeled by applying one citywide budget-per-reported-crime amount to each neighborhood’s selected crime count; they are not observed spending, staffing, service delivery, or district allocations.
+2. **Audited actuals** use Cincinnati ACFR General Fund Division of Police expenditures on the published GAAP basis for FY2014–FY2024. The comparable headline excludes Emergency Communications when separately reported. City totals are audited; neighborhood shares are crime-share attributions, not audited neighborhood expenditures.
+3. **Initiative ledger** retains only officially published violence-prevention or neighborhood-safety amounts described as awarded, invested, or deployed. Geography is assigned only when the source names a neighborhood, and most dollars remain unallocated because the sources do not publish a defensible neighborhood split. This ledger is separate and must not be added to Police actuals.
 
 ## Architecture
 
 ```text
-Official CAGIS / Socrata sources
-        ↓ immutable snapshots + manifests
-Normalization / mapping / validation scripts
-        ↓
-SQLite-ready canonical schema + processed JSON aggregates
-        ↓
-Static Next.js application / GitHub Pages
+Official City / County / CAGIS / Socrata sources
+                    ↓
+Retrieval, normalization, crosswalk, and validation scripts
+                    ↓
+Versioned raw snapshots, manifests, reports, and processed JSON
+                    ↓
+Static Next.js export
+                    ↓
+GitHub Pages
 ```
 
-GitHub Pages cannot run a Node server or query SQLite per request. Refresh and aggregation therefore happen before deployment, and the browser receives only compact JSON required for the current views.
+SQLite schema and seed tooling remain available for local analytical work, but the deployed application does not query SQLite. Application components consume processed artifacts rather than raw source tables.
 
-## Setup
+## Local setup
 
 Requirements: Node.js 24+ and npm.
 
 ```bash
 npm ci
-npm run data:process:geography
-npm run db:migrate
-npm run db:seed
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://localhost:3000`. The repository includes the processed artifacts required to run the application without refreshing external sources.
 
-## Data acquisition and refresh
+Optional local SQLite setup:
 
-Public Cincinnati datasets require no secret. An optional Socrata app token is reserved in `.env.example`.
+```bash
+npm run db:migrate
+npm run db:seed
+```
+
+The default database path is `data/cnce.sqlite` and is ignored by Git. Set `DATABASE_PATH` to override it.
+
+## Data refresh
+
+Public Cincinnati datasets require no secret. `SOCRATA_APP_TOKEN` in `.env.example` is optional.
 
 ```bash
 npm run data:fetch:geography
@@ -66,18 +147,13 @@ npm run data:refresh
 npm run data:validate
 ```
 
-`data:refresh` fetches aggregate—not address-level—STARS data, current CPD neighborhood reports, official 2010/2020 population and ACS profiles, PDI/STARS annual history, same-date YTD history, and transition checks. Raw aggregate responses are cached under `data/raw`; processed browser-ready JSON is written under `data/processed` and `public/data`.
+`data:refresh` currently rebuilds PDI and grouped STARS crime artifacts, population, demographics, current CPD reports, historical panels, elections, Police budget authority, and source-transition checks. Raw responses are stored under `data/raw`; browser-ready artifacts are written under `data/processed` and `public/data`; validation output is written under `data/reports`.
 
-## Database
+The curated ACFR actuals and initiative ledger are committed artifacts and are not presently rebuilt by `data:refresh`.
 
-```bash
-npm run db:migrate
-npm run db:seed
-```
+Available focused commands are listed in `package.json`, including `data:fetch:stars`, `data:fetch:demographics`, `data:build:historical`, `data:build:elections`, and `data:fetch:budget`.
 
-Default location: `data/cnce.sqlite` (ignored by Git). Set `DATABASE_PATH` to override it. Application components never query raw source tables directly.
-
-## Testing and validation
+## Testing
 
 ```bash
 npm test
@@ -87,40 +163,36 @@ npm run test:e2e
 npm run data:validate
 ```
 
-The validation command treats source-integrity failures as fatal. The documented PDI transition and non-additive population-profile reconciliation remain visible warnings.
+- Vitest covers analytics, color classification, data contracts, and artifact reconciliation.
+- Playwright exercises all major application routes and interactive controls.
+- The production build performs the Next.js and TypeScript checks and generates 65 static pages.
+- Validation treats integrity failures as fatal while preserving documented source warnings.
 
-## Data methodology
+The GitHub Pages workflow runs `npm ci`, unit tests, and a production export with the `/cincy-crime` base path before deploying `out/`.
 
-- STARS rows are offenses, not necessarily unique incidents, victims, calls for service, arrests, or adjudicated outcomes.
-- Current YTD and prior YTD use the same month/day cutoff.
+## Crime methodology
+
+- Current and prior YTD periods use the same month/day cutoff.
 - Current 28 days is `D−27…D`; previous 28 days is `D−55…D−28`.
-- Zero denominators display “new activity,” never infinity.
-- Part I violent is derived from STARS `type = Part 1 Violent`. Strangulation remains separately preserved pending official cross-system comparability review.
-- PDI and STARS are separate source systems and are never naively concatenated.
-- Current dashboard views use preliminary CPD neighborhood-report aggregates; STARS remains the separately labeled offense-level source.
-- Historical rates use the selected year’s denominator: official 2010/2020 Census anchors, linear interpolation for 2011–2019, and a clearly labeled 2020 carry-forward afterward. Citywide rates use direct Citywide anchors.
-- ACS demographic cards retain published 90% MOEs. Derived percentage and combined-region MOEs are visibly labeled approximate.
+- A zero prior denominator displays “new activity,” never infinity.
+- Part I violent comes from STARS `type = Part 1 Violent`.
+- PDI and STARS remain distinct source systems and are not naively concatenated.
+- The operational records-system transition is June 3, 2024. Later PDI `date_reported` outliers are preserved and warned about rather than used as a clean operational cutoff.
+- Motor-vehicle theft and Strangulation are separately selectable only from the STARS transition onward; unsupported earlier values are unavailable, not zero.
+- Years before 2011 are outside the supported historical product window.
 
-See [docs/DATA_METHODOLOGY.md](docs/DATA_METHODOLOGY.md) and [docs/SOURCE_REGISTER.md](docs/SOURCE_REGISTER.md).
-
-## 2024 records-system caveat
-
-STARS begins on June 3, 2024. The legacy PDI dataset contains a small number of later `date_reported` values, including outliers through 2026, even though the operational transition occurred in June 2024. The transition report preserves these records and warns rather than treating the absolute PDI maximum as a clean cutoff.
+See [Data methodology](docs/DATA_METHODOLOGY.md), [Source register](docs/SOURCE_REGISTER.md), and [Architecture](docs/ARCHITECTURE.md).
 
 ## Deployment
 
-Push `main` to `https://github.com/hilesfiles/cincy-crime`. GitHub Actions tests, builds with the `/cincy-crime` base path, uploads `out/`, enables Pages, and deploys the site to `https://hilesfiles.github.io/cincy-crime/`.
+Pushes to `main` trigger `.github/workflows/deploy-pages.yml`. GitHub Actions tests, builds the static export with the repository base path, uploads `out/`, and deploys:
 
-## Supported runtime
+<https://hilesfiles.github.io/cincy-crime/>
 
-The browser application deployed through GitHub Pages is the sole supported runtime. Electron packaging was retired after v0.1.2 to keep development, testing, and releases focused on the web experience. Earlier Windows downloads remain archived as historical, unsupported artifacts.
-
-## Historical roadmap
-
-The supported historical product window is **2011–present**. Complete calendar years 2011–2025 are enabled, and the trends view also compares January 1–August 22 across 2011–2026. Long-running discrete categories begin in 2011; motor-vehicle theft and Strangulation are separately selectable only from the 2024 source transition onward. Earlier unsupported values remain unavailable, not zero. The 2024 PDI/STARS transition is visibly marked. Historical observations use current 2020 SNA geography as a proxy; unresolved source rows remain citywide and unassigned rather than being fabricated or treated as zero. Years before 2011 are out of scope.
+The retired Electron/Windows distribution remains historical and unsupported.
 
 ## Licensing and attribution
 
-- PDI metadata identifies the source as Public Domain.
-- Other City/CAGIS and STARS redistribution terms must be rechecked against current source metadata before downstream redistribution.
-- Application source is licensed under Apache License 2.0; see `LICENSE`.
+- PDI metadata identifies that dataset as Public Domain.
+- Other City, County, CAGIS, and STARS redistribution terms should be checked against their current source metadata before downstream redistribution.
+- Application source is licensed under the Apache License 2.0; see [LICENSE](LICENSE).
