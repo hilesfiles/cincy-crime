@@ -1,7 +1,7 @@
 {
   "sourceSystem": "CPD_PDI",
   "datasetId": "k59e-2pvf",
-  "retrievedAt": "2026-08-26T22:03:39.870Z",
+  "retrievedAt": "2026-09-03T02:54:06.302Z",
   "metadata": {
     "id": "k59e-2pvf",
     "name": "PDI (Police Data Initiative) Crime Incidents",
@@ -13,7 +13,7 @@
     "description": "Note: Due to the RMS change for CPS, this data set stops on 6/2/2024. For records beginning on 6/3/2024, please see the dataset at this link: \nhttps://data.cincinnati-oh.gov/safety/Reported-Crime-STARS-Category-Offenses-/7aqy-xrv9/about_data\n\n\nData Description: This data represents reported Crime Incidents in the City of Cincinnati. Incidents are the records, of reported crimes, collated by an agency for management. Incidents are typically housed in a Records Management System (RMS) that stores agency-wide data about law enforcement operations. This does not include police calls for service, arrest information, final case determination, or any other incident outcome data.\n \nData Creation: The Cincinnati Police Department's (CPD) records crime incidents in the City through Records Management System (RMS) that stores agency-wide data about law enforcement operations. \n\nData Created By: The source of this data is the Cincinnati Police Department.\n\nRefresh Frequency: This data is updated daily.\n\nCincyInsights: The City of Cincinnati maintains an interactive dashboard portal, CincyInsights in addition to our Open Data in an effort to increase access and usage of city data. This data set has an associated dashboard available here: https://insights.cincinnati-oh.gov/stories/s/8eaa-xrvz\n\nData Dictionary: A data dictionary providing definitions of columns and attributes is available as an attachment to this dataset.\n\nProcessing: The City of Cincinnati is committed to providing the most granular and accurate data possible. In that pursuit the Office of Performance and Data Analytics  facilitates standard processing to most raw data prior to publication. Processing includes but is not limited: address verification, geocoding, decoding attributes, and addition of administrative areas (i.e. Census, neighborhoods, police districts, etc.).\n\nData Usage: For directions on downloading and using open data please visit our How-to Guide: https://data.cincinnati-oh.gov/dataset/Open-Data-How-To-Guide/gdr9-g3ad\n\nDisclaimer: In compliance with privacy laws, all Public Safety datasets are anonymized and appropriately redacted prior to publication on the City of Cincinnati’s Open Data Portal. This means that for all public safety datasets: (1) the last two digits of all addresses have been replaced with “XX,” and in cases where there is a single digit street address, the entire address number is replaced with \"X\"; and (2) Latitude and Longitude have been randomly skewed to represent values within the same block area (but not the exact location) of the incident.",
     "diciBackend": false,
     "displayType": "table",
-    "downloadCount": 14669,
+    "downloadCount": 14678,
     "hideFromCatalog": false,
     "hideFromDataJson": false,
     "licenseId": "PUBLIC_DOMAIN",
@@ -27,12 +27,12 @@
     "publicationDate": 1630442186,
     "publicationGroup": 14619252,
     "publicationStage": "published",
-    "rowsUpdatedAt": 1787766864,
+    "rowsUpdatedAt": 1788372103,
     "rowsUpdatedBy": "wvxi-y5xi",
     "tableId": 18426094,
     "totalTimesRated": 0,
-    "viewCount": 94504,
-    "viewLastModified": 1787766681,
+    "viewCount": 94824,
+    "viewLastModified": 1788371891,
     "viewType": "tabular",
     "approvals": [
       {
@@ -3485,7 +3485,7 @@
   "coverage": {
     "min_date": "1991-12-31T00:00:00.000",
     "max_date": "2026-01-13T14:14:00.000",
-    "count": "538745"
+    "count": "538744"
   },
   "postTransition": [
     {

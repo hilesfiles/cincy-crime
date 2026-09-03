@@ -17,8 +17,8 @@ async function main() {
   const stars = await fetchStars();
   await fetchPopulation();
   await fetchDemographics();
-  await fetchCpdNeighborhoodReports();
-  await fetchHistoricalSources();
+  const cpd = await fetchCpdNeighborhoodReports();
+  await fetchHistoricalSources(cpd.metadata.cutoff);
   await buildHistorical();
   await buildElections();
   await fetchBudget();

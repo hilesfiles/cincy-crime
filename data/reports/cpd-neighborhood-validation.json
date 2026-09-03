@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-26T23:49:20.835Z",
+  "generatedAt": "2026-09-03T02:54:17.552Z",
   "status": "warning",
   "reportCount": 51,
   "expectedReportCount": 51,
-  "reportUpdatedAt": "8/24/2026",
-  "current28Period": "07/26/26|08/22/26",
-  "cutoff": "2026-08-22",
+  "reportUpdatedAt": "9/1/2026",
+  "current28Period": "08/02/26|08/29/26",
+  "cutoff": "2026-08-29",
   "missing": [],
   "extra": [],
   "reconciliationExceptions": [

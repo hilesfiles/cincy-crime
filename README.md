@@ -12,14 +12,14 @@ The supported product is the browser application deployed through GitHub Pages. 
 
 Current checked-in coverage:
 
-- Preliminary CPD neighborhood-report aggregates through **August 22, 2026**.
-- **52,500** STARS offense rows in the source feed through **June 23, 2026**; the application retains grouped statistics rather than address-level records.
-- Complete calendar-year crime history for **2011–2025** and same-date YTD comparisons for **2011–2026**.
+- Preliminary CPD neighborhood-report aggregates through **August 29, 2026**.
+- **57,446** STARS offense rows in the source feed through **September 1, 2026**; the application retains grouped statistics rather than address-level records.
+- Complete calendar-year crime history for **2011–2025** and January 1–August 29 YTD comparisons for **2011–2026**.
 - **50** map regions representing **51** civic-neighborhood names.
 - Official 2010 and 2020 population anchors plus complete 2016–2020 ACS profiles for all 50 map regions.
 - Seven official election contest results across **2016, 2018, 2020, 2022, and 2024**.
 - Police budget authority for FY2004–FY2027, with FY2005 unavailable in the published ledger.
-- Audited General Fund Police actuals for FY2014–FY2024.
+- Audited General Fund Police actuals for FY2014–FY2025.
 - A separate 66-record public-safety initiative ledger covering four published programs.
 
 Dates and counts above describe the committed artifacts. The in-app **Data status** page is the authoritative build-specific inventory.
@@ -97,7 +97,7 @@ Democratic and Republican percentages describe candidate or ticket vote shares, 
 The financial section intentionally keeps three concepts separate:
 
 1. **Budget authority** aggregates published Cincinnati Financial System `CURRENT_BUDGET` Police department and bureau rows. FY2013 is a six-month transition stub. Neighborhood values for FY2014–FY2025 are modeled by applying one citywide budget-per-reported-crime amount to each neighborhood’s selected crime count; they are not observed spending, staffing, service delivery, or district allocations.
-2. **Audited actuals** use Cincinnati ACFR General Fund Division of Police expenditures on the published GAAP basis for FY2014–FY2024. The comparable headline excludes Emergency Communications when separately reported. City totals are audited; neighborhood shares are crime-share attributions, not audited neighborhood expenditures.
+2. **Audited actuals** use Cincinnati ACFR General Fund Division of Police expenditures on the published GAAP basis for FY2014–FY2025. The comparable headline excludes Emergency Communications when separately reported. City totals are audited; neighborhood shares are crime-share attributions, not audited neighborhood expenditures.
 3. **Initiative ledger** retains only officially published violence-prevention or neighborhood-safety amounts described as awarded, invested, or deployed. Geography is assigned only when the source names a neighborhood, and most dollars remain unallocated because the sources do not publish a defensible neighborhood split. This ledger is separate and must not be added to Police actuals.
 
 ## Architecture

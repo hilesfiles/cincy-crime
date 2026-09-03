@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { mapWithConcurrency, sha256 } from "./pdf-text";
 import { socrataQuery } from "./socrata";
@@ -9,7 +9,12 @@ type PeriodRows<T> = { period: "annual" | "same_date_ytd"; year: number; start: 
 
 const firstYear = 2011;
 const lastFullYear = 2025;
-const comparisonMonthDay = "08-22";
+
+export function comparisonMonthDayFromCutoff(cutoff: string) {
+  const match = /^\d{4}-(\d{2}-\d{2})$/.exec(cutoff);
+  if (!match) throw new Error(`Invalid CPD cutoff: ${cutoff}`);
+  return match[1];
+}
 
 function annualQuery(dateField: string, neighborhoodField: string, categoryFields: string[], start: string, end: string) {
   const selected = [`date_extract_y(${dateField}) as year`, neighborhoodField, ...categoryFields, "count(*) as count"];
@@ -24,15 +29,19 @@ async function fetchPeriodRows<T>(datasetId: string, dateField: string, neighbor
   }));
 }
 
-export async function fetchHistoricalSources() {
+export async function fetchHistoricalSources(currentCpdCutoff?: string) {
   const root = process.cwd();
   const retrievedAt = new Date().toISOString();
+  const currentSummary = currentCpdCutoff
+    ? null
+    : JSON.parse(await readFile(path.join(root, "data/processed/crime/cpd-neighborhood-summary.json"), "utf8")) as { metadata: { cutoff: string } };
+  const monthDay = comparisonMonthDayFromCutoff(currentCpdCutoff ?? currentSummary!.metadata.cutoff);
   console.log("Fetching official annual and same-date historical aggregates...");
 
   const pdiAnnualQuery = annualQuery("date_reported", "sna_neighborhood", ["cpd_neighborhood", "community_council_neighborhood", "ucr_group"], `${firstYear}-01-01`, "2024-06-02");
   const starsAnnualQuery = annualQuery("datereported", "sna_neighborhood", ["stars_category", "type"], "2024-06-03", `${lastFullYear}-12-31`);
-  const pdiYtdPeriods = Array.from({ length: 14 }, (_, index) => firstYear + index).map((year) => ({ year, start: `${year}-01-01`, end: year === 2024 ? "2024-06-02" : `${year}-${comparisonMonthDay}` }));
-  const starsYtdPeriods = [2024, 2025].map((year) => ({ year, start: year === 2024 ? "2024-06-03" : `${year}-01-01`, end: `${year}-${comparisonMonthDay}` }));
+  const pdiYtdPeriods = Array.from({ length: 14 }, (_, index) => firstYear + index).map((year) => ({ year, start: `${year}-01-01`, end: year === 2024 ? "2024-06-02" : `${year}-${monthDay}` }));
+  const starsYtdPeriods = [2024, 2025].map((year) => ({ year, start: year === 2024 ? "2024-06-03" : `${year}-01-01`, end: `${year}-${monthDay}` }));
 
   const [pdiAnnualRows, starsAnnualRows, pdiYtd, starsYtd] = await Promise.all([
     socrataQuery<PdiRow>("k59e-2pvf", pdiAnnualQuery),
@@ -46,14 +55,14 @@ export async function fetchHistoricalSources() {
       retrievedAt,
       firstYear,
       lastFullYear,
-      comparisonMonthDay,
+      comparisonMonthDay: monthDay,
       sources: [
         { sourceSystem: "CPD_PDI", datasetId: "k59e-2pvf", unit: "reported crime incident row", operationalEnd: "2024-06-02", annualQuery: pdiAnnualQuery },
         { sourceSystem: "CPD_STARS", datasetId: "7aqy-xrv9", unit: "STARS offense row", operationalStart: "2024-06-03", annualQuery: starsAnnualQuery },
       ],
     },
     annual: { pdiRows: pdiAnnualRows, starsRows: starsAnnualRows },
-    sameDateYtd: { monthDay: comparisonMonthDay, pdiPeriods: pdiYtd, starsPeriods: starsYtd },
+    sameDateYtd: { monthDay, pdiPeriods: pdiYtd, starsPeriods: starsYtd },
   };
   await Promise.all([mkdir(path.join(root, "data/raw/crime/historical"), { recursive: true }), mkdir(path.join(root, "data/reports"), { recursive: true })]);
   const serialized = `${JSON.stringify(output)}\n`;

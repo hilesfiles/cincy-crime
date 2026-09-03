@@ -12,11 +12,19 @@ const budget = budgetJson as PoliceBudgetData;
 
 describe("financial actuals", () => {
   it("keeps a consecutive audited Police series with same-basis variance", () => {
-    expect(actuals.years.map((row) => row.fiscalYear)).toEqual(Array.from({ length: 11 }, (_, index) => 2014 + index));
+    expect(actuals.years.map((row) => row.fiscalYear)).toEqual(Array.from({ length: 12 }, (_, index) => 2014 + index));
     for (const row of actuals.years) {
       expect(row.finalBudget - row.budgetBasisActual).toBe(row.budgetBasisVariance);
       expect(row.gaapActual).toBeGreaterThan(0);
     }
+    expect(actuals.years.at(-1)).toMatchObject({
+      fiscalYear: 2025,
+      gaapActual: 194_262_000,
+      originalBudget: 181_618_000,
+      finalBudget: 194_804_000,
+      budgetBasisActual: 192_936_000,
+      budgetBasisVariance: 1_868_000,
+    });
   });
 
   it("reconciles modeled neighborhood and unresolved geography to the audited city total", () => {

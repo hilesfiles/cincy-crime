@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-27T05:22:38.805Z",
+    "generatedAt": "2026-09-03T02:54:35.625Z",
     "budgetDatasetId": "hv35-hdk2",
     "budgetSourceUrl": "https://data.cincinnati-oh.gov/resource/hv35-hdk2.json",
     "budgetField": "CURRENT_BUDGET",
@@ -19,7 +19,7 @@
       "firstFiscalYear": 2014,
       "lastCompleteFiscalYear": 2025
     },
-    "sourceUpdatedAt": 1787800095
+    "sourceUpdatedAt": 1788318530
   },
   "budgets": [
     {
@@ -8524,7 +8524,7 @@
         "larceny_theft": 10546,
         "motor_vehicle_theft": 0,
         "strangulation": 0,
-        "other": 15937
+        "other": 15936
       },
       "unassignedCounts": {
         "totalPart1": 51,
@@ -8638,7 +8638,7 @@
             "larceny_theft": 133,
             "motor_vehicle_theft": 0,
             "strangulation": 0,
-            "other": 137
+            "other": 136
           }
         },
         {
@@ -11631,18 +11631,18 @@
       ],
       "sourceGrain": "STARS offense rows",
       "cityCounts": {
-        "totalPart1": 15228,
+        "totalPart1": 15227,
         "violent": 2140,
-        "property": 13088,
+        "property": 13087,
         "homicide": 72,
         "rape": 199,
         "robbery": 801,
         "aggravated_assault": 799,
         "burglary": 1932,
         "larceny_theft": 8222,
-        "motor_vehicle_theft": 2934,
+        "motor_vehicle_theft": 2933,
         "strangulation": 269,
-        "other": 10629
+        "other": 10628
       },
       "unassignedCounts": {
         "totalPart1": 74,
@@ -11656,7 +11656,7 @@
         "larceny_theft": 23,
         "motor_vehicle_theft": 17,
         "strangulation": 1,
-        "other": 49
+        "other": 48
       },
       "neighborhoods": [
         {
@@ -12016,7 +12016,7 @@
             "larceny_theft": 78,
             "motor_vehicle_theft": 53,
             "strangulation": 0,
-            "other": 99
+            "other": 98
           }
         },
         {
@@ -12056,7 +12056,7 @@
             "larceny_theft": 48,
             "motor_vehicle_theft": 16,
             "strangulation": 1,
-            "other": 59
+            "other": 58
           }
         },
         {
@@ -12316,7 +12316,7 @@
             "larceny_theft": 451,
             "motor_vehicle_theft": 62,
             "strangulation": 2,
-            "other": 212
+            "other": 213
           }
         },
         {
@@ -12356,7 +12356,7 @@
             "larceny_theft": 33,
             "motor_vehicle_theft": 18,
             "strangulation": 3,
-            "other": 50
+            "other": 51
           }
         },
         {
@@ -12605,16 +12605,16 @@
           "name": "West Price Hill",
           "population": 19960,
           "counts": {
-            "totalPart1": 709,
+            "totalPart1": 708,
             "violent": 118,
-            "property": 591,
+            "property": 590,
             "homicide": 2,
             "rape": 9,
             "robbery": 55,
             "aggravated_assault": 34,
             "burglary": 81,
             "larceny_theft": 370,
-            "motor_vehicle_theft": 140,
+            "motor_vehicle_theft": 139,
             "strangulation": 18,
             "other": 564
           }

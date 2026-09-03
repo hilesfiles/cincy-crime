@@ -3,12 +3,12 @@
     "sourceSystem": "CPD_STARS",
     "datasetId": "7aqy-xrv9",
     "title": "Reported Crime (STARS Category Offenses) on or after 6/3/2024",
-    "retrievedAt": "2026-08-26T22:26:37.485Z",
-    "cutoff": "2026-06-23",
+    "retrievedAt": "2026-09-03T02:54:06.772Z",
+    "cutoff": "2026-09-01",
     "sourceCoverage": {
       "min_date": "2024-06-03T00:12:00.000",
-      "max_date": "2026-06-23T04:12:00.000",
-      "count": "52500"
+      "max_date": "2026-09-01T07:13:00.000",
+      "count": "57446"
     },
     "unit": "STARS offense rows",
     "mappingVersion": "2026-08-26.1"
@@ -16,80 +16,80 @@
   "windows": {
     "ytd": {
       "comparisonStart": "2026-01-01",
-      "comparisonEnd": "2026-06-23",
+      "comparisonEnd": "2026-09-01",
       "priorStart": "2025-01-01",
-      "priorEnd": "2025-06-23"
+      "priorEnd": "2025-09-01"
     },
     "rolling28": {
-      "currentStart": "2026-05-27",
-      "currentEnd": "2026-06-23",
-      "previousStart": "2026-04-29",
-      "previousEnd": "2026-05-26"
+      "currentStart": "2026-08-05",
+      "currentEnd": "2026-09-01",
+      "previousStart": "2026-07-08",
+      "previousEnd": "2026-08-04"
     }
   },
   "city": {
     "currentYtd": {
-      "violent": 954,
-      "property": 5390,
-      "totalPart1": 6344,
+      "violent": 1439,
+      "property": 7668,
+      "totalPart1": 9107,
       "categories": {
-        "other": 5083,
-        "robbery": 258,
-        "motor_vehicle_theft": 813,
-        "aggravated_assault": 349,
-        "burglary": 682,
-        "homicide": 22,
-        "larceny_theft": 3895,
-        "strangulation": 203,
-        "rape": 122
+        "other": 7264,
+        "homicide": 28,
+        "robbery": 378,
+        "larceny_theft": 5500,
+        "burglary": 946,
+        "strangulation": 297,
+        "motor_vehicle_theft": 1222,
+        "aggravated_assault": 530,
+        "rape": 206
       }
     },
     "priorYtd": {
-      "violent": 917,
-      "property": 5774,
-      "totalPart1": 6691,
+      "violent": 1354,
+      "property": 8269,
+      "totalPart1": 9623,
       "categories": {
-        "larceny_theft": 3731,
-        "motor_vehicle_theft": 1130,
-        "other": 4920,
-        "robbery": 328,
-        "aggravated_assault": 329,
-        "burglary": 913,
-        "strangulation": 133,
-        "homicide": 36,
-        "rape": 91
+        "burglary": 1282,
+        "motor_vehicle_theft": 1602,
+        "other": 7155,
+        "larceny_theft": 5385,
+        "aggravated_assault": 510,
+        "robbery": 468,
+        "strangulation": 195,
+        "homicide": 48,
+        "rape": 133
       }
     },
     "current28": {
-      "violent": 163,
-      "property": 1051,
-      "totalPart1": 1214,
+      "violent": 192,
+      "property": 907,
+      "totalPart1": 1099,
       "categories": {
-        "strangulation": 31,
-        "larceny_theft": 807,
-        "burglary": 105,
-        "motor_vehicle_theft": 139,
-        "other": 892,
-        "aggravated_assault": 66,
-        "rape": 21,
-        "robbery": 41,
+        "larceny_theft": 610,
+        "other": 844,
+        "robbery": 50,
+        "burglary": 116,
+        "rape": 22,
+        "motor_vehicle_theft": 181,
+        "aggravated_assault": 72,
+        "strangulation": 44,
         "homicide": 4
       }
     },
     "previous28": {
-      "violent": 183,
-      "property": 892,
-      "totalPart1": 1075,
+      "violent": 193,
+      "property": 922,
+      "totalPart1": 1115,
       "categories": {
-        "burglary": 97,
-        "larceny_theft": 667,
-        "robbery": 56,
-        "other": 911,
-        "strangulation": 39,
-        "motor_vehicle_theft": 128,
-        "aggravated_assault": 59,
-        "rape": 26,
-        "homicide": 3
+        "other": 854,
+        "motor_vehicle_theft": 135,
+        "aggravated_assault": 69,
+        "burglary": 95,
+        "larceny_theft": 692,
+        "strangulation": 38,
+        "rape": 35,
+        "robbery": 50,
+        "homicide": 1
       }
     }
   },
@@ -100,84 +100,83 @@
       "name": "Avondale",
       "sourceName": "Avondale",
       "currentYtd": {
-        "violent": 90,
-        "property": 227,
-        "totalPart1": 317,
+        "violent": 138,
+        "property": 343,
+        "totalPart1": 481,
         "categories": {
-          "other": 391,
-          "aggravated_assault": 36,
-          "larceny_theft": 137,
-          "burglary": 49,
-          "robbery": 19,
-          "motor_vehicle_theft": 41,
-          "strangulation": 18,
-          "rape": 14,
+          "larceny_theft": 195,
+          "other": 557,
+          "aggravated_assault": 60,
+          "burglary": 73,
+          "robbery": 29,
+          "motor_vehicle_theft": 75,
+          "strangulation": 24,
+          "rape": 22,
           "homicide": 3
         }
       },
       "priorYtd": {
-        "violent": 71,
-        "property": 220,
-        "totalPart1": 291,
+        "violent": 104,
+        "property": 312,
+        "totalPart1": 416,
         "categories": {
-          "robbery": 21,
-          "other": 352,
-          "aggravated_assault": 28,
-          "larceny_theft": 116,
-          "burglary": 54,
-          "motor_vehicle_theft": 50,
-          "homicide": 1,
-          "strangulation": 16,
-          "rape": 5
+          "aggravated_assault": 37,
+          "robbery": 34,
+          "other": 479,
+          "larceny_theft": 174,
+          "burglary": 65,
+          "motor_vehicle_theft": 73,
+          "homicide": 2,
+          "strangulation": 22,
+          "rape": 9
         }
       },
       "current28": {
-        "violent": 14,
-        "property": 35,
-        "totalPart1": 49,
+        "violent": 20,
+        "property": 45,
+        "totalPart1": 65,
         "categories": {
-          "larceny_theft": 25,
-          "burglary": 4,
-          "other": 67,
-          "aggravated_assault": 6,
-          "rape": 4,
-          "motor_vehicle_theft": 6,
-          "strangulation": 2,
-          "robbery": 2
+          "other": 55,
+          "motor_vehicle_theft": 15,
+          "larceny_theft": 20,
+          "burglary": 10,
+          "aggravated_assault": 11,
+          "robbery": 3,
+          "strangulation": 3,
+          "rape": 3
         }
       },
       "previous28": {
-        "violent": 20,
-        "property": 37,
-        "totalPart1": 57,
+        "violent": 17,
+        "property": 48,
+        "totalPart1": 65,
         "categories": {
-          "other": 79,
-          "strangulation": 7,
-          "rape": 4,
-          "larceny_theft": 19,
-          "robbery": 4,
-          "motor_vehicle_theft": 7,
-          "aggravated_assault": 4,
-          "burglary": 11,
-          "homicide": 1
+          "larceny_theft": 27,
+          "other": 71,
+          "robbery": 6,
+          "burglary": 8,
+          "aggravated_assault": 6,
+          "motor_vehicle_theft": 13,
+          "strangulation": 2,
+          "rape": 3
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 26.76056338028169
+          "value": 32.69230769230769
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 3.1818181818181817
+          "value": 9.935897435897436
         },
         "totalYtd": {
           "kind": "value",
-          "value": 8.934707903780069
+          "value": 15.625
         },
         "violent28": {
           "kind": "value",
-          "value": -30
+          "value": 17.647058823529413
         }
       }
     },
@@ -187,78 +186,77 @@
       "name": "Bond Hill",
       "sourceName": "Bond Hill",
       "currentYtd": {
-        "violent": 25,
-        "property": 72,
-        "totalPart1": 97,
+        "violent": 37,
+        "property": 101,
+        "totalPart1": 138,
         "categories": {
-          "strangulation": 4,
-          "larceny_theft": 51,
-          "other": 119,
+          "strangulation": 7,
+          "other": 160,
+          "larceny_theft": 69,
           "homicide": 2,
-          "aggravated_assault": 9,
-          "motor_vehicle_theft": 12,
-          "burglary": 9,
-          "rape": 5,
+          "aggravated_assault": 14,
+          "motor_vehicle_theft": 16,
+          "burglary": 16,
+          "rape": 9,
           "robbery": 5
         }
       },
       "priorYtd": {
-        "violent": 17,
-        "property": 114,
-        "totalPart1": 131,
+        "violent": 22,
+        "property": 156,
+        "totalPart1": 178,
         "categories": {
-          "larceny_theft": 65,
-          "robbery": 7,
+          "larceny_theft": 94,
+          "robbery": 9,
           "rape": 2,
-          "other": 100,
-          "burglary": 20,
-          "motor_vehicle_theft": 29,
-          "aggravated_assault": 6,
-          "strangulation": 2
+          "other": 154,
+          "burglary": 27,
+          "motor_vehicle_theft": 35,
+          "aggravated_assault": 8,
+          "strangulation": 3
         }
       },
       "current28": {
-        "violent": 6,
-        "property": 10,
-        "totalPart1": 16,
+        "violent": 2,
+        "property": 12,
+        "totalPart1": 14,
         "categories": {
-          "larceny_theft": 7,
+          "other": 18,
+          "larceny_theft": 8,
           "burglary": 2,
-          "other": 19,
-          "robbery": 3,
-          "aggravated_assault": 2,
-          "motor_vehicle_theft": 1,
-          "homicide": 1
+          "motor_vehicle_theft": 2,
+          "strangulation": 2
         }
       },
       "previous28": {
-        "violent": 1,
-        "property": 13,
-        "totalPart1": 14,
+        "violent": 6,
+        "property": 14,
+        "totalPart1": 20,
         "categories": {
-          "other": 24,
-          "burglary": 2,
-          "larceny_theft": 8,
-          "motor_vehicle_theft": 3,
-          "aggravated_assault": 1
+          "rape": 3,
+          "other": 12,
+          "larceny_theft": 10,
+          "aggravated_assault": 3,
+          "burglary": 3,
+          "motor_vehicle_theft": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 47.05882352941176
+          "value": 68.18181818181817
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -36.84210526315789
+          "value": -35.256410256410255
         },
         "totalYtd": {
           "kind": "value",
-          "value": -25.954198473282442
+          "value": -22.47191011235955
         },
         "violent28": {
           "kind": "value",
-          "value": 500
+          "value": -66.66666666666666
         }
       }
     },
@@ -269,39 +267,38 @@
       "sourceName": "California",
       "currentYtd": {
         "violent": 0,
-        "property": 2,
-        "totalPart1": 2,
+        "property": 3,
+        "totalPart1": 3,
         "categories": {
-          "other": 1,
+          "other": 2,
           "burglary": 1,
-          "larceny_theft": 1
+          "larceny_theft": 2
         }
       },
       "priorYtd": {
         "violent": 0,
-        "property": 7,
-        "totalPart1": 7,
+        "property": 8,
+        "totalPart1": 8,
         "categories": {
-          "other": 8,
-          "motor_vehicle_theft": 2,
+          "other": 9,
           "burglary": 2,
-          "larceny_theft": 3
+          "motor_vehicle_theft": 2,
+          "larceny_theft": 4
         }
       },
       "current28": {
         "violent": 0,
         "property": 0,
         "totalPart1": 0,
-        "categories": {}
+        "categories": {
+          "other": 1
+        }
       },
       "previous28": {
         "violent": 0,
-        "property": 2,
-        "totalPart1": 2,
-        "categories": {
-          "burglary": 1,
-          "larceny_theft": 1
-        }
+        "property": 0,
+        "totalPart1": 0,
+        "categories": {}
       },
       "changes": {
         "violentYtd": {
@@ -310,11 +307,11 @@
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -71.42857142857143
+          "value": -62.5
         },
         "totalYtd": {
           "kind": "value",
-          "value": -71.42857142857143
+          "value": -62.5
         },
         "violent28": {
           "kind": "no-change",
@@ -328,73 +325,74 @@
       "name": "Camp Washington",
       "sourceName": "Camp Washington",
       "currentYtd": {
-        "violent": 10,
-        "property": 115,
-        "totalPart1": 125,
+        "violent": 19,
+        "property": 147,
+        "totalPart1": 166,
         "categories": {
-          "other": 55,
-          "larceny_theft": 97,
-          "motor_vehicle_theft": 13,
-          "robbery": 2,
-          "aggravated_assault": 6,
-          "strangulation": 2,
-          "burglary": 5
+          "larceny_theft": 122,
+          "other": 61,
+          "motor_vehicle_theft": 16,
+          "robbery": 8,
+          "aggravated_assault": 8,
+          "strangulation": 3,
+          "burglary": 9
         }
       },
       "priorYtd": {
-        "violent": 8,
-        "property": 54,
-        "totalPart1": 62,
+        "violent": 13,
+        "property": 99,
+        "totalPart1": 112,
         "categories": {
-          "burglary": 7,
-          "motor_vehicle_theft": 14,
-          "other": 41,
-          "larceny_theft": 33,
-          "robbery": 2,
+          "burglary": 24,
+          "motor_vehicle_theft": 23,
+          "other": 65,
+          "larceny_theft": 52,
+          "robbery": 4,
           "rape": 1,
-          "aggravated_assault": 5
+          "aggravated_assault": 6,
+          "strangulation": 2
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 20,
-        "totalPart1": 23,
+        "violent": 2,
+        "property": 9,
+        "totalPart1": 11,
         "categories": {
-          "other": 8,
-          "larceny_theft": 19,
-          "strangulation": 1,
-          "motor_vehicle_theft": 1,
-          "robbery": 1,
-          "aggravated_assault": 1
+          "other": 2,
+          "aggravated_assault": 1,
+          "larceny_theft": 5,
+          "motor_vehicle_theft": 3,
+          "burglary": 1,
+          "robbery": 1
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 22,
-        "totalPart1": 24,
+        "violent": 4,
+        "property": 10,
+        "totalPart1": 14,
         "categories": {
-          "other": 10,
-          "larceny_theft": 19,
-          "motor_vehicle_theft": 3,
-          "aggravated_assault": 2
+          "larceny_theft": 10,
+          "robbery": 3,
+          "strangulation": 1,
+          "other": 3
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 25
+          "value": 46.15384615384615
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 112.96296296296295
+          "value": 48.484848484848484
         },
         "totalYtd": {
           "kind": "value",
-          "value": 101.61290322580645
+          "value": 48.214285714285715
         },
         "violent28": {
           "kind": "value",
-          "value": 50
+          "value": -50
         }
       }
     },
@@ -404,55 +402,54 @@
       "name": "Carthage",
       "sourceName": "Carthage",
       "currentYtd": {
-        "violent": 10,
-        "property": 85,
-        "totalPart1": 95,
+        "violent": 16,
+        "property": 108,
+        "totalPart1": 124,
         "categories": {
-          "larceny_theft": 52,
-          "motor_vehicle_theft": 15,
-          "other": 62,
-          "burglary": 18,
-          "aggravated_assault": 3,
+          "larceny_theft": 69,
+          "motor_vehicle_theft": 19,
+          "other": 75,
+          "burglary": 20,
+          "aggravated_assault": 6,
           "rape": 2,
-          "robbery": 4,
+          "robbery": 7,
           "strangulation": 1
         }
       },
       "priorYtd": {
-        "violent": 14,
-        "property": 53,
-        "totalPart1": 67,
+        "violent": 25,
+        "property": 71,
+        "totalPart1": 96,
         "categories": {
-          "robbery": 11,
-          "other": 39,
-          "larceny_theft": 31,
-          "burglary": 9,
-          "motor_vehicle_theft": 13,
-          "aggravated_assault": 2,
+          "robbery": 19,
+          "other": 63,
+          "larceny_theft": 42,
+          "burglary": 12,
+          "motor_vehicle_theft": 17,
+          "aggravated_assault": 5,
           "homicide": 1
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 22,
-        "totalPart1": 25,
+        "violent": 2,
+        "property": 7,
+        "totalPart1": 9,
         "categories": {
-          "other": 14,
-          "larceny_theft": 12,
-          "strangulation": 1,
-          "robbery": 2,
-          "motor_vehicle_theft": 3,
-          "burglary": 7
+          "aggravated_assault": 1,
+          "other": 4,
+          "larceny_theft": 7,
+          "robbery": 1
         }
       },
       "previous28": {
-        "violent": 1,
-        "property": 16,
-        "totalPart1": 17,
+        "violent": 2,
+        "property": 8,
+        "totalPart1": 10,
         "categories": {
-          "other": 12,
-          "larceny_theft": 10,
-          "motor_vehicle_theft": 4,
+          "other": 6,
+          "motor_vehicle_theft": 2,
+          "larceny_theft": 4,
+          "aggravated_assault": 1,
           "burglary": 2,
           "robbery": 1
         }
@@ -460,19 +457,19 @@
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -28.57142857142857
+          "value": -36
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 60.37735849056604
+          "value": 52.112676056338024
         },
         "totalYtd": {
           "kind": "value",
-          "value": 41.7910447761194
+          "value": 29.166666666666668
         },
         "violent28": {
           "kind": "value",
-          "value": 200
+          "value": 0
         }
       }
     },
@@ -482,72 +479,78 @@
       "name": "Clifton",
       "sourceName": "Clifton",
       "currentYtd": {
-        "violent": 8,
-        "property": 113,
-        "totalPart1": 121,
+        "violent": 15,
+        "property": 168,
+        "totalPart1": 183,
         "categories": {
-          "larceny_theft": 80,
-          "motor_vehicle_theft": 22,
-          "other": 86,
-          "strangulation": 2,
-          "burglary": 11,
+          "larceny_theft": 115,
+          "motor_vehicle_theft": 36,
+          "other": 139,
+          "strangulation": 4,
+          "burglary": 17,
           "rape": 1,
-          "robbery": 2,
-          "aggravated_assault": 3
+          "robbery": 5,
+          "aggravated_assault": 4,
+          "homicide": 1
         }
       },
       "priorYtd": {
-        "violent": 24,
-        "property": 141,
-        "totalPart1": 165,
+        "violent": 36,
+        "property": 207,
+        "totalPart1": 243,
         "categories": {
-          "other": 108,
-          "larceny_theft": 81,
-          "motor_vehicle_theft": 33,
-          "burglary": 27,
-          "robbery": 10,
-          "aggravated_assault": 9,
-          "strangulation": 4,
-          "rape": 1
+          "other": 155,
+          "larceny_theft": 130,
+          "motor_vehicle_theft": 40,
+          "burglary": 37,
+          "robbery": 13,
+          "aggravated_assault": 13,
+          "strangulation": 7,
+          "rape": 3
         }
       },
       "current28": {
-        "violent": 0,
-        "property": 30,
-        "totalPart1": 30,
+        "violent": 4,
+        "property": 12,
+        "totalPart1": 16,
         "categories": {
-          "motor_vehicle_theft": 2,
-          "larceny_theft": 28,
-          "other": 14
+          "larceny_theft": 9,
+          "other": 16,
+          "burglary": 1,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "homicide": 1,
+          "motor_vehicle_theft": 2
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 11,
-        "totalPart1": 11,
+        "violent": 1,
+        "property": 25,
+        "totalPart1": 26,
         "categories": {
-          "larceny_theft": 6,
-          "other": 10,
-          "burglary": 3,
-          "motor_vehicle_theft": 2
+          "burglary": 5,
+          "other": 23,
+          "larceny_theft": 14,
+          "motor_vehicle_theft": 6,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -66.66666666666666
+          "value": -58.333333333333336
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -19.858156028368796
+          "value": -18.84057971014493
         },
         "totalYtd": {
           "kind": "value",
-          "value": -26.666666666666668
+          "value": -24.691358024691358
         },
         "violent28": {
-          "kind": "no-change",
-          "value": 0
+          "kind": "value",
+          "value": 300
         }
       }
     },
@@ -557,78 +560,79 @@
       "name": "College Hill",
       "sourceName": "College Hill",
       "currentYtd": {
-        "violent": 16,
-        "property": 127,
-        "totalPart1": 143,
+        "violent": 27,
+        "property": 172,
+        "totalPart1": 199,
         "categories": {
-          "motor_vehicle_theft": 18,
-          "other": 157,
-          "robbery": 5,
-          "larceny_theft": 93,
-          "burglary": 16,
-          "strangulation": 5,
-          "aggravated_assault": 3,
-          "rape": 3
+          "motor_vehicle_theft": 32,
+          "robbery": 6,
+          "other": 212,
+          "larceny_theft": 117,
+          "burglary": 23,
+          "strangulation": 10,
+          "aggravated_assault": 6,
+          "rape": 5
         }
       },
       "priorYtd": {
-        "violent": 23,
-        "property": 125,
-        "totalPart1": 148,
+        "violent": 35,
+        "property": 198,
+        "totalPart1": 233,
         "categories": {
-          "other": 163,
-          "larceny_theft": 51,
-          "robbery": 8,
-          "motor_vehicle_theft": 50,
-          "burglary": 24,
-          "aggravated_assault": 6,
-          "rape": 4,
-          "strangulation": 5
+          "other": 228,
+          "larceny_theft": 96,
+          "robbery": 10,
+          "motor_vehicle_theft": 70,
+          "burglary": 32,
+          "aggravated_assault": 14,
+          "rape": 5,
+          "strangulation": 6
         }
       },
       "current28": {
         "violent": 4,
-        "property": 32,
-        "totalPart1": 36,
+        "property": 23,
+        "totalPart1": 27,
         "categories": {
-          "larceny_theft": 26,
-          "motor_vehicle_theft": 2,
-          "other": 20,
-          "burglary": 4,
-          "strangulation": 1,
+          "other": 22,
+          "larceny_theft": 14,
+          "motor_vehicle_theft": 7,
           "robbery": 1,
-          "rape": 2
+          "burglary": 2,
+          "aggravated_assault": 2,
+          "strangulation": 1
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 31,
-        "totalPart1": 33,
+        "violent": 4,
+        "property": 18,
+        "totalPart1": 22,
         "categories": {
-          "other": 31,
-          "larceny_theft": 27,
-          "motor_vehicle_theft": 1,
-          "aggravated_assault": 1,
-          "burglary": 3,
-          "strangulation": 1
+          "larceny_theft": 10,
+          "other": 16,
+          "burglary": 4,
+          "strangulation": 2,
+          "motor_vehicle_theft": 4,
+          "rape": 1,
+          "aggravated_assault": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -30.434782608695656
+          "value": -22.857142857142858
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 1.6
+          "value": -13.131313131313133
         },
         "totalYtd": {
           "kind": "value",
-          "value": -3.3783783783783785
+          "value": -14.592274678111588
         },
         "violent28": {
           "kind": "value",
-          "value": 100
+          "value": 0
         }
       }
     },
@@ -639,10 +643,10 @@
       "sourceName": "Columbia Tusculum",
       "currentYtd": {
         "violent": 0,
-        "property": 3,
-        "totalPart1": 3,
+        "property": 5,
+        "totalPart1": 5,
         "categories": {
-          "larceny_theft": 3,
+          "larceny_theft": 5,
           "other": 3
         }
       },
@@ -653,7 +657,7 @@
         "categories": {
           "motor_vehicle_theft": 4,
           "larceny_theft": 3,
-          "other": 8,
+          "other": 11,
           "burglary": 7
         }
       },
@@ -676,11 +680,11 @@
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -78.57142857142857
+          "value": -64.28571428571429
         },
         "totalYtd": {
           "kind": "value",
-          "value": -78.57142857142857
+          "value": -64.28571428571429
         },
         "violent28": {
           "kind": "no-change",
@@ -694,56 +698,57 @@
       "name": "Corryville",
       "sourceName": "Corryville",
       "currentYtd": {
-        "violent": 17,
-        "property": 181,
-        "totalPart1": 198,
+        "violent": 25,
+        "property": 250,
+        "totalPart1": 275,
         "categories": {
-          "other": 106,
-          "larceny_theft": 134,
-          "rape": 3,
-          "burglary": 19,
-          "motor_vehicle_theft": 28,
-          "robbery": 5,
+          "other": 142,
+          "larceny_theft": 185,
+          "rape": 5,
+          "burglary": 21,
+          "motor_vehicle_theft": 44,
+          "robbery": 8,
           "strangulation": 2,
-          "aggravated_assault": 7
+          "aggravated_assault": 10
         }
       },
       "priorYtd": {
-        "violent": 25,
-        "property": 214,
-        "totalPart1": 239,
+        "violent": 36,
+        "property": 282,
+        "totalPart1": 318,
         "categories": {
-          "motor_vehicle_theft": 39,
-          "other": 117,
-          "larceny_theft": 151,
-          "burglary": 24,
-          "aggravated_assault": 8,
-          "robbery": 10,
+          "other": 171,
+          "motor_vehicle_theft": 46,
+          "larceny_theft": 205,
+          "burglary": 31,
+          "aggravated_assault": 15,
+          "robbery": 14,
           "rape": 3,
           "homicide": 1,
           "strangulation": 3
         }
       },
       "current28": {
-        "violent": 0,
-        "property": 28,
-        "totalPart1": 28,
+        "violent": 4,
+        "property": 36,
+        "totalPart1": 40,
         "categories": {
-          "larceny_theft": 23,
-          "other": 19,
-          "motor_vehicle_theft": 4,
+          "other": 14,
+          "motor_vehicle_theft": 11,
+          "larceny_theft": 24,
+          "robbery": 3,
+          "aggravated_assault": 1,
           "burglary": 1
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 40,
-        "totalPart1": 42,
+        "violent": 1,
+        "property": 24,
+        "totalPart1": 25,
         "categories": {
-          "larceny_theft": 35,
-          "other": 18,
-          "motor_vehicle_theft": 4,
-          "aggravated_assault": 1,
+          "other": 12,
+          "larceny_theft": 21,
+          "motor_vehicle_theft": 2,
           "rape": 1,
           "burglary": 1
         }
@@ -751,19 +756,19 @@
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -32
+          "value": -30.555555555555557
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -15.42056074766355
+          "value": -11.347517730496454
         },
         "totalYtd": {
           "kind": "value",
-          "value": -17.154811715481173
+          "value": -13.522012578616351
         },
         "violent28": {
           "kind": "value",
-          "value": -100
+          "value": 300
         }
       }
     },
@@ -773,84 +778,81 @@
       "name": "CUF",
       "sourceName": "CUF",
       "currentYtd": {
-        "violent": 38,
-        "property": 358,
-        "totalPart1": 396,
+        "violent": 62,
+        "property": 506,
+        "totalPart1": 568,
         "categories": {
-          "burglary": 50,
-          "other": 164,
-          "motor_vehicle_theft": 80,
-          "larceny_theft": 228,
-          "strangulation": 8,
-          "aggravated_assault": 9,
-          "robbery": 13,
-          "rape": 7,
+          "motor_vehicle_theft": 120,
+          "other": 252,
+          "burglary": 60,
+          "larceny_theft": 326,
+          "strangulation": 17,
+          "aggravated_assault": 17,
+          "robbery": 17,
+          "rape": 10,
           "homicide": 1
         }
       },
       "priorYtd": {
-        "violent": 34,
-        "property": 392,
-        "totalPart1": 426,
+        "violent": 47,
+        "property": 537,
+        "totalPart1": 584,
         "categories": {
-          "larceny_theft": 275,
-          "other": 154,
-          "motor_vehicle_theft": 59,
-          "burglary": 58,
-          "rape": 3,
-          "robbery": 15,
-          "aggravated_assault": 10,
+          "other": 224,
+          "larceny_theft": 352,
+          "motor_vehicle_theft": 89,
+          "burglary": 96,
+          "rape": 4,
+          "robbery": 21,
+          "aggravated_assault": 16,
           "homicide": 3,
           "strangulation": 3
         }
       },
       "current28": {
-        "violent": 9,
-        "property": 68,
-        "totalPart1": 77,
+        "violent": 4,
+        "property": 66,
+        "totalPart1": 70,
         "categories": {
-          "rape": 1,
-          "motor_vehicle_theft": 15,
-          "larceny_theft": 47,
-          "other": 28,
-          "burglary": 6,
+          "other": 35,
+          "larceny_theft": 36,
           "strangulation": 2,
-          "robbery": 3,
           "aggravated_assault": 2,
-          "homicide": 1
+          "motor_vehicle_theft": 26,
+          "burglary": 4
         }
       },
       "previous28": {
-        "violent": 8,
-        "property": 55,
-        "totalPart1": 63,
+        "violent": 11,
+        "property": 58,
+        "totalPart1": 69,
         "categories": {
-          "larceny_theft": 38,
-          "motor_vehicle_theft": 11,
-          "strangulation": 2,
-          "other": 26,
-          "burglary": 6,
-          "robbery": 3,
+          "other": 40,
+          "larceny_theft": 42,
           "rape": 2,
-          "aggravated_assault": 1
+          "motor_vehicle_theft": 10,
+          "burglary": 6,
+          "aggravated_assault": 2,
+          "robbery": 3,
+          "strangulation": 4
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 11.76470588235294
+          "value": 31.914893617021278
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -8.673469387755102
+          "value": -5.772811918063315
         },
         "totalYtd": {
           "kind": "value",
-          "value": -7.042253521126761
+          "value": -2.73972602739726
         },
         "violent28": {
           "kind": "value",
-          "value": 12.5
+          "value": -63.63636363636363
         }
       }
     },
@@ -860,80 +862,81 @@
       "name": "Downtown",
       "sourceName": "Downtown",
       "currentYtd": {
-        "violent": 48,
-        "property": 372,
-        "totalPart1": 420,
+        "violent": 66,
+        "property": 571,
+        "totalPart1": 637,
         "categories": {
-          "aggravated_assault": 13,
-          "other": 293,
-          "larceny_theft": 326,
-          "robbery": 21,
-          "burglary": 17,
-          "motor_vehicle_theft": 29,
-          "rape": 5,
-          "strangulation": 7,
+          "other": 416,
+          "aggravated_assault": 15,
+          "larceny_theft": 494,
+          "burglary": 31,
+          "robbery": 32,
+          "motor_vehicle_theft": 46,
+          "rape": 7,
+          "strangulation": 10,
           "homicide": 2
         }
       },
       "priorYtd": {
-        "violent": 49,
-        "property": 491,
-        "totalPart1": 540,
+        "violent": 74,
+        "property": 715,
+        "totalPart1": 789,
         "categories": {
-          "other": 277,
-          "larceny_theft": 378,
-          "burglary": 58,
-          "robbery": 32,
-          "motor_vehicle_theft": 55,
+          "other": 409,
+          "larceny_theft": 565,
+          "burglary": 79,
+          "robbery": 44,
+          "motor_vehicle_theft": 71,
           "rape": 2,
-          "aggravated_assault": 15
+          "aggravated_assault": 24,
+          "strangulation": 4
         }
       },
       "current28": {
-        "violent": 7,
-        "property": 85,
-        "totalPart1": 92,
+        "violent": 4,
+        "property": 72,
+        "totalPart1": 76,
         "categories": {
+          "robbery": 2,
+          "burglary": 7,
+          "larceny_theft": 59,
+          "other": 42,
+          "motor_vehicle_theft": 6,
           "strangulation": 1,
-          "other": 70,
-          "robbery": 5,
-          "larceny_theft": 76,
-          "burglary": 4,
-          "motor_vehicle_theft": 5,
-          "aggravated_assault": 1
+          "rape": 1
         }
       },
       "previous28": {
-        "violent": 13,
-        "property": 69,
-        "totalPart1": 82,
+        "violent": 11,
+        "property": 84,
+        "totalPart1": 95,
         "categories": {
-          "larceny_theft": 63,
-          "other": 55,
-          "aggravated_assault": 5,
-          "motor_vehicle_theft": 5,
-          "robbery": 4,
-          "homicide": 1,
-          "strangulation": 3,
-          "burglary": 1
+          "larceny_theft": 76,
+          "other": 50,
+          "aggravated_assault": 1,
+          "robbery": 7,
+          "motor_vehicle_theft": 6,
+          "burglary": 2,
+          "strangulation": 2,
+          "rape": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -2.0408163265306123
+          "value": -10.81081081081081
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -24.236252545824847
+          "value": -20.13986013986014
         },
         "totalYtd": {
           "kind": "value",
-          "value": -22.22222222222222
+          "value": -19.26489226869455
         },
         "violent28": {
           "kind": "value",
-          "value": -46.15384615384615
+          "value": -63.63636363636363
         }
       }
     },
@@ -943,64 +946,68 @@
       "name": "East End",
       "sourceName": "East End",
       "currentYtd": {
-        "violent": 0,
-        "property": 19,
-        "totalPart1": 19,
+        "violent": 1,
+        "property": 33,
+        "totalPart1": 34,
         "categories": {
-          "larceny_theft": 14,
-          "other": 17,
-          "burglary": 3,
-          "motor_vehicle_theft": 2
+          "larceny_theft": 21,
+          "other": 24,
+          "burglary": 8,
+          "motor_vehicle_theft": 4,
+          "aggravated_assault": 1
         }
       },
       "priorYtd": {
         "violent": 4,
-        "property": 22,
-        "totalPart1": 26,
+        "property": 33,
+        "totalPart1": 37,
         "categories": {
-          "other": 18,
-          "motor_vehicle_theft": 3,
-          "larceny_theft": 17,
+          "other": 23,
+          "motor_vehicle_theft": 5,
+          "larceny_theft": 24,
           "robbery": 3,
-          "burglary": 2,
+          "burglary": 4,
           "aggravated_assault": 1
         }
       },
       "current28": {
         "violent": 0,
-        "property": 2,
-        "totalPart1": 2,
+        "property": 6,
+        "totalPart1": 6,
         "categories": {
-          "larceny_theft": 2,
-          "other": 2
+          "burglary": 2,
+          "motor_vehicle_theft": 2,
+          "other": 4,
+          "larceny_theft": 2
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 3,
-        "totalPart1": 3,
+        "violent": 1,
+        "property": 7,
+        "totalPart1": 8,
         "categories": {
-          "other": 4,
-          "larceny_theft": 2,
-          "burglary": 1
+          "aggravated_assault": 1,
+          "larceny_theft": 4,
+          "burglary": 3,
+          "other": 3
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -100
+          "value": -75
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -13.636363636363635
+          "value": 0
         },
         "totalYtd": {
           "kind": "value",
-          "value": -26.923076923076923
+          "value": -8.108108108108109
         },
         "violent28": {
-          "kind": "no-change",
-          "value": 0
+          "kind": "value",
+          "value": -100
         }
       }
     },
@@ -1010,80 +1017,84 @@
       "name": "East Price Hill",
       "sourceName": "East Price Hill",
       "currentYtd": {
-        "violent": 67,
-        "property": 259,
-        "totalPart1": 326,
+        "violent": 91,
+        "property": 375,
+        "totalPart1": 466,
         "categories": {
-          "robbery": 35,
-          "larceny_theft": 171,
-          "other": 253,
-          "burglary": 47,
-          "motor_vehicle_theft": 41,
-          "strangulation": 10,
-          "aggravated_assault": 20,
-          "rape": 2
+          "robbery": 41,
+          "larceny_theft": 245,
+          "other": 378,
+          "burglary": 63,
+          "motor_vehicle_theft": 67,
+          "strangulation": 17,
+          "aggravated_assault": 21,
+          "rape": 11,
+          "homicide": 1
         }
       },
       "priorYtd": {
-        "violent": 64,
-        "property": 232,
-        "totalPart1": 296,
+        "violent": 93,
+        "property": 343,
+        "totalPart1": 436,
         "categories": {
-          "robbery": 32,
-          "larceny_theft": 117,
-          "other": 267,
-          "burglary": 56,
-          "motor_vehicle_theft": 59,
-          "aggravated_assault": 20,
+          "other": 375,
+          "larceny_theft": 183,
+          "burglary": 75,
+          "robbery": 47,
+          "motor_vehicle_theft": 85,
+          "aggravated_assault": 26,
           "homicide": 1,
-          "strangulation": 7,
-          "rape": 4
+          "strangulation": 12,
+          "rape": 7
         }
       },
       "current28": {
-        "violent": 7,
-        "property": 46,
-        "totalPart1": 53,
+        "violent": 9,
+        "property": 50,
+        "totalPart1": 59,
         "categories": {
-          "larceny_theft": 35,
-          "other": 38,
-          "robbery": 6,
-          "motor_vehicle_theft": 6,
-          "burglary": 5,
-          "aggravated_assault": 1
+          "other": 53,
+          "motor_vehicle_theft": 10,
+          "larceny_theft": 28,
+          "rape": 2,
+          "burglary": 12,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "homicide": 1,
+          "strangulation": 3
         }
       },
       "previous28": {
-        "violent": 15,
-        "property": 55,
-        "totalPart1": 70,
+        "violent": 10,
+        "property": 48,
+        "totalPart1": 58,
         "categories": {
-          "larceny_theft": 33,
-          "robbery": 8,
-          "other": 52,
-          "motor_vehicle_theft": 10,
-          "aggravated_assault": 4,
-          "burglary": 12,
-          "strangulation": 2,
-          "rape": 1
+          "aggravated_assault": 2,
+          "motor_vehicle_theft": 9,
+          "burglary": 4,
+          "other": 37,
+          "larceny_theft": 35,
+          "rape": 2,
+          "robbery": 3,
+          "strangulation": 3
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 4.6875
+          "value": -2.1505376344086025
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 11.637931034482758
+          "value": 9.329446064139942
         },
         "totalYtd": {
           "kind": "value",
-          "value": 10.135135135135135
+          "value": 6.8807339449541285
         },
         "violent28": {
           "kind": "value",
-          "value": -53.333333333333336
+          "value": -10
         }
       }
     },
@@ -1094,24 +1105,25 @@
       "sourceName": "East Walnut Hills",
       "currentYtd": {
         "violent": 3,
-        "property": 49,
-        "totalPart1": 52,
+        "property": 79,
+        "totalPart1": 82,
         "categories": {
-          "other": 22,
-          "larceny_theft": 36,
-          "motor_vehicle_theft": 13,
+          "larceny_theft": 56,
+          "other": 37,
+          "motor_vehicle_theft": 22,
           "strangulation": 2,
-          "rape": 1
+          "rape": 1,
+          "burglary": 1
         }
       },
       "priorYtd": {
         "violent": 6,
-        "property": 30,
-        "totalPart1": 36,
+        "property": 47,
+        "totalPart1": 53,
         "categories": {
-          "motor_vehicle_theft": 8,
-          "other": 25,
-          "larceny_theft": 12,
+          "motor_vehicle_theft": 18,
+          "other": 42,
+          "larceny_theft": 19,
           "robbery": 2,
           "burglary": 10,
           "aggravated_assault": 3,
@@ -1120,22 +1132,22 @@
       },
       "current28": {
         "violent": 0,
-        "property": 15,
-        "totalPart1": 15,
+        "property": 9,
+        "totalPart1": 9,
         "categories": {
-          "larceny_theft": 10,
-          "other": 1,
-          "motor_vehicle_theft": 5
+          "larceny_theft": 5,
+          "motor_vehicle_theft": 4,
+          "other": 5
         }
       },
       "previous28": {
         "violent": 0,
-        "property": 9,
-        "totalPart1": 9,
+        "property": 16,
+        "totalPart1": 16,
         "categories": {
-          "larceny_theft": 8,
-          "other": 3,
-          "motor_vehicle_theft": 1
+          "other": 5,
+          "larceny_theft": 13,
+          "motor_vehicle_theft": 3
         }
       },
       "changes": {
@@ -1145,11 +1157,11 @@
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 63.33333333333333
+          "value": 68.08510638297872
         },
         "totalYtd": {
           "kind": "value",
-          "value": 44.44444444444444
+          "value": 54.71698113207547
         },
         "violent28": {
           "kind": "no-change",
@@ -1163,78 +1175,74 @@
       "name": "East Westwood",
       "sourceName": "East Westwood",
       "currentYtd": {
-        "violent": 19,
-        "property": 42,
-        "totalPart1": 61,
+        "violent": 22,
+        "property": 54,
+        "totalPart1": 76,
         "categories": {
-          "larceny_theft": 28,
-          "burglary": 9,
-          "other": 50,
-          "aggravated_assault": 6,
-          "robbery": 5,
+          "larceny_theft": 37,
+          "burglary": 11,
+          "other": 70,
+          "aggravated_assault": 8,
+          "robbery": 6,
           "strangulation": 3,
-          "motor_vehicle_theft": 5,
+          "motor_vehicle_theft": 6,
           "rape": 5
         }
       },
       "priorYtd": {
-        "violent": 10,
-        "property": 51,
-        "totalPart1": 61,
+        "violent": 13,
+        "property": 73,
+        "totalPart1": 86,
         "categories": {
-          "other": 54,
-          "larceny_theft": 25,
-          "burglary": 10,
+          "other": 73,
+          "larceny_theft": 42,
+          "burglary": 13,
           "rape": 1,
-          "motor_vehicle_theft": 16,
+          "motor_vehicle_theft": 18,
           "aggravated_assault": 3,
           "homicide": 1,
-          "strangulation": 4,
-          "robbery": 1
+          "strangulation": 6,
+          "robbery": 2
         }
       },
       "current28": {
-        "violent": 4,
-        "property": 12,
-        "totalPart1": 16,
+        "violent": 3,
+        "property": 3,
+        "totalPart1": 6,
         "categories": {
-          "larceny_theft": 7,
-          "other": 9,
-          "burglary": 4,
-          "motor_vehicle_theft": 1,
           "aggravated_assault": 2,
-          "rape": 1,
-          "strangulation": 1
+          "other": 7,
+          "burglary": 1,
+          "larceny_theft": 2,
+          "robbery": 1
         }
       },
       "previous28": {
-        "violent": 3,
-        "property": 7,
-        "totalPart1": 10,
+        "violent": 0,
+        "property": 5,
+        "totalPart1": 5,
         "categories": {
-          "robbery": 1,
-          "other": 12,
-          "larceny_theft": 6,
-          "motor_vehicle_theft": 1,
-          "rape": 2
+          "other": 8,
+          "larceny_theft": 4,
+          "motor_vehicle_theft": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 90
+          "value": 69.23076923076923
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -17.647058823529413
+          "value": -26.027397260273972
         },
         "totalYtd": {
           "kind": "value",
-          "value": 0
+          "value": -11.627906976744185
         },
         "violent28": {
-          "kind": "value",
-          "value": 33.33333333333333
+          "kind": "new-activity",
+          "value": null
         }
       }
     },
@@ -1245,35 +1253,35 @@
       "sourceName": "English Woods_North Fairmount",
       "currentYtd": {
         "violent": 3,
-        "property": 7,
-        "totalPart1": 10,
+        "property": 10,
+        "totalPart1": 13,
         "categories": {
-          "larceny_theft": 4,
-          "other": 7,
+          "larceny_theft": 6,
+          "other": 14,
           "burglary": 2,
           "aggravated_assault": 2,
           "strangulation": 1,
-          "motor_vehicle_theft": 1
+          "motor_vehicle_theft": 2
         }
       },
       "priorYtd": {
         "violent": 1,
-        "property": 6,
-        "totalPart1": 7,
+        "property": 7,
+        "totalPart1": 8,
         "categories": {
           "burglary": 3,
-          "other": 15,
-          "larceny_theft": 3,
+          "other": 22,
+          "larceny_theft": 4,
           "aggravated_assault": 1
         }
       },
       "current28": {
-        "violent": 1,
+        "violent": 0,
         "property": 1,
-        "totalPart1": 2,
+        "totalPart1": 1,
         "categories": {
-          "burglary": 1,
-          "aggravated_assault": 1
+          "other": 3,
+          "larceny_theft": 1
         }
       },
       "previous28": {
@@ -1281,8 +1289,8 @@
         "property": 1,
         "totalPart1": 1,
         "categories": {
-          "other": 3,
-          "larceny_theft": 1
+          "other": 2,
+          "motor_vehicle_theft": 1
         }
       },
       "changes": {
@@ -1292,15 +1300,15 @@
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 16.666666666666664
+          "value": 42.857142857142854
         },
         "totalYtd": {
           "kind": "value",
-          "value": 42.857142857142854
+          "value": 62.5
         },
         "violent28": {
-          "kind": "new-activity",
-          "value": null
+          "kind": "no-change",
+          "value": 0
         }
       }
     },
@@ -1310,79 +1318,81 @@
       "name": "Evanston",
       "sourceName": "Evanston",
       "currentYtd": {
-        "violent": 21,
-        "property": 104,
-        "totalPart1": 125,
+        "violent": 32,
+        "property": 136,
+        "totalPart1": 168,
         "categories": {
-          "aggravated_assault": 10,
-          "other": 95,
-          "strangulation": 6,
-          "larceny_theft": 76,
-          "motor_vehicle_theft": 18,
-          "burglary": 10,
-          "rape": 1,
-          "robbery": 4
+          "aggravated_assault": 15,
+          "other": 133,
+          "strangulation": 8,
+          "larceny_theft": 96,
+          "motor_vehicle_theft": 27,
+          "burglary": 13,
+          "rape": 2,
+          "robbery": 7
         }
       },
       "priorYtd": {
-        "violent": 16,
-        "property": 126,
-        "totalPart1": 142,
+        "violent": 19,
+        "property": 172,
+        "totalPart1": 191,
         "categories": {
-          "burglary": 15,
-          "other": 76,
-          "larceny_theft": 72,
+          "burglary": 17,
+          "other": 124,
+          "larceny_theft": 104,
           "aggravated_assault": 4,
-          "motor_vehicle_theft": 39,
+          "motor_vehicle_theft": 51,
           "rape": 5,
-          "strangulation": 4,
-          "robbery": 2,
+          "strangulation": 5,
+          "robbery": 4,
           "homicide": 1
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 29,
-        "totalPart1": 32,
+        "violent": 5,
+        "property": 13,
+        "totalPart1": 18,
         "categories": {
-          "larceny_theft": 24,
-          "motor_vehicle_theft": 3,
-          "burglary": 2,
-          "other": 10,
+          "burglary": 1,
+          "other": 17,
+          "larceny_theft": 9,
           "aggravated_assault": 2,
-          "robbery": 1
+          "motor_vehicle_theft": 3,
+          "robbery": 2,
+          "strangulation": 1
         }
       },
       "previous28": {
         "violent": 6,
-        "property": 13,
-        "totalPart1": 19,
+        "property": 11,
+        "totalPart1": 17,
         "categories": {
-          "other": 20,
-          "motor_vehicle_theft": 3,
-          "larceny_theft": 9,
+          "other": 10,
+          "robbery": 1,
+          "larceny_theft": 8,
           "aggravated_assault": 3,
-          "burglary": 1,
-          "strangulation": 2,
-          "robbery": 1
+          "strangulation": 1,
+          "rape": 1,
+          "motor_vehicle_theft": 1,
+          "burglary": 2
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 31.25
+          "value": 68.42105263157895
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -17.46031746031746
+          "value": -20.930232558139537
         },
         "totalYtd": {
           "kind": "value",
-          "value": -11.971830985915492
+          "value": -12.041884816753926
         },
         "violent28": {
           "kind": "value",
-          "value": -50
+          "value": -16.666666666666664
         }
       }
     },
@@ -1392,78 +1402,75 @@
       "name": "Hartwell",
       "sourceName": "Hartwell",
       "currentYtd": {
-        "violent": 12,
-        "property": 60,
-        "totalPart1": 72,
+        "violent": 15,
+        "property": 76,
+        "totalPart1": 91,
         "categories": {
-          "other": 59,
+          "other": 91,
           "motor_vehicle_theft": 10,
-          "larceny_theft": 40,
-          "homicide": 2,
-          "burglary": 10,
-          "strangulation": 3,
+          "larceny_theft": 53,
+          "homicide": 1,
+          "burglary": 13,
+          "strangulation": 5,
           "aggravated_assault": 4,
-          "rape": 2,
+          "rape": 4,
           "robbery": 1
         }
       },
       "priorYtd": {
-        "violent": 6,
-        "property": 58,
-        "totalPart1": 64,
+        "violent": 11,
+        "property": 78,
+        "totalPart1": 89,
         "categories": {
-          "burglary": 14,
-          "other": 45,
-          "larceny_theft": 30,
+          "burglary": 18,
+          "larceny_theft": 42,
+          "other": 70,
           "robbery": 2,
-          "rape": 2,
-          "motor_vehicle_theft": 14,
-          "aggravated_assault": 1,
-          "homicide": 1
+          "rape": 4,
+          "motor_vehicle_theft": 18,
+          "aggravated_assault": 3,
+          "homicide": 1,
+          "strangulation": 1
         }
       },
       "current28": {
-        "violent": 4,
-        "property": 20,
-        "totalPart1": 24,
+        "violent": 1,
+        "property": 5,
+        "totalPart1": 6,
         "categories": {
-          "larceny_theft": 14,
           "other": 10,
-          "burglary": 4,
-          "strangulation": 2,
-          "aggravated_assault": 1,
-          "rape": 1,
-          "motor_vehicle_theft": 2
+          "larceny_theft": 5,
+          "strangulation": 1
         }
       },
       "previous28": {
         "violent": 2,
-        "property": 5,
-        "totalPart1": 7,
+        "property": 9,
+        "totalPart1": 11,
         "categories": {
-          "other": 9,
-          "larceny_theft": 2,
-          "robbery": 1,
+          "other": 16,
           "burglary": 3,
-          "aggravated_assault": 1
+          "larceny_theft": 6,
+          "strangulation": 1,
+          "rape": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 100
+          "value": 36.36363636363637
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 3.4482758620689653
+          "value": -2.564102564102564
         },
         "totalYtd": {
           "kind": "value",
-          "value": 12.5
+          "value": 2.247191011235955
         },
         "violent28": {
           "kind": "value",
-          "value": 100
+          "value": -50
         }
       }
     },
@@ -1473,70 +1480,71 @@
       "name": "Hyde Park",
       "sourceName": "Hyde Park",
       "currentYtd": {
-        "violent": 7,
-        "property": 61,
-        "totalPart1": 68,
+        "violent": 9,
+        "property": 72,
+        "totalPart1": 81,
         "categories": {
-          "larceny_theft": 46,
-          "motor_vehicle_theft": 12,
-          "other": 56,
+          "larceny_theft": 52,
+          "motor_vehicle_theft": 14,
+          "other": 75,
           "robbery": 3,
           "aggravated_assault": 2,
-          "burglary": 3,
-          "strangulation": 2
+          "burglary": 6,
+          "strangulation": 3,
+          "rape": 1
         }
       },
       "priorYtd": {
-        "violent": 4,
-        "property": 90,
-        "totalPart1": 94,
+        "violent": 5,
+        "property": 136,
+        "totalPart1": 141,
         "categories": {
-          "burglary": 10,
-          "other": 62,
-          "larceny_theft": 70,
-          "motor_vehicle_theft": 10,
+          "burglary": 13,
+          "other": 81,
+          "larceny_theft": 99,
+          "motor_vehicle_theft": 24,
           "rape": 2,
-          "aggravated_assault": 2
+          "aggravated_assault": 2,
+          "strangulation": 1
         }
       },
       "current28": {
-        "violent": 1,
-        "property": 17,
-        "totalPart1": 18,
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
         "categories": {
-          "other": 9,
-          "larceny_theft": 11,
-          "motor_vehicle_theft": 6,
-          "robbery": 1
+          "larceny_theft": 3,
+          "other": 10
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 5,
+        "violent": 1,
+        "property": 6,
         "totalPart1": 7,
         "categories": {
-          "other": 10,
-          "larceny_theft": 5,
-          "strangulation": 1,
-          "aggravated_assault": 1
+          "burglary": 3,
+          "larceny_theft": 2,
+          "motor_vehicle_theft": 1,
+          "other": 11,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 75
+          "value": 80
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -32.22222222222222
+          "value": -47.05882352941176
         },
         "totalYtd": {
           "kind": "value",
-          "value": -27.659574468085108
+          "value": -42.5531914893617
         },
         "violent28": {
           "kind": "value",
-          "value": -50
+          "value": -100
         }
       }
     },
@@ -1546,69 +1554,72 @@
       "name": "Kennedy Heights",
       "sourceName": "Kennedy Heights",
       "currentYtd": {
-        "violent": 5,
-        "property": 35,
-        "totalPart1": 40,
+        "violent": 7,
+        "property": 44,
+        "totalPart1": 51,
         "categories": {
-          "aggravated_assault": 2,
-          "other": 34,
-          "motor_vehicle_theft": 7,
           "robbery": 3,
-          "burglary": 6,
-          "larceny_theft": 22
+          "other": 46,
+          "motor_vehicle_theft": 9,
+          "aggravated_assault": 4,
+          "burglary": 7,
+          "larceny_theft": 28
         }
       },
       "priorYtd": {
-        "violent": 5,
-        "property": 51,
-        "totalPart1": 56,
+        "violent": 9,
+        "property": 68,
+        "totalPart1": 77,
         "categories": {
-          "larceny_theft": 28,
-          "burglary": 10,
-          "other": 27,
-          "motor_vehicle_theft": 13,
-          "rape": 3,
-          "aggravated_assault": 2
+          "larceny_theft": 36,
+          "burglary": 14,
+          "other": 42,
+          "motor_vehicle_theft": 18,
+          "rape": 4,
+          "aggravated_assault": 3,
+          "robbery": 1,
+          "strangulation": 1
         }
       },
       "current28": {
         "violent": 1,
-        "property": 7,
-        "totalPart1": 8,
+        "property": 3,
+        "totalPart1": 4,
         "categories": {
-          "larceny_theft": 4,
+          "larceny_theft": 1,
           "motor_vehicle_theft": 1,
-          "other": 5,
-          "burglary": 2,
+          "other": 2,
+          "burglary": 1,
           "aggravated_assault": 1
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 6,
+        "violent": 1,
+        "property": 5,
         "totalPart1": 6,
         "categories": {
-          "other": 8,
-          "larceny_theft": 5,
-          "burglary": 1
+          "motor_vehicle_theft": 1,
+          "other": 10,
+          "larceny_theft": 4,
+          "aggravated_assault": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 0
+          "value": -22.22222222222222
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -31.372549019607842
+          "value": -35.294117647058826
         },
         "totalYtd": {
           "kind": "value",
-          "value": -28.57142857142857
+          "value": -33.76623376623377
         },
         "violent28": {
-          "kind": "new-activity",
-          "value": null
+          "kind": "value",
+          "value": 0
         }
       }
     },
@@ -1619,45 +1630,45 @@
       "sourceName": "Linwood",
       "currentYtd": {
         "violent": 1,
-        "property": 23,
-        "totalPart1": 24,
+        "property": 31,
+        "totalPart1": 32,
         "categories": {
-          "burglary": 8,
+          "burglary": 10,
           "motor_vehicle_theft": 1,
-          "larceny_theft": 14,
-          "other": 9,
+          "larceny_theft": 20,
+          "other": 12,
           "aggravated_assault": 1
         }
       },
       "priorYtd": {
         "violent": 1,
-        "property": 17,
-        "totalPart1": 18,
+        "property": 26,
+        "totalPart1": 27,
         "categories": {
-          "burglary": 5,
-          "other": 9,
-          "larceny_theft": 11,
-          "motor_vehicle_theft": 1,
+          "burglary": 6,
+          "other": 18,
+          "larceny_theft": 18,
+          "motor_vehicle_theft": 2,
           "aggravated_assault": 1
         }
       },
       "current28": {
         "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
+        "property": 1,
+        "totalPart1": 1,
         "categories": {
-          "larceny_theft": 2,
-          "burglary": 2
+          "other": 2,
+          "larceny_theft": 1
         }
       },
       "previous28": {
         "violent": 0,
-        "property": 2,
-        "totalPart1": 2,
+        "property": 5,
+        "totalPart1": 5,
         "categories": {
-          "other": 2,
-          "burglary": 1,
-          "larceny_theft": 1
+          "burglary": 2,
+          "other": 1,
+          "larceny_theft": 3
         }
       },
       "changes": {
@@ -1667,11 +1678,11 @@
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 35.294117647058826
+          "value": 19.230769230769234
         },
         "totalYtd": {
           "kind": "value",
-          "value": 33.33333333333333
+          "value": 18.51851851851852
         },
         "violent28": {
           "kind": "no-change",
@@ -1685,74 +1696,76 @@
       "name": "Lower Price Hill / Queensgate",
       "sourceName": "Lower Price Hill_Queensgate",
       "currentYtd": {
-        "violent": 13,
-        "property": 82,
-        "totalPart1": 95,
+        "violent": 17,
+        "property": 106,
+        "totalPart1": 123,
         "categories": {
-          "larceny_theft": 58,
-          "other": 78,
-          "burglary": 9,
-          "rape": 2,
+          "larceny_theft": 73,
+          "other": 104,
+          "burglary": 14,
+          "rape": 3,
           "strangulation": 3,
-          "motor_vehicle_theft": 15,
-          "aggravated_assault": 7,
+          "motor_vehicle_theft": 19,
+          "aggravated_assault": 10,
           "robbery": 1
         }
       },
       "priorYtd": {
-        "violent": 12,
-        "property": 82,
-        "totalPart1": 94,
+        "violent": 20,
+        "property": 105,
+        "totalPart1": 125,
         "categories": {
-          "other": 78,
-          "larceny_theft": 42,
-          "motor_vehicle_theft": 22,
-          "burglary": 18,
-          "aggravated_assault": 6,
-          "robbery": 4,
-          "strangulation": 2
+          "other": 113,
+          "larceny_theft": 60,
+          "motor_vehicle_theft": 24,
+          "burglary": 21,
+          "aggravated_assault": 9,
+          "robbery": 5,
+          "strangulation": 2,
+          "rape": 3,
+          "homicide": 1
         }
       },
       "current28": {
-        "violent": 1,
-        "property": 14,
-        "totalPart1": 15,
+        "violent": 2,
+        "property": 10,
+        "totalPart1": 12,
         "categories": {
-          "other": 13,
-          "larceny_theft": 11,
-          "motor_vehicle_theft": 3,
-          "aggravated_assault": 1
+          "other": 8,
+          "aggravated_assault": 2,
+          "larceny_theft": 5,
+          "burglary": 3,
+          "motor_vehicle_theft": 2
         }
       },
       "previous28": {
-        "violent": 3,
-        "property": 17,
-        "totalPart1": 20,
+        "violent": 1,
+        "property": 8,
+        "totalPart1": 9,
         "categories": {
-          "aggravated_assault": 2,
-          "burglary": 3,
-          "motor_vehicle_theft": 3,
-          "other": 14,
-          "larceny_theft": 11,
-          "strangulation": 1
+          "rape": 1,
+          "other": 6,
+          "motor_vehicle_theft": 2,
+          "larceny_theft": 5,
+          "burglary": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 8.333333333333332
+          "value": -15
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 0
+          "value": 0.9523809523809524
         },
         "totalYtd": {
           "kind": "value",
-          "value": 1.0638297872340425
+          "value": -1.6
         },
         "violent28": {
           "kind": "value",
-          "value": -66.66666666666666
+          "value": 100
         }
       }
     },
@@ -1762,79 +1775,80 @@
       "name": "Madisonville",
       "sourceName": "Madisonville",
       "currentYtd": {
-        "violent": 14,
-        "property": 74,
-        "totalPart1": 88,
+        "violent": 22,
+        "property": 102,
+        "totalPart1": 124,
         "categories": {
-          "larceny_theft": 52,
-          "other": 81,
-          "motor_vehicle_theft": 11,
-          "rape": 2,
-          "burglary": 11,
+          "larceny_theft": 71,
+          "other": 134,
+          "motor_vehicle_theft": 16,
+          "rape": 6,
+          "burglary": 15,
+          "aggravated_assault": 7,
           "robbery": 4,
-          "aggravated_assault": 6,
           "homicide": 1,
-          "strangulation": 1
+          "strangulation": 4
         }
       },
       "priorYtd": {
-        "violent": 10,
-        "property": 97,
-        "totalPart1": 107,
+        "violent": 17,
+        "property": 131,
+        "totalPart1": 148,
         "categories": {
-          "larceny_theft": 65,
-          "other": 79,
-          "burglary": 10,
-          "motor_vehicle_theft": 22,
-          "aggravated_assault": 2,
-          "robbery": 4,
+          "other": 113,
+          "larceny_theft": 83,
+          "burglary": 17,
+          "motor_vehicle_theft": 31,
+          "aggravated_assault": 4,
+          "robbery": 6,
           "homicide": 1,
-          "rape": 3
+          "rape": 4,
+          "strangulation": 2
         }
       },
       "current28": {
         "violent": 4,
-        "property": 23,
-        "totalPart1": 27,
+        "property": 14,
+        "totalPart1": 18,
         "categories": {
-          "other": 17,
-          "strangulation": 1,
-          "larceny_theft": 18,
-          "motor_vehicle_theft": 3,
           "burglary": 2,
-          "aggravated_assault": 2,
-          "robbery": 1
+          "other": 21,
+          "larceny_theft": 8,
+          "motor_vehicle_theft": 4,
+          "rape": 2,
+          "aggravated_assault": 1,
+          "strangulation": 1
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 14,
-        "totalPart1": 16,
+        "violent": 3,
+        "property": 12,
+        "totalPart1": 15,
         "categories": {
+          "larceny_theft": 9,
+          "other": 18,
+          "burglary": 2,
+          "strangulation": 2,
           "rape": 1,
-          "other": 16,
-          "larceny_theft": 10,
-          "motor_vehicle_theft": 2,
-          "aggravated_assault": 1,
-          "burglary": 2
+          "motor_vehicle_theft": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 40
+          "value": 29.411764705882355
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -23.711340206185564
+          "value": -22.137404580152673
         },
         "totalYtd": {
           "kind": "value",
-          "value": -17.75700934579439
+          "value": -16.216216216216218
         },
         "violent28": {
           "kind": "value",
-          "value": 100
+          "value": 33.33333333333333
         }
       }
     },
@@ -1844,76 +1858,78 @@
       "name": "Millvale",
       "sourceName": "Millvale",
       "currentYtd": {
-        "violent": 20,
-        "property": 34,
-        "totalPart1": 54,
+        "violent": 29,
+        "property": 55,
+        "totalPart1": 84,
         "categories": {
-          "larceny_theft": 24,
-          "other": 93,
-          "aggravated_assault": 11,
-          "burglary": 3,
-          "robbery": 5,
-          "strangulation": 3,
-          "motor_vehicle_theft": 7,
+          "larceny_theft": 33,
+          "other": 128,
+          "aggravated_assault": 14,
+          "burglary": 9,
+          "robbery": 7,
+          "strangulation": 5,
+          "motor_vehicle_theft": 13,
+          "rape": 2,
           "homicide": 1
         }
       },
       "priorYtd": {
-        "violent": 12,
-        "property": 37,
-        "totalPart1": 49,
+        "violent": 23,
+        "property": 49,
+        "totalPart1": 72,
         "categories": {
-          "other": 65,
-          "motor_vehicle_theft": 5,
-          "larceny_theft": 18,
-          "aggravated_assault": 7,
+          "other": 98,
+          "motor_vehicle_theft": 6,
+          "larceny_theft": 23,
+          "aggravated_assault": 13,
           "robbery": 2,
-          "burglary": 14,
-          "strangulation": 2,
-          "homicide": 1
+          "burglary": 20,
+          "strangulation": 4,
+          "homicide": 4
         }
       },
       "current28": {
-        "violent": 5,
-        "property": 9,
+        "violent": 6,
+        "property": 8,
         "totalPart1": 14,
         "categories": {
-          "other": 18,
-          "motor_vehicle_theft": 3,
           "larceny_theft": 5,
-          "burglary": 1,
-          "aggravated_assault": 3,
-          "homicide": 1,
-          "strangulation": 1
+          "other": 17,
+          "aggravated_assault": 2,
+          "robbery": 1,
+          "strangulation": 2,
+          "burglary": 2,
+          "rape": 1,
+          "motor_vehicle_theft": 1
         }
       },
       "previous28": {
-        "violent": 1,
-        "property": 5,
-        "totalPart1": 6,
+        "violent": 0,
+        "property": 10,
+        "totalPart1": 10,
         "categories": {
+          "motor_vehicle_theft": 5,
           "larceny_theft": 4,
-          "other": 10,
-          "aggravated_assault": 1,
-          "motor_vehicle_theft": 1
+          "other": 12,
+          "burglary": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 66.66666666666666
+          "value": 26.08695652173913
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -8.108108108108109
+          "value": 12.244897959183673
         },
         "totalYtd": {
           "kind": "value",
-          "value": 10.204081632653061
+          "value": 16.666666666666664
         },
         "violent28": {
-          "kind": "value",
-          "value": 400
+          "kind": "new-activity",
+          "value": null
         }
       }
     },
@@ -1924,33 +1940,32 @@
       "sourceName": "Mt. Adams",
       "currentYtd": {
         "violent": 1,
-        "property": 15,
-        "totalPart1": 16,
+        "property": 17,
+        "totalPart1": 18,
         "categories": {
-          "other": 17,
+          "other": 16,
           "burglary": 1,
           "aggravated_assault": 1,
-          "larceny_theft": 14
+          "larceny_theft": 16
         }
       },
       "priorYtd": {
         "violent": 0,
-        "property": 12,
-        "totalPart1": 12,
+        "property": 14,
+        "totalPart1": 14,
         "categories": {
-          "other": 6,
-          "larceny_theft": 8,
-          "burglary": 1,
+          "other": 9,
+          "larceny_theft": 9,
+          "burglary": 2,
           "motor_vehicle_theft": 3
         }
       },
       "current28": {
         "violent": 0,
-        "property": 8,
-        "totalPart1": 8,
+        "property": 1,
+        "totalPart1": 1,
         "categories": {
-          "larceny_theft": 8,
-          "other": 11
+          "larceny_theft": 1
         }
       },
       "previous28": {
@@ -1958,6 +1973,7 @@
         "property": 1,
         "totalPart1": 1,
         "categories": {
+          "other": 2,
           "larceny_theft": 1
         }
       },
@@ -1968,11 +1984,11 @@
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 25
+          "value": 21.428571428571427
         },
         "totalYtd": {
           "kind": "value",
-          "value": 33.33333333333333
+          "value": 28.57142857142857
         },
         "violent28": {
           "kind": "no-change",
@@ -1986,79 +2002,80 @@
       "name": "Mt. Airy",
       "sourceName": "Mt. Airy",
       "currentYtd": {
-        "violent": 26,
-        "property": 118,
-        "totalPart1": 144,
+        "violent": 49,
+        "property": 167,
+        "totalPart1": 216,
         "categories": {
-          "strangulation": 8,
-          "other": 138,
-          "larceny_theft": 69,
-          "robbery": 3,
-          "motor_vehicle_theft": 31,
-          "aggravated_assault": 10,
-          "burglary": 18,
-          "rape": 5
+          "other": 204,
+          "strangulation": 12,
+          "larceny_theft": 106,
+          "robbery": 8,
+          "motor_vehicle_theft": 38,
+          "aggravated_assault": 20,
+          "burglary": 23,
+          "rape": 9
         }
       },
       "priorYtd": {
-        "violent": 27,
-        "property": 94,
-        "totalPart1": 121,
+        "violent": 30,
+        "property": 137,
+        "totalPart1": 167,
         "categories": {
-          "strangulation": 7,
-          "other": 129,
-          "larceny_theft": 64,
+          "strangulation": 8,
+          "other": 210,
+          "larceny_theft": 94,
           "aggravated_assault": 10,
-          "motor_vehicle_theft": 18,
-          "robbery": 8,
-          "burglary": 12,
-          "rape": 2
+          "motor_vehicle_theft": 23,
+          "robbery": 9,
+          "burglary": 20,
+          "rape": 3
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 20,
-        "totalPart1": 23,
+        "violent": 10,
+        "property": 25,
+        "totalPart1": 35,
         "categories": {
-          "larceny_theft": 14,
-          "other": 17,
-          "burglary": 4,
-          "strangulation": 1,
-          "aggravated_assault": 1,
-          "rape": 1,
-          "motor_vehicle_theft": 2
+          "motor_vehicle_theft": 4,
+          "larceny_theft": 19,
+          "other": 21,
+          "burglary": 2,
+          "aggravated_assault": 5,
+          "robbery": 3,
+          "rape": 2
         }
       },
       "previous28": {
-        "violent": 5,
-        "property": 15,
-        "totalPart1": 20,
+        "violent": 9,
+        "property": 14,
+        "totalPart1": 23,
         "categories": {
-          "other": 37,
-          "burglary": 2,
-          "motor_vehicle_theft": 5,
-          "rape": 2,
-          "larceny_theft": 8,
-          "aggravated_assault": 1,
-          "strangulation": 2
+          "aggravated_assault": 3,
+          "other": 29,
+          "larceny_theft": 11,
+          "motor_vehicle_theft": 2,
+          "strangulation": 4,
+          "burglary": 1,
+          "robbery": 1,
+          "rape": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -3.7037037037037033
+          "value": 63.33333333333333
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 25.53191489361702
+          "value": 21.897810218978105
         },
         "totalYtd": {
           "kind": "value",
-          "value": 19.00826446280992
+          "value": 29.34131736526946
         },
         "violent28": {
           "kind": "value",
-          "value": -40
+          "value": 11.11111111111111
         }
       }
     },
@@ -2068,78 +2085,77 @@
       "name": "Mt. Auburn",
       "sourceName": "Mt. Auburn",
       "currentYtd": {
-        "violent": 11,
-        "property": 96,
-        "totalPart1": 107,
+        "violent": 19,
+        "property": 142,
+        "totalPart1": 161,
         "categories": {
-          "other": 92,
-          "larceny_theft": 70,
-          "robbery": 4,
-          "burglary": 10,
-          "motor_vehicle_theft": 16,
-          "rape": 2,
-          "strangulation": 2,
-          "aggravated_assault": 3
+          "other": 133,
+          "larceny_theft": 108,
+          "robbery": 5,
+          "motor_vehicle_theft": 22,
+          "burglary": 12,
+          "rape": 4,
+          "strangulation": 3,
+          "aggravated_assault": 7
         }
       },
       "priorYtd": {
-        "violent": 13,
-        "property": 102,
-        "totalPart1": 115,
+        "violent": 19,
+        "property": 150,
+        "totalPart1": 169,
         "categories": {
-          "other": 96,
-          "burglary": 12,
-          "larceny_theft": 64,
-          "strangulation": 5,
-          "motor_vehicle_theft": 26,
-          "rape": 2,
+          "other": 141,
+          "larceny_theft": 92,
+          "burglary": 15,
+          "strangulation": 6,
+          "motor_vehicle_theft": 43,
+          "rape": 4,
           "homicide": 1,
-          "aggravated_assault": 2,
-          "robbery": 3
+          "aggravated_assault": 4,
+          "robbery": 4
         }
       },
       "current28": {
-        "violent": 2,
-        "property": 19,
-        "totalPart1": 21,
+        "violent": 6,
+        "property": 20,
+        "totalPart1": 26,
         "categories": {
-          "other": 23,
-          "larceny_theft": 14,
-          "burglary": 3,
-          "aggravated_assault": 1,
-          "robbery": 1,
-          "motor_vehicle_theft": 2
+          "rape": 1,
+          "other": 18,
+          "larceny_theft": 17,
+          "aggravated_assault": 4,
+          "motor_vehicle_theft": 2,
+          "burglary": 1,
+          "strangulation": 1
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 13,
-        "totalPart1": 15,
+        "violent": 1,
+        "property": 15,
+        "totalPart1": 16,
         "categories": {
-          "robbery": 1,
-          "motor_vehicle_theft": 4,
-          "burglary": 1,
-          "other": 15,
-          "larceny_theft": 8,
-          "strangulation": 1
+          "larceny_theft": 13,
+          "other": 17,
+          "motor_vehicle_theft": 2,
+          "robbery": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -15.384615384615385
+          "value": 0
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -5.88235294117647
+          "value": -5.333333333333334
         },
         "totalYtd": {
           "kind": "value",
-          "value": -6.956521739130435
+          "value": -4.733727810650888
         },
         "violent28": {
           "kind": "value",
-          "value": 0
+          "value": 500
         }
       }
     },
@@ -2149,24 +2165,27 @@
       "name": "Mt. Lookout",
       "sourceName": "Mt. Lookout",
       "currentYtd": {
-        "violent": 1,
-        "property": 18,
-        "totalPart1": 19,
+        "violent": 4,
+        "property": 24,
+        "totalPart1": 28,
         "categories": {
-          "larceny_theft": 14,
-          "other": 12,
+          "larceny_theft": 19,
+          "other": 21,
           "motor_vehicle_theft": 4,
-          "rape": 1
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "burglary": 1
         }
       },
       "priorYtd": {
         "violent": 2,
-        "property": 18,
-        "totalPart1": 20,
+        "property": 26,
+        "totalPart1": 28,
         "categories": {
-          "larceny_theft": 9,
-          "motor_vehicle_theft": 2,
-          "other": 13,
+          "larceny_theft": 12,
+          "motor_vehicle_theft": 7,
+          "other": 23,
           "burglary": 7,
           "strangulation": 1,
           "rape": 1
@@ -2174,40 +2193,42 @@
       },
       "current28": {
         "violent": 0,
-        "property": 3,
-        "totalPart1": 3,
+        "property": 2,
+        "totalPart1": 2,
         "categories": {
-          "motor_vehicle_theft": 2,
+          "burglary": 1,
           "larceny_theft": 1,
-          "other": 1
+          "other": 2
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
+        "violent": 3,
+        "property": 3,
+        "totalPart1": 6,
         "categories": {
           "larceny_theft": 3,
-          "other": 3,
-          "motor_vehicle_theft": 1
+          "other": 4,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "rape": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -50
+          "value": 100
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 0
+          "value": -7.6923076923076925
         },
         "totalYtd": {
           "kind": "value",
-          "value": -5
+          "value": 0
         },
         "violent28": {
-          "kind": "no-change",
-          "value": 0
+          "kind": "value",
+          "value": -100
         }
       }
     },
@@ -2217,70 +2238,72 @@
       "name": "Mt. Washington",
       "sourceName": "Mt. Washington",
       "currentYtd": {
-        "violent": 6,
-        "property": 49,
-        "totalPart1": 55,
+        "violent": 10,
+        "property": 72,
+        "totalPart1": 82,
         "categories": {
-          "other": 68,
-          "aggravated_assault": 1,
-          "larceny_theft": 36,
-          "strangulation": 3,
-          "motor_vehicle_theft": 8,
-          "burglary": 5,
-          "rape": 2
+          "other": 94,
+          "strangulation": 4,
+          "larceny_theft": 51,
+          "aggravated_assault": 3,
+          "motor_vehicle_theft": 15,
+          "burglary": 6,
+          "rape": 3
         }
       },
       "priorYtd": {
-        "violent": 8,
-        "property": 68,
-        "totalPart1": 76,
+        "violent": 10,
+        "property": 88,
+        "totalPart1": 98,
         "categories": {
-          "larceny_theft": 42,
-          "motor_vehicle_theft": 16,
-          "other": 53,
-          "burglary": 10,
+          "larceny_theft": 54,
+          "motor_vehicle_theft": 22,
+          "other": 77,
+          "burglary": 12,
           "strangulation": 3,
           "robbery": 2,
-          "aggravated_assault": 3
+          "aggravated_assault": 4,
+          "homicide": 1
         }
       },
       "current28": {
-        "violent": 1,
-        "property": 8,
-        "totalPart1": 9,
+        "violent": 0,
+        "property": 12,
+        "totalPart1": 12,
         "categories": {
-          "other": 13,
-          "rape": 1,
-          "larceny_theft": 6,
-          "motor_vehicle_theft": 2
+          "larceny_theft": 7,
+          "other": 7,
+          "motor_vehicle_theft": 4,
+          "burglary": 1
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 2,
-        "totalPart1": 2,
+        "violent": 1,
+        "property": 3,
+        "totalPart1": 4,
         "categories": {
-          "other": 15,
-          "larceny_theft": 1,
-          "burglary": 1
+          "larceny_theft": 2,
+          "other": 11,
+          "motor_vehicle_theft": 1,
+          "aggravated_assault": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -25
+          "value": 0
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -27.941176470588236
+          "value": -18.181818181818183
         },
         "totalYtd": {
           "kind": "value",
-          "value": -27.631578947368425
+          "value": -16.3265306122449
         },
         "violent28": {
-          "kind": "new-activity",
-          "value": null
+          "kind": "value",
+          "value": -100
         }
       }
     },
@@ -2290,30 +2313,30 @@
       "name": "North Avondale",
       "sourceName": "North Avondale",
       "currentYtd": {
-        "violent": 3,
-        "property": 28,
-        "totalPart1": 31,
+        "violent": 4,
+        "property": 38,
+        "totalPart1": 42,
         "categories": {
+          "other": 58,
           "aggravated_assault": 1,
-          "other": 46,
-          "larceny_theft": 17,
+          "larceny_theft": 25,
           "motor_vehicle_theft": 5,
-          "burglary": 6,
+          "burglary": 8,
           "rape": 1,
-          "strangulation": 1
+          "strangulation": 2
         }
       },
       "priorYtd": {
-        "violent": 5,
-        "property": 34,
-        "totalPart1": 39,
+        "violent": 7,
+        "property": 50,
+        "totalPart1": 57,
         "categories": {
-          "other": 28,
-          "larceny_theft": 21,
-          "burglary": 9,
-          "motor_vehicle_theft": 4,
+          "larceny_theft": 31,
+          "other": 37,
+          "burglary": 10,
+          "motor_vehicle_theft": 9,
           "robbery": 2,
-          "aggravated_assault": 3
+          "aggravated_assault": 5
         }
       },
       "current28": {
@@ -2321,37 +2344,38 @@
         "property": 5,
         "totalPart1": 5,
         "categories": {
+          "larceny_theft": 4,
           "other": 6,
-          "motor_vehicle_theft": 2,
-          "burglary": 2,
-          "larceny_theft": 1
+          "burglary": 1
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
+        "violent": 1,
+        "property": 5,
+        "totalPart1": 6,
         "categories": {
-          "other": 16,
-          "larceny_theft": 4
+          "larceny_theft": 4,
+          "other": 3,
+          "burglary": 1,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -40
+          "value": -42.857142857142854
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -17.647058823529413
+          "value": -24
         },
         "totalYtd": {
           "kind": "value",
-          "value": -20.51282051282051
+          "value": -26.31578947368421
         },
         "violent28": {
-          "kind": "no-change",
-          "value": 0
+          "kind": "value",
+          "value": -100
         }
       }
     },
@@ -2361,76 +2385,76 @@
       "name": "North Fairmount",
       "sourceName": "North Fairmount",
       "currentYtd": {
-        "violent": 8,
-        "property": 21,
-        "totalPart1": 29,
+        "violent": 13,
+        "property": 31,
+        "totalPart1": 44,
         "categories": {
-          "larceny_theft": 10,
-          "other": 40,
-          "motor_vehicle_theft": 6,
-          "burglary": 5,
-          "aggravated_assault": 2,
-          "strangulation": 4,
-          "rape": 1,
-          "robbery": 1
+          "larceny_theft": 14,
+          "other": 49,
+          "motor_vehicle_theft": 9,
+          "burglary": 8,
+          "aggravated_assault": 3,
+          "strangulation": 5,
+          "rape": 2,
+          "robbery": 3
         }
       },
       "priorYtd": {
-        "violent": 10,
-        "property": 30,
-        "totalPart1": 40,
+        "violent": 17,
+        "property": 42,
+        "totalPart1": 59,
         "categories": {
-          "other": 55,
-          "motor_vehicle_theft": 11,
-          "burglary": 5,
-          "larceny_theft": 14,
-          "robbery": 2,
-          "aggravated_assault": 6,
-          "strangulation": 2
+          "other": 68,
+          "motor_vehicle_theft": 17,
+          "burglary": 6,
+          "larceny_theft": 19,
+          "robbery": 5,
+          "aggravated_assault": 9,
+          "strangulation": 2,
+          "rape": 1
         }
       },
       "current28": {
-        "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
+        "violent": 1,
+        "property": 2,
+        "totalPart1": 3,
         "categories": {
-          "other": 7,
-          "burglary": 1,
           "motor_vehicle_theft": 1,
-          "larceny_theft": 2
+          "other": 5,
+          "larceny_theft": 1,
+          "robbery": 1
         }
       },
       "previous28": {
-        "violent": 5,
-        "property": 3,
+        "violent": 3,
+        "property": 5,
         "totalPart1": 8,
         "categories": {
-          "other": 7,
-          "aggravated_assault": 1,
           "motor_vehicle_theft": 1,
-          "larceny_theft": 1,
-          "strangulation": 2,
-          "rape": 1,
+          "larceny_theft": 2,
+          "other": 2,
           "robbery": 1,
-          "burglary": 1
+          "burglary": 2,
+          "strangulation": 1,
+          "aggravated_assault": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -20
+          "value": -23.52941176470588
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -30
+          "value": -26.190476190476193
         },
         "totalYtd": {
           "kind": "value",
-          "value": -27.500000000000004
+          "value": -25.423728813559322
         },
         "violent28": {
           "kind": "value",
-          "value": -100
+          "value": -66.66666666666666
         }
       }
     },
@@ -2440,79 +2464,81 @@
       "name": "Northside",
       "sourceName": "Northside",
       "currentYtd": {
-        "violent": 23,
-        "property": 141,
-        "totalPart1": 164,
+        "violent": 36,
+        "property": 207,
+        "totalPart1": 243,
         "categories": {
-          "larceny_theft": 91,
-          "other": 106,
-          "burglary": 20,
-          "motor_vehicle_theft": 30,
-          "strangulation": 7,
-          "aggravated_assault": 8,
-          "homicide": 1,
-          "robbery": 6,
-          "rape": 1
+          "larceny_theft": 129,
+          "other": 146,
+          "burglary": 33,
+          "motor_vehicle_theft": 45,
+          "strangulation": 9,
+          "aggravated_assault": 14,
+          "homicide": 2,
+          "robbery": 9,
+          "rape": 2
         }
       },
       "priorYtd": {
-        "violent": 11,
-        "property": 130,
-        "totalPart1": 141,
+        "violent": 26,
+        "property": 185,
+        "totalPart1": 211,
         "categories": {
-          "aggravated_assault": 6,
-          "larceny_theft": 79,
-          "other": 110,
-          "burglary": 19,
-          "motor_vehicle_theft": 32,
-          "robbery": 5
+          "aggravated_assault": 12,
+          "larceny_theft": 106,
+          "other": 156,
+          "burglary": 30,
+          "motor_vehicle_theft": 49,
+          "robbery": 11,
+          "strangulation": 2,
+          "rape": 1
         }
       },
       "current28": {
-        "violent": 5,
-        "property": 31,
-        "totalPart1": 36,
+        "violent": 8,
+        "property": 27,
+        "totalPart1": 35,
         "categories": {
-          "burglary": 2,
-          "other": 24,
-          "larceny_theft": 23,
-          "motor_vehicle_theft": 6,
-          "aggravated_assault": 1,
-          "rape": 1,
+          "larceny_theft": 13,
+          "aggravated_assault": 3,
+          "burglary": 6,
+          "motor_vehicle_theft": 8,
           "strangulation": 1,
-          "robbery": 2
+          "robbery": 2,
+          "other": 18,
+          "rape": 1,
+          "homicide": 1
         }
       },
       "previous28": {
-        "violent": 6,
-        "property": 32,
-        "totalPart1": 38,
+        "violent": 2,
+        "property": 26,
+        "totalPart1": 28,
         "categories": {
-          "burglary": 6,
-          "other": 17,
-          "larceny_theft": 21,
-          "aggravated_assault": 4,
-          "robbery": 1,
-          "motor_vehicle_theft": 5,
+          "other": 18,
+          "larceny_theft": 19,
+          "burglary": 5,
+          "aggravated_assault": 1,
+          "motor_vehicle_theft": 2,
           "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 109.09090909090908
+          "value": 38.46153846153847
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 8.461538461538462
+          "value": 11.891891891891893
         },
         "totalYtd": {
           "kind": "value",
-          "value": 16.312056737588655
+          "value": 15.165876777251185
         },
         "violent28": {
           "kind": "value",
-          "value": -16.666666666666664
+          "value": 300
         }
       }
     },
@@ -2522,73 +2548,75 @@
       "name": "Oakley",
       "sourceName": "Oakley",
       "currentYtd": {
-        "violent": 4,
-        "property": 356,
-        "totalPart1": 360,
+        "violent": 6,
+        "property": 452,
+        "totalPart1": 458,
         "categories": {
-          "larceny_theft": 323,
-          "other": 90,
-          "burglary": 17,
-          "motor_vehicle_theft": 16,
-          "homicide": 1,
+          "larceny_theft": 412,
+          "other": 132,
+          "burglary": 21,
+          "motor_vehicle_theft": 19,
           "robbery": 1,
+          "homicide": 2,
           "strangulation": 1,
-          "aggravated_assault": 1
+          "aggravated_assault": 1,
+          "rape": 1
         }
       },
       "priorYtd": {
-        "violent": 6,
-        "property": 237,
-        "totalPart1": 243,
+        "violent": 7,
+        "property": 371,
+        "totalPart1": 378,
         "categories": {
-          "larceny_theft": 202,
-          "other": 89,
-          "motor_vehicle_theft": 18,
-          "burglary": 17,
+          "larceny_theft": 314,
+          "other": 120,
+          "motor_vehicle_theft": 31,
+          "burglary": 26,
           "robbery": 2,
           "strangulation": 2,
-          "aggravated_assault": 2
+          "aggravated_assault": 3
         }
       },
       "current28": {
         "violent": 1,
-        "property": 71,
-        "totalPart1": 72,
+        "property": 35,
+        "totalPart1": 36,
         "categories": {
-          "larceny_theft": 64,
-          "other": 10,
-          "burglary": 5,
-          "motor_vehicle_theft": 2,
-          "aggravated_assault": 1
+          "larceny_theft": 32,
+          "burglary": 2,
+          "homicide": 1,
+          "other": 7,
+          "motor_vehicle_theft": 1
         }
       },
       "previous28": {
-        "violent": 0,
-        "property": 39,
-        "totalPart1": 39,
+        "violent": 1,
+        "property": 41,
+        "totalPart1": 42,
         "categories": {
-          "other": 11,
-          "larceny_theft": 35,
-          "burglary": 2,
-          "motor_vehicle_theft": 2
+          "motor_vehicle_theft": 2,
+          "larceny_theft": 38,
+          "rape": 1,
+          "other": 21,
+          "burglary": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -33.33333333333333
+          "value": -14.285714285714285
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 50.210970464135016
+          "value": 21.83288409703504
         },
         "totalYtd": {
           "kind": "value",
-          "value": 48.148148148148145
+          "value": 21.164021164021165
         },
         "violent28": {
-          "kind": "new-activity",
-          "value": null
+          "kind": "value",
+          "value": 0
         }
       }
     },
@@ -2598,79 +2626,82 @@
       "name": "Over-the-Rhine",
       "sourceName": "Over-the-Rhine",
       "currentYtd": {
-        "violent": 53,
-        "property": 315,
-        "totalPart1": 368,
+        "violent": 77,
+        "property": 464,
+        "totalPart1": 541,
         "categories": {
-          "robbery": 17,
-          "larceny_theft": 238,
-          "burglary": 47,
-          "other": 266,
-          "motor_vehicle_theft": 30,
-          "aggravated_assault": 22,
-          "rape": 7,
-          "strangulation": 7
+          "robbery": 24,
+          "burglary": 59,
+          "other": 392,
+          "larceny_theft": 358,
+          "motor_vehicle_theft": 47,
+          "aggravated_assault": 33,
+          "rape": 10,
+          "strangulation": 10
         }
       },
       "priorYtd": {
-        "violent": 59,
-        "property": 425,
-        "totalPart1": 484,
+        "violent": 87,
+        "property": 655,
+        "totalPart1": 742,
         "categories": {
-          "motor_vehicle_theft": 75,
-          "other": 254,
-          "larceny_theft": 264,
-          "aggravated_assault": 23,
-          "burglary": 86,
-          "robbery": 20,
-          "strangulation": 7,
-          "homicide": 5,
+          "motor_vehicle_theft": 93,
+          "other": 406,
+          "larceny_theft": 437,
+          "burglary": 125,
+          "aggravated_assault": 38,
+          "robbery": 30,
+          "strangulation": 9,
+          "homicide": 6,
           "rape": 4
         }
       },
       "current28": {
-        "violent": 7,
-        "property": 48,
-        "totalPart1": 55,
+        "violent": 9,
+        "property": 49,
+        "totalPart1": 58,
         "categories": {
-          "other": 53,
-          "burglary": 4,
-          "larceny_theft": 43,
-          "aggravated_assault": 6,
-          "strangulation": 1,
-          "motor_vehicle_theft": 1
+          "other": 48,
+          "motor_vehicle_theft": 7,
+          "larceny_theft": 39,
+          "strangulation": 2,
+          "robbery": 2,
+          "aggravated_assault": 4,
+          "rape": 1,
+          "burglary": 3
         }
       },
       "previous28": {
-        "violent": 9,
-        "property": 57,
-        "totalPart1": 66,
+        "violent": 13,
+        "property": 72,
+        "totalPart1": 85,
         "categories": {
-          "larceny_theft": 50,
-          "other": 42,
-          "aggravated_assault": 3,
-          "motor_vehicle_theft": 3,
-          "robbery": 4,
-          "burglary": 4,
-          "rape": 2
+          "larceny_theft": 59,
+          "robbery": 5,
+          "burglary": 5,
+          "other": 51,
+          "aggravated_assault": 5,
+          "rape": 2,
+          "motor_vehicle_theft": 8,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -10.16949152542373
+          "value": -11.494252873563218
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -25.882352941176475
+          "value": -29.16030534351145
         },
         "totalYtd": {
           "kind": "value",
-          "value": -23.96694214876033
+          "value": -27.088948787061994
         },
         "violent28": {
           "kind": "value",
-          "value": -22.22222222222222
+          "value": -30.76923076923077
         }
       }
     },
@@ -2680,71 +2711,68 @@
       "name": "Paddock Hills",
       "sourceName": "Paddock Hills",
       "currentYtd": {
-        "violent": 8,
-        "property": 18,
-        "totalPart1": 26,
+        "violent": 9,
+        "property": 26,
+        "totalPart1": 35,
         "categories": {
-          "other": 32,
-          "larceny_theft": 15,
-          "rape": 5,
+          "other": 43,
+          "larceny_theft": 23,
+          "rape": 6,
           "strangulation": 3,
           "burglary": 1,
           "motor_vehicle_theft": 2
         }
       },
       "priorYtd": {
-        "violent": 8,
-        "property": 32,
-        "totalPart1": 40,
+        "violent": 14,
+        "property": 40,
+        "totalPart1": 54,
         "categories": {
-          "larceny_theft": 18,
-          "motor_vehicle_theft": 8,
-          "other": 30,
-          "strangulation": 2,
-          "rape": 3,
-          "burglary": 6,
-          "aggravated_assault": 2,
-          "robbery": 1
+          "larceny_theft": 22,
+          "motor_vehicle_theft": 10,
+          "other": 42,
+          "strangulation": 3,
+          "rape": 5,
+          "burglary": 8,
+          "aggravated_assault": 3,
+          "robbery": 3
         }
       },
       "current28": {
-        "violent": 2,
-        "property": 4,
-        "totalPart1": 6,
+        "violent": 0,
+        "property": 3,
+        "totalPart1": 3,
         "categories": {
-          "other": 6,
-          "rape": 2,
-          "larceny_theft": 1,
-          "burglary": 1,
-          "motor_vehicle_theft": 2
+          "larceny_theft": 3,
+          "other": 6
         }
       },
       "previous28": {
-        "violent": 2,
-        "property": 1,
+        "violent": 1,
+        "property": 2,
         "totalPart1": 3,
         "categories": {
-          "other": 2,
-          "strangulation": 2,
-          "larceny_theft": 1
+          "other": 3,
+          "rape": 1,
+          "larceny_theft": 2
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 0
+          "value": -35.714285714285715
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -43.75
+          "value": -35
         },
         "totalYtd": {
           "kind": "value",
-          "value": -35
+          "value": -35.18518518518518
         },
         "violent28": {
           "kind": "value",
-          "value": 0
+          "value": -100
         }
       }
     },
@@ -2755,71 +2783,68 @@
       "sourceName": "Pendleton",
       "currentYtd": {
         "violent": 10,
-        "property": 32,
-        "totalPart1": 42,
+        "property": 53,
+        "totalPart1": 63,
         "categories": {
-          "other": 39,
-          "larceny_theft": 25,
+          "other": 48,
+          "larceny_theft": 41,
           "strangulation": 2,
           "robbery": 5,
           "aggravated_assault": 3,
-          "motor_vehicle_theft": 6,
+          "motor_vehicle_theft": 11,
           "burglary": 1
         }
       },
       "priorYtd": {
-        "violent": 3,
-        "property": 49,
-        "totalPart1": 52,
+        "violent": 4,
+        "property": 85,
+        "totalPart1": 89,
         "categories": {
-          "larceny_theft": 39,
-          "other": 34,
-          "motor_vehicle_theft": 6,
-          "burglary": 4,
+          "larceny_theft": 63,
+          "other": 56,
+          "motor_vehicle_theft": 11,
           "aggravated_assault": 2,
-          "robbery": 1
+          "burglary": 11,
+          "robbery": 1,
+          "rape": 1
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 11,
-        "totalPart1": 14,
-        "categories": {
-          "other": 9,
-          "aggravated_assault": 1,
-          "robbery": 1,
-          "larceny_theft": 9,
-          "strangulation": 1,
-          "motor_vehicle_theft": 2
-        }
-      },
-      "previous28": {
         "violent": 0,
         "property": 7,
         "totalPart1": 7,
         "categories": {
-          "other": 9,
-          "larceny_theft": 3,
-          "burglary": 1,
-          "motor_vehicle_theft": 3
+          "other": 6,
+          "motor_vehicle_theft": 2,
+          "larceny_theft": 5
+        }
+      },
+      "previous28": {
+        "violent": 0,
+        "property": 9,
+        "totalPart1": 9,
+        "categories": {
+          "other": 2,
+          "larceny_theft": 7,
+          "motor_vehicle_theft": 2
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 233.33333333333334
+          "value": 150
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -34.69387755102041
+          "value": -37.64705882352941
         },
         "totalYtd": {
           "kind": "value",
-          "value": -19.230769230769234
+          "value": -29.213483146067414
         },
         "violent28": {
-          "kind": "new-activity",
-          "value": null
+          "kind": "no-change",
+          "value": 0
         }
       }
     },
@@ -2829,75 +2854,72 @@
       "name": "Pleasant Ridge",
       "sourceName": "Pleasant Ridge",
       "currentYtd": {
-        "violent": 6,
-        "property": 63,
-        "totalPart1": 69,
+        "violent": 9,
+        "property": 84,
+        "totalPart1": 93,
         "categories": {
-          "larceny_theft": 49,
-          "other": 51,
-          "aggravated_assault": 2,
-          "motor_vehicle_theft": 7,
-          "burglary": 7,
+          "larceny_theft": 60,
+          "other": 76,
+          "aggravated_assault": 5,
+          "motor_vehicle_theft": 14,
+          "burglary": 10,
           "robbery": 3,
           "strangulation": 1
         }
       },
       "priorYtd": {
-        "violent": 8,
-        "property": 58,
-        "totalPart1": 66,
+        "violent": 10,
+        "property": 89,
+        "totalPart1": 99,
         "categories": {
-          "other": 60,
-          "motor_vehicle_theft": 18,
-          "larceny_theft": 27,
-          "burglary": 13,
-          "strangulation": 2,
+          "other": 98,
+          "motor_vehicle_theft": 29,
+          "larceny_theft": 43,
+          "burglary": 17,
+          "strangulation": 3,
           "robbery": 2,
-          "aggravated_assault": 3,
+          "aggravated_assault": 4,
           "rape": 1
         }
       },
       "current28": {
-        "violent": 1,
-        "property": 5,
-        "totalPart1": 6,
+        "violent": 0,
+        "property": 10,
+        "totalPart1": 10,
         "categories": {
-          "aggravated_assault": 1,
-          "other": 6,
-          "larceny_theft": 1,
-          "motor_vehicle_theft": 2,
+          "other": 11,
+          "larceny_theft": 5,
+          "motor_vehicle_theft": 3,
           "burglary": 2
         }
       },
       "previous28": {
-        "violent": 4,
-        "property": 14,
-        "totalPart1": 18,
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
         "categories": {
-          "larceny_theft": 12,
-          "other": 11,
-          "robbery": 3,
-          "strangulation": 1,
-          "burglary": 1,
-          "motor_vehicle_theft": 1
+          "other": 8,
+          "motor_vehicle_theft": 2,
+          "larceny_theft": 4,
+          "aggravated_assault": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -25
+          "value": -10
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 8.620689655172415
+          "value": -5.617977528089887
         },
         "totalYtd": {
           "kind": "value",
-          "value": 4.545454545454546
+          "value": -6.0606060606060606
         },
         "violent28": {
           "kind": "value",
-          "value": -75
+          "value": -100
         }
       }
     },
@@ -2907,32 +2929,35 @@
       "name": "Riverside",
       "sourceName": "Riverside",
       "currentYtd": {
-        "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
+        "violent": 1,
+        "property": 5,
+        "totalPart1": 6,
         "categories": {
-          "other": 11,
+          "other": 18,
           "burglary": 1,
-          "larceny_theft": 3
+          "larceny_theft": 4,
+          "rape": 1
         }
       },
       "priorYtd": {
         "violent": 1,
-        "property": 13,
-        "totalPart1": 14,
+        "property": 20,
+        "totalPart1": 21,
         "categories": {
           "motor_vehicle_theft": 4,
-          "larceny_theft": 9,
-          "other": 7,
-          "aggravated_assault": 1
+          "larceny_theft": 12,
+          "other": 11,
+          "aggravated_assault": 1,
+          "burglary": 4
         }
       },
       "current28": {
-        "violent": 0,
+        "violent": 1,
         "property": 1,
-        "totalPart1": 1,
+        "totalPart1": 2,
         "categories": {
-          "other": 2,
+          "other": 4,
+          "rape": 1,
           "larceny_theft": 1
         }
       },
@@ -2942,25 +2967,25 @@
         "totalPart1": 1,
         "categories": {
           "larceny_theft": 1,
-          "other": 3
+          "other": 2
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -100
+          "value": 0
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -69.23076923076923
+          "value": -75
         },
         "totalYtd": {
           "kind": "value",
           "value": -71.42857142857143
         },
         "violent28": {
-          "kind": "no-change",
-          "value": 0
+          "kind": "new-activity",
+          "value": null
         }
       }
     },
@@ -2970,70 +2995,77 @@
       "name": "Riverside / Sedamsville",
       "sourceName": "Riverside_Sedamsville",
       "currentYtd": {
-        "violent": 4,
-        "property": 36,
-        "totalPart1": 40,
+        "violent": 11,
+        "property": 50,
+        "totalPart1": 61,
         "categories": {
-          "larceny_theft": 27,
-          "robbery": 2,
-          "burglary": 3,
-          "other": 32,
-          "motor_vehicle_theft": 6,
-          "aggravated_assault": 1,
-          "strangulation": 1
+          "larceny_theft": 36,
+          "robbery": 5,
+          "burglary": 4,
+          "other": 59,
+          "motor_vehicle_theft": 10,
+          "aggravated_assault": 2,
+          "strangulation": 3,
+          "rape": 1
         }
       },
       "priorYtd": {
-        "violent": 6,
-        "property": 28,
-        "totalPart1": 34,
+        "violent": 7,
+        "property": 45,
+        "totalPart1": 52,
         "categories": {
-          "motor_vehicle_theft": 4,
-          "larceny_theft": 22,
-          "burglary": 2,
-          "other": 38,
+          "motor_vehicle_theft": 7,
+          "larceny_theft": 34,
+          "burglary": 4,
+          "other": 46,
           "strangulation": 1,
-          "robbery": 3,
+          "robbery": 4,
           "aggravated_assault": 2
         }
       },
       "current28": {
-        "violent": 1,
+        "violent": 4,
         "property": 6,
-        "totalPart1": 7,
+        "totalPart1": 10,
         "categories": {
           "larceny_theft": 4,
-          "motor_vehicle_theft": 2,
+          "other": 13,
+          "motor_vehicle_theft": 1,
+          "robbery": 1,
+          "rape": 1,
+          "burglary": 1,
           "strangulation": 1,
-          "other": 5
+          "aggravated_assault": 1
         }
       },
       "previous28": {
-        "violent": 0,
+        "violent": 2,
         "property": 6,
-        "totalPart1": 6,
+        "totalPart1": 8,
         "categories": {
-          "other": 5,
-          "larceny_theft": 5,
-          "motor_vehicle_theft": 1
+          "other": 10,
+          "larceny_theft": 3,
+          "motor_vehicle_theft": 3,
+          "strangulation": 1,
+          "robbery": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -33.33333333333333
+          "value": 57.14285714285714
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 28.57142857142857
+          "value": 11.11111111111111
         },
         "totalYtd": {
           "kind": "value",
-          "value": 17.647058823529413
+          "value": 17.307692307692307
         },
         "violent28": {
-          "kind": "new-activity",
-          "value": null
+          "kind": "value",
+          "value": 100
         }
       }
     },
@@ -3043,77 +3075,80 @@
       "name": "Roselawn",
       "sourceName": "Roselawn",
       "currentYtd": {
-        "violent": 30,
-        "property": 153,
-        "totalPart1": 183,
+        "violent": 52,
+        "property": 217,
+        "totalPart1": 269,
         "categories": {
-          "other": 183,
-          "larceny_theft": 102,
-          "burglary": 24,
-          "robbery": 12,
-          "motor_vehicle_theft": 27,
-          "strangulation": 7,
-          "aggravated_assault": 11
+          "other": 252,
+          "larceny_theft": 152,
+          "burglary": 29,
+          "robbery": 20,
+          "motor_vehicle_theft": 36,
+          "strangulation": 9,
+          "aggravated_assault": 21,
+          "rape": 2
         }
       },
       "priorYtd": {
-        "violent": 40,
-        "property": 168,
-        "totalPart1": 208,
+        "violent": 61,
+        "property": 238,
+        "totalPart1": 299,
         "categories": {
-          "larceny_theft": 112,
-          "motor_vehicle_theft": 27,
-          "robbery": 17,
-          "other": 183,
-          "rape": 4,
-          "burglary": 29,
-          "aggravated_assault": 14,
+          "larceny_theft": 151,
+          "motor_vehicle_theft": 48,
+          "robbery": 25,
+          "other": 251,
+          "rape": 5,
+          "burglary": 39,
+          "aggravated_assault": 23,
           "homicide": 2,
-          "strangulation": 3
+          "strangulation": 6
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 20,
-        "totalPart1": 23,
+        "violent": 13,
+        "property": 24,
+        "totalPart1": 37,
         "categories": {
-          "other": 30,
-          "larceny_theft": 12,
-          "robbery": 1,
-          "motor_vehicle_theft": 6,
-          "aggravated_assault": 2,
-          "burglary": 2
+          "larceny_theft": 21,
+          "other": 34,
+          "robbery": 6,
+          "rape": 2,
+          "aggravated_assault": 4,
+          "motor_vehicle_theft": 2,
+          "burglary": 1,
+          "strangulation": 1
         }
       },
       "previous28": {
-        "violent": 8,
+        "violent": 5,
         "property": 32,
-        "totalPart1": 40,
+        "totalPart1": 37,
         "categories": {
-          "motor_vehicle_theft": 7,
-          "larceny_theft": 25,
-          "other": 37,
-          "strangulation": 2,
-          "aggravated_assault": 3,
-          "robbery": 3
+          "larceny_theft": 23,
+          "other": 25,
+          "burglary": 4,
+          "aggravated_assault": 4,
+          "motor_vehicle_theft": 5,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -25
+          "value": -14.754098360655737
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -8.928571428571429
+          "value": -8.823529411764707
         },
         "totalYtd": {
           "kind": "value",
-          "value": -12.01923076923077
+          "value": -10.033444816053512
         },
         "violent28": {
           "kind": "value",
-          "value": -62.5
+          "value": 160
         }
       }
     },
@@ -3123,63 +3158,67 @@
       "name": "Sayler Park",
       "sourceName": "Sayler Park",
       "currentYtd": {
-        "violent": 0,
-        "property": 16,
-        "totalPart1": 16,
+        "violent": 1,
+        "property": 25,
+        "totalPart1": 26,
         "categories": {
-          "motor_vehicle_theft": 6,
-          "other": 14,
-          "larceny_theft": 10
+          "motor_vehicle_theft": 11,
+          "other": 22,
+          "larceny_theft": 13,
+          "strangulation": 1,
+          "burglary": 1
         }
       },
       "priorYtd": {
-        "violent": 2,
-        "property": 25,
-        "totalPart1": 27,
+        "violent": 5,
+        "property": 33,
+        "totalPart1": 38,
         "categories": {
-          "larceny_theft": 15,
-          "other": 21,
-          "motor_vehicle_theft": 4,
-          "burglary": 6,
-          "aggravated_assault": 1,
+          "larceny_theft": 19,
+          "other": 28,
+          "motor_vehicle_theft": 7,
+          "burglary": 7,
+          "aggravated_assault": 4,
           "robbery": 1
         }
       },
       "current28": {
-        "violent": 0,
-        "property": 5,
-        "totalPart1": 5,
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
         "categories": {
-          "larceny_theft": 4,
-          "motor_vehicle_theft": 1,
-          "other": 2
+          "larceny_theft": 3,
+          "other": 4,
+          "motor_vehicle_theft": 2,
+          "strangulation": 1,
+          "burglary": 1
         }
       },
       "previous28": {
         "violent": 0,
-        "property": 3,
-        "totalPart1": 3,
+        "property": 1,
+        "totalPart1": 1,
         "categories": {
           "other": 3,
-          "motor_vehicle_theft": 3
+          "motor_vehicle_theft": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -100
+          "value": -80
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -36
+          "value": -24.242424242424242
         },
         "totalYtd": {
           "kind": "value",
-          "value": -40.74074074074074
+          "value": -31.57894736842105
         },
         "violent28": {
-          "kind": "no-change",
-          "value": 0
+          "kind": "new-activity",
+          "value": null
         }
       }
     },
@@ -3189,66 +3228,65 @@
       "name": "South Cumminsville",
       "sourceName": "South Cumminsville",
       "currentYtd": {
-        "violent": 5,
-        "property": 14,
-        "totalPart1": 19,
+        "violent": 7,
+        "property": 22,
+        "totalPart1": 29,
         "categories": {
-          "other": 15,
-          "larceny_theft": 8,
-          "motor_vehicle_theft": 3,
-          "aggravated_assault": 3,
+          "other": 20,
+          "larceny_theft": 15,
+          "motor_vehicle_theft": 4,
+          "aggravated_assault": 5,
           "strangulation": 1,
           "rape": 1,
           "burglary": 3
         }
       },
       "priorYtd": {
-        "violent": 4,
-        "property": 14,
-        "totalPart1": 18,
+        "violent": 5,
+        "property": 18,
+        "totalPart1": 23,
         "categories": {
-          "other": 16,
-          "larceny_theft": 8,
-          "motor_vehicle_theft": 2,
-          "aggravated_assault": 1,
-          "burglary": 4,
+          "other": 23,
+          "motor_vehicle_theft": 3,
+          "larceny_theft": 9,
+          "aggravated_assault": 2,
+          "burglary": 6,
           "robbery": 1,
           "homicide": 2
         }
       },
       "current28": {
         "violent": 0,
-        "property": 3,
-        "totalPart1": 3,
+        "property": 2,
+        "totalPart1": 2,
         "categories": {
-          "other": 2,
-          "larceny_theft": 2,
-          "burglary": 1
+          "other": 1,
+          "larceny_theft": 2
         }
       },
       "previous28": {
         "violent": 1,
-        "property": 2,
-        "totalPart1": 3,
+        "property": 5,
+        "totalPart1": 6,
         "categories": {
-          "other": 2,
+          "larceny_theft": 4,
+          "other": 4,
           "motor_vehicle_theft": 1,
-          "burglary": 1,
           "aggravated_assault": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 25
+          "value": 40
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 0
+          "value": 22.22222222222222
         },
         "totalYtd": {
           "kind": "value",
-          "value": 5.555555555555555
+          "value": 26.08695652173913
         },
         "violent28": {
           "kind": "value",
@@ -3262,77 +3300,74 @@
       "name": "South Fairmount",
       "sourceName": "South Fairmount",
       "currentYtd": {
-        "violent": 11,
-        "property": 55,
-        "totalPart1": 66,
+        "violent": 14,
+        "property": 86,
+        "totalPart1": 100,
         "categories": {
-          "other": 47,
-          "larceny_theft": 42,
-          "aggravated_assault": 6,
+          "other": 67,
+          "larceny_theft": 56,
+          "aggravated_assault": 8,
           "strangulation": 4,
-          "motor_vehicle_theft": 7,
-          "burglary": 6,
-          "robbery": 1
+          "motor_vehicle_theft": 20,
+          "burglary": 10,
+          "robbery": 2
         }
       },
       "priorYtd": {
-        "violent": 10,
-        "property": 35,
-        "totalPart1": 45,
+        "violent": 12,
+        "property": 45,
+        "totalPart1": 57,
         "categories": {
-          "larceny_theft": 20,
-          "other": 42,
-          "aggravated_assault": 3,
-          "motor_vehicle_theft": 12,
+          "larceny_theft": 25,
+          "other": 57,
+          "aggravated_assault": 4,
+          "motor_vehicle_theft": 13,
           "robbery": 3,
-          "burglary": 3,
-          "rape": 2,
+          "burglary": 7,
+          "rape": 3,
           "strangulation": 2
         }
       },
       "current28": {
-        "violent": 4,
-        "property": 11,
-        "totalPart1": 15,
+        "violent": 1,
+        "property": 9,
+        "totalPart1": 10,
         "categories": {
-          "larceny_theft": 8,
-          "aggravated_assault": 2,
-          "other": 11,
-          "strangulation": 2,
-          "burglary": 2,
-          "motor_vehicle_theft": 1
+          "burglary": 3,
+          "motor_vehicle_theft": 4,
+          "other": 5,
+          "larceny_theft": 2,
+          "aggravated_assault": 1
         }
       },
       "previous28": {
-        "violent": 4,
-        "property": 16,
-        "totalPart1": 20,
+        "violent": 2,
+        "property": 12,
+        "totalPart1": 14,
         "categories": {
-          "larceny_theft": 13,
-          "other": 5,
-          "strangulation": 1,
-          "aggravated_assault": 2,
+          "larceny_theft": 6,
+          "other": 7,
           "robbery": 1,
-          "burglary": 1,
-          "motor_vehicle_theft": 2
+          "aggravated_assault": 1,
+          "motor_vehicle_theft": 6
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 10
+          "value": 16.666666666666664
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 57.14285714285714
+          "value": 91.11111111111111
         },
         "totalYtd": {
           "kind": "value",
-          "value": 46.666666666666664
+          "value": 75.43859649122807
         },
         "violent28": {
           "kind": "value",
-          "value": 0
+          "value": -50
         }
       }
     },
@@ -3342,76 +3377,77 @@
       "name": "Spring Grove Village",
       "sourceName": "Spring Grove Village",
       "currentYtd": {
-        "violent": 9,
-        "property": 50,
-        "totalPart1": 59,
+        "violent": 16,
+        "property": 82,
+        "totalPart1": 98,
         "categories": {
-          "motor_vehicle_theft": 5,
-          "burglary": 11,
-          "larceny_theft": 34,
-          "other": 48,
-          "aggravated_assault": 3,
-          "robbery": 3,
+          "burglary": 14,
+          "motor_vehicle_theft": 12,
+          "larceny_theft": 56,
+          "other": 76,
+          "aggravated_assault": 8,
+          "robbery": 4,
           "strangulation": 2,
-          "rape": 1
+          "rape": 2
         }
       },
       "priorYtd": {
-        "violent": 8,
-        "property": 47,
-        "totalPart1": 55,
+        "violent": 10,
+        "property": 75,
+        "totalPart1": 85,
         "categories": {
-          "other": 45,
-          "aggravated_assault": 4,
-          "motor_vehicle_theft": 9,
-          "burglary": 9,
-          "larceny_theft": 29,
+          "other": 65,
+          "aggravated_assault": 5,
+          "motor_vehicle_theft": 11,
+          "burglary": 16,
+          "larceny_theft": 48,
           "strangulation": 1,
           "homicide": 2,
-          "robbery": 1
+          "robbery": 2
         }
       },
       "current28": {
-        "violent": 2,
-        "property": 8,
-        "totalPart1": 10,
+        "violent": 4,
+        "property": 9,
+        "totalPart1": 13,
         "categories": {
-          "other": 14,
+          "other": 8,
+          "burglary": 2,
+          "larceny_theft": 6,
+          "aggravated_assault": 3,
           "robbery": 1,
-          "motor_vehicle_theft": 3,
-          "larceny_theft": 2,
-          "burglary": 3,
-          "aggravated_assault": 1
+          "motor_vehicle_theft": 1
         }
       },
       "previous28": {
         "violent": 2,
-        "property": 10,
-        "totalPart1": 12,
+        "property": 18,
+        "totalPart1": 20,
         "categories": {
-          "larceny_theft": 9,
-          "other": 4,
-          "motor_vehicle_theft": 1,
-          "robbery": 1,
-          "rape": 1
+          "motor_vehicle_theft": 4,
+          "other": 12,
+          "larceny_theft": 13,
+          "aggravated_assault": 1,
+          "rape": 1,
+          "burglary": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 12.5
+          "value": 60
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 6.382978723404255
+          "value": 9.333333333333334
         },
         "totalYtd": {
           "kind": "value",
-          "value": 7.2727272727272725
+          "value": 15.294117647058824
         },
         "violent28": {
           "kind": "value",
-          "value": 0
+          "value": 100
         }
       }
     },
@@ -3421,76 +3457,76 @@
       "name": "Villages at Roll Hill",
       "sourceName": "Roll Hill",
       "currentYtd": {
-        "violent": 25,
-        "property": 41,
-        "totalPart1": 66,
+        "violent": 28,
+        "property": 58,
+        "totalPart1": 86,
         "categories": {
-          "other": 70,
-          "larceny_theft": 24,
-          "strangulation": 12,
-          "burglary": 9,
-          "motor_vehicle_theft": 8,
-          "aggravated_assault": 10,
+          "other": 101,
+          "larceny_theft": 30,
+          "strangulation": 13,
+          "burglary": 16,
+          "motor_vehicle_theft": 12,
+          "aggravated_assault": 11,
           "homicide": 2,
-          "robbery": 1
+          "robbery": 2
         }
       },
       "priorYtd": {
-        "violent": 9,
-        "property": 27,
-        "totalPart1": 36,
+        "violent": 13,
+        "property": 40,
+        "totalPart1": 53,
         "categories": {
-          "other": 91,
-          "burglary": 8,
-          "larceny_theft": 11,
-          "motor_vehicle_theft": 8,
-          "aggravated_assault": 6,
-          "strangulation": 2,
+          "other": 118,
+          "burglary": 12,
+          "larceny_theft": 17,
+          "motor_vehicle_theft": 11,
+          "aggravated_assault": 8,
+          "strangulation": 4,
           "rape": 1
         }
       },
       "current28": {
-        "violent": 8,
-        "property": 3,
-        "totalPart1": 11,
+        "violent": 3,
+        "property": 10,
+        "totalPart1": 13,
         "categories": {
+          "strangulation": 1,
+          "other": 11,
+          "larceny_theft": 5,
+          "burglary": 4,
           "motor_vehicle_theft": 1,
-          "other": 9,
-          "strangulation": 3,
-          "aggravated_assault": 3,
-          "burglary": 1,
-          "homicide": 1,
-          "larceny_theft": 1,
-          "robbery": 1
+          "robbery": 1,
+          "aggravated_assault": 1
         }
       },
       "previous28": {
-        "violent": 4,
-        "property": 10,
-        "totalPart1": 14,
+        "violent": 1,
+        "property": 5,
+        "totalPart1": 6,
         "categories": {
-          "larceny_theft": 10,
-          "other": 12,
-          "strangulation": 3,
-          "aggravated_assault": 1
+          "strangulation": 1,
+          "other": 15,
+          "burglary": 3,
+          "motor_vehicle_theft": 1,
+          "larceny_theft": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 177.77777777777777
+          "value": 115.38461538461537
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 51.85185185185185
+          "value": 45
         },
         "totalYtd": {
           "kind": "value",
-          "value": 83.33333333333334
+          "value": 62.264150943396224
         },
         "violent28": {
           "kind": "value",
-          "value": 100
+          "value": 200
         }
       }
     },
@@ -3500,81 +3536,82 @@
       "name": "Walnut Hills",
       "sourceName": "Walnut Hills",
       "currentYtd": {
-        "violent": 26,
-        "property": 203,
-        "totalPart1": 229,
+        "violent": 50,
+        "property": 276,
+        "totalPart1": 326,
         "categories": {
-          "larceny_theft": 148,
-          "other": 167,
-          "motor_vehicle_theft": 30,
-          "strangulation": 3,
-          "burglary": 25,
+          "larceny_theft": 201,
+          "other": 240,
+          "motor_vehicle_theft": 39,
+          "strangulation": 4,
+          "burglary": 36,
           "homicide": 3,
-          "rape": 5,
-          "robbery": 7,
-          "aggravated_assault": 8
+          "rape": 7,
+          "robbery": 17,
+          "aggravated_assault": 19
         }
       },
       "priorYtd": {
-        "violent": 41,
-        "property": 203,
-        "totalPart1": 244,
+        "violent": 58,
+        "property": 271,
+        "totalPart1": 329,
         "categories": {
-          "other": 190,
-          "motor_vehicle_theft": 29,
-          "larceny_theft": 129,
-          "burglary": 45,
-          "robbery": 8,
-          "aggravated_assault": 23,
-          "rape": 6,
-          "strangulation": 2,
-          "homicide": 2
+          "other": 258,
+          "motor_vehicle_theft": 52,
+          "larceny_theft": 163,
+          "burglary": 56,
+          "robbery": 11,
+          "aggravated_assault": 30,
+          "rape": 10,
+          "strangulation": 3,
+          "homicide": 4
         }
       },
       "current28": {
-        "violent": 8,
-        "property": 49,
-        "totalPart1": 57,
+        "violent": 12,
+        "property": 36,
+        "totalPart1": 48,
         "categories": {
-          "other": 27,
-          "larceny_theft": 42,
+          "other": 26,
+          "larceny_theft": 29,
+          "burglary": 3,
+          "rape": 1,
+          "robbery": 5,
           "aggravated_assault": 5,
           "motor_vehicle_theft": 4,
-          "burglary": 3,
-          "robbery": 2,
           "strangulation": 1
         }
       },
       "previous28": {
-        "violent": 4,
-        "property": 36,
-        "totalPart1": 40,
+        "violent": 8,
+        "property": 28,
+        "totalPart1": 36,
         "categories": {
-          "larceny_theft": 29,
-          "other": 37,
-          "motor_vehicle_theft": 6,
-          "burglary": 1,
-          "robbery": 2,
-          "homicide": 1,
-          "aggravated_assault": 1
+          "other": 31,
+          "motor_vehicle_theft": 5,
+          "burglary": 5,
+          "larceny_theft": 18,
+          "rape": 1,
+          "robbery": 4,
+          "aggravated_assault": 3
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -36.58536585365854
+          "value": -13.793103448275861
         },
         "propertyYtd": {
           "kind": "value",
-          "value": 0
+          "value": 1.8450184501845017
         },
         "totalYtd": {
           "kind": "value",
-          "value": -6.147540983606557
+          "value": -0.911854103343465
         },
         "violent28": {
           "kind": "value",
-          "value": 100
+          "value": 50
         }
       }
     },
@@ -3584,80 +3621,82 @@
       "name": "West End",
       "sourceName": "West End",
       "currentYtd": {
-        "violent": 52,
-        "property": 147,
-        "totalPart1": 199,
+        "violent": 76,
+        "property": 220,
+        "totalPart1": 296,
         "categories": {
-          "homicide": 1,
-          "aggravated_assault": 21,
-          "other": 273,
-          "burglary": 35,
-          "strangulation": 13,
-          "robbery": 13,
-          "larceny_theft": 83,
-          "motor_vehicle_theft": 29,
-          "rape": 4
+          "homicide": 2,
+          "other": 398,
+          "aggravated_assault": 26,
+          "burglary": 52,
+          "strangulation": 17,
+          "robbery": 20,
+          "larceny_theft": 128,
+          "motor_vehicle_theft": 40,
+          "rape": 11
         }
       },
       "priorYtd": {
-        "violent": 33,
-        "property": 203,
-        "totalPart1": 236,
+        "violent": 68,
+        "property": 264,
+        "totalPart1": 332,
         "categories": {
-          "larceny_theft": 123,
-          "burglary": 32,
-          "other": 240,
-          "strangulation": 9,
-          "aggravated_assault": 15,
-          "motor_vehicle_theft": 48,
-          "rape": 2,
-          "robbery": 6,
+          "larceny_theft": 162,
+          "burglary": 42,
+          "other": 395,
+          "aggravated_assault": 34,
+          "strangulation": 14,
+          "motor_vehicle_theft": 60,
+          "rape": 5,
+          "robbery": 14,
           "homicide": 1
         }
       },
       "current28": {
-        "violent": 6,
-        "property": 19,
-        "totalPart1": 25,
+        "violent": 7,
+        "property": 36,
+        "totalPart1": 43,
         "categories": {
-          "other": 45,
-          "motor_vehicle_theft": 6,
-          "larceny_theft": 13,
-          "aggravated_assault": 4,
+          "motor_vehicle_theft": 4,
+          "burglary": 7,
+          "other": 55,
+          "larceny_theft": 25,
+          "aggravated_assault": 2,
+          "robbery": 3,
           "strangulation": 2
         }
       },
       "previous28": {
-        "violent": 12,
-        "property": 17,
-        "totalPart1": 29,
+        "violent": 9,
+        "property": 21,
+        "totalPart1": 30,
         "categories": {
-          "burglary": 7,
-          "other": 40,
-          "robbery": 2,
-          "aggravated_assault": 5,
-          "larceny_theft": 8,
-          "strangulation": 3,
-          "rape": 2,
-          "motor_vehicle_theft": 2
+          "other": 50,
+          "rape": 3,
+          "motor_vehicle_theft": 4,
+          "larceny_theft": 13,
+          "aggravated_assault": 2,
+          "burglary": 4,
+          "robbery": 3,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 57.57575757575758
+          "value": 11.76470588235294
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -27.586206896551722
+          "value": -16.666666666666664
         },
         "totalYtd": {
           "kind": "value",
-          "value": -15.677966101694915
+          "value": -10.843373493975903
         },
         "violent28": {
           "kind": "value",
-          "value": -50
+          "value": -22.22222222222222
         }
       }
     },
@@ -3667,80 +3706,80 @@
       "name": "West Price Hill",
       "sourceName": "West Price Hill",
       "currentYtd": {
-        "violent": 51,
-        "property": 235,
-        "totalPart1": 286,
+        "violent": 79,
+        "property": 321,
+        "totalPart1": 400,
         "categories": {
-          "other": 245,
-          "larceny_theft": 174,
-          "motor_vehicle_theft": 26,
-          "strangulation": 14,
-          "burglary": 35,
-          "aggravated_assault": 13,
-          "robbery": 15,
-          "rape": 9
+          "other": 346,
+          "larceny_theft": 243,
+          "motor_vehicle_theft": 34,
+          "strangulation": 23,
+          "burglary": 44,
+          "aggravated_assault": 22,
+          "robbery": 21,
+          "rape": 13
         }
       },
       "priorYtd": {
-        "violent": 56,
-        "property": 260,
-        "totalPart1": 316,
+        "violent": 78,
+        "property": 384,
+        "totalPart1": 462,
         "categories": {
-          "robbery": 25,
-          "aggravated_assault": 16,
-          "larceny_theft": 171,
-          "other": 279,
-          "motor_vehicle_theft": 56,
-          "homicide": 2,
-          "burglary": 33,
-          "rape": 4,
-          "strangulation": 9
+          "robbery": 33,
+          "larceny_theft": 254,
+          "aggravated_assault": 24,
+          "other": 395,
+          "homicide": 4,
+          "motor_vehicle_theft": 74,
+          "burglary": 56,
+          "rape": 5,
+          "strangulation": 12
         }
       },
       "current28": {
-        "violent": 6,
-        "property": 31,
+        "violent": 7,
+        "property": 30,
         "totalPart1": 37,
         "categories": {
-          "other": 41,
-          "burglary": 4,
-          "larceny_theft": 24,
-          "robbery": 2,
-          "motor_vehicle_theft": 3,
-          "rape": 2,
-          "strangulation": 2
+          "other": 40,
+          "larceny_theft": 23,
+          "burglary": 5,
+          "motor_vehicle_theft": 2,
+          "strangulation": 6,
+          "robbery": 1
         }
       },
       "previous28": {
-        "violent": 7,
-        "property": 32,
-        "totalPart1": 39,
+        "violent": 16,
+        "property": 39,
+        "totalPart1": 55,
         "categories": {
-          "burglary": 5,
-          "larceny_theft": 20,
-          "other": 33,
-          "robbery": 5,
-          "motor_vehicle_theft": 7,
-          "aggravated_assault": 1,
-          "rape": 1
+          "larceny_theft": 34,
+          "rape": 3,
+          "other": 37,
+          "aggravated_assault": 7,
+          "motor_vehicle_theft": 3,
+          "strangulation": 2,
+          "robbery": 4,
+          "burglary": 2
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": -8.928571428571429
+          "value": 1.282051282051282
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -9.615384615384617
+          "value": -16.40625
         },
         "totalYtd": {
           "kind": "value",
-          "value": -9.49367088607595
+          "value": -13.41991341991342
         },
         "violent28": {
           "kind": "value",
-          "value": -14.285714285714285
+          "value": -56.25
         }
       }
     },
@@ -3750,82 +3789,83 @@
       "name": "Westwood",
       "sourceName": "Westwood",
       "currentYtd": {
-        "violent": 87,
-        "property": 568,
-        "totalPart1": 655,
+        "violent": 124,
+        "property": 819,
+        "totalPart1": 943,
         "categories": {
-          "larceny_theft": 423,
-          "other": 456,
-          "aggravated_assault": 34,
-          "robbery": 21,
-          "burglary": 58,
-          "strangulation": 18,
-          "rape": 14,
-          "motor_vehicle_theft": 87
+          "other": 638,
+          "aggravated_assault": 48,
+          "larceny_theft": 611,
+          "robbery": 30,
+          "burglary": 79,
+          "strangulation": 27,
+          "rape": 18,
+          "motor_vehicle_theft": 129,
+          "homicide": 1
         }
       },
       "priorYtd": {
-        "violent": 83,
-        "property": 644,
-        "totalPart1": 727,
+        "violent": 124,
+        "property": 897,
+        "totalPart1": 1021,
         "categories": {
-          "robbery": 29,
-          "larceny_theft": 491,
-          "other": 462,
-          "motor_vehicle_theft": 102,
-          "aggravated_assault": 20,
-          "burglary": 51,
-          "rape": 13,
-          "strangulation": 18,
+          "motor_vehicle_theft": 154,
+          "burglary": 70,
+          "other": 662,
+          "larceny_theft": 673,
+          "aggravated_assault": 39,
+          "robbery": 39,
+          "rape": 19,
+          "strangulation": 24,
           "homicide": 3
         }
       },
       "current28": {
-        "violent": 13,
-        "property": 102,
-        "totalPart1": 115,
+        "violent": 15,
+        "property": 99,
+        "totalPart1": 114,
         "categories": {
-          "larceny_theft": 81,
-          "motor_vehicle_theft": 13,
-          "burglary": 8,
-          "other": 75,
-          "rape": 4,
           "aggravated_assault": 5,
+          "other": 73,
+          "larceny_theft": 65,
+          "rape": 1,
+          "motor_vehicle_theft": 22,
+          "burglary": 12,
           "robbery": 3,
-          "strangulation": 1
+          "strangulation": 6
         }
       },
       "previous28": {
-        "violent": 19,
-        "property": 80,
-        "totalPart1": 99,
+        "violent": 18,
+        "property": 89,
+        "totalPart1": 107,
         "categories": {
-          "other": 80,
-          "larceny_theft": 64,
-          "aggravated_assault": 7,
-          "rape": 3,
-          "robbery": 7,
-          "motor_vehicle_theft": 10,
-          "strangulation": 2,
-          "burglary": 6
+          "other": 62,
+          "larceny_theft": 74,
+          "aggravated_assault": 9,
+          "motor_vehicle_theft": 8,
+          "rape": 2,
+          "burglary": 7,
+          "robbery": 4,
+          "strangulation": 3
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 4.819277108433735
+          "value": 0
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -11.801242236024844
+          "value": -8.695652173913043
         },
         "totalYtd": {
           "kind": "value",
-          "value": -9.903713892709765
+          "value": -7.639569049951028
         },
         "violent28": {
           "kind": "value",
-          "value": -31.57894736842105
+          "value": -16.666666666666664
         }
       }
     },
@@ -3835,82 +3875,82 @@
       "name": "Winton Hills",
       "sourceName": "Winton Hills",
       "currentYtd": {
-        "violent": 43,
-        "property": 68,
-        "totalPart1": 111,
+        "violent": 65,
+        "property": 135,
+        "totalPart1": 200,
         "categories": {
-          "other": 204,
-          "aggravated_assault": 22,
-          "robbery": 6,
-          "larceny_theft": 41,
-          "burglary": 15,
-          "homicide": 2,
-          "rape": 8,
-          "motor_vehicle_theft": 12,
-          "strangulation": 5
+          "other": 299,
+          "aggravated_assault": 32,
+          "robbery": 8,
+          "larceny_theft": 86,
+          "burglary": 26,
+          "homicide": 3,
+          "rape": 11,
+          "motor_vehicle_theft": 23,
+          "strangulation": 11
         }
       },
       "priorYtd": {
-        "violent": 38,
-        "property": 79,
-        "totalPart1": 117,
+        "violent": 54,
+        "property": 112,
+        "totalPart1": 166,
         "categories": {
-          "motor_vehicle_theft": 25,
-          "aggravated_assault": 17,
-          "larceny_theft": 36,
-          "other": 145,
-          "burglary": 18,
-          "robbery": 15,
-          "homicide": 2,
+          "motor_vehicle_theft": 36,
+          "aggravated_assault": 26,
+          "other": 215,
+          "larceny_theft": 50,
+          "burglary": 26,
+          "robbery": 19,
+          "homicide": 3,
           "rape": 2,
-          "strangulation": 2
+          "strangulation": 4
         }
       },
       "current28": {
-        "violent": 10,
-        "property": 15,
-        "totalPart1": 25,
+        "violent": 9,
+        "property": 26,
+        "totalPart1": 35,
         "categories": {
-          "aggravated_assault": 6,
-          "other": 37,
-          "larceny_theft": 8,
-          "strangulation": 2,
-          "robbery": 1,
-          "burglary": 6,
+          "other": 33,
+          "larceny_theft": 15,
+          "burglary": 5,
+          "aggravated_assault": 2,
+          "strangulation": 4,
+          "motor_vehicle_theft": 6,
           "rape": 1,
-          "motor_vehicle_theft": 1
+          "robbery": 2
         }
       },
       "previous28": {
-        "violent": 6,
-        "property": 12,
-        "totalPart1": 18,
+        "violent": 8,
+        "property": 28,
+        "totalPart1": 36,
         "categories": {
-          "robbery": 2,
-          "other": 32,
-          "burglary": 3,
-          "aggravated_assault": 1,
-          "motor_vehicle_theft": 1,
-          "rape": 3,
-          "larceny_theft": 8
+          "larceny_theft": 24,
+          "other": 45,
+          "motor_vehicle_theft": 2,
+          "aggravated_assault": 6,
+          "burglary": 2,
+          "homicide": 1,
+          "strangulation": 1
         }
       },
       "changes": {
         "violentYtd": {
           "kind": "value",
-          "value": 13.157894736842104
+          "value": 20.37037037037037
         },
         "propertyYtd": {
           "kind": "value",
-          "value": -13.924050632911392
+          "value": 20.535714285714285
         },
         "totalYtd": {
           "kind": "value",
-          "value": -5.128205128205128
+          "value": 20.481927710843372
         },
         "violent28": {
           "kind": "value",
-          "value": 66.66666666666666
+          "value": 12.5
         }
       }
     }

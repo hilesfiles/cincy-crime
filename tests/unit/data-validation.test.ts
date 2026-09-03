@@ -44,7 +44,9 @@ describe("processed data", () => {
   it("publishes validated annual and same-date historical periods", () => {
     expect(historical.metadata.annualYears).toEqual(Array.from({ length: 15 }, (_, index) => 2011 + index));
     expect(historical.metadata.sameDateYtdYears.at(-1)).toBe(2026);
+    expect(historical.metadata.sameDateCutoff).toBe(summary.metadata.cutoff.slice(5));
     expect(historical.periods.annual).toHaveLength(15);
+    expect(historical.periods.sameDateYtd.every((period) => period.end.slice(5) === historical.metadata.sameDateCutoff)).toBe(true);
     expect(historical.periods.annual.every((period) => period.neighborhoods.length === 50 && period.reconciliation.status === "pass")).toBe(true);
   });
   it("publishes a reconciled fiscal-year police budget allocation panel", () => {

@@ -91,7 +91,7 @@ test("dashboard map and routes work", async ({ page }) => {
   await page.goto("/actuals/");
   await expect(page.getByRole("heading", { name: "Police actual expenditures" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Audited actuals" })).toHaveCSS("color", "rgb(255, 255, 255)");
-  await expect(page.getByLabel("Actual fiscal year")).toHaveValue("2024");
+  await expect(page.getByLabel("Actual fiscal year")).toHaveValue("2025");
   await page.getByLabel("Actual fiscal year").selectOption("2018");
   await page.getByLabel("Actual crime attribution basis").selectOption("violent");
   await page.getByLabel("Actual selected area").selectOption("west-end");

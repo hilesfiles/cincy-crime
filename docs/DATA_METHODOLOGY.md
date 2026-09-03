@@ -46,7 +46,7 @@ Source URLs, retrieval times, checksums, queries, mapping version, and validatio
 
 ## Historical publication order
 
-Complete calendar years 2011–2025 are published. Comparable YTD trends use January 1–August 22 for 2011–2026, so a partial current year is never compared with a full historical year. PDI supplies 2011 through June 2, 2024; STARS begins June 3, 2024. The mixed 2024 year is annotated in charts and tables.
+Complete calendar years 2011–2025 are published. Comparable YTD trends use January 1–August 29 for 2011–2026, matching the current CPD neighborhood-report cutoff, so a partial current year is never compared with a full historical year. PDI supplies 2011 through June 2, 2024; STARS begins June 3, 2024. The mixed 2024 year is annotated in charts and tables.
 
 Homicide, rape, robbery, aggravated assault, burglary, and larceny/theft are available across the 2011–present panel. Motor-vehicle theft and Strangulation become separately available with the 2024 STARS transition. Unsupported earlier observations remain null/unavailable and are never converted to zero. Every map measure is filled from the same fixed signed change bands centered on zero: every nonzero decrease is green, every nonzero increase is red, and symmetric thresholds at 2.5, 5, 7.5, 15, 20, 25, and 50 percent increase saturation with magnitude. Only exact zero is gray; gray hatching indicates unavailable comparisons. The displayed tooltip still reports the selected primary count, rate, or change.
 

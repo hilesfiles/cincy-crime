@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T03:25:40.893Z",
+  "generatedAt": "2026-09-03T03:01:23.927Z",
   "status": "warning",
   "annualYears": [
     2011,
@@ -43,7 +43,7 @@
       "periodType": "calendar_year",
       "year": 2011,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 10920
+      "count": 10918
     },
     {
       "periodType": "calendar_year",
@@ -55,7 +55,7 @@
       "periodType": "calendar_year",
       "year": 2012,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 7300
+      "count": 7299
     },
     {
       "periodType": "calendar_year",
@@ -211,25 +211,25 @@
       "periodType": "calendar_year",
       "year": 2025,
       "label": "CPD_STARS:(blank)",
-      "count": 109
+      "count": 108
     },
     {
       "periodType": "same_date_ytd",
       "year": 2011,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 7296
+      "count": 7542
     },
     {
       "periodType": "same_date_ytd",
       "year": 2012,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 4953
+      "count": 5139
     },
     {
       "periodType": "same_date_ytd",
       "year": 2013,
       "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
-      "count": 5
+      "count": 11
     },
     {
       "periodType": "same_date_ytd",
@@ -241,7 +241,7 @@
       "periodType": "same_date_ytd",
       "year": 2014,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 23
+      "count": 24
     },
     {
       "periodType": "same_date_ytd",
@@ -253,7 +253,7 @@
       "periodType": "same_date_ytd",
       "year": 2015,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 23
+      "count": 24
     },
     {
       "periodType": "same_date_ytd",
@@ -277,25 +277,25 @@
       "periodType": "same_date_ytd",
       "year": 2017,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 93
+      "count": 95
     },
     {
       "periodType": "same_date_ytd",
       "year": 2018,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 93
+      "count": 96
     },
     {
       "periodType": "same_date_ytd",
       "year": 2019,
       "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
-      "count": 4
+      "count": 5
     },
     {
       "periodType": "same_date_ytd",
       "year": 2019,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 57
+      "count": 59
     },
     {
       "periodType": "same_date_ytd",
@@ -319,13 +319,13 @@
       "periodType": "same_date_ytd",
       "year": 2021,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 47
+      "count": 51
     },
     {
       "periodType": "same_date_ytd",
       "year": 2022,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 77
+      "count": 78
     },
     {
       "periodType": "same_date_ytd",
@@ -337,7 +337,7 @@
       "periodType": "same_date_ytd",
       "year": 2023,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 56
+      "count": 58
     },
     {
       "periodType": "same_date_ytd",
@@ -355,13 +355,13 @@
       "periodType": "same_date_ytd",
       "year": 2024,
       "label": "CPD_STARS:(blank)",
-      "count": 50
+      "count": 55
     },
     {
       "periodType": "same_date_ytd",
       "year": 2025,
       "label": "CPD_STARS:(blank)",
-      "count": 63
+      "count": 64
     }
   ],
   "unmappedOffenses": [
@@ -501,7 +501,7 @@
       "periodType": "same_date_ytd",
       "year": 2020,
       "label": "CPD_PDI:(blank)",
-      "count": 10
+      "count": 11
     },
     {
       "periodType": "same_date_ytd",
@@ -513,13 +513,13 @@
       "periodType": "same_date_ytd",
       "year": 2022,
       "label": "CPD_PDI:(blank)",
-      "count": 13
+      "count": 14
     },
     {
       "periodType": "same_date_ytd",
       "year": 2023,
       "label": "CPD_PDI:(blank)",
-      "count": 168
+      "count": 181
     },
     {
       "periodType": "same_date_ytd",
