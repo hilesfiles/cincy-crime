@@ -2,7 +2,7 @@
 
 ## Source layers
 
-Current dashboard totals come from the 51 official CPD neighborhood reports. They are preliminary aggregate offense counts and are the fresher layer. STARS is retained separately as the offense-level layer: each STARS row is an offense, not necessarily a unique incident, victim, call for service, arrest, or conviction. The layers are never silently blended.
+Current dashboard totals come from the 51 official CPD neighborhood reports. They are preliminary aggregate offense counts and are the current dashboard layer. STARS is retained separately as the offense-level layer: each STARS row is an offense, not necessarily a unique incident, victim, call for service, arrest, or conviction. The layers are never silently blended.
 
 The current Villages at Roll Hill source PDF (published under the legacy report name Fay Apartments) has YTD subtotal values that do not equal its published component rows. The pipeline preserves the official subtotal and component values without recomputing either and emits a validation warning.
 
@@ -30,7 +30,7 @@ Any selected crime-type rate per 1,000 is `selected-period count / selected-year
 
 ## ACS estimates and uncertainty
 
-The demographic drilldown extracts the official City Planning SNA tables based on the 2016–2020 ACS 5-year estimates. Published 90% margins of error are retained with each count. Derived percentage MOEs use approximate ratio propagation. Composite education measures and combined CAGIS regions combine component MOEs by root-sum-of-squares; these derived margins are explicitly labeled approximate. The official Sedamsville and Westwood tables are image-only, so ACS values for Westwood and Riverside / Sedamsville remain unavailable rather than being inferred or zero-filled.
+The demographic drilldown extracts the official City Planning SNA tables based on the 2016–2020 ACS 5-year estimates. Published 90% margins of error are retained with each count. Derived percentage MOEs use approximate ratio propagation. Composite education measures and combined CAGIS regions combine component MOEs by root-sum-of-squares; these derived margins are explicitly labeled approximate. The official Sedamsville and Westwood tables are image-only. Their estimates and published MOEs are preserved through the page-referenced, independently checked image-profile override manifest; all 50 map regions have ACS coverage. Housing and household identities, subset ratios, and regression fixtures validate the extracted and transcribed values.
 
 ## June 2024 transition
 
@@ -46,7 +46,7 @@ Source URLs, retrieval times, checksums, queries, mapping version, and validatio
 
 ## Historical publication order
 
-Complete calendar years 2011–2025 are published. Comparable YTD trends use January 1–August 29 for 2011–2026, matching the current CPD neighborhood-report cutoff, so a partial current year is never compared with a full historical year. PDI supplies 2011 through June 2, 2024; STARS begins June 3, 2024. The mixed 2024 year is annotated in charts and tables.
+Complete calendar years 2011–2025 are published. Comparable YTD trends use January 1–September 26 for 2011–2026, matching the current CPD neighborhood-report cutoff, so a partial current year is never compared with a full historical year. PDI supplies 2011 through June 2, 2024; STARS begins June 3, 2024. The mixed 2024 year is annotated in charts and tables.
 
 Homicide, rape, robbery, aggravated assault, burglary, and larceny/theft are available across the 2011–present panel. Motor-vehicle theft and Strangulation become separately available with the 2024 STARS transition. Unsupported earlier observations remain null/unavailable and are never converted to zero. Every map measure is filled from the same fixed signed change bands centered on zero: every nonzero decrease is green, every nonzero increase is red, and symmetric thresholds at 2.5, 5, 7.5, 15, 20, 25, and 50 percent increase saturation with magnitude. Only exact zero is gray; gray hatching indicates unavailable comparisons. The displayed tooltip still reports the selected primary count, rate, or change.
 
@@ -57,3 +57,7 @@ PDI geography resolves the source SNA field first, then the CPD-neighborhood and
 The elections panel uses the Hamilton County Board of Elections official general-election canvass workbooks for the 2016, 2020, and 2024 presidential contests and the 2018 and 2022 Governor and U.S. Senate contests. Turnout is ballots cast divided by registered voters. Democratic, Republican, and other percentages use all votes cast in the selected contest as the denominator; ballot undervotes are excluded. These are candidate or candidate-ticket shares, not measures of voter party registration or identity. Other combines minor-party, nonparty, and write-in candidates.
 
 Official precinct results are joined by precinct identifier to the current CAGIS Hamilton County Voter Precinct layer retrieved August 26, 2026. The precinct polygons are intersected with SNA 2020 polygons, and counts are allocated in proportion to polygon area. This is an ecological geographic estimate: population is not evenly distributed within a precinct, and the official archive does not publish machine-readable contemporaneous precinct polygons for each historical election. Citywide totals remain official. Every neighborhood value is labeled modeled. The public map presents one averaged result per neighborhood with no precinct overlay; each neighborhood still reports the percentage of allocated ballots arising from precincts contained at least 98 percent within one SNA.
+
+## 2026 initiative refresh
+
+January and May 2026 Safe & Clean award cycles are recorded as FY2026 grant awards, using the July–June fiscal convention. Each record cites the official City Manager memo and source page. Single-neighborhood awards are attributed to their named area on the established SNA map; the new multi-neighborhood awards remain named but unallocated because the memos do not publish dollar splits. The $549,060 annual program investment is not added alongside these component awards, and no September-cycle amount is inferred. The ledger remains separate and non-additive to Police actuals.

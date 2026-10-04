@@ -1,0 +1,687 @@
+{
+  "reviewedAt": "2026-10-04T20:59:55.150Z",
+  "baselineCommit": "fa87f10f28733d97d498504c2424e5d437b8f551",
+  "baseline": {
+    "cpd": {
+      "cutoff": "2026-08-29",
+      "updatedAt": "2026-09-01",
+      "reports": 51,
+      "mapRegions": 50,
+      "cityPart1Ytd": 8778,
+      "cityViolentYtd": 1360,
+      "cityPropertyYtd": 7386
+    },
+    "stars": {
+      "cutoff": "2026-09-01",
+      "sourceRows": 57446
+    },
+    "pdi": {
+      "operationalCutoff": "2024-06-02",
+      "maximumReportedDate": "2026-01-13T14:14:00.000",
+      "sourceRows": 538744
+    },
+    "historical": {
+      "annualYears": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "sameDateYtdYears": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "sameDateCutoff": "08-29",
+      "periodCount": 31,
+      "reconciledPeriods": 31
+    },
+    "demographics": {
+      "decennialAnchors": [
+        2010,
+        2020
+      ],
+      "acsYears": [
+        2020
+      ],
+      "regions": 50,
+      "regionsWithAcs": 50
+    },
+    "elections": {
+      "years": [
+        2016,
+        2018,
+        2020,
+        2022,
+        2024
+      ],
+      "contestResults": 7
+    },
+    "budget": {
+      "availableFiscalYears": [
+        2004,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027
+      ],
+      "unavailableFiscalYears": [
+        2005
+      ]
+    },
+    "actuals": {
+      "fiscalYears": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "initiatives": {
+      "records": 66,
+      "programs": 4,
+      "publishedAmount": 3776800
+    }
+  },
+  "refreshed": {
+    "cpd": {
+      "cutoff": "2026-09-26",
+      "updatedAt": "2026-09-28",
+      "reports": 51,
+      "mapRegions": 50,
+      "cityPart1Ytd": 9871,
+      "cityViolentYtd": 1568,
+      "cityPropertyYtd": 8269
+    },
+    "stars": {
+      "cutoff": "2026-10-03",
+      "sourceRows": 59614
+    },
+    "pdi": {
+      "operationalCutoff": "2024-06-02",
+      "maximumReportedDate": "2026-01-13T14:14:00.000",
+      "sourceRows": 538738
+    },
+    "historical": {
+      "annualYears": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "sameDateYtdYears": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "sameDateCutoff": "09-26",
+      "periodCount": 31,
+      "reconciledPeriods": 31
+    },
+    "demographics": {
+      "decennialAnchors": [
+        2010,
+        2020
+      ],
+      "acsYears": [
+        2020
+      ],
+      "regions": 50,
+      "regionsWithAcs": 50
+    },
+    "elections": {
+      "years": [
+        2016,
+        2018,
+        2020,
+        2022,
+        2024
+      ],
+      "contestResults": 7
+    },
+    "budget": {
+      "availableFiscalYears": [
+        2004,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027
+      ],
+      "unavailableFiscalYears": [
+        2005
+      ]
+    },
+    "actuals": {
+      "fiscalYears": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "initiatives": {
+      "records": 83,
+      "programs": 4,
+      "publishedAmount": 4120277
+    }
+  },
+  "validationReports": [
+    {
+      "name": "budget-validation.json",
+      "before": {
+        "status": "warning"
+      },
+      "after": {
+        "status": "warning"
+      }
+    },
+    {
+      "name": "cpd-neighborhood-validation.json",
+      "before": {
+        "status": "warning"
+      },
+      "after": {
+        "status": "warning"
+      }
+    },
+    {
+      "name": "demographics-validation.json",
+      "before": {
+        "status": "pass",
+        "housingIdentityFailures": 0,
+        "householdIdentityFailures": 0,
+        "invalidRatios": 0
+      },
+      "after": {
+        "status": "pass",
+        "housingIdentityFailures": 0,
+        "householdIdentityFailures": 0,
+        "invalidRatios": 0
+      }
+    },
+    {
+      "name": "elections-validation.json",
+      "before": {
+        "status": "pass"
+      },
+      "after": {
+        "status": "pass"
+      }
+    },
+    {
+      "name": "financial-validation.json",
+      "before": {
+        "status": "warning"
+      },
+      "after": {
+        "status": "warning"
+      }
+    },
+    {
+      "name": "geography-validation.json",
+      "before": {
+        "status": "pass"
+      },
+      "after": {
+        "status": "pass"
+      }
+    },
+    {
+      "name": "historical-source-retrieval.json",
+      "before": {
+        "status": "pass"
+      },
+      "after": {
+        "status": "pass"
+      }
+    },
+    {
+      "name": "historical-validation.json",
+      "before": {
+        "status": "warning",
+        "geographyExceptions": 54,
+        "taxonomyExceptions": 27
+      },
+      "after": {
+        "status": "warning",
+        "geographyExceptions": 55,
+        "taxonomyExceptions": 27
+      }
+    },
+    {
+      "name": "population-validation.json",
+      "before": {
+        "status": "warning"
+      },
+      "after": {
+        "status": "warning"
+      }
+    },
+    {
+      "name": "source-transition-validation.json",
+      "before": {
+        "status": "warning"
+      },
+      "after": {
+        "status": "warning"
+      }
+    },
+    {
+      "name": "unmapped-offenses.json",
+      "before": {
+        "status": "pass"
+      },
+      "after": {
+        "status": "pass"
+      }
+    },
+    {
+      "name": "validation-summary.json",
+      "before": {
+        "status": "warning",
+        "checks": [
+          {
+            "id": "geography-source-features",
+            "status": "pass",
+            "detail": "50 polygons representing 51 names"
+          },
+          {
+            "id": "geography-crosswalk",
+            "status": "pass",
+            "detail": "51 civic names → 50 CAGIS features; three combined features"
+          },
+          {
+            "id": "unique-region-slugs",
+            "status": "pass",
+            "detail": "50 slugs"
+          },
+          {
+            "id": "cpd-neighborhood-reports",
+            "status": "warning",
+            "detail": "51 reports through 2026-08-29"
+          },
+          {
+            "id": "cpd-map-regions",
+            "status": "pass",
+            "detail": "50 map aggregates"
+          },
+          {
+            "id": "population-denominators",
+            "status": "warning",
+            "detail": "51 profiles; reconciliation warning"
+          },
+          {
+            "id": "annual-population-series",
+            "status": "pass",
+            "detail": "51 2010 profiles + 51 2020 profiles; 50/50 regions with ACS/MOE"
+          },
+          {
+            "id": "election-panel",
+            "status": "pass",
+            "detail": "7 contest results across 5 election years; 190 precinct reference polygons; 2016-president 100% ID coverage, 2018-governor 100% ID coverage, 2018-us_senate 100% ID coverage, 2020-president 100% ID coverage, 2022-governor 100% ID coverage, 2022-us_senate 100% ID coverage, 2024-president 100% ID coverage"
+          },
+          {
+            "id": "stars-offense-detail-cutoff",
+            "status": "pass",
+            "detail": "2026-09-01"
+          },
+          {
+            "id": "historical-periods",
+            "status": "pass",
+            "detail": "15 annual periods; 16 same-date YTD periods"
+          },
+          {
+            "id": "historical-unassigned-and-taxonomy",
+            "status": "warning",
+            "detail": "54 period/label geography exceptions; 27 period/label taxonomy exceptions"
+          },
+          {
+            "id": "source-transition",
+            "status": "warning",
+            "detail": "STARS begins on the expected transition date. The legacy PDI feed contains a small number of post-transition reported dates, including later outliers, so its absolute maximum is not treated as the operational cutoff without review."
+          },
+          {
+            "id": "offense-mapping",
+            "status": "pass",
+            "detail": "0 unmapped labels"
+          }
+        ]
+      },
+      "after": {
+        "status": "warning",
+        "checks": [
+          {
+            "id": "geography-source-features",
+            "status": "pass",
+            "detail": "50 polygons representing 51 names"
+          },
+          {
+            "id": "geography-crosswalk",
+            "status": "pass",
+            "detail": "51 civic names → 50 CAGIS features; three combined features"
+          },
+          {
+            "id": "unique-region-slugs",
+            "status": "pass",
+            "detail": "50 slugs"
+          },
+          {
+            "id": "cpd-neighborhood-reports",
+            "status": "warning",
+            "detail": "51 reports through 2026-09-26"
+          },
+          {
+            "id": "cpd-map-regions",
+            "status": "pass",
+            "detail": "50 map aggregates"
+          },
+          {
+            "id": "population-denominators",
+            "status": "warning",
+            "detail": "51 profiles; reconciliation warning"
+          },
+          {
+            "id": "annual-population-series",
+            "status": "pass",
+            "detail": "51 2010 profiles + 51 2020 profiles; 50/50 regions with ACS/MOE"
+          },
+          {
+            "id": "election-panel",
+            "status": "pass",
+            "detail": "7 contest results across 5 election years; 190 precinct reference polygons; 2016-president 100% ID coverage, 2018-governor 100% ID coverage, 2018-us_senate 100% ID coverage, 2020-president 100% ID coverage, 2022-governor 100% ID coverage, 2022-us_senate 100% ID coverage, 2024-president 100% ID coverage"
+          },
+          {
+            "id": "stars-offense-detail-cutoff",
+            "status": "pass",
+            "detail": "2026-10-03"
+          },
+          {
+            "id": "historical-periods",
+            "status": "pass",
+            "detail": "15 annual periods; 16 same-date YTD periods"
+          },
+          {
+            "id": "historical-unassigned-and-taxonomy",
+            "status": "warning",
+            "detail": "55 period/label geography exceptions; 27 period/label taxonomy exceptions"
+          },
+          {
+            "id": "source-transition",
+            "status": "warning",
+            "detail": "STARS begins on the expected transition date. The legacy PDI feed contains a small number of post-transition reported dates, including later outliers, so its absolute maximum is not treated as the operational cutoff without review."
+          },
+          {
+            "id": "offense-mapping",
+            "status": "pass",
+            "detail": "0 unmapped labels"
+          }
+        ]
+      }
+    }
+  ],
+  "supplementalSourceChecks": {
+    "acfr": {
+      "urls": [
+        "https://www.cincinnati-oh.gov/finance/financial-reports/",
+        "https://www.cincinnati-oh.gov/retirement/crs-financial-information/cincinnati-annual-comprehensive-financial-reports/"
+      ],
+      "latestListedFiscalYear": 2025,
+      "decision": "Retain FY2014–FY2025 General Fund Division of Police GAAP actuals. FY2026 remains unavailable; no estimate is added."
+    },
+    "demographics": {
+      "url": "https://www.cincinnati-oh.gov/planning/resources/census/",
+      "latestListedDecennialYear": 2020,
+      "decision": "Official City Planning still links 2020 SNA profiles. All 52 ACS source profiles and 2010/2020 anchors were retrieved; estimates unchanged. No newer published City Planning SNA ACS profile was located. Census place or tract estimates are not substituted for neighborhood profiles."
+    },
+    "elections": {
+      "url": "https://votehamiltoncountyohio.gov/results/",
+      "workbooks": [
+        {
+          "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2020/02/Gen16OffCanvass.xlsx",
+          "localFile": "Gen16OffCanvass.xlsx",
+          "checksumSha256": "3f2812d153d892d0b72d92cc2da2f6194e7e8c93a0b9f8b32d4c51f5e111eb25",
+          "status": "unchanged_official_source_verified"
+        },
+        {
+          "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2020/02/G18_Official_Amended_Canvass.xlsx",
+          "localFile": "G18_Official_Amended_Canvass.xlsx",
+          "checksumSha256": "3714bc948030d54cf31dd5f304ee4eb0c2e0d9b5909bce78b6aedf2a94a186b6",
+          "status": "unchanged_official_source_verified"
+        },
+        {
+          "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2021/04/G20_Official_Canvass.xlsx",
+          "localFile": "G20_Official_Canvass.xlsx",
+          "checksumSha256": "ea0e54fe813d392639435535f15a0aba1d4c1dbfe46f829d10e124df98fa87e3",
+          "status": "unchanged_official_source_verified"
+        },
+        {
+          "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2023/04/G22_Official_Canvass.xlsx",
+          "localFile": "G22_Official_Canvass.xlsx",
+          "checksumSha256": "fc9544ee5f2f008f6ccd823bf476120736fad03f1186f2bbfc4ad50873bb8b0c",
+          "status": "unchanged_official_source_verified"
+        },
+        {
+          "sourceUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2025/04/G24OfficialCanvass.xlsx",
+          "localFile": "G24OfficialCanvass.xlsx",
+          "checksumSha256": "d7743c31a03cc1962f1c2892820d6a80873388b6309cab96a268f7062a05f535",
+          "status": "unchanged_official_source_verified"
+        }
+      ],
+      "newerCompletedGeneralElection": "2025-11-04",
+      "newerCanvassUrl": "https://votehamiltoncountyohio.gov/wp-content/uploads/2025/12/G25-Recounts-Canvass-FINAL.pdf",
+      "decision": "The 2025 general-election material contains local contests outside the specified President/Governor/U.S. Senate panel. Confirm seven supported official results through 2024; do not expand the product or import May 2026 primary results. November 2026 general election has not occurred."
+    },
+    "initiatives": {
+      "addedRecords": 17,
+      "addedAmount": 343477,
+      "sources": [
+        {
+          "sourceUrl": "https://www.cincinnati-oh.gov/noncms/cmgr/memo/?action=public.viewpdf&name=45971.pdf",
+          "localFile": "data/raw/financials/safe-clean-january-2026.pdf",
+          "publicationDate": "2026-02-27",
+          "checksumSha256": "2c439ceb6742a1772dcc46d6c3766bfb9de47ee91af520a6aa94d106c2b1e10f",
+          "records": 7,
+          "amount": 128737
+        },
+        {
+          "sourceUrl": "https://www.cincinnati-oh.gov/noncms/cmgr/memo/?action=public.viewpdf&name=46191.pdf",
+          "localFile": "data/raw/financials/safe-clean-may-2026.pdf",
+          "publicationDate": "2026-06-18",
+          "checksumSha256": "c96e1b8f9daa54da32b92933a667e4f5298b9254d14072bf411d8c5dcd292309",
+          "records": 10,
+          "amount": 214740
+        }
+      ],
+      "decision": "Include published January and May 2026 Safe & Clean awards as FY2026 award commitments. Preserve named multi-neighborhood awards without dollar splits as unallocated. Do not add the $549,060 annual investment alongside its awards or infer the September cycle.",
+      "unresolvedCandidates": [
+        {
+          "url": "https://www.gcfdn.org/blog/boots-on-the-ground-fund-awards-702500-to-support-35-local-nonprofits/",
+          "reason": "Program administrator describes 2026 awards and mixed City/private funding; no qualifying official City record and recipient-level City share were verified for this refresh. Not imported into the official-City-source ledger."
+        }
+      ]
+    }
+  },
+  "warnings": [
+    {
+      "id": "cpd-subtotals",
+      "detail": "Villages at Roll Hill/Fay Apartments current and prior YTD published subtotal/component discrepancies remain preserved. City Part I total consequently differs from violent plus property; this is a source inconsistency, not a forced correction."
+    },
+    {
+      "id": "population-nonadditivity",
+      "detail": "Published 2020 civic-profile sum 329,782 differs by 20,465 from direct Citywide 309,317; rates preserve the respective official denominators."
+    },
+    {
+      "id": "pdi-transition",
+      "detail": "Six later PDI date groups remain outliers; maximum reported date 2026-01-13 does not extend June 2, 2024 operational coverage. PDI source row count fell by six due to source revisions."
+    },
+    {
+      "id": "historical-unassigned",
+      "detail": "55 period/label geography groups (previously 54) remain in explicit unassigned buckets; all 31 periods reconcile.",
+      "newLabelGroups": [
+        {
+          "periodType": "same_date_ytd",
+          "year": 2018,
+          "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "historical-taxonomy",
+      "detail": "27 blank/offense-label exceptions remain excluded from Part I and reported; zero unmapped current STARS offense labels."
+    },
+    {
+      "id": "elections-modeled",
+      "detail": "Current 190-precinct reference geometry is a documented historical proxy; all seven contests retain 100% matched-ballot coverage. Neighborhood figures remain modeled estimates."
+    },
+    {
+      "id": "budget-and-actuals",
+      "detail": "FY2005 budget remains unavailable; FY2013 is a six-month stub. FY2004–FY2027 budget amounts are unchanged; historical crime revisions change some attribution shares. Budget and audited actual neighborhood figures are crime-share attributions."
+    },
+    {
+      "id": "initiative-geography",
+      "detail": "$3,582,676 of the $4,120,277 ledger remains unallocated within Cincinnati; $35,000 is outside-city. $502,601 is directly or previously explicitly modeled neighborhood allocation. Awards remain separate and non-additive to Police actuals."
+    },
+    {
+      "id": "pdf-fonts",
+      "detail": "PDF.js emitted TrueType font-program warnings during extraction; all population, demographic identities, regression fixtures, and synchronized CPD report coverage pass."
+    }
+  ],
+  "timestampChurnPolicy": "Artifacts unchanged apart from retrieval/generation timestamps were restored byte-for-byte to their baseline; new retrieval evidence is retained in this review.",
+  "verification": {
+    "unitTests": {
+      "command": "npm test",
+      "status": "pass",
+      "testFiles": 8,
+      "tests": 33
+    },
+    "lint": {
+      "command": "npm run lint",
+      "status": "pass"
+    },
+    "build": {
+      "command": "npm run build",
+      "status": "pass",
+      "staticPages": 65
+    },
+    "dataValidation": {
+      "command": "npm run data:validate",
+      "status": "warning",
+      "integrityFailures": 0
+    },
+    "diffCheck": {
+      "command": "git diff --check",
+      "status": "pass"
+    },
+    "socialMetadata": {
+      "status": "pass",
+      "preview": "public/social-preview.png"
+    },
+    "browserTests": {
+      "command": "npm run test:e2e",
+      "status": "pass",
+      "tests": 1,
+      "note": "All route and interaction assertions passed. On Windows, the owned Next.js development server stalled in teardown; terminating those two project-local server processes allowed Playwright to complete with exit code 0."
+    }
+  }
+}

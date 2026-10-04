@@ -3,17 +3,17 @@
     "sourceSystem": "CPD_NEIGHBORHOOD_REPORTS",
     "datasetId": "cpdmobile-neighborhood-reports",
     "title": "CPD Neighborhood Reports",
-    "retrievedAt": "2026-09-03T02:54:17.552Z",
-    "cutoff": "2026-08-29",
+    "retrievedAt": "2026-10-04T20:52:00.563Z",
+    "cutoff": "2026-09-26",
     "sourceCoverage": {
       "min_date": "2026-01-01",
-      "max_date": "2026-08-29",
+      "max_date": "2026-09-26",
       "count": "51"
     },
     "unit": "preliminary CPD aggregate offense counts",
     "mappingVersion": "2026-08-26.2",
     "provenanceLayer": "fresher_aggregate",
-    "reportUpdatedAt": "2026-09-01",
+    "reportUpdatedAt": "2026-09-28",
     "reportCount": 51,
     "reportQualityCaveat": "1 source report has a published subtotal/component inconsistency; source values are preserved.",
     "population": {
@@ -28,71 +28,71 @@
       "civicSlug": "cuf",
       "reportName": "CUF",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D1/CUF.pdf",
-      "checksumSha256": "3d95caae842c1e61255fc42a79b7fe4ad26923d4a86a14cf3bf424b76b53b785",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "e33b5433aee749ee407adb3c9145fb6db27ca1f75e5ff2a3c0766914aad84bb9",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 53,
-        "property": 399,
-        "totalPart1": 452,
+        "violent": 59,
+        "property": 458,
+        "totalPart1": 517,
         "categories": {
           "homicide": 1,
-          "rape": 8,
+          "rape": 12,
           "robbery": 15,
-          "aggravated_assault": 15,
+          "aggravated_assault": 17,
           "strangulation": 14,
-          "burglary": 39,
-          "theft_from_auto": 135,
-          "motor_vehicle_theft": 91,
-          "personal_other_theft": 134
+          "burglary": 41,
+          "theft_from_auto": 154,
+          "motor_vehicle_theft": 110,
+          "personal_other_theft": 153
         }
       },
       "priorYtd": {
-        "violent": 41,
-        "property": 478,
-        "totalPart1": 519,
+        "violent": 44,
+        "property": 514,
+        "totalPart1": 558,
         "categories": {
           "homicide": 3,
-          "rape": 3,
-          "robbery": 17,
-          "aggravated_assault": 15,
+          "rape": 4,
+          "robbery": 18,
+          "aggravated_assault": 16,
           "strangulation": 3,
-          "burglary": 88,
-          "theft_from_auto": 89,
-          "motor_vehicle_theft": 79,
-          "personal_other_theft": 222
+          "burglary": 97,
+          "theft_from_auto": 98,
+          "motor_vehicle_theft": 91,
+          "personal_other_theft": 228
         }
       },
       "current28": {
+        "violent": 6,
+        "property": 58,
+        "totalPart1": 64,
+        "categories": {
+          "homicide": 0,
+          "rape": 4,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 18,
+          "motor_vehicle_theft": 19,
+          "personal_other_theft": 19
+        }
+      },
+      "previous28": {
         "violent": 5,
-        "property": 41,
-        "totalPart1": 46,
+        "property": 43,
+        "totalPart1": 48,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 1,
           "aggravated_assault": 2,
           "strangulation": 2,
-          "burglary": 4,
-          "theft_from_auto": 14,
+          "burglary": 5,
+          "theft_from_auto": 15,
           "motor_vehicle_theft": 10,
-          "personal_other_theft": 13
-        }
-      },
-      "previous28": {
-        "violent": 10,
-        "property": 41,
-        "totalPart1": 51,
-        "categories": {
-          "homicide": 0,
-          "rape": 2,
-          "robbery": 2,
-          "aggravated_assault": 1,
-          "strangulation": 5,
-          "burglary": 2,
-          "theft_from_auto": 18,
-          "motor_vehicle_theft": 8,
           "personal_other_theft": 13
         }
       },
@@ -103,10 +103,10 @@
       "civicSlug": "california",
       "reportName": "California",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/CALIFORNIA.pdf",
-      "checksumSha256": "afab83ad0da2f63d9a07ec6f9d843cb5218ba732f78f7ad8f93691d91e60635a",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "0764906b1dfd7f3dedc35ce885746190d99f01d49a45a3c4d33c911b9ce6acc6",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 0,
         "property": 2,
@@ -124,14 +124,14 @@
         }
       },
       "priorYtd": {
-        "violent": 0,
+        "violent": 1,
         "property": 7,
-        "totalPart1": 7,
+        "totalPart1": 8,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 0,
-          "aggravated_assault": 0,
+          "aggravated_assault": 1,
           "strangulation": 0,
           "burglary": 2,
           "theft_from_auto": 2,
@@ -178,43 +178,59 @@
       "civicSlug": "mt-auburn",
       "reportName": "Mount Auburn",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D1/MOUNT_AUBURN.pdf",
-      "checksumSha256": "8f7558688e8ac981b08ed7aea3fe94c375ae01e5dc8125c2a8e0f7fb18eada52",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "6cd7db8794d11dcaf82e656ab862c90f39f3ebe5655cbf86000db345d6367743",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 18,
-        "property": 159,
-        "totalPart1": 177,
+        "violent": 21,
+        "property": 164,
+        "totalPart1": 185,
         "categories": {
           "homicide": 0,
-          "rape": 4,
-          "robbery": 5,
+          "rape": 6,
+          "robbery": 6,
           "aggravated_assault": 6,
           "strangulation": 3,
-          "burglary": 12,
-          "theft_from_auto": 70,
+          "burglary": 14,
+          "theft_from_auto": 72,
           "motor_vehicle_theft": 26,
-          "personal_other_theft": 51
+          "personal_other_theft": 52
         }
       },
       "priorYtd": {
-        "violent": 21,
-        "property": 176,
-        "totalPart1": 197,
+        "violent": 25,
+        "property": 197,
+        "totalPart1": 222,
         "categories": {
           "homicide": 1,
           "rape": 4,
           "robbery": 5,
-          "aggravated_assault": 5,
-          "strangulation": 6,
+          "aggravated_assault": 8,
+          "strangulation": 7,
           "burglary": 17,
-          "theft_from_auto": 87,
-          "motor_vehicle_theft": 41,
-          "personal_other_theft": 31
+          "theft_from_auto": 92,
+          "motor_vehicle_theft": 52,
+          "personal_other_theft": 36
         }
       },
       "current28": {
+        "violent": 3,
+        "property": 5,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
         "violent": 5,
         "property": 24,
         "totalPart1": 29,
@@ -230,22 +246,6 @@
           "personal_other_theft": 6
         }
       },
-      "previous28": {
-        "violent": 2,
-        "property": 23,
-        "totalPart1": 25,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 1,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 12,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 7
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -253,21 +253,21 @@
       "civicSlug": "columbia-tusculum",
       "reportName": "Columbia / Tusculum",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/COLUMBIA_TUSCULUM.pdf",
-      "checksumSha256": "b1f05b6cba76510e14664ffa1a1a3146a90da4910c928b59561a4e9deedb76a3",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "964e999b7e88de08c2782e4acee3396002950702aa30efb448fe6b3e7b06bd97",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 0,
-        "property": 21,
-        "totalPart1": 21,
+        "property": 22,
+        "totalPart1": 22,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 0,
           "aggravated_assault": 0,
           "strangulation": 0,
-          "burglary": 2,
+          "burglary": 3,
           "theft_from_auto": 7,
           "motor_vehicle_theft": 1,
           "personal_other_theft": 11
@@ -275,21 +275,37 @@
       },
       "priorYtd": {
         "violent": 4,
-        "property": 23,
-        "totalPart1": 27,
+        "property": 25,
+        "totalPart1": 29,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 3,
           "aggravated_assault": 1,
           "strangulation": 0,
-          "burglary": 8,
+          "burglary": 9,
           "theft_from_auto": 4,
           "motor_vehicle_theft": 7,
-          "personal_other_theft": 4
+          "personal_other_theft": 5
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 1,
+        "totalPart1": 1,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 2,
         "totalPart1": 2,
@@ -305,22 +321,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 1,
-        "totalPart1": 1,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 0
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -328,43 +328,59 @@
       "civicSlug": "over-the-rhine",
       "reportName": "Over The Rhine",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D1/OVER_THE_RHINE.pdf",
-      "checksumSha256": "4231a0e46efa668713fd56708eb5d58972f74c63fede29a02e4acb30e998c4d1",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "a86bb657fb994ff4f8945bd2361624329828a5819b7a1d2df53d592312e48a4d",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 80,
-        "property": 486,
-        "totalPart1": 566,
+        "violent": 94,
+        "property": 542,
+        "totalPart1": 636,
         "categories": {
           "homicide": 0,
-          "rape": 11,
-          "robbery": 25,
-          "aggravated_assault": 32,
-          "strangulation": 12,
-          "burglary": 68,
-          "theft_from_auto": 255,
-          "motor_vehicle_theft": 48,
-          "personal_other_theft": 115
+          "rape": 12,
+          "robbery": 31,
+          "aggravated_assault": 35,
+          "strangulation": 16,
+          "burglary": 73,
+          "theft_from_auto": 285,
+          "motor_vehicle_theft": 51,
+          "personal_other_theft": 133
         }
       },
       "priorYtd": {
-        "violent": 87,
-        "property": 638,
-        "totalPart1": 725,
+        "violent": 98,
+        "property": 709,
+        "totalPart1": 807,
         "categories": {
-          "homicide": 8,
+          "homicide": 9,
           "rape": 4,
-          "robbery": 30,
-          "aggravated_assault": 37,
+          "robbery": 37,
+          "aggravated_assault": 40,
           "strangulation": 8,
-          "burglary": 125,
-          "theft_from_auto": 280,
-          "motor_vehicle_theft": 93,
-          "personal_other_theft": 140
+          "burglary": 134,
+          "theft_from_auto": 313,
+          "motor_vehicle_theft": 106,
+          "personal_other_theft": 156
         }
       },
       "current28": {
+        "violent": 13,
+        "property": 56,
+        "totalPart1": 69,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 5,
+          "aggravated_assault": 3,
+          "strangulation": 4,
+          "burglary": 5,
+          "theft_from_auto": 29,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 18
+        }
+      },
+      "previous28": {
         "violent": 9,
         "property": 64,
         "totalPart1": 73,
@@ -375,25 +391,9 @@
           "aggravated_assault": 4,
           "strangulation": 2,
           "burglary": 3,
-          "theft_from_auto": 38,
-          "motor_vehicle_theft": 11,
+          "theft_from_auto": 39,
+          "motor_vehicle_theft": 10,
           "personal_other_theft": 12
-        }
-      },
-      "previous28": {
-        "violent": 13,
-        "property": 65,
-        "totalPart1": 78,
-        "categories": {
-          "homicide": 0,
-          "rape": 2,
-          "robbery": 5,
-          "aggravated_assault": 5,
-          "strangulation": 1,
-          "burglary": 6,
-          "theft_from_auto": 44,
-          "motor_vehicle_theft": 6,
-          "personal_other_theft": 9
         }
       },
       "reconciliationWarnings": []
@@ -403,30 +403,30 @@
       "civicSlug": "east-end",
       "reportName": "East End",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/EAST_END.pdf",
-      "checksumSha256": "2c068f9afa9e1d7dbe85a0ab2d7d597ed0bff7db8e46e8d3d9f1a446ae8bcbbe",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "635d9fb5f9a93aa37731aaa86ecd957b67cde0d7d1cc84d02d1898db18cd1164",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 2,
-        "property": 47,
-        "totalPart1": 49,
+        "property": 51,
+        "totalPart1": 53,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 0,
           "aggravated_assault": 2,
           "strangulation": 0,
-          "burglary": 15,
-          "theft_from_auto": 10,
-          "motor_vehicle_theft": 4,
+          "burglary": 17,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 5,
           "personal_other_theft": 18
         }
       },
       "priorYtd": {
         "violent": 0,
-        "property": 31,
-        "totalPart1": 31,
+        "property": 36,
+        "totalPart1": 36,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -434,12 +434,28 @@
           "aggravated_assault": 0,
           "strangulation": 0,
           "burglary": 8,
-          "theft_from_auto": 7,
+          "theft_from_auto": 8,
           "motor_vehicle_theft": 3,
-          "personal_other_theft": 13
+          "personal_other_theft": 17
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 4,
+        "totalPart1": 4,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 6,
         "totalPart1": 6,
@@ -455,22 +471,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 8,
-        "totalPart1": 9,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 4,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 3
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -478,43 +478,59 @@
       "civicSlug": "pendleton",
       "reportName": "Pendleton",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D1/PENDLETON.pdf",
-      "checksumSha256": "fe40b25c78f0e22ffb08bc691b6da1b6d0855966316f029c9365125a24cda9a0",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "448af884e99c4feea9afe192bb9dddbaa40773998cdfd50dd2f35b7aa79beb17",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 10,
-        "property": 41,
-        "totalPart1": 51,
+        "violent": 11,
+        "property": 48,
+        "totalPart1": 59,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 5,
           "aggravated_assault": 3,
-          "strangulation": 2,
+          "strangulation": 3,
           "burglary": 1,
-          "theft_from_auto": 19,
-          "motor_vehicle_theft": 8,
+          "theft_from_auto": 21,
+          "motor_vehicle_theft": 13,
           "personal_other_theft": 13
         }
       },
       "priorYtd": {
-        "violent": 3,
-        "property": 71,
-        "totalPart1": 74,
+        "violent": 5,
+        "property": 79,
+        "totalPart1": 84,
         "categories": {
           "homicide": 0,
           "rape": 1,
-          "robbery": 1,
+          "robbery": 2,
           "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 10,
-          "theft_from_auto": 32,
+          "strangulation": 1,
+          "burglary": 11,
+          "theft_from_auto": 37,
           "motor_vehicle_theft": 10,
-          "personal_other_theft": 19
+          "personal_other_theft": 21
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 7,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 1,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 7,
         "totalPart1": 7,
@@ -530,22 +546,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 3,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 0
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -553,43 +553,59 @@
       "civicSlug": "east-walnut-hills",
       "reportName": "East Walnut Hills",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/EAST_WALNUT_HILLS.pdf",
-      "checksumSha256": "b3996675cdfa7de0720f77e55d57172ca5c7628111e2ae2d2e8b04d4517aa527",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "74599f014ef06453a806933130da4ecf5e4c4b6237c983cc133f5b48afa3dfe8",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 3,
-        "property": 63,
-        "totalPart1": 66,
+        "violent": 4,
+        "property": 72,
+        "totalPart1": 76,
         "categories": {
           "homicide": 1,
           "rape": 0,
           "robbery": 0,
-          "aggravated_assault": 0,
+          "aggravated_assault": 1,
           "strangulation": 2,
           "burglary": 1,
           "theft_from_auto": 23,
-          "motor_vehicle_theft": 21,
-          "personal_other_theft": 18
+          "motor_vehicle_theft": 23,
+          "personal_other_theft": 25
         }
       },
       "priorYtd": {
-        "violent": 2,
-        "property": 60,
-        "totalPart1": 62,
+        "violent": 3,
+        "property": 70,
+        "totalPart1": 73,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 14,
+          "theft_from_auto": 20,
+          "motor_vehicle_theft": 14,
+          "personal_other_theft": 22
+        }
+      },
+      "current28": {
+        "violent": 1,
+        "property": 9,
+        "totalPart1": 10,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 0,
-          "aggravated_assault": 2,
+          "aggravated_assault": 1,
           "strangulation": 0,
-          "burglary": 13,
-          "theft_from_auto": 13,
-          "motor_vehicle_theft": 13,
-          "personal_other_theft": 21
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 7
         }
       },
-      "current28": {
+      "previous28": {
         "violent": 0,
         "property": 6,
         "totalPart1": 6,
@@ -605,22 +621,6 @@
           "personal_other_theft": 3
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 8,
-        "totalPart1": 8,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 6,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 0
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -628,46 +628,62 @@
       "civicSlug": "queensgate",
       "reportName": "Queensgate",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D1/QUEENSGATE.pdf",
-      "checksumSha256": "2eeac62445d1923b9ac2d65bbd6d87c5792789935477607519589f910ac80968",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "c9fba7923d7cb61eec8eb2ce863bd4d2f1e60b3c2599f7109658f5919e294358",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 12,
-        "property": 70,
-        "totalPart1": 82,
+        "violent": 14,
+        "property": 74,
+        "totalPart1": 88,
         "categories": {
           "homicide": 0,
           "rape": 3,
-          "robbery": 2,
-          "aggravated_assault": 5,
+          "robbery": 3,
+          "aggravated_assault": 6,
           "strangulation": 2,
-          "burglary": 7,
-          "theft_from_auto": 14,
+          "burglary": 9,
+          "theft_from_auto": 15,
           "motor_vehicle_theft": 11,
-          "personal_other_theft": 38
+          "personal_other_theft": 39
         }
       },
       "priorYtd": {
-        "violent": 12,
-        "property": 78,
-        "totalPart1": 90,
+        "violent": 13,
+        "property": 91,
+        "totalPart1": 104,
         "categories": {
           "homicide": 1,
           "rape": 3,
-          "robbery": 3,
+          "robbery": 4,
           "aggravated_assault": 4,
           "strangulation": 1,
-          "burglary": 13,
-          "theft_from_auto": 16,
-          "motor_vehicle_theft": 19,
-          "personal_other_theft": 30
+          "burglary": 16,
+          "theft_from_auto": 17,
+          "motor_vehicle_theft": 21,
+          "personal_other_theft": 37
         }
       },
       "current28": {
         "violent": 2,
-        "property": 4,
-        "totalPart1": 6,
+        "property": 5,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 3,
+        "totalPart1": 5,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -677,23 +693,7 @@
           "burglary": 1,
           "theft_from_auto": 0,
           "motor_vehicle_theft": 0,
-          "personal_other_theft": 3
-        }
-      },
-      "previous28": {
-        "violent": 1,
-        "property": 6,
-        "totalPart1": 7,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 1
+          "personal_other_theft": 2
         }
       },
       "reconciliationWarnings": []
@@ -703,43 +703,59 @@
       "civicSlug": "evanston",
       "reportName": "Evanston",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/EVANSTON.pdf",
-      "checksumSha256": "f62549a0293e2f16be303a01276a98db27c17e28ae856406b13d9a006f53ee0f",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "b12f11ffc687006385d2dd3a971af752be1eda4199d782cf6a5c4d91f5d10b14",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 32,
-        "property": 132,
-        "totalPart1": 164,
+        "violent": 37,
+        "property": 141,
+        "totalPart1": 178,
         "categories": {
           "homicide": 0,
           "rape": 3,
           "robbery": 7,
-          "aggravated_assault": 15,
-          "strangulation": 7,
-          "burglary": 12,
-          "theft_from_auto": 45,
-          "motor_vehicle_theft": 27,
-          "personal_other_theft": 48
+          "aggravated_assault": 18,
+          "strangulation": 9,
+          "burglary": 15,
+          "theft_from_auto": 46,
+          "motor_vehicle_theft": 28,
+          "personal_other_theft": 52
         }
       },
       "priorYtd": {
-        "violent": 18,
-        "property": 153,
-        "totalPart1": 171,
+        "violent": 21,
+        "property": 186,
+        "totalPart1": 207,
         "categories": {
-          "homicide": 1,
+          "homicide": 2,
           "rape": 4,
-          "robbery": 4,
-          "aggravated_assault": 4,
+          "robbery": 5,
+          "aggravated_assault": 5,
           "strangulation": 5,
           "burglary": 18,
-          "theft_from_auto": 34,
-          "motor_vehicle_theft": 48,
-          "personal_other_theft": 53
+          "theft_from_auto": 43,
+          "motor_vehicle_theft": 56,
+          "personal_other_theft": 69
         }
       },
       "current28": {
+        "violent": 5,
+        "property": 9,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 3,
+          "strangulation": 2,
+          "burglary": 3,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 4
+        }
+      },
+      "previous28": {
         "violent": 4,
         "property": 13,
         "totalPart1": 17,
@@ -755,22 +771,6 @@
           "personal_other_theft": 8
         }
       },
-      "previous28": {
-        "violent": 6,
-        "property": 10,
-        "totalPart1": 16,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 1,
-          "aggravated_assault": 3,
-          "strangulation": 1,
-          "burglary": 2,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 5
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -778,43 +778,59 @@
       "civicSlug": "west-end",
       "reportName": "West End",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D1/WEST_END.pdf",
-      "checksumSha256": "b2020bbec4b6b765a71382e91a726b8102045ec0569c4b39984332606996079e",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "71a6a9959627f80e533d43bf62f722bf56b74bf9efa14c50f2366740f3180acb",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 71,
-        "property": 208,
-        "totalPart1": 279,
+        "violent": 83,
+        "property": 236,
+        "totalPart1": 319,
         "categories": {
           "homicide": 2,
-          "rape": 10,
-          "robbery": 19,
-          "aggravated_assault": 24,
+          "rape": 13,
+          "robbery": 20,
+          "aggravated_assault": 32,
           "strangulation": 16,
-          "burglary": 50,
-          "theft_from_auto": 35,
-          "motor_vehicle_theft": 38,
-          "personal_other_theft": 85
+          "burglary": 52,
+          "theft_from_auto": 39,
+          "motor_vehicle_theft": 46,
+          "personal_other_theft": 99
         }
       },
       "priorYtd": {
-        "violent": 67,
-        "property": 239,
-        "totalPart1": 306,
+        "violent": 74,
+        "property": 266,
+        "totalPart1": 340,
         "categories": {
           "homicide": 0,
-          "rape": 5,
-          "robbery": 13,
-          "aggravated_assault": 35,
-          "strangulation": 14,
-          "burglary": 37,
-          "theft_from_auto": 52,
-          "motor_vehicle_theft": 53,
-          "personal_other_theft": 97
+          "rape": 7,
+          "robbery": 15,
+          "aggravated_assault": 37,
+          "strangulation": 15,
+          "burglary": 46,
+          "theft_from_auto": 56,
+          "motor_vehicle_theft": 58,
+          "personal_other_theft": 106
         }
       },
       "current28": {
+        "violent": 11,
+        "property": 28,
+        "totalPart1": 39,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 8,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 14
+        }
+      },
+      "previous28": {
         "violent": 7,
         "property": 40,
         "totalPart1": 47,
@@ -830,22 +846,6 @@
           "personal_other_theft": 15
         }
       },
-      "previous28": {
-        "violent": 10,
-        "property": 17,
-        "totalPart1": 27,
-        "categories": {
-          "homicide": 1,
-          "rape": 3,
-          "robbery": 3,
-          "aggravated_assault": 1,
-          "strangulation": 2,
-          "burglary": 2,
-          "theft_from_auto": 4,
-          "motor_vehicle_theft": 3,
-          "personal_other_theft": 8
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -853,43 +853,59 @@
       "civicSlug": "hyde-park",
       "reportName": "Hyde Park",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/HYDE_PARK.pdf",
-      "checksumSha256": "9ba12461dcf097c9ecb68d8afbe0f718f283fbc8f8880afa08bb911d1d6a9171",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "405e9c49e48a4114c79da588073d9cf507c47b21450d8554ca2c0592a01cde29",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 10,
-        "property": 61,
-        "totalPart1": 71,
+        "violent": 14,
+        "property": 67,
+        "totalPart1": 81,
         "categories": {
           "homicide": 0,
-          "rape": 1,
+          "rape": 3,
           "robbery": 3,
-          "aggravated_assault": 2,
+          "aggravated_assault": 4,
           "strangulation": 4,
           "burglary": 5,
-          "theft_from_auto": 24,
-          "motor_vehicle_theft": 13,
-          "personal_other_theft": 19
+          "theft_from_auto": 25,
+          "motor_vehicle_theft": 14,
+          "personal_other_theft": 23
         }
       },
       "priorYtd": {
         "violent": 5,
-        "property": 139,
-        "totalPart1": 144,
+        "property": 158,
+        "totalPart1": 163,
         "categories": {
           "homicide": 0,
           "rape": 2,
           "robbery": 0,
           "aggravated_assault": 2,
           "strangulation": 1,
-          "burglary": 13,
-          "theft_from_auto": 44,
-          "motor_vehicle_theft": 25,
-          "personal_other_theft": 57
+          "burglary": 14,
+          "theft_from_auto": 49,
+          "motor_vehicle_theft": 33,
+          "personal_other_theft": 62
         }
       },
       "current28": {
+        "violent": 2,
+        "property": 6,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 4
+        }
+      },
+      "previous28": {
         "violent": 1,
         "property": 2,
         "totalPart1": 3,
@@ -905,22 +921,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 2,
-        "property": 7,
-        "totalPart1": 9,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 1,
-          "burglary": 2,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 2
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -928,43 +928,59 @@
       "civicSlug": "kennedy-heights",
       "reportName": "Kennedy Heights",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/KENNEDY_HEIGHTS.pdf",
-      "checksumSha256": "cae29892f8c29b39f463e19a4c96087987288d39c9dee5ed4dc3bb0add820537",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "d21642164d80105e5a79f2976adb67401f2531c40a69d427d4a3be23363777ea",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 6,
-        "property": 41,
-        "totalPart1": 47,
+        "violent": 9,
+        "property": 42,
+        "totalPart1": 51,
         "categories": {
-          "homicide": 0,
+          "homicide": 1,
           "rape": 0,
           "robbery": 3,
-          "aggravated_assault": 3,
+          "aggravated_assault": 5,
           "strangulation": 0,
           "burglary": 6,
           "theft_from_auto": 13,
           "motor_vehicle_theft": 8,
-          "personal_other_theft": 14
+          "personal_other_theft": 15
         }
       },
       "priorYtd": {
-        "violent": 9,
-        "property": 69,
-        "totalPart1": 78,
+        "violent": 10,
+        "property": 78,
+        "totalPart1": 88,
         "categories": {
           "homicide": 0,
           "rape": 4,
           "robbery": 1,
           "aggravated_assault": 3,
-          "strangulation": 1,
-          "burglary": 14,
-          "theft_from_auto": 15,
+          "strangulation": 2,
+          "burglary": 15,
+          "theft_from_auto": 21,
           "motor_vehicle_theft": 18,
-          "personal_other_theft": 22
+          "personal_other_theft": 24
         }
       },
       "current28": {
+        "violent": 3,
+        "property": 1,
+        "totalPart1": 4,
+        "categories": {
+          "homicide": 1,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 4,
         "totalPart1": 4,
@@ -980,22 +996,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 5,
-        "totalPart1": 6,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 3
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1003,46 +1003,62 @@
       "civicSlug": "camp-washington",
       "reportName": "Camp Washington",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/CAMP_WASHINGTON.pdf",
-      "checksumSha256": "5c4f20db88f6f9c3b922b3a245f17152fc9ea7caf8099753c47e958fe15e508c",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "44d31e39d300f7ab22c907a2315ddc435ec0eeaaa4c847cfff9a073e3deffdb6",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 18,
-        "property": 144,
-        "totalPart1": 162,
+        "violent": 21,
+        "property": 156,
+        "totalPart1": 177,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 7,
-          "aggravated_assault": 8,
+          "robbery": 9,
+          "aggravated_assault": 9,
           "strangulation": 3,
-          "burglary": 9,
-          "theft_from_auto": 17,
-          "motor_vehicle_theft": 15,
-          "personal_other_theft": 103
+          "burglary": 12,
+          "theft_from_auto": 18,
+          "motor_vehicle_theft": 16,
+          "personal_other_theft": 110
         }
       },
       "priorYtd": {
-        "violent": 12,
-        "property": 98,
-        "totalPart1": 110,
+        "violent": 13,
+        "property": 105,
+        "totalPart1": 118,
         "categories": {
           "homicide": 0,
           "rape": 1,
-          "robbery": 3,
+          "robbery": 4,
           "aggravated_assault": 6,
           "strangulation": 2,
-          "burglary": 24,
-          "theft_from_auto": 23,
+          "burglary": 26,
+          "theft_from_auto": 24,
           "motor_vehicle_theft": 23,
-          "personal_other_theft": 28
+          "personal_other_theft": 32
         }
       },
       "current28": {
+        "violent": 3,
+        "property": 11,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 3,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
         "violent": 2,
-        "property": 8,
-        "totalPart1": 10,
+        "property": 9,
+        "totalPart1": 11,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -1052,23 +1068,7 @@
           "burglary": 1,
           "theft_from_auto": 0,
           "motor_vehicle_theft": 3,
-          "personal_other_theft": 4
-        }
-      },
-      "previous28": {
-        "violent": 3,
-        "property": 14,
-        "totalPart1": 17,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 2,
-          "aggravated_assault": 0,
-          "strangulation": 1,
-          "burglary": 0,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 13
+          "personal_other_theft": 5
         }
       },
       "reconciliationWarnings": []
@@ -1078,10 +1078,10 @@
       "civicSlug": "linwood",
       "reportName": "Linwood",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/LINWOOD.pdf",
-      "checksumSha256": "0f4c1f1631a5ccf5e42a761bdabdbc4bdd3245bfe8d40c7b57aebb983b8f9fca",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "91f195ae59b06e1174c2ee24db36092e3e63c83575e5ff1920c2bbe61d8e6f2b",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 0,
         "property": 5,
@@ -1132,8 +1132,8 @@
       },
       "previous28": {
         "violent": 0,
-        "property": 1,
-        "totalPart1": 1,
+        "property": 0,
+        "totalPart1": 0,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -1143,7 +1143,7 @@
           "burglary": 0,
           "theft_from_auto": 0,
           "motor_vehicle_theft": 0,
-          "personal_other_theft": 1
+          "personal_other_theft": 0
         }
       },
       "reconciliationWarnings": []
@@ -1153,43 +1153,59 @@
       "civicSlug": "college-hill",
       "reportName": "College Hill",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/COLLEGE_HILL.pdf",
-      "checksumSha256": "18e4d4afc0a3e1acf867cf279b143741a6fc05932da30e9e036d8d27b194bce3",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "b0a658f1a1911aa09470dc1d4b76b6c2a93d8e325a4d4158602ea9375f9a32cd",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 17,
-        "property": 148,
-        "totalPart1": 165,
+        "violent": 23,
+        "property": 163,
+        "totalPart1": 186,
         "categories": {
           "homicide": 0,
-          "rape": 4,
-          "robbery": 5,
-          "aggravated_assault": 2,
-          "strangulation": 6,
-          "burglary": 19,
+          "rape": 6,
+          "robbery": 6,
+          "aggravated_assault": 4,
+          "strangulation": 7,
+          "burglary": 23,
           "theft_from_auto": 51,
-          "motor_vehicle_theft": 29,
-          "personal_other_theft": 49
+          "motor_vehicle_theft": 34,
+          "personal_other_theft": 55
         }
       },
       "priorYtd": {
-        "violent": 31,
-        "property": 182,
-        "totalPart1": 213,
+        "violent": 32,
+        "property": 208,
+        "totalPart1": 240,
         "categories": {
           "homicide": 1,
           "rape": 4,
           "robbery": 10,
           "aggravated_assault": 11,
-          "strangulation": 5,
-          "burglary": 30,
-          "theft_from_auto": 35,
-          "motor_vehicle_theft": 63,
-          "personal_other_theft": 54
+          "strangulation": 6,
+          "burglary": 33,
+          "theft_from_auto": 42,
+          "motor_vehicle_theft": 71,
+          "personal_other_theft": 62
         }
       },
       "current28": {
+        "violent": 6,
+        "property": 15,
+        "totalPart1": 21,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 4,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
         "violent": 3,
         "property": 19,
         "totalPart1": 22,
@@ -1205,22 +1221,6 @@
           "personal_other_theft": 5
         }
       },
-      "previous28": {
-        "violent": 3,
-        "property": 16,
-        "totalPart1": 19,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 1,
-          "burglary": 2,
-          "theft_from_auto": 7,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 3
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1228,46 +1228,62 @@
       "civicSlug": "madisonville",
       "reportName": "Madisonville",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/MADISONVILLE.pdf",
-      "checksumSha256": "bcec51eaa8faa20f571cd114caf6fd8926617bfdac7b58d1ee66840862fe091b",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "40be5825e42648fb52e516dc1e2178f18eb3f25235a1b252e25cb6ac7f87e5f5",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 21,
-        "property": 100,
-        "totalPart1": 121,
+        "violent": 22,
+        "property": 105,
+        "totalPart1": 127,
         "categories": {
           "homicide": 1,
           "rape": 6,
           "robbery": 4,
-          "aggravated_assault": 6,
+          "aggravated_assault": 7,
           "strangulation": 4,
-          "burglary": 15,
-          "theft_from_auto": 24,
-          "motor_vehicle_theft": 16,
-          "personal_other_theft": 45
+          "burglary": 16,
+          "theft_from_auto": 26,
+          "motor_vehicle_theft": 15,
+          "personal_other_theft": 48
         }
       },
       "priorYtd": {
         "violent": 16,
-        "property": 128,
-        "totalPart1": 144,
+        "property": 144,
+        "totalPart1": 160,
         "categories": {
           "homicide": 1,
           "rape": 4,
           "robbery": 6,
           "aggravated_assault": 3,
           "strangulation": 2,
-          "burglary": 17,
-          "theft_from_auto": 36,
-          "motor_vehicle_theft": 30,
-          "personal_other_theft": 45
+          "burglary": 19,
+          "theft_from_auto": 39,
+          "motor_vehicle_theft": 35,
+          "personal_other_theft": 51
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 6,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
         "violent": 4,
-        "property": 15,
-        "totalPart1": 19,
+        "property": 14,
+        "totalPart1": 18,
         "categories": {
           "homicide": 0,
           "rape": 2,
@@ -1276,23 +1292,7 @@
           "strangulation": 1,
           "burglary": 2,
           "theft_from_auto": 2,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 7
-        }
-      },
-      "previous28": {
-        "violent": 3,
-        "property": 12,
-        "totalPart1": 15,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 2,
-          "burglary": 2,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
+          "motor_vehicle_theft": 3,
           "personal_other_theft": 7
         }
       },
@@ -1303,43 +1303,59 @@
       "civicSlug": "east-price-hill",
       "reportName": "East Price Hill",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/EAST_PRICE_HILL.pdf",
-      "checksumSha256": "49430f4522f43a439e37a4daecfd7e42080d5e28535228ad00e36128ec04dc5f",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "52a43607ac1640f3182b5b5d7987cdebb07872eb9b3ae7cdf27d5d897bb10d21",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 69,
-        "property": 304,
-        "totalPart1": 373,
+        "violent": 82,
+        "property": 349,
+        "totalPart1": 431,
         "categories": {
           "homicide": 1,
           "rape": 7,
-          "robbery": 29,
-          "aggravated_assault": 18,
-          "strangulation": 14,
-          "burglary": 47,
-          "theft_from_auto": 81,
-          "motor_vehicle_theft": 50,
-          "personal_other_theft": 126
+          "robbery": 39,
+          "aggravated_assault": 20,
+          "strangulation": 15,
+          "burglary": 52,
+          "theft_from_auto": 92,
+          "motor_vehicle_theft": 65,
+          "personal_other_theft": 140
         }
       },
       "priorYtd": {
-        "violent": 70,
-        "property": 283,
-        "totalPart1": 353,
+        "violent": 84,
+        "property": 318,
+        "totalPart1": 402,
         "categories": {
           "homicide": 2,
-          "rape": 7,
-          "robbery": 30,
-          "aggravated_assault": 21,
+          "rape": 8,
+          "robbery": 41,
+          "aggravated_assault": 23,
           "strangulation": 10,
-          "burglary": 52,
-          "theft_from_auto": 59,
-          "motor_vehicle_theft": 71,
-          "personal_other_theft": 101
+          "burglary": 56,
+          "theft_from_auto": 71,
+          "motor_vehicle_theft": 78,
+          "personal_other_theft": 113
         }
       },
       "current28": {
+        "violent": 13,
+        "property": 45,
+        "totalPart1": 58,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 10,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 5,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 15,
+          "personal_other_theft": 14
+        }
+      },
+      "previous28": {
         "violent": 7,
         "property": 40,
         "totalPart1": 47,
@@ -1355,22 +1371,6 @@
           "personal_other_theft": 17
         }
       },
-      "previous28": {
-        "violent": 8,
-        "property": 42,
-        "totalPart1": 50,
-        "categories": {
-          "homicide": 0,
-          "rape": 3,
-          "robbery": 3,
-          "aggravated_assault": 1,
-          "strangulation": 1,
-          "burglary": 4,
-          "theft_from_auto": 11,
-          "motor_vehicle_theft": 8,
-          "personal_other_theft": 19
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1378,30 +1378,30 @@
       "civicSlug": "mt-lookout",
       "reportName": "Mount Lookout",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/MOUNT_LOOKOUT.pdf",
-      "checksumSha256": "af880f488fe28cb717b82f86fab17536f7dc029105061e49c302605e5c355bcb",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "36716adeade87ec934942a63fe8890ba614c73c3c2a6a071c2b5e6e908855a02",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 4,
-        "property": 30,
-        "totalPart1": 34,
+        "violent": 5,
+        "property": 33,
+        "totalPart1": 38,
         "categories": {
           "homicide": 0,
           "rape": 2,
-          "robbery": 1,
+          "robbery": 2,
           "aggravated_assault": 1,
           "strangulation": 0,
-          "burglary": 2,
+          "burglary": 3,
           "theft_from_auto": 12,
-          "motor_vehicle_theft": 5,
-          "personal_other_theft": 11
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 12
         }
       },
       "priorYtd": {
         "violent": 2,
-        "property": 30,
-        "totalPart1": 32,
+        "property": 34,
+        "totalPart1": 36,
         "categories": {
           "homicide": 0,
           "rape": 1,
@@ -1409,12 +1409,28 @@
           "aggravated_assault": 0,
           "strangulation": 1,
           "burglary": 6,
-          "theft_from_auto": 11,
-          "motor_vehicle_theft": 7,
+          "theft_from_auto": 12,
+          "motor_vehicle_theft": 10,
           "personal_other_theft": 6
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 3,
+        "totalPart1": 4,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 3,
         "totalPart1": 3,
@@ -1430,22 +1446,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 3,
-        "property": 5,
-        "totalPart1": 8,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 1,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 0,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 4
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1453,43 +1453,59 @@
       "civicSlug": "east-westwood",
       "reportName": "East Westwood",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/EAST_WESTWOOD.pdf",
-      "checksumSha256": "3d6626eb51c2111774094e32ca34c8dd6909c7f962bc412f82655c322f8fa3dc",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "e4ca717093c9cf0c6b6b0eabbbf0dff733beeab9613b60bf59b004e8b09cbebc",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 31,
-        "property": 58,
-        "totalPart1": 89,
+        "violent": 34,
+        "property": 62,
+        "totalPart1": 96,
         "categories": {
           "homicide": 0,
-          "rape": 5,
+          "rape": 6,
           "robbery": 5,
           "aggravated_assault": 17,
-          "strangulation": 4,
-          "burglary": 9,
+          "strangulation": 6,
+          "burglary": 11,
           "theft_from_auto": 13,
           "motor_vehicle_theft": 9,
-          "personal_other_theft": 27
+          "personal_other_theft": 29
         }
       },
       "priorYtd": {
-        "violent": 27,
-        "property": 78,
-        "totalPart1": 105,
+        "violent": 29,
+        "property": 87,
+        "totalPart1": 116,
         "categories": {
           "homicide": 3,
           "rape": 1,
           "robbery": 4,
-          "aggravated_assault": 12,
+          "aggravated_assault": 14,
           "strangulation": 7,
-          "burglary": 14,
-          "theft_from_auto": 5,
-          "motor_vehicle_theft": 19,
-          "personal_other_theft": 40
+          "burglary": 17,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 21,
+          "personal_other_theft": 41
         }
       },
       "current28": {
+        "violent": 2,
+        "property": 4,
+        "totalPart1": 6,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 2,
+          "burglary": 2,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
         "violent": 6,
         "property": 3,
         "totalPart1": 9,
@@ -1505,22 +1521,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 5,
-        "totalPart1": 5,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 2
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1528,43 +1528,59 @@
       "civicSlug": "mt-washington",
       "reportName": "Mount Washington",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/MOUNT_WASHINGTON.pdf",
-      "checksumSha256": "54d8108d71e51d73c101e6e5832787b09831755cdf4798294cc9726b99b17c3d",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "a86aad12937bd55f2583ebf3e1188bf09f7e1aef1ce3391c099df8f8b7dfa7c0",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 10,
-        "property": 68,
-        "totalPart1": 78,
+        "property": 77,
+        "totalPart1": 87,
         "categories": {
           "homicide": 0,
           "rape": 3,
           "robbery": 0,
           "aggravated_assault": 3,
           "strangulation": 4,
-          "burglary": 6,
-          "theft_from_auto": 21,
-          "motor_vehicle_theft": 14,
-          "personal_other_theft": 27
+          "burglary": 8,
+          "theft_from_auto": 23,
+          "motor_vehicle_theft": 16,
+          "personal_other_theft": 30
         }
       },
       "priorYtd": {
-        "violent": 8,
-        "property": 86,
-        "totalPart1": 94,
+        "violent": 12,
+        "property": 92,
+        "totalPart1": 104,
         "categories": {
-          "homicide": 0,
+          "homicide": 3,
           "rape": 0,
           "robbery": 2,
-          "aggravated_assault": 3,
+          "aggravated_assault": 4,
           "strangulation": 3,
           "burglary": 12,
-          "theft_from_auto": 13,
+          "theft_from_auto": 14,
           "motor_vehicle_theft": 21,
-          "personal_other_theft": 40
+          "personal_other_theft": 45
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 9,
+        "totalPart1": 9,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 12,
         "totalPart1": 12,
@@ -1580,22 +1596,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 4,
-        "totalPart1": 5,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 0,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 3
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1603,14 +1603,14 @@
       "civicSlug": "english-woods",
       "reportName": "English Woods",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/ENGLISH_WOODS.pdf",
-      "checksumSha256": "1b6bef5fe784f8e545db690d99caf566d5c61ef91b365007eb6689e0e89c69e6",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "0779611e49e1682b9a461c265fb967e586194b5707ba373b58b2a4b5cf845e88",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 6,
-        "property": 13,
-        "totalPart1": 19,
+        "property": 14,
+        "totalPart1": 20,
         "categories": {
           "homicide": 0,
           "rape": 1,
@@ -1620,22 +1620,22 @@
           "burglary": 2,
           "theft_from_auto": 2,
           "motor_vehicle_theft": 3,
-          "personal_other_theft": 6
+          "personal_other_theft": 7
         }
       },
       "priorYtd": {
-        "violent": 1,
-        "property": 9,
-        "totalPart1": 10,
+        "violent": 2,
+        "property": 11,
+        "totalPart1": 13,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 0,
+          "robbery": 1,
           "aggravated_assault": 1,
           "strangulation": 0,
           "burglary": 4,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 2,
           "personal_other_theft": 2
         }
       },
@@ -1667,8 +1667,8 @@
           "strangulation": 0,
           "burglary": 0,
           "theft_from_auto": 0,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 0
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
         }
       },
       "reconciliationWarnings": []
@@ -1678,43 +1678,59 @@
       "civicSlug": "oakley",
       "reportName": "Oakley",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/OAKLEY.pdf",
-      "checksumSha256": "4cb26b0f255c3eeea515faec53bc6b267d34532166472e9d5b094d181eb2a323",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "aaf6e461db21d02c8504aedfbe6ae754cb1f7d62bfcde3918ef2241c2c22fbde",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 5,
-        "property": 443,
-        "totalPart1": 448,
+        "violent": 6,
+        "property": 491,
+        "totalPart1": 497,
         "categories": {
           "homicide": 2,
           "rape": 1,
-          "robbery": 1,
+          "robbery": 2,
           "aggravated_assault": 0,
           "strangulation": 1,
-          "burglary": 21,
-          "theft_from_auto": 39,
+          "burglary": 25,
+          "theft_from_auto": 45,
           "motor_vehicle_theft": 19,
-          "personal_other_theft": 364
+          "personal_other_theft": 402
         }
       },
       "priorYtd": {
-        "violent": 6,
-        "property": 361,
-        "totalPart1": 367,
+        "violent": 12,
+        "property": 421,
+        "totalPart1": 433,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 2,
+          "robbery": 8,
           "aggravated_assault": 2,
           "strangulation": 2,
-          "burglary": 23,
-          "theft_from_auto": 39,
-          "motor_vehicle_theft": 31,
-          "personal_other_theft": 268
+          "burglary": 24,
+          "theft_from_auto": 44,
+          "motor_vehicle_theft": 35,
+          "personal_other_theft": 318
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 48,
+        "totalPart1": 49,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 4,
+          "theft_from_auto": 6,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 38
+        }
+      },
+      "previous28": {
         "violent": 1,
         "property": 33,
         "totalPart1": 34,
@@ -1730,22 +1746,6 @@
           "personal_other_theft": 29
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 44,
-        "totalPart1": 45,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 11,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 30
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1753,72 +1753,72 @@
       "civicSlug": "villages-at-roll-hill",
       "reportName": "Fay Apartments",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/FAY_APARTMENTS.pdf",
-      "checksumSha256": "a858b6de292e6e0b5de050dc5d7d5533f5447add4d4a16b2db42ccf62217d65a",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "d1dc9e54aa517598ff98a1b68444ef7bf31897c870be8d02ad6f20eb71e9cfcb",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 20,
-        "property": 29,
-        "totalPart1": 81,
+        "violent": 22,
+        "property": 28,
+        "totalPart1": 84,
         "categories": {
           "homicide": 3,
           "rape": 0,
-          "robbery": 2,
+          "robbery": 1,
           "aggravated_assault": 11,
           "strangulation": 13,
-          "burglary": 15,
-          "theft_from_auto": 7,
+          "burglary": 16,
+          "theft_from_auto": 8,
           "motor_vehicle_theft": 10,
-          "personal_other_theft": 20
+          "personal_other_theft": 22
         }
       },
       "priorYtd": {
-        "violent": 16,
+        "violent": 17,
         "property": 13,
-        "totalPart1": 51,
+        "totalPart1": 54,
         "categories": {
           "homicide": 0,
           "rape": 1,
           "robbery": 1,
           "aggravated_assault": 8,
           "strangulation": 3,
-          "burglary": 12,
+          "burglary": 14,
           "theft_from_auto": 2,
           "motor_vehicle_theft": 8,
-          "personal_other_theft": 16
+          "personal_other_theft": 17
         }
       },
       "current28": {
-        "violent": 3,
-        "property": 10,
-        "totalPart1": 13,
+        "violent": 0,
+        "property": 4,
+        "totalPart1": 4,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 2,
+        "property": 10,
+        "totalPart1": 12,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
           "aggravated_assault": 1,
           "strangulation": 1,
           "burglary": 4,
           "theft_from_auto": 1,
           "motor_vehicle_theft": 1,
           "personal_other_theft": 4
-        }
-      },
-      "previous28": {
-        "violent": 1,
-        "property": 5,
-        "totalPart1": 6,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 1,
-          "burglary": 3,
-          "theft_from_auto": 0,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 1
         }
       },
       "reconciliationWarnings": [
@@ -1837,43 +1837,59 @@
       "civicSlug": "pleasant-ridge",
       "reportName": "Pleasant Ridge",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/PLEASANT_RIDGE.pdf",
-      "checksumSha256": "ed02e8604d41afbfd6b3ba91847adaea4dd8c1792429100aab36003bf3f66c07",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "af0718ee561f630325c08dbd0472ad2c6d55c8d16d974578551076cc5999f776",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 9,
-        "property": 81,
-        "totalPart1": 90,
+        "violent": 11,
+        "property": 86,
+        "totalPart1": 97,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 3,
+          "robbery": 5,
           "aggravated_assault": 5,
           "strangulation": 1,
           "burglary": 10,
-          "theft_from_auto": 31,
-          "motor_vehicle_theft": 12,
-          "personal_other_theft": 28
+          "theft_from_auto": 32,
+          "motor_vehicle_theft": 13,
+          "personal_other_theft": 31
         }
       },
       "priorYtd": {
-        "violent": 9,
-        "property": 85,
-        "totalPart1": 94,
+        "violent": 10,
+        "property": 93,
+        "totalPart1": 103,
         "categories": {
           "homicide": 0,
           "rape": 1,
           "robbery": 1,
           "aggravated_assault": 4,
-          "strangulation": 3,
-          "burglary": 17,
+          "strangulation": 4,
+          "burglary": 19,
           "theft_from_auto": 16,
           "motor_vehicle_theft": 29,
-          "personal_other_theft": 23
+          "personal_other_theft": 29
         }
       },
       "current28": {
+        "violent": 2,
+        "property": 5,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 2,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 3
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 9,
         "totalPart1": 9,
@@ -1889,22 +1905,6 @@
           "personal_other_theft": 3
         }
       },
-      "previous28": {
-        "violent": 3,
-        "property": 6,
-        "totalPart1": 9,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 3,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 2
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1912,43 +1912,59 @@
       "civicSlug": "lower-price-hill",
       "reportName": "Lower Price Hill",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/LOWER_PRICE_HILL.pdf",
-      "checksumSha256": "2c561712b87aca5f04ddf1b7709dd99d9ef07f0166dad5d03be63862855c0bff",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "4661789fa689fa424d6ed7bf3bea368a7996d098bd2b1b1ea2ddd18eb44aa54c",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 7,
-        "property": 33,
-        "totalPart1": 40,
+        "violent": 8,
+        "property": 41,
+        "totalPart1": 49,
         "categories": {
           "homicide": 0,
           "rape": 1,
           "robbery": 0,
-          "aggravated_assault": 4,
+          "aggravated_assault": 5,
           "strangulation": 2,
-          "burglary": 6,
-          "theft_from_auto": 11,
-          "motor_vehicle_theft": 7,
-          "personal_other_theft": 9
+          "burglary": 8,
+          "theft_from_auto": 14,
+          "motor_vehicle_theft": 9,
+          "personal_other_theft": 10
         }
       },
       "priorYtd": {
         "violent": 6,
-        "property": 33,
-        "totalPart1": 39,
+        "property": 36,
+        "totalPart1": 42,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 2,
           "aggravated_assault": 3,
           "strangulation": 1,
-          "burglary": 7,
-          "theft_from_auto": 4,
+          "burglary": 8,
+          "theft_from_auto": 5,
           "motor_vehicle_theft": 6,
-          "personal_other_theft": 16
+          "personal_other_theft": 17
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 8,
+        "totalPart1": 9,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 4,
         "totalPart1": 4,
@@ -1964,22 +1980,6 @@
           "personal_other_theft": 0
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 4,
-        "totalPart1": 4,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 2
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -1987,43 +1987,59 @@
       "civicSlug": "walnut-hills",
       "reportName": "Walnut Hills",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D2/WALNUT_HILLS.pdf",
-      "checksumSha256": "23b63a493db98db6a27fd970dc32c877818f80f51334aa656f0bb704ce638140",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "e52bf6e517557b2454ad314a81a1d9f4d084c3cdec3bb993f5f95e2ad34da7b0",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 47,
-        "property": 274,
-        "totalPart1": 321,
+        "violent": 55,
+        "property": 308,
+        "totalPart1": 363,
         "categories": {
           "homicide": 3,
           "rape": 7,
-          "robbery": 17,
-          "aggravated_assault": 16,
-          "strangulation": 4,
-          "burglary": 36,
-          "theft_from_auto": 116,
-          "motor_vehicle_theft": 36,
-          "personal_other_theft": 86
+          "robbery": 22,
+          "aggravated_assault": 18,
+          "strangulation": 5,
+          "burglary": 40,
+          "theft_from_auto": 125,
+          "motor_vehicle_theft": 39,
+          "personal_other_theft": 104
         }
       },
       "priorYtd": {
-        "violent": 60,
-        "property": 248,
-        "totalPart1": 308,
+        "violent": 67,
+        "property": 297,
+        "totalPart1": 364,
         "categories": {
           "homicide": 4,
           "rape": 9,
-          "robbery": 12,
-          "aggravated_assault": 31,
+          "robbery": 15,
+          "aggravated_assault": 35,
           "strangulation": 4,
-          "burglary": 48,
-          "theft_from_auto": 56,
-          "motor_vehicle_theft": 55,
-          "personal_other_theft": 89
+          "burglary": 58,
+          "theft_from_auto": 76,
+          "motor_vehicle_theft": 65,
+          "personal_other_theft": 98
         }
       },
       "current28": {
+        "violent": 7,
+        "property": 34,
+        "totalPart1": 41,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 5,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 4,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 17
+        }
+      },
+      "previous28": {
         "violent": 10,
         "property": 43,
         "totalPart1": 53,
@@ -2035,24 +2051,8 @@
           "strangulation": 1,
           "burglary": 4,
           "theft_from_auto": 13,
-          "motor_vehicle_theft": 6,
-          "personal_other_theft": 20
-        }
-      },
-      "previous28": {
-        "violent": 10,
-        "property": 27,
-        "totalPart1": 37,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 4,
-          "aggravated_assault": 5,
-          "strangulation": 0,
-          "burglary": 5,
-          "theft_from_auto": 14,
-          "motor_vehicle_theft": 3,
-          "personal_other_theft": 5
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 21
         }
       },
       "reconciliationWarnings": []
@@ -2062,279 +2062,54 @@
       "civicSlug": "millvale",
       "reportName": "Millvale",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/MILLVALE.pdf",
-      "checksumSha256": "bf2449c664c6abbf877cf6d44c8d3005383e29339e88b119f4e01bc27b2bcea9",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "8348ff9d89ff1d08b9696fe54b2ac258204f0a86aac28136aaacdc3f0ef1a821",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 17,
-        "property": 41,
-        "totalPart1": 58,
+        "violent": 20,
+        "property": 43,
+        "totalPart1": 63,
         "categories": {
           "homicide": 4,
           "rape": 1,
-          "robbery": 5,
-          "aggravated_assault": 4,
+          "robbery": 6,
+          "aggravated_assault": 6,
           "strangulation": 3,
-          "burglary": 8,
-          "theft_from_auto": 10,
+          "burglary": 9,
+          "theft_from_auto": 11,
           "motor_vehicle_theft": 10,
           "personal_other_theft": 13
         }
       },
       "priorYtd": {
-        "violent": 5,
-        "property": 28,
-        "totalPart1": 33,
+        "violent": 8,
+        "property": 29,
+        "totalPart1": 37,
         "categories": {
-          "homicide": 0,
+          "homicide": 1,
           "rape": 0,
           "robbery": 0,
-          "aggravated_assault": 4,
+          "aggravated_assault": 6,
           "strangulation": 1,
           "burglary": 12,
           "theft_from_auto": 3,
-          "motor_vehicle_theft": 3,
+          "motor_vehicle_theft": 4,
           "personal_other_theft": 10
         }
       },
       "current28": {
-        "violent": 2,
-        "property": 5,
-        "totalPart1": 7,
+        "violent": 3,
+        "property": 3,
+        "totalPart1": 6,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 1,
-          "aggravated_assault": 0,
-          "strangulation": 1,
+          "aggravated_assault": 2,
+          "strangulation": 0,
           "burglary": 1,
           "theft_from_auto": 1,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 2
-        }
-      },
-      "previous28": {
-        "violent": 0,
-        "property": 10,
-        "totalPart1": 10,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 2,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 5,
-          "personal_other_theft": 1
-        }
-      },
-      "reconciliationWarnings": []
-    },
-    {
-      "civicName": "Mt. Airy",
-      "civicSlug": "mt-airy",
-      "reportName": "Mount Airy",
-      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/MOUNT_AIRY.pdf",
-      "checksumSha256": "00ad6db6c486c93c51893b842dbba7cf84d7b241d5d35adb8fc30744f106fc6e",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
-      "currentYtd": {
-        "violent": 43,
-        "property": 155,
-        "totalPart1": 198,
-        "categories": {
-          "homicide": 0,
-          "rape": 8,
-          "robbery": 6,
-          "aggravated_assault": 17,
-          "strangulation": 12,
-          "burglary": 22,
-          "theft_from_auto": 28,
-          "motor_vehicle_theft": 36,
-          "personal_other_theft": 69
-        }
-      },
-      "priorYtd": {
-        "violent": 26,
-        "property": 127,
-        "totalPart1": 153,
-        "categories": {
-          "homicide": 0,
-          "rape": 3,
-          "robbery": 6,
-          "aggravated_assault": 9,
-          "strangulation": 8,
-          "burglary": 18,
-          "theft_from_auto": 19,
-          "motor_vehicle_theft": 18,
-          "personal_other_theft": 72
-        }
-      },
-      "current28": {
-        "violent": 8,
-        "property": 24,
-        "totalPart1": 32,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 1,
-          "aggravated_assault": 5,
-          "strangulation": 1,
-          "burglary": 2,
-          "theft_from_auto": 9,
-          "motor_vehicle_theft": 3,
-          "personal_other_theft": 10
-        }
-      },
-      "previous28": {
-        "violent": 7,
-        "property": 14,
-        "totalPart1": 21,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 1,
-          "aggravated_assault": 2,
-          "strangulation": 3,
-          "burglary": 2,
-          "theft_from_auto": 3,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 7
-        }
-      },
-      "reconciliationWarnings": []
-    },
-    {
-      "civicName": "Avondale",
-      "civicSlug": "avondale",
-      "reportName": "Avondale",
-      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/AVONDALE.pdf",
-      "checksumSha256": "b2561de773da9a5483afd0d6fd2a81e0e6547af9b209da6a4c8665045faec73b",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
-      "currentYtd": {
-        "violent": 87,
-        "property": 242,
-        "totalPart1": 329,
-        "categories": {
-          "homicide": 2,
-          "rape": 14,
-          "robbery": 16,
-          "aggravated_assault": 40,
-          "strangulation": 15,
-          "burglary": 49,
-          "theft_from_auto": 41,
-          "motor_vehicle_theft": 54,
-          "personal_other_theft": 98
-        }
-      },
-      "priorYtd": {
-        "violent": 69,
-        "property": 203,
-        "totalPart1": 272,
-        "categories": {
-          "homicide": 2,
-          "rape": 4,
-          "robbery": 24,
-          "aggravated_assault": 25,
-          "strangulation": 14,
-          "burglary": 38,
-          "theft_from_auto": 32,
-          "motor_vehicle_theft": 46,
-          "personal_other_theft": 87
-        }
-      },
-      "current28": {
-        "violent": 16,
-        "property": 40,
-        "totalPart1": 56,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 2,
-          "aggravated_assault": 10,
-          "strangulation": 3,
-          "burglary": 10,
-          "theft_from_auto": 3,
-          "motor_vehicle_theft": 13,
-          "personal_other_theft": 14
-        }
-      },
-      "previous28": {
-        "violent": 13,
-        "property": 34,
-        "totalPart1": 47,
-        "categories": {
-          "homicide": 0,
-          "rape": 2,
-          "robbery": 5,
-          "aggravated_assault": 4,
-          "strangulation": 2,
-          "burglary": 5,
-          "theft_from_auto": 7,
-          "motor_vehicle_theft": 8,
-          "personal_other_theft": 14
-        }
-      },
-      "reconciliationWarnings": []
-    },
-    {
-      "civicName": "North Fairmount",
-      "civicSlug": "north-fairmount",
-      "reportName": "North Fairmount",
-      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/NORTH_FAIRMOUNT.pdf",
-      "checksumSha256": "8b28c827a9e51d0199e36bb9e92b19bce61afb3d856b5f849bc0d3b1e2255c89",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
-      "currentYtd": {
-        "violent": 8,
-        "property": 21,
-        "totalPart1": 29,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 2,
-          "aggravated_assault": 2,
-          "strangulation": 4,
-          "burglary": 5,
-          "theft_from_auto": 6,
-          "motor_vehicle_theft": 7,
-          "personal_other_theft": 3
-        }
-      },
-      "priorYtd": {
-        "violent": 10,
-        "property": 25,
-        "totalPart1": 35,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 2,
-          "aggravated_assault": 5,
-          "strangulation": 2,
-          "burglary": 4,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 11,
-          "personal_other_theft": 8
-        }
-      },
-      "current28": {
-        "violent": 1,
-        "property": 2,
-        "totalPart1": 3,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 0,
           "motor_vehicle_theft": 1,
           "personal_other_theft": 0
         }
@@ -2351,7 +2126,232 @@
           "strangulation": 1,
           "burglary": 1,
           "theft_from_auto": 1,
-          "motor_vehicle_theft": 2,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 2
+        }
+      },
+      "reconciliationWarnings": []
+    },
+    {
+      "civicName": "Mt. Airy",
+      "civicSlug": "mt-airy",
+      "reportName": "Mount Airy",
+      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/MOUNT_AIRY.pdf",
+      "checksumSha256": "5e80e4247dfedf17b07cbbd3f8653cf1f9730a2596ad2a48081f6066edf7804b",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
+      "currentYtd": {
+        "violent": 53,
+        "property": 185,
+        "totalPart1": 238,
+        "categories": {
+          "homicide": 0,
+          "rape": 10,
+          "robbery": 10,
+          "aggravated_assault": 19,
+          "strangulation": 14,
+          "burglary": 25,
+          "theft_from_auto": 35,
+          "motor_vehicle_theft": 47,
+          "personal_other_theft": 78
+        }
+      },
+      "priorYtd": {
+        "violent": 33,
+        "property": 144,
+        "totalPart1": 177,
+        "categories": {
+          "homicide": 0,
+          "rape": 6,
+          "robbery": 7,
+          "aggravated_assault": 12,
+          "strangulation": 8,
+          "burglary": 20,
+          "theft_from_auto": 22,
+          "motor_vehicle_theft": 19,
+          "personal_other_theft": 83
+        }
+      },
+      "current28": {
+        "violent": 7,
+        "property": 31,
+        "totalPart1": 38,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 4,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 3,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 11,
+          "personal_other_theft": 10
+        }
+      },
+      "previous28": {
+        "violent": 9,
+        "property": 23,
+        "totalPart1": 32,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 6,
+          "strangulation": 1,
+          "burglary": 2,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 9
+        }
+      },
+      "reconciliationWarnings": []
+    },
+    {
+      "civicName": "Avondale",
+      "civicSlug": "avondale",
+      "reportName": "Avondale",
+      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/AVONDALE.pdf",
+      "checksumSha256": "e4c4aa5be3de5db60d29302afd8151faa9aec0a3159e9061484cc77e14cbfa04",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
+      "currentYtd": {
+        "violent": 95,
+        "property": 270,
+        "totalPart1": 365,
+        "categories": {
+          "homicide": 2,
+          "rape": 12,
+          "robbery": 19,
+          "aggravated_assault": 46,
+          "strangulation": 16,
+          "burglary": 55,
+          "theft_from_auto": 48,
+          "motor_vehicle_theft": 57,
+          "personal_other_theft": 110
+        }
+      },
+      "priorYtd": {
+        "violent": 76,
+        "property": 233,
+        "totalPart1": 309,
+        "categories": {
+          "homicide": 2,
+          "rape": 4,
+          "robbery": 25,
+          "aggravated_assault": 27,
+          "strangulation": 18,
+          "burglary": 41,
+          "theft_from_auto": 43,
+          "motor_vehicle_theft": 55,
+          "personal_other_theft": 94
+        }
+      },
+      "current28": {
+        "violent": 10,
+        "property": 28,
+        "totalPart1": 38,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 6,
+          "strangulation": 1,
+          "burglary": 6,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 12
+        }
+      },
+      "previous28": {
+        "violent": 16,
+        "property": 40,
+        "totalPart1": 56,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 10,
+          "strangulation": 3,
+          "burglary": 10,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 13,
+          "personal_other_theft": 14
+        }
+      },
+      "reconciliationWarnings": []
+    },
+    {
+      "civicName": "North Fairmount",
+      "civicSlug": "north-fairmount",
+      "reportName": "North Fairmount",
+      "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/NORTH_FAIRMOUNT.pdf",
+      "checksumSha256": "a8e6dfa16690f958b06f0152d1a4ede24b6bb275f0ac9026afb9a933655ef445",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
+      "currentYtd": {
+        "violent": 11,
+        "property": 26,
+        "totalPart1": 37,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 3,
+          "strangulation": 5,
+          "burglary": 6,
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 8,
+          "personal_other_theft": 5
+        }
+      },
+      "priorYtd": {
+        "violent": 11,
+        "property": 26,
+        "totalPart1": 37,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 6,
+          "strangulation": 2,
+          "burglary": 4,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 8
+        }
+      },
+      "current28": {
+        "violent": 3,
+        "property": 5,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
+        "violent": 1,
+        "property": 2,
+        "totalPart1": 3,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
           "personal_other_theft": 0
         }
       },
@@ -2362,43 +2362,59 @@
       "civicSlug": "bond-hill",
       "reportName": "Bond Hill",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/BOND_HILL.pdf",
-      "checksumSha256": "00430ae2f0fed0b226cc2c13c1ee94296dc992a117957bfbd477365c4c65868d",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "35de3ac387f00b741b02d28188fe1ecfa835d4136e89082edbb3f3a398be6946",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 47,
-        "property": 115,
-        "totalPart1": 162,
+        "violent": 54,
+        "property": 137,
+        "totalPart1": 191,
         "categories": {
           "homicide": 2,
-          "rape": 10,
-          "robbery": 7,
-          "aggravated_assault": 19,
+          "rape": 11,
+          "robbery": 9,
+          "aggravated_assault": 23,
           "strangulation": 9,
-          "burglary": 19,
-          "theft_from_auto": 28,
-          "motor_vehicle_theft": 20,
-          "personal_other_theft": 48
+          "burglary": 29,
+          "theft_from_auto": 30,
+          "motor_vehicle_theft": 22,
+          "personal_other_theft": 56
         }
       },
       "priorYtd": {
-        "violent": 22,
-        "property": 172,
-        "totalPart1": 194,
+        "violent": 26,
+        "property": 201,
+        "totalPart1": 227,
         "categories": {
           "homicide": 0,
           "rape": 2,
           "robbery": 10,
-          "aggravated_assault": 7,
-          "strangulation": 3,
-          "burglary": 28,
-          "theft_from_auto": 47,
-          "motor_vehicle_theft": 38,
-          "personal_other_theft": 59
+          "aggravated_assault": 9,
+          "strangulation": 5,
+          "burglary": 34,
+          "theft_from_auto": 59,
+          "motor_vehicle_theft": 46,
+          "personal_other_theft": 62
         }
       },
       "current28": {
+        "violent": 7,
+        "property": 22,
+        "totalPart1": 29,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 4,
+          "strangulation": 0,
+          "burglary": 10,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 8
+        }
+      },
+      "previous28": {
         "violent": 4,
         "property": 15,
         "totalPart1": 19,
@@ -2414,22 +2430,6 @@
           "personal_other_theft": 9
         }
       },
-      "previous28": {
-        "violent": 7,
-        "property": 12,
-        "totalPart1": 19,
-        "categories": {
-          "homicide": 0,
-          "rape": 3,
-          "robbery": 0,
-          "aggravated_assault": 4,
-          "strangulation": 0,
-          "burglary": 2,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 7
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -2437,72 +2437,72 @@
       "civicSlug": "northside",
       "reportName": "Northside",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/NORTHSIDE.pdf",
-      "checksumSha256": "24cfcfce95844d1627b2751172134fbb634094bbefd6564ac8cf06e78cd5e9b4",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "5c419509c822347637d75aeaefe0ec8b22ce4201cccfab1f9495879794944938",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 43,
-        "property": 219,
-        "totalPart1": 262,
+        "violent": 48,
+        "property": 240,
+        "totalPart1": 288,
         "categories": {
           "homicide": 4,
-          "rape": 4,
-          "robbery": 9,
-          "aggravated_assault": 15,
-          "strangulation": 11,
-          "burglary": 36,
-          "theft_from_auto": 74,
-          "motor_vehicle_theft": 45,
-          "personal_other_theft": 64
+          "rape": 6,
+          "robbery": 10,
+          "aggravated_assault": 16,
+          "strangulation": 12,
+          "burglary": 39,
+          "theft_from_auto": 82,
+          "motor_vehicle_theft": 49,
+          "personal_other_theft": 70
         }
       },
       "priorYtd": {
-        "violent": 29,
-        "property": 194,
-        "totalPart1": 223,
+        "violent": 32,
+        "property": 213,
+        "totalPart1": 245,
         "categories": {
           "homicide": 0,
-          "rape": 2,
+          "rape": 3,
           "robbery": 11,
-          "aggravated_assault": 12,
+          "aggravated_assault": 14,
           "strangulation": 4,
-          "burglary": 27,
-          "theft_from_auto": 49,
-          "motor_vehicle_theft": 55,
-          "personal_other_theft": 63
+          "burglary": 29,
+          "theft_from_auto": 58,
+          "motor_vehicle_theft": 56,
+          "personal_other_theft": 70
         }
       },
       "current28": {
-        "violent": 8,
+        "violent": 4,
+        "property": 21,
+        "totalPart1": 25,
+        "categories": {
+          "homicide": 0,
+          "rape": 2,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 3,
+          "theft_from_auto": 8,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
+        "violent": 9,
         "property": 29,
-        "totalPart1": 37,
+        "totalPart1": 38,
         "categories": {
           "homicide": 1,
           "rape": 2,
           "robbery": 2,
           "aggravated_assault": 2,
-          "strangulation": 1,
+          "strangulation": 2,
           "burglary": 8,
           "theft_from_auto": 9,
           "motor_vehicle_theft": 8,
           "personal_other_theft": 4
-        }
-      },
-      "previous28": {
-        "violent": 4,
-        "property": 31,
-        "totalPart1": 35,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 3,
-          "strangulation": 1,
-          "burglary": 7,
-          "theft_from_auto": 13,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 9
         }
       },
       "reconciliationWarnings": []
@@ -2512,43 +2512,59 @@
       "civicSlug": "carthage",
       "reportName": "Carthage",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/CARTHAGE.pdf",
-      "checksumSha256": "4bef5baac1ef75cb9eec9e7aa501be78cf474e01ed1b5c2ad0a200ec25e013f7",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "35b49e338e5fa3901471eef9f3bc942fe208b85cdd6001b83f1a03c69cba9b01",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 17,
-        "property": 108,
-        "totalPart1": 125,
+        "property": 114,
+        "totalPart1": 131,
         "categories": {
           "homicide": 1,
           "rape": 2,
           "robbery": 7,
           "aggravated_assault": 6,
           "strangulation": 1,
-          "burglary": 21,
-          "theft_from_auto": 30,
-          "motor_vehicle_theft": 20,
-          "personal_other_theft": 37
+          "burglary": 22,
+          "theft_from_auto": 32,
+          "motor_vehicle_theft": 21,
+          "personal_other_theft": 39
         }
       },
       "priorYtd": {
-        "violent": 24,
-        "property": 70,
-        "totalPart1": 94,
+        "violent": 26,
+        "property": 89,
+        "totalPart1": 115,
         "categories": {
           "homicide": 1,
           "rape": 0,
-          "robbery": 18,
+          "robbery": 20,
           "aggravated_assault": 5,
           "strangulation": 0,
-          "burglary": 13,
-          "theft_from_auto": 18,
-          "motor_vehicle_theft": 15,
-          "personal_other_theft": 24
+          "burglary": 17,
+          "theft_from_auto": 21,
+          "motor_vehicle_theft": 21,
+          "personal_other_theft": 30
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 6,
+        "totalPart1": 6,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
         "violent": 3,
         "property": 7,
         "totalPart1": 10,
@@ -2564,22 +2580,6 @@
           "personal_other_theft": 6
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 8,
-        "totalPart1": 9,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 2,
-          "personal_other_theft": 3
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -2587,14 +2587,14 @@
       "civicSlug": "riverside",
       "reportName": "Riverside",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/RIVERSIDE.pdf",
-      "checksumSha256": "4bd66678a0f045781b17db5b3b7fe11d93cc192dd13e13ae1e02cd65ed35cd92",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "5277be048b1a1c3ccd693014eab6a2856addabc58c38541a7daacd531a474298",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 5,
-        "property": 22,
-        "totalPart1": 27,
+        "property": 29,
+        "totalPart1": 34,
         "categories": {
           "homicide": 0,
           "rape": 2,
@@ -2602,15 +2602,15 @@
           "aggravated_assault": 1,
           "strangulation": 1,
           "burglary": 3,
-          "theft_from_auto": 4,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 11
+          "theft_from_auto": 7,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 13
         }
       },
       "priorYtd": {
         "violent": 3,
-        "property": 29,
-        "totalPart1": 32,
+        "property": 31,
+        "totalPart1": 34,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -2618,12 +2618,28 @@
           "aggravated_assault": 1,
           "strangulation": 1,
           "burglary": 6,
-          "theft_from_auto": 6,
+          "theft_from_auto": 8,
           "motor_vehicle_theft": 7,
           "personal_other_theft": 10
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 7,
+        "totalPart1": 7,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
         "violent": 3,
         "property": 7,
         "totalPart1": 10,
@@ -2639,22 +2655,6 @@
           "personal_other_theft": 3
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 2,
-        "totalPart1": 3,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 1,
-          "burglary": 0,
-          "theft_from_auto": 0,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 2
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -2662,72 +2662,72 @@
       "civicSlug": "clifton",
       "reportName": "Clifton",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/CLIFTON.pdf",
-      "checksumSha256": "35a7c09e3d3fd9ab0fbd50fbb24267bb614a8c4d9c6b6b106e6e40172c0539a0",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "5dab3e440a904e2a537982fd42b766e668f6d1dedc5f03cb8ccd95e1828b2e82",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 19,
-        "property": 203,
-        "totalPart1": 222,
+        "violent": 25,
+        "property": 225,
+        "totalPart1": 250,
         "categories": {
           "homicide": 1,
           "rape": 2,
-          "robbery": 6,
-          "aggravated_assault": 5,
-          "strangulation": 5,
-          "burglary": 22,
-          "theft_from_auto": 73,
-          "motor_vehicle_theft": 45,
-          "personal_other_theft": 63
+          "robbery": 9,
+          "aggravated_assault": 6,
+          "strangulation": 7,
+          "burglary": 24,
+          "theft_from_auto": 77,
+          "motor_vehicle_theft": 50,
+          "personal_other_theft": 74
         }
       },
       "priorYtd": {
-        "violent": 38,
-        "property": 218,
-        "totalPart1": 256,
+        "violent": 42,
+        "property": 244,
+        "totalPart1": 286,
         "categories": {
           "homicide": 1,
-          "rape": 3,
-          "robbery": 15,
-          "aggravated_assault": 12,
+          "rape": 4,
+          "robbery": 17,
+          "aggravated_assault": 13,
           "strangulation": 7,
-          "burglary": 34,
-          "theft_from_auto": 50,
-          "motor_vehicle_theft": 40,
-          "personal_other_theft": 94
+          "burglary": 37,
+          "theft_from_auto": 61,
+          "motor_vehicle_theft": 46,
+          "personal_other_theft": 100
         }
       },
       "current28": {
+        "violent": 6,
+        "property": 21,
+        "totalPart1": 27,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 3,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 1,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 11
+        }
+      },
+      "previous28": {
         "violent": 4,
-        "property": 20,
-        "totalPart1": 24,
+        "property": 21,
+        "totalPart1": 25,
         "categories": {
           "homicide": 1,
           "rape": 0,
           "robbery": 2,
           "aggravated_assault": 1,
           "strangulation": 0,
-          "burglary": 1,
+          "burglary": 2,
           "theft_from_auto": 5,
           "motor_vehicle_theft": 9,
           "personal_other_theft": 5
-        }
-      },
-      "previous28": {
-        "violent": 2,
-        "property": 34,
-        "totalPart1": 36,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 1,
-          "burglary": 6,
-          "theft_from_auto": 13,
-          "motor_vehicle_theft": 7,
-          "personal_other_theft": 8
         }
       },
       "reconciliationWarnings": []
@@ -2737,14 +2737,14 @@
       "civicSlug": "sayler-park",
       "reportName": "Sayler Park",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/SAYLER_PARK.pdf",
-      "checksumSha256": "744129df8bd94898ae0e06df70961d3afb2aabf3cc1488d8950767330e17ea44",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "1a12841f8894906b5a8995ee70324b9e0562ae2ec2525ee2455ba9d71e284df3",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 1,
-        "property": 25,
-        "totalPart1": 26,
+        "property": 27,
+        "totalPart1": 28,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -2753,14 +2753,14 @@
           "strangulation": 1,
           "burglary": 1,
           "theft_from_auto": 7,
-          "motor_vehicle_theft": 11,
-          "personal_other_theft": 6
+          "motor_vehicle_theft": 12,
+          "personal_other_theft": 7
         }
       },
       "priorYtd": {
         "violent": 5,
-        "property": 36,
-        "totalPart1": 41,
+        "property": 37,
+        "totalPart1": 42,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -2770,10 +2770,26 @@
           "burglary": 8,
           "theft_from_auto": 9,
           "motor_vehicle_theft": 8,
-          "personal_other_theft": 11
+          "personal_other_theft": 12
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 2,
+        "totalPart1": 2,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 1
+        }
+      },
+      "previous28": {
         "violent": 1,
         "property": 6,
         "totalPart1": 7,
@@ -2789,22 +2805,6 @@
           "personal_other_theft": 1
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 1,
-        "totalPart1": 1,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 0,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 0
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -2812,72 +2812,72 @@
       "civicSlug": "corryville",
       "reportName": "Corryville",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/CORRYVILLE.pdf",
-      "checksumSha256": "d9c762d9289a01df5afbce73381b2394a042286e745d23c5c8ed7ccd91d9ee24",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "1501ad726517d73ea9bc94de97ecd3732c34611da2e847c9e526a5f47ff738b5",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 24,
-        "property": 244,
-        "totalPart1": 268,
+        "violent": 28,
+        "property": 286,
+        "totalPart1": 314,
         "categories": {
-          "homicide": 0,
-          "rape": 5,
+          "homicide": 1,
+          "rape": 6,
           "robbery": 8,
-          "aggravated_assault": 9,
+          "aggravated_assault": 11,
           "strangulation": 2,
-          "burglary": 20,
-          "theft_from_auto": 66,
-          "motor_vehicle_theft": 40,
-          "personal_other_theft": 118
+          "burglary": 22,
+          "theft_from_auto": 79,
+          "motor_vehicle_theft": 50,
+          "personal_other_theft": 135
         }
       },
       "priorYtd": {
-        "violent": 37,
-        "property": 278,
-        "totalPart1": 315,
+        "violent": 43,
+        "property": 316,
+        "totalPart1": 359,
         "categories": {
           "homicide": 2,
           "rape": 3,
-          "robbery": 14,
-          "aggravated_assault": 15,
+          "robbery": 16,
+          "aggravated_assault": 19,
           "strangulation": 3,
-          "burglary": 31,
-          "theft_from_auto": 50,
-          "motor_vehicle_theft": 46,
-          "personal_other_theft": 151
+          "burglary": 35,
+          "theft_from_auto": 59,
+          "motor_vehicle_theft": 55,
+          "personal_other_theft": 167
         }
       },
       "current28": {
-        "violent": 4,
+        "violent": 5,
+        "property": 42,
+        "totalPart1": 47,
+        "categories": {
+          "homicide": 1,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 13,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 17
+        }
+      },
+      "previous28": {
+        "violent": 3,
         "property": 35,
-        "totalPart1": 39,
+        "totalPart1": 38,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 3,
+          "robbery": 2,
           "aggravated_assault": 1,
           "strangulation": 0,
           "burglary": 1,
           "theft_from_auto": 7,
           "motor_vehicle_theft": 8,
           "personal_other_theft": 19
-        }
-      },
-      "previous28": {
-        "violent": 1,
-        "property": 22,
-        "totalPart1": 23,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 9,
-          "motor_vehicle_theft": 3,
-          "personal_other_theft": 10
         }
       },
       "reconciliationWarnings": []
@@ -2887,10 +2887,10 @@
       "civicSlug": "sedamsville",
       "reportName": "Sedamsville",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/SEDAMSVILLE.pdf",
-      "checksumSha256": "5a1ae7c315855bc0d13cc23be0c270f1ba8ea6790bdb043d68b92b90586881c2",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "241393fab73a1d27d79e02917f84650aaf7abd179360c5779a91885c467656ff",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 4,
         "property": 31,
@@ -2908,22 +2908,38 @@
         }
       },
       "priorYtd": {
-        "violent": 4,
-        "property": 24,
-        "totalPart1": 28,
+        "violent": 5,
+        "property": 29,
+        "totalPart1": 34,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 3,
           "aggravated_assault": 1,
-          "strangulation": 0,
+          "strangulation": 1,
           "burglary": 1,
           "theft_from_auto": 4,
-          "motor_vehicle_theft": 3,
-          "personal_other_theft": 16
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 19
         }
       },
       "current28": {
+        "violent": 0,
+        "property": 0,
+        "totalPart1": 0,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 0,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 0
+        }
+      },
+      "previous28": {
         "violent": 1,
         "property": 0,
         "totalPart1": 1,
@@ -2939,22 +2955,6 @@
           "personal_other_theft": 0
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 4,
-        "totalPart1": 5,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 1,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 3,
-          "personal_other_theft": 0
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -2962,43 +2962,59 @@
       "civicSlug": "hartwell",
       "reportName": "Hartwell",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/HARTWELL.pdf",
-      "checksumSha256": "dd96a5eb9432e09f264c42f9577dc2fb5fc575d7fc02148963811b6a5367b92d",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "27e06f97c8b622d1413fb189685f3a38db045c525a4db8b55aca5121edc97091",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 15,
-        "property": 72,
-        "totalPart1": 87,
+        "violent": 16,
+        "property": 88,
+        "totalPart1": 104,
         "categories": {
           "homicide": 1,
-          "rape": 4,
+          "rape": 5,
           "robbery": 1,
           "aggravated_assault": 4,
           "strangulation": 5,
-          "burglary": 13,
-          "theft_from_auto": 12,
-          "motor_vehicle_theft": 8,
-          "personal_other_theft": 39
+          "burglary": 19,
+          "theft_from_auto": 14,
+          "motor_vehicle_theft": 10,
+          "personal_other_theft": 45
         }
       },
       "priorYtd": {
         "violent": 12,
-        "property": 72,
-        "totalPart1": 84,
+        "property": 81,
+        "totalPart1": 93,
         "categories": {
           "homicide": 2,
           "rape": 4,
           "robbery": 2,
           "aggravated_assault": 3,
           "strangulation": 1,
-          "burglary": 16,
-          "theft_from_auto": 11,
-          "motor_vehicle_theft": 16,
-          "personal_other_theft": 29
+          "burglary": 20,
+          "theft_from_auto": 12,
+          "motor_vehicle_theft": 18,
+          "personal_other_theft": 31
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 16,
+        "totalPart1": 17,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 6,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
         "violent": 1,
         "property": 5,
         "totalPart1": 6,
@@ -3014,22 +3030,6 @@
           "personal_other_theft": 4
         }
       },
-      "previous28": {
-        "violent": 2,
-        "property": 9,
-        "totalPart1": 11,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 1,
-          "burglary": 3,
-          "theft_from_auto": 3,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 3
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -3037,43 +3037,59 @@
       "civicSlug": "south-cumminsville",
       "reportName": "South Cumminsville",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/SOUTH_CUMMINSVILLE.pdf",
-      "checksumSha256": "2ef769d89955ef623e04bf14fa820090b80e75b6584449cb08764e654da256c1",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "14a1bb336eecf5765e76eff5059e5f6e86e0239c312550a92b99bc01f5f9511e",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 8,
-        "property": 25,
-        "totalPart1": 33,
+        "violent": 9,
+        "property": 29,
+        "totalPart1": 38,
         "categories": {
           "homicide": 0,
           "rape": 1,
-          "robbery": 0,
+          "robbery": 1,
           "aggravated_assault": 5,
           "strangulation": 2,
-          "burglary": 2,
+          "burglary": 3,
           "theft_from_auto": 7,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 12
+          "motor_vehicle_theft": 5,
+          "personal_other_theft": 14
         }
       },
       "priorYtd": {
-        "violent": 5,
-        "property": 20,
-        "totalPart1": 25,
+        "violent": 6,
+        "property": 26,
+        "totalPart1": 32,
         "categories": {
           "homicide": 2,
           "rape": 0,
           "robbery": 1,
-          "aggravated_assault": 2,
+          "aggravated_assault": 3,
           "strangulation": 0,
-          "burglary": 8,
+          "burglary": 9,
           "theft_from_auto": 1,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 7
+          "motor_vehicle_theft": 7,
+          "personal_other_theft": 9
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 4,
+        "totalPart1": 5,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 1,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 2
+        }
+      },
+      "previous28": {
         "violent": 1,
         "property": 2,
         "totalPart1": 3,
@@ -3089,22 +3105,6 @@
           "personal_other_theft": 1
         }
       },
-      "previous28": {
-        "violent": 1,
-        "property": 7,
-        "totalPart1": 8,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 4
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -3112,43 +3112,59 @@
       "civicSlug": "north-avondale",
       "reportName": "North Avondale",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/NORTH_AVONDALE.pdf",
-      "checksumSha256": "2791162fcaa40f9c07bffc2d79638c1e435633f2677b68ab68012250bbbb9807",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "5c2cbbfd775da020a2dcd861f2430ebe2226b9cc971de782d43fd268468c766b",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 53,
-        "property": 126,
-        "totalPart1": 179,
+        "violent": 58,
+        "property": 145,
+        "totalPart1": 203,
         "categories": {
           "homicide": 1,
-          "rape": 9,
-          "robbery": 12,
-          "aggravated_assault": 20,
-          "strangulation": 11,
-          "burglary": 29,
-          "theft_from_auto": 26,
-          "motor_vehicle_theft": 22,
-          "personal_other_theft": 49
+          "rape": 10,
+          "robbery": 13,
+          "aggravated_assault": 22,
+          "strangulation": 12,
+          "burglary": 30,
+          "theft_from_auto": 29,
+          "motor_vehicle_theft": 23,
+          "personal_other_theft": 63
         }
       },
       "priorYtd": {
-        "violent": 42,
-        "property": 134,
-        "totalPart1": 176,
+        "violent": 46,
+        "property": 147,
+        "totalPart1": 193,
         "categories": {
           "homicide": 0,
           "rape": 5,
           "robbery": 11,
-          "aggravated_assault": 17,
-          "strangulation": 9,
+          "aggravated_assault": 20,
+          "strangulation": 10,
           "burglary": 35,
-          "theft_from_auto": 22,
-          "motor_vehicle_theft": 31,
-          "personal_other_theft": 46
+          "theft_from_auto": 28,
+          "motor_vehicle_theft": 32,
+          "personal_other_theft": 52
         }
       },
       "current28": {
+        "violent": 5,
+        "property": 19,
+        "totalPart1": 24,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 2,
+          "strangulation": 1,
+          "burglary": 1,
+          "theft_from_auto": 3,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 14
+        }
+      },
+      "previous28": {
         "violent": 4,
         "property": 17,
         "totalPart1": 21,
@@ -3164,22 +3180,6 @@
           "personal_other_theft": 7
         }
       },
-      "previous28": {
-        "violent": 8,
-        "property": 12,
-        "totalPart1": 20,
-        "categories": {
-          "homicide": 0,
-          "rape": 2,
-          "robbery": 1,
-          "aggravated_assault": 3,
-          "strangulation": 2,
-          "burglary": 2,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 5
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -3187,71 +3187,71 @@
       "civicSlug": "south-fairmount",
       "reportName": "South Fairmount",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/SOUTH_FAIRMOUNT.pdf",
-      "checksumSha256": "adac52ed341ba9c0015cf73825d3a7767ac3253dd300a0abb085481216d8e97d",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "19a919053db674caac1bd48dfb3ef523e3d03525aad3f5f8b55aeb060c5c2f6d",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 23,
-        "property": 138,
-        "totalPart1": 161,
+        "violent": 29,
+        "property": 156,
+        "totalPart1": 185,
         "categories": {
           "homicide": 1,
-          "rape": 6,
-          "robbery": 1,
-          "aggravated_assault": 10,
+          "rape": 7,
+          "robbery": 3,
+          "aggravated_assault": 13,
           "strangulation": 5,
-          "burglary": 24,
-          "theft_from_auto": 18,
-          "motor_vehicle_theft": 20,
-          "personal_other_theft": 76
+          "burglary": 32,
+          "theft_from_auto": 20,
+          "motor_vehicle_theft": 22,
+          "personal_other_theft": 82
         }
       },
       "priorYtd": {
-        "violent": 20,
-        "property": 102,
-        "totalPart1": 122,
+        "violent": 23,
+        "property": 109,
+        "totalPart1": 132,
         "categories": {
           "homicide": 0,
-          "rape": 3,
+          "rape": 4,
           "robbery": 4,
-          "aggravated_assault": 10,
-          "strangulation": 3,
+          "aggravated_assault": 11,
+          "strangulation": 4,
           "burglary": 31,
-          "theft_from_auto": 8,
-          "motor_vehicle_theft": 25,
-          "personal_other_theft": 38
+          "theft_from_auto": 10,
+          "motor_vehicle_theft": 28,
+          "personal_other_theft": 40
         }
       },
       "current28": {
+        "violent": 6,
+        "property": 17,
+        "totalPart1": 23,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 2,
+          "aggravated_assault": 3,
+          "strangulation": 0,
+          "burglary": 7,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 2,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
         "violent": 3,
-        "property": 15,
-        "totalPart1": 18,
+        "property": 16,
+        "totalPart1": 19,
         "categories": {
           "homicide": 0,
           "rape": 2,
           "robbery": 0,
           "aggravated_assault": 1,
           "strangulation": 0,
-          "burglary": 4,
+          "burglary": 5,
           "theft_from_auto": 2,
           "motor_vehicle_theft": 4,
-          "personal_other_theft": 5
-        }
-      },
-      "previous28": {
-        "violent": 3,
-        "property": 18,
-        "totalPart1": 21,
-        "categories": {
-          "homicide": 0,
-          "rape": 1,
-          "robbery": 1,
-          "aggravated_assault": 1,
-          "strangulation": 0,
-          "burglary": 0,
-          "theft_from_auto": 4,
-          "motor_vehicle_theft": 9,
           "personal_other_theft": 5
         }
       },
@@ -3262,43 +3262,59 @@
       "civicSlug": "paddock-hills",
       "reportName": "Paddock Hills",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/PADDOCK_HILLS.pdf",
-      "checksumSha256": "e07a5d8220c32a856f47e76f45ecde680157d2861507039071b6cb3563201747",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "fa6505e47c4d3b5dcf73c2d6df4ac0887f18ccdc75b214fd87aa91c983d965ef",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 7,
-        "property": 28,
-        "totalPart1": 35,
+        "violent": 8,
+        "property": 35,
+        "totalPart1": 43,
         "categories": {
           "homicide": 0,
-          "rape": 4,
+          "rape": 5,
           "robbery": 0,
           "aggravated_assault": 0,
           "strangulation": 3,
-          "burglary": 2,
-          "theft_from_auto": 6,
+          "burglary": 3,
+          "theft_from_auto": 7,
           "motor_vehicle_theft": 3,
-          "personal_other_theft": 17
+          "personal_other_theft": 22
         }
       },
       "priorYtd": {
-        "violent": 11,
-        "property": 41,
-        "totalPart1": 52,
+        "violent": 12,
+        "property": 48,
+        "totalPart1": 60,
         "categories": {
           "homicide": 0,
-          "rape": 3,
+          "rape": 4,
           "robbery": 3,
           "aggravated_assault": 3,
           "strangulation": 2,
-          "burglary": 6,
-          "theft_from_auto": 5,
+          "burglary": 9,
+          "theft_from_auto": 7,
           "motor_vehicle_theft": 12,
-          "personal_other_theft": 18
+          "personal_other_theft": 20
         }
       },
       "current28": {
+        "violent": 1,
+        "property": 7,
+        "totalPart1": 8,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 0,
+          "aggravated_assault": 0,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 1,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 5
+        }
+      },
+      "previous28": {
         "violent": 0,
         "property": 3,
         "totalPart1": 3,
@@ -3314,22 +3330,6 @@
           "personal_other_theft": 2
         }
       },
-      "previous28": {
-        "violent": 0,
-        "property": 5,
-        "totalPart1": 5,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 0,
-          "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 2,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 2
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -3337,43 +3337,59 @@
       "civicSlug": "west-price-hill",
       "reportName": "West Price Hill",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/WEST_PRICE_HILL.pdf",
-      "checksumSha256": "92a783929ee9ad46a15b5ee97c092276ff97a6e5ceacd88d5ea0d3b48e48f81e",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "aafc03df2d9d1f8315ce465f294c1868ad2b427df73057141cbc6a4655fa4eda",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 82,
-        "property": 315,
-        "totalPart1": 397,
+        "violent": 92,
+        "property": 351,
+        "totalPart1": 443,
         "categories": {
           "homicide": 0,
           "rape": 12,
-          "robbery": 23,
-          "aggravated_assault": 21,
-          "strangulation": 26,
-          "burglary": 47,
-          "theft_from_auto": 86,
-          "motor_vehicle_theft": 39,
-          "personal_other_theft": 143
+          "robbery": 28,
+          "aggravated_assault": 25,
+          "strangulation": 27,
+          "burglary": 51,
+          "theft_from_auto": 95,
+          "motor_vehicle_theft": 45,
+          "personal_other_theft": 160
         }
       },
       "priorYtd": {
-        "violent": 87,
-        "property": 367,
-        "totalPart1": 454,
+        "violent": 100,
+        "property": 423,
+        "totalPart1": 523,
         "categories": {
           "homicide": 3,
-          "rape": 5,
-          "robbery": 41,
-          "aggravated_assault": 25,
-          "strangulation": 13,
-          "burglary": 62,
-          "theft_from_auto": 73,
-          "motor_vehicle_theft": 76,
-          "personal_other_theft": 156
+          "rape": 6,
+          "robbery": 46,
+          "aggravated_assault": 29,
+          "strangulation": 16,
+          "burglary": 68,
+          "theft_from_auto": 87,
+          "motor_vehicle_theft": 88,
+          "personal_other_theft": 180
         }
       },
       "current28": {
+        "violent": 10,
+        "property": 36,
+        "totalPart1": 46,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 5,
+          "aggravated_assault": 4,
+          "strangulation": 1,
+          "burglary": 4,
+          "theft_from_auto": 9,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 17
+        }
+      },
+      "previous28": {
         "violent": 7,
         "property": 26,
         "totalPart1": 33,
@@ -3389,22 +3405,6 @@
           "personal_other_theft": 13
         }
       },
-      "previous28": {
-        "violent": 18,
-        "property": 39,
-        "totalPart1": 57,
-        "categories": {
-          "homicide": 0,
-          "rape": 3,
-          "robbery": 5,
-          "aggravated_assault": 6,
-          "strangulation": 4,
-          "burglary": 2,
-          "theft_from_auto": 11,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 22
-        }
-      },
       "reconciliationWarnings": []
     },
     {
@@ -3412,46 +3412,62 @@
       "civicSlug": "roselawn",
       "reportName": "Roselawn",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/ROSELAWN.pdf",
-      "checksumSha256": "07bca8c1f6726ab860b192e2b4cb6b9637c7948070f6387431da6de106302d7f",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "15b43fc55353d92798907aa6977f5df2b28d461b587c7dcd821a69ae5713f104",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 41,
-        "property": 201,
-        "totalPart1": 242,
+        "violent": 46,
+        "property": 213,
+        "totalPart1": 259,
         "categories": {
           "homicide": 0,
           "rape": 1,
-          "robbery": 18,
-          "aggravated_assault": 15,
+          "robbery": 22,
+          "aggravated_assault": 16,
           "strangulation": 7,
-          "burglary": 26,
+          "burglary": 27,
           "theft_from_auto": 23,
-          "motor_vehicle_theft": 32,
-          "personal_other_theft": 120
+          "motor_vehicle_theft": 36,
+          "personal_other_theft": 127
         }
       },
       "priorYtd": {
-        "violent": 57,
-        "property": 215,
-        "totalPart1": 272,
+        "violent": 62,
+        "property": 239,
+        "totalPart1": 301,
         "categories": {
           "homicide": 1,
           "rape": 4,
-          "robbery": 24,
-          "aggravated_assault": 22,
-          "strangulation": 6,
-          "burglary": 37,
-          "theft_from_auto": 38,
-          "motor_vehicle_theft": 42,
-          "personal_other_theft": 98
+          "robbery": 25,
+          "aggravated_assault": 24,
+          "strangulation": 8,
+          "burglary": 41,
+          "theft_from_auto": 45,
+          "motor_vehicle_theft": 50,
+          "personal_other_theft": 103
         }
       },
       "current28": {
+        "violent": 5,
+        "property": 13,
+        "totalPart1": 18,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 4,
+          "aggravated_assault": 1,
+          "strangulation": 0,
+          "burglary": 1,
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 8
+        }
+      },
+      "previous28": {
         "violent": 10,
-        "property": 26,
-        "totalPart1": 36,
+        "property": 25,
+        "totalPart1": 35,
         "categories": {
           "homicide": 0,
           "rape": 1,
@@ -3461,23 +3477,7 @@
           "burglary": 1,
           "theft_from_auto": 2,
           "motor_vehicle_theft": 1,
-          "personal_other_theft": 22
-        }
-      },
-      "previous28": {
-        "violent": 6,
-        "property": 28,
-        "totalPart1": 34,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 0,
-          "aggravated_assault": 5,
-          "strangulation": 1,
-          "burglary": 4,
-          "theft_from_auto": 5,
-          "motor_vehicle_theft": 5,
-          "personal_other_theft": 14
+          "personal_other_theft": 21
         }
       },
       "reconciliationWarnings": []
@@ -3487,46 +3487,62 @@
       "civicSlug": "westwood",
       "reportName": "Westwood",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D3/WESTWOOD.pdf",
-      "checksumSha256": "e780181bb465bcc8c818872b90a562e573c6030cf5b56b502e8de33808c36f22",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "65048283a20d6abb7cfaafb1a6c555d2542eec19038ad4587d12ca99a0ce5fb2",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 116,
-        "property": 797,
-        "totalPart1": 913,
+        "violent": 128,
+        "property": 904,
+        "totalPart1": 1032,
         "categories": {
           "homicide": 2,
-          "rape": 18,
-          "robbery": 26,
-          "aggravated_assault": 44,
-          "strangulation": 26,
-          "burglary": 75,
-          "theft_from_auto": 105,
-          "motor_vehicle_theft": 122,
-          "personal_other_theft": 495
+          "rape": 19,
+          "robbery": 30,
+          "aggravated_assault": 47,
+          "strangulation": 30,
+          "burglary": 81,
+          "theft_from_auto": 116,
+          "motor_vehicle_theft": 141,
+          "personal_other_theft": 566
         }
       },
       "priorYtd": {
-        "violent": 114,
-        "property": 873,
-        "totalPart1": 987,
+        "violent": 119,
+        "property": 985,
+        "totalPart1": 1104,
         "categories": {
           "homicide": 3,
           "rape": 17,
-          "robbery": 33,
-          "aggravated_assault": 36,
+          "robbery": 37,
+          "aggravated_assault": 37,
           "strangulation": 25,
-          "burglary": 65,
-          "theft_from_auto": 166,
-          "motor_vehicle_theft": 144,
-          "personal_other_theft": 498
+          "burglary": 74,
+          "theft_from_auto": 180,
+          "motor_vehicle_theft": 163,
+          "personal_other_theft": 568
         }
       },
       "current28": {
+        "violent": 12,
+        "property": 97,
+        "totalPart1": 109,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 4,
+          "aggravated_assault": 3,
+          "strangulation": 4,
+          "burglary": 6,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 19,
+          "personal_other_theft": 61
+        }
+      },
+      "previous28": {
         "violent": 15,
-        "property": 96,
-        "totalPart1": 111,
+        "property": 105,
+        "totalPart1": 120,
         "categories": {
           "homicide": 0,
           "rape": 2,
@@ -3536,23 +3552,7 @@
           "burglary": 11,
           "theft_from_auto": 13,
           "motor_vehicle_theft": 20,
-          "personal_other_theft": 52
-        }
-      },
-      "previous28": {
-        "violent": 12,
-        "property": 95,
-        "totalPart1": 107,
-        "categories": {
-          "homicide": 1,
-          "rape": 1,
-          "robbery": 3,
-          "aggravated_assault": 4,
-          "strangulation": 3,
-          "burglary": 5,
-          "theft_from_auto": 8,
-          "motor_vehicle_theft": 12,
-          "personal_other_theft": 70
+          "personal_other_theft": 61
         }
       },
       "reconciliationWarnings": []
@@ -3562,72 +3562,72 @@
       "civicSlug": "spring-grove-village",
       "reportName": "Spring Grove Village",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/SPRING_GROVE_VILLAGE.pdf",
-      "checksumSha256": "0a9e03039a82ffefe0550116b8f0d7f5b977ae8640819453186f10cb2ec9e873",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "9d038589981873db549a76be833a50b3680c47fbb7503aea5a22a700ec32fe5c",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 14,
-        "property": 85,
-        "totalPart1": 99,
+        "violent": 15,
+        "property": 95,
+        "totalPart1": 110,
         "categories": {
           "homicide": 0,
           "rape": 0,
-          "robbery": 4,
-          "aggravated_assault": 8,
+          "robbery": 3,
+          "aggravated_assault": 10,
           "strangulation": 2,
           "burglary": 15,
-          "theft_from_auto": 22,
-          "motor_vehicle_theft": 15,
-          "personal_other_theft": 33
+          "theft_from_auto": 26,
+          "motor_vehicle_theft": 16,
+          "personal_other_theft": 38
         }
       },
       "priorYtd": {
-        "violent": 10,
-        "property": 75,
-        "totalPart1": 85,
+        "violent": 13,
+        "property": 89,
+        "totalPart1": 102,
         "categories": {
           "homicide": 1,
           "rape": 0,
-          "robbery": 2,
-          "aggravated_assault": 6,
+          "robbery": 3,
+          "aggravated_assault": 8,
           "strangulation": 1,
-          "burglary": 16,
-          "theft_from_auto": 13,
-          "motor_vehicle_theft": 11,
-          "personal_other_theft": 35
+          "burglary": 18,
+          "theft_from_auto": 17,
+          "motor_vehicle_theft": 16,
+          "personal_other_theft": 38
         }
       },
       "current28": {
-        "violent": 4,
-        "property": 9,
-        "totalPart1": 13,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 1,
-          "aggravated_assault": 3,
-          "strangulation": 0,
-          "burglary": 2,
-          "theft_from_auto": 3,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 3
-        }
-      },
-      "previous28": {
-        "violent": 1,
-        "property": 17,
-        "totalPart1": 18,
+        "violent": 2,
+        "property": 8,
+        "totalPart1": 10,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 0,
-          "aggravated_assault": 1,
+          "aggravated_assault": 2,
           "strangulation": 0,
-          "burglary": 1,
-          "theft_from_auto": 6,
-          "motor_vehicle_theft": 5,
+          "burglary": 0,
+          "theft_from_auto": 2,
+          "motor_vehicle_theft": 1,
           "personal_other_theft": 5
+        }
+      },
+      "previous28": {
+        "violent": 3,
+        "property": 11,
+        "totalPart1": 14,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 0,
+          "aggravated_assault": 3,
+          "strangulation": 0,
+          "burglary": 2,
+          "theft_from_auto": 5,
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 3
         }
       },
       "reconciliationWarnings": []
@@ -3637,46 +3637,62 @@
       "civicSlug": "winton-hills",
       "reportName": "Winton Hills",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/D4/WINTON_HILLS.pdf",
-      "checksumSha256": "e429f953193b33e156b9de1991a5a7b8d7819f1a8d5a19df086d564cc6e0165b",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "866ce5924f1c347966d2fd4755eab05fe7211e8b42cd4616f17f418914f9baea",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 65,
-        "property": 126,
-        "totalPart1": 191,
+        "violent": 82,
+        "property": 143,
+        "totalPart1": 225,
         "categories": {
           "homicide": 3,
           "rape": 13,
-          "robbery": 8,
-          "aggravated_assault": 31,
-          "strangulation": 10,
-          "burglary": 24,
-          "theft_from_auto": 23,
-          "motor_vehicle_theft": 20,
-          "personal_other_theft": 59
+          "robbery": 13,
+          "aggravated_assault": 40,
+          "strangulation": 13,
+          "burglary": 29,
+          "theft_from_auto": 27,
+          "motor_vehicle_theft": 23,
+          "personal_other_theft": 64
         }
       },
       "priorYtd": {
-        "violent": 54,
-        "property": 102,
-        "totalPart1": 156,
+        "violent": 60,
+        "property": 116,
+        "totalPart1": 176,
         "categories": {
-          "homicide": 4,
+          "homicide": 5,
           "rape": 2,
           "robbery": 19,
-          "aggravated_assault": 25,
-          "strangulation": 4,
-          "burglary": 24,
-          "theft_from_auto": 15,
-          "motor_vehicle_theft": 33,
-          "personal_other_theft": 30
+          "aggravated_assault": 29,
+          "strangulation": 5,
+          "burglary": 31,
+          "theft_from_auto": 16,
+          "motor_vehicle_theft": 35,
+          "personal_other_theft": 34
         }
       },
       "current28": {
+        "violent": 17,
+        "property": 18,
+        "totalPart1": 35,
+        "categories": {
+          "homicide": 0,
+          "rape": 0,
+          "robbery": 5,
+          "aggravated_assault": 9,
+          "strangulation": 3,
+          "burglary": 5,
+          "theft_from_auto": 4,
+          "motor_vehicle_theft": 3,
+          "personal_other_theft": 6
+        }
+      },
+      "previous28": {
         "violent": 11,
-        "property": 26,
-        "totalPart1": 37,
+        "property": 25,
+        "totalPart1": 36,
         "categories": {
           "homicide": 0,
           "rape": 1,
@@ -3686,23 +3702,7 @@
           "burglary": 4,
           "theft_from_auto": 7,
           "motor_vehicle_theft": 4,
-          "personal_other_theft": 11
-        }
-      },
-      "previous28": {
-        "violent": 7,
-        "property": 27,
-        "totalPart1": 34,
-        "categories": {
-          "homicide": 1,
-          "rape": 1,
-          "robbery": 0,
-          "aggravated_assault": 5,
-          "strangulation": 0,
-          "burglary": 4,
-          "theft_from_auto": 5,
-          "motor_vehicle_theft": 4,
-          "personal_other_theft": 14
+          "personal_other_theft": 10
         }
       },
       "reconciliationWarnings": []
@@ -3712,72 +3712,72 @@
       "civicSlug": "downtown",
       "reportName": "CBD Riverfront",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/CBS/CBD_RIVERFRONT.pdf",
-      "checksumSha256": "8f5c0760e1e46892b356f18e93b0d44197afe77a9c140a2b744943bc1db55df5",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "9138317ce3676a4594e538eee49f44533bf6c6271fc1569748dc7073e5969e67",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
-        "violent": 58,
-        "property": 568,
-        "totalPart1": 626,
+        "violent": 69,
+        "property": 641,
+        "totalPart1": 710,
         "categories": {
           "homicide": 2,
-          "rape": 6,
-          "robbery": 26,
-          "aggravated_assault": 14,
-          "strangulation": 10,
-          "burglary": 30,
-          "theft_from_auto": 239,
-          "motor_vehicle_theft": 43,
-          "personal_other_theft": 256
+          "rape": 8,
+          "robbery": 28,
+          "aggravated_assault": 19,
+          "strangulation": 12,
+          "burglary": 35,
+          "theft_from_auto": 274,
+          "motor_vehicle_theft": 46,
+          "personal_other_theft": 286
         }
       },
       "priorYtd": {
-        "violent": 69,
-        "property": 716,
-        "totalPart1": 785,
+        "violent": 79,
+        "property": 798,
+        "totalPart1": 877,
         "categories": {
           "homicide": 0,
-          "rape": 3,
-          "robbery": 39,
-          "aggravated_assault": 24,
+          "rape": 6,
+          "robbery": 43,
+          "aggravated_assault": 27,
           "strangulation": 3,
-          "burglary": 75,
-          "theft_from_auto": 344,
-          "motor_vehicle_theft": 60,
-          "personal_other_theft": 237
+          "burglary": 84,
+          "theft_from_auto": 373,
+          "motor_vehicle_theft": 66,
+          "personal_other_theft": 275
         }
       },
       "current28": {
-        "violent": 4,
-        "property": 78,
-        "totalPart1": 82,
-        "categories": {
-          "homicide": 0,
-          "rape": 0,
-          "robbery": 2,
-          "aggravated_assault": 0,
-          "strangulation": 2,
-          "burglary": 7,
-          "theft_from_auto": 36,
-          "motor_vehicle_theft": 7,
-          "personal_other_theft": 28
-        }
-      },
-      "previous28": {
         "violent": 10,
-        "property": 92,
-        "totalPart1": 102,
+        "property": 75,
+        "totalPart1": 85,
         "categories": {
           "homicide": 0,
           "rape": 1,
-          "robbery": 6,
-          "aggravated_assault": 2,
-          "strangulation": 1,
-          "burglary": 2,
-          "theft_from_auto": 46,
-          "motor_vehicle_theft": 5,
-          "personal_other_theft": 39
+          "robbery": 3,
+          "aggravated_assault": 4,
+          "strangulation": 2,
+          "burglary": 5,
+          "theft_from_auto": 35,
+          "motor_vehicle_theft": 4,
+          "personal_other_theft": 31
+        }
+      },
+      "previous28": {
+        "violent": 5,
+        "property": 77,
+        "totalPart1": 82,
+        "categories": {
+          "homicide": 0,
+          "rape": 1,
+          "robbery": 1,
+          "aggravated_assault": 1,
+          "strangulation": 2,
+          "burglary": 7,
+          "theft_from_auto": 36,
+          "motor_vehicle_theft": 6,
+          "personal_other_theft": 28
         }
       },
       "reconciliationWarnings": []
@@ -3787,10 +3787,10 @@
       "civicSlug": "mt-adams",
       "reportName": "Mount Adams",
       "sourceUrl": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/Reports/CBS/MOUNT_ADAMS.pdf",
-      "checksumSha256": "1ea2a455ef1c7b8a57f80e6ef312e963b53480c9bb92f8acfcf9b215fc01a64d",
-      "updated": "9/1/2026",
-      "current28Start": "08/02/26",
-      "current28End": "08/29/26",
+      "checksumSha256": "0c97c73a22b6b4b539d846d0a48598fc16e875e5554225964e1636c2ff83e7f1",
+      "updated": "9/28/2026",
+      "current28Start": "08/30/26",
+      "current28End": "09/26/26",
       "currentYtd": {
         "violent": 2,
         "property": 19,
@@ -3802,25 +3802,25 @@
           "aggravated_assault": 2,
           "strangulation": 0,
           "burglary": 1,
-          "theft_from_auto": 12,
-          "motor_vehicle_theft": 1,
+          "theft_from_auto": 11,
+          "motor_vehicle_theft": 2,
           "personal_other_theft": 5
         }
       },
       "priorYtd": {
-        "violent": 1,
-        "property": 13,
-        "totalPart1": 14,
+        "violent": 2,
+        "property": 16,
+        "totalPart1": 18,
         "categories": {
           "homicide": 0,
           "rape": 0,
           "robbery": 1,
-          "aggravated_assault": 0,
+          "aggravated_assault": 1,
           "strangulation": 0,
           "burglary": 2,
-          "theft_from_auto": 5,
+          "theft_from_auto": 7,
           "motor_vehicle_theft": 1,
-          "personal_other_theft": 5
+          "personal_other_theft": 6
         }
       },
       "current28": {
@@ -3835,14 +3835,14 @@
           "strangulation": 0,
           "burglary": 0,
           "theft_from_auto": 0,
-          "motor_vehicle_theft": 0,
-          "personal_other_theft": 1
+          "motor_vehicle_theft": 1,
+          "personal_other_theft": 0
         }
       },
       "previous28": {
         "violent": 0,
-        "property": 2,
-        "totalPart1": 2,
+        "property": 1,
+        "totalPart1": 1,
         "categories": {
           "homicide": 0,
           "rape": 0,
@@ -3850,9 +3850,9 @@
           "aggravated_assault": 0,
           "strangulation": 0,
           "burglary": 0,
-          "theft_from_auto": 1,
-          "motor_vehicle_theft": 1,
-          "personal_other_theft": 0
+          "theft_from_auto": 0,
+          "motor_vehicle_theft": 0,
+          "personal_other_theft": 1
         }
       },
       "reconciliationWarnings": []

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-03T02:54:35.625Z",
+    "generatedAt": "2026-10-04T20:52:24.479Z",
     "budgetDatasetId": "hv35-hdk2",
     "budgetSourceUrl": "https://data.cincinnati-oh.gov/resource/hv35-hdk2.json",
     "budgetField": "CURRENT_BUDGET",
@@ -19,7 +19,7 @@
       "firstFiscalYear": 2014,
       "lastCompleteFiscalYear": 2025
     },
-    "sourceUpdatedAt": 1788318530
+    "sourceUpdatedAt": 1791082969
   },
   "budgets": [
     {
@@ -8513,14 +8513,14 @@
       ],
       "sourceGrain": "reported crime incident rows",
       "cityCounts": {
-        "totalPart1": 16589,
+        "totalPart1": 16588,
         "violent": 3509,
-        "property": 13080,
+        "property": 13079,
         "homicide": 155,
         "rape": 334,
         "robbery": 1456,
         "aggravated_assault": 1564,
-        "burglary": 2534,
+        "burglary": 2533,
         "larceny_theft": 10546,
         "motor_vehicle_theft": 0,
         "strangulation": 0,
@@ -8547,14 +8547,14 @@
           "name": "Avondale",
           "population": 11345,
           "counts": {
-            "totalPart1": 793,
+            "totalPart1": 792,
             "violent": 211,
-            "property": 582,
+            "property": 581,
             "homicide": 4,
             "rape": 13,
             "robbery": 74,
             "aggravated_assault": 120,
-            "burglary": 151,
+            "burglary": 150,
             "larceny_theft": 431,
             "motor_vehicle_theft": 0,
             "strangulation": 0,
@@ -9552,15 +9552,15 @@
       ],
       "sourceGrain": "reported crime incident rows",
       "cityCounts": {
-        "totalPart1": 19246,
+        "totalPart1": 19245,
         "violent": 3603,
-        "property": 15643,
+        "property": 15642,
         "homicide": 117,
         "rape": 384,
         "robbery": 1576,
         "aggravated_assault": 1526,
         "burglary": 2702,
-        "larceny_theft": 12941,
+        "larceny_theft": 12940,
         "motor_vehicle_theft": 0,
         "strangulation": 0,
         "other": 16691
@@ -10086,15 +10086,15 @@
           "name": "Mt. Airy",
           "population": 9210,
           "counts": {
-            "totalPart1": 525,
+            "totalPart1": 524,
             "violent": 119,
-            "property": 406,
+            "property": 405,
             "homicide": 9,
             "rape": 18,
             "robbery": 57,
             "aggravated_assault": 35,
             "burglary": 66,
-            "larceny_theft": 340,
+            "larceny_theft": 339,
             "motor_vehicle_theft": 0,
             "strangulation": 0,
             "other": 580
@@ -10592,14 +10592,14 @@
       ],
       "sourceGrain": "mixed incident and offense rows",
       "cityCounts": {
-        "totalPart1": 20245,
+        "totalPart1": 20244,
         "violent": 3107,
-        "property": 17138,
+        "property": 17137,
         "homicide": 122,
         "rape": 297,
         "robbery": 1396,
         "aggravated_assault": 1266,
-        "burglary": 2226,
+        "burglary": 2225,
         "larceny_theft": 14703,
         "motor_vehicle_theft": 209,
         "strangulation": 26,
@@ -11386,14 +11386,14 @@
           "name": "Riverside / Sedamsville",
           "population": 2513,
           "counts": {
-            "totalPart1": 204,
+            "totalPart1": 203,
             "violent": 45,
-            "property": 159,
+            "property": 158,
             "homicide": 3,
             "rape": 4,
             "robbery": 22,
             "aggravated_assault": 16,
-            "burglary": 31,
+            "burglary": 30,
             "larceny_theft": 127,
             "motor_vehicle_theft": 1,
             "strangulation": 0,
@@ -11642,7 +11642,7 @@
         "larceny_theft": 8222,
         "motor_vehicle_theft": 2933,
         "strangulation": 269,
-        "other": 10628
+        "other": 10629
       },
       "unassignedCounts": {
         "totalPart1": 74,
@@ -12056,7 +12056,7 @@
             "larceny_theft": 48,
             "motor_vehicle_theft": 16,
             "strangulation": 1,
-            "other": 58
+            "other": 59
           }
         },
         {

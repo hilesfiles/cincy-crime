@@ -103,7 +103,7 @@ test("dashboard map and routes work", async ({ page }) => {
   await expect(page.getByRole("link", { name: "Initiative ledger" })).toHaveCSS("color", "rgb(255, 255, 255)");
   await page.getByLabel("Initiative selected neighborhood").selectOption("lower-price-hill-queensgate");
   await expect(page.getByRole("heading", { name: "Lower Price Hill / Queensgate" }).first()).toBeVisible();
-  await expect(page.getByText("$109K", { exact: true })).toBeVisible();
+  await expect(page.getByText("$139K", { exact: true })).toBeVisible();
   await page.getByLabel("Initiative selected neighborhood").selectOption("avondale");
   await expect(page.getByText("Named, no split", { exact: true })).toBeVisible();
   await expect(page.getByText("Separate, non-additive ledger", { exact: true })).toBeVisible();

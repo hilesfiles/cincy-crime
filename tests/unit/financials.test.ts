@@ -38,8 +38,8 @@ describe("financial actuals", () => {
 
 describe("initiative ledger", () => {
   it("preserves published totals and does not over-allocate any record", () => {
-    expect(initiatives.records).toHaveLength(66);
-    expect(initiatives.records.reduce((sum, row) => sum + row.amount, 0)).toBe(3_776_800);
+    expect(initiatives.records).toHaveLength(83);
+    expect(initiatives.records.reduce((sum, row) => sum + row.amount, 0)).toBe(4_120_277);
     for (const record of initiatives.records) {
       expect(initiativeAllocatedAmount(record)).toBeLessThanOrEqual(record.amount);
       const weights = record.neighborhoods.map((row) => row.weight).filter((weight): weight is number => weight !== undefined);
@@ -48,7 +48,18 @@ describe("initiative ledger", () => {
   });
 
   it("assigns only the explicitly documented neighborhood share", () => {
-    expect(initiatives.records.reduce((sum, row) => sum + initiativeAllocatedAmount(row), 0)).toBeCloseTo(371_100, 4);
+    expect(initiatives.records.reduce((sum, row) => sum + initiativeAllocatedAmount(row), 0)).toBeCloseTo(502_601, 4);
     expect(initiatives.records.filter((row) => row.geographyStatus === "outside_city").reduce((sum, row) => sum + row.amount, 0)).toBe(35_000);
+  });
+
+  it("preserves the 2026 published award cycles without inventing multi-neighborhood splits", () => {
+    const awards = initiatives.records.filter((row) => row.id.startsWith("safe-clean-2026-"));
+    expect(awards).toHaveLength(17);
+    expect(awards.reduce((sum, row) => sum + row.amount, 0)).toBe(343_477);
+    expect(awards.every((row) => row.fiscalYear === 2026 && row.amountType === "awarded" && row.sourcePage && row.sourceUrl)).toBe(true);
+    expect(awards.filter((row) => row.geographyStatus === "shared_unallocated").every((row) => initiativeAllocatedAmount(row) === 0)).toBe(true);
+    expect(awards.find((row) => row.id === "safe-clean-2026-jan-whitney-strong")?.geographyStatus).toBe("shared_unallocated");
+    expect(awards.reduce((sum, row) => sum + initiativeAllocatedAmount(row), 0)).toBe(131_501);
+    expect(awards.some((row) => row.amount === 549_060)).toBe(false);
   });
 });

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T03:01:23.927Z",
+  "generatedAt": "2026-10-04T20:52:12.375Z",
   "status": "warning",
   "annualYears": [
     2011,
@@ -55,7 +55,7 @@
       "periodType": "calendar_year",
       "year": 2012,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 7299
+      "count": 7297
     },
     {
       "periodType": "calendar_year",
@@ -217,55 +217,55 @@
       "periodType": "same_date_ytd",
       "year": 2011,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 7542
+      "count": 8496
     },
     {
       "periodType": "same_date_ytd",
       "year": 2012,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 5139
+      "count": 5776
     },
     {
       "periodType": "same_date_ytd",
       "year": 2013,
       "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
-      "count": 11
+      "count": 12
     },
     {
       "periodType": "same_date_ytd",
       "year": 2013,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 14
+      "count": 16
     },
     {
       "periodType": "same_date_ytd",
       "year": 2014,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 24
+      "count": 25
     },
     {
       "periodType": "same_date_ytd",
       "year": 2015,
       "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
-      "count": 6
+      "count": 7
     },
     {
       "periodType": "same_date_ytd",
       "year": 2015,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 24
+      "count": 27
     },
     {
       "periodType": "same_date_ytd",
       "year": 2016,
       "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
-      "count": 3
+      "count": 7
     },
     {
       "periodType": "same_date_ytd",
       "year": 2016,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 21
+      "count": 30
     },
     {
       "periodType": "same_date_ytd",
@@ -277,13 +277,19 @@
       "periodType": "same_date_ytd",
       "year": 2017,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 95
+      "count": 110
+    },
+    {
+      "periodType": "same_date_ytd",
+      "year": 2018,
+      "label": "CPD_PDI:N/A | O'BRYONVILLE | N/A",
+      "count": 2
     },
     {
       "periodType": "same_date_ytd",
       "year": 2018,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 96
+      "count": 105
     },
     {
       "periodType": "same_date_ytd",
@@ -295,7 +301,7 @@
       "periodType": "same_date_ytd",
       "year": 2019,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 59
+      "count": 65
     },
     {
       "periodType": "same_date_ytd",
@@ -307,7 +313,7 @@
       "periodType": "same_date_ytd",
       "year": 2020,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 35
+      "count": 47
     },
     {
       "periodType": "same_date_ytd",
@@ -319,13 +325,13 @@
       "periodType": "same_date_ytd",
       "year": 2021,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 51
+      "count": 60
     },
     {
       "periodType": "same_date_ytd",
       "year": 2022,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 78
+      "count": 87
     },
     {
       "periodType": "same_date_ytd",
@@ -337,7 +343,7 @@
       "periodType": "same_date_ytd",
       "year": 2023,
       "label": "CPD_PDI:N/A | N/A",
-      "count": 58
+      "count": 65
     },
     {
       "periodType": "same_date_ytd",
@@ -355,13 +361,13 @@
       "periodType": "same_date_ytd",
       "year": 2024,
       "label": "CPD_STARS:(blank)",
-      "count": 55
+      "count": 63
     },
     {
       "periodType": "same_date_ytd",
       "year": 2025,
       "label": "CPD_STARS:(blank)",
-      "count": 64
+      "count": 74
     }
   ],
   "unmappedOffenses": [
@@ -453,13 +459,13 @@
       "periodType": "same_date_ytd",
       "year": 2011,
       "label": "CPD_PDI:(blank)",
-      "count": 9
+      "count": 10
     },
     {
       "periodType": "same_date_ytd",
       "year": 2012,
       "label": "CPD_PDI:(blank)",
-      "count": 12
+      "count": 20
     },
     {
       "periodType": "same_date_ytd",
@@ -471,7 +477,7 @@
       "periodType": "same_date_ytd",
       "year": 2014,
       "label": "CPD_PDI:(blank)",
-      "count": 5
+      "count": 6
     },
     {
       "periodType": "same_date_ytd",
@@ -507,19 +513,19 @@
       "periodType": "same_date_ytd",
       "year": 2021,
       "label": "CPD_PDI:(blank)",
-      "count": 13
+      "count": 22
     },
     {
       "periodType": "same_date_ytd",
       "year": 2022,
       "label": "CPD_PDI:(blank)",
-      "count": 14
+      "count": 17
     },
     {
       "periodType": "same_date_ytd",
       "year": 2023,
       "label": "CPD_PDI:(blank)",
-      "count": 181
+      "count": 225
     },
     {
       "periodType": "same_date_ytd",

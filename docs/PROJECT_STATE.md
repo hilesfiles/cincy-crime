@@ -1,13 +1,13 @@
 # Project state
 
-Updated: 2026-08-26
+Updated: 2026-10-04
 
 ## Application status
 
 - Static Next.js dashboard builds successfully for GitHub Pages.
 - Official vector map, signed change/count/rate measures, selection, stable URL state, rankings, comparison, detail, methodology, source, trends, and data-status routes are implemented.
-- Current views use all 51 preliminary CPD neighborhood reports through 2026-08-22; reports were updated 2026-08-24.
-- STARS offense-level aggregates remain separate and available through 2026-06-23.
+- Current views use all 51 preliminary CPD neighborhood reports through 2026-09-26; reports were updated 2026-09-28.
+- STARS offense-level aggregates remain separate and available through 2026-10-03.
 - Official 2020 population profiles and violent-crime rates per 1,000 are implemented.
 - The historical artifact publishes 15 complete calendar years (2011–2025) and 16 same-date YTD periods (2011–2026), with unresolved neighborhood rows retained explicitly.
 - Period/year switchers are implemented on the explorer, rankings, comparisons, and all neighborhood profiles.
@@ -23,8 +23,8 @@ Updated: 2026-08-26
 ## Current validated facts
 
 - Geography: 50 source polygons representing 51 expected names.
-- STARS source rows reported by metadata: 52,500.
-- Dashboard cutoff: 2026-08-22 from the fresher CPD aggregate reports.
+- STARS source rows reported by metadata: 59,614.
+- Dashboard cutoff: 2026-09-26 from the CPD aggregate reports.
 - Unmapped STARS categories: 0.
 - Published population rates: available using 2020 City Planning profiles; the non-additive citywide reconciliation is disclosed.
 - Historical annual panel: 2011–2025 enabled; comparable YTD series extends through the current 2026 aggregate.

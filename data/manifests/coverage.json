@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "manifestId": "cincinnati-neighborhood-crime-coverage",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-10-04",
   "scope": {
     "startDate": "2011-01-01",
     "endDate": "present",
@@ -47,9 +47,9 @@
       "title": "CPD Neighborhood Reports",
       "url": "https://cpdmobile.cincinnati-oh.gov/Neighborhoods/default.html",
       "rowUnit": "preliminary aggregate offense count",
-      "role": "fresher current layer for map, ranking, comparison, and profile statistics",
+      "role": "current preliminary aggregate layer for map, ranking, comparison, and profile statistics",
       "reportCount": 51,
-      "cutoffAsOfRefresh": "2026-08-22"
+      "cutoffAsOfRefresh": "2026-09-26"
     },
     "CITY_PLANNING_2020_SNA_PROFILES": {
       "datasetId": "planning-2020-sna-profiles",
@@ -104,15 +104,15 @@
     {
       "id": "stars-current-year",
       "startDate": "2026-01-01",
-      "endDate": "2026-08-22",
+      "endDate": "2026-09-26",
       "sourceIds": ["CPD_STARS", "CPD_NEIGHBORHOOD_REPORTS"],
       "calendarCoverage": "year_to_date",
       "sourceAvailability": "available_through_cutoff",
       "historicalPanelStatus": "published_current_summary",
       "selectorState": "enabled_for_ytd_views",
       "geographyStatus": "modern_source_mapping_available",
-      "cutoffAsOfRefresh": "2026-08-22",
-      "sourceLayerNote": "CPD neighborhood reports supply the fresher aggregate cutoff; STARS remains the offense-level source through 2026-06-23."
+      "cutoffAsOfRefresh": "2026-09-26",
+      "sourceLayerNote": "CPD neighborhood reports supply the dashboard aggregate cutoff of 2026-09-26; STARS remains a separate offense-level source through 2026-10-03."
     }
   ],
   "comparisonRules": {
@@ -133,7 +133,7 @@
     "year completeness and data cutoff are exposed to the interface"
   ],
   "knownLimitations": [
-    "The browser artifact publishes calendar-year history for 2011–2025 and comparable January 1–August 22 windows for 2011–2026.",
+    "The browser artifact publishes calendar-year history for 2011–2025 and comparable January 1–September 26 windows for 2011–2026.",
     "PDI and STARS use different source row units.",
     "Historical observations are displayed on the current 2020 SNA proxy. Unresolved PDI neighborhood rows remain in an explicit citywide unassigned bucket, with the largest gaps in 2011 and 2012.",
     "Published City Planning neighborhood-profile populations do not sum to the direct Citywide profile; neighborhood rates use each published profile and the citywide rate uses the direct Citywide population."

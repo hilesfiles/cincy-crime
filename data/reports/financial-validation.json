@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T02:58:37.000Z",
+  "generatedAt": "2026-10-04T20:56:25.957Z",
   "status": "warning",
   "actuals": {
     "status": "pass",
@@ -12,12 +12,12 @@
   },
   "initiatives": {
     "status": "warning",
-    "records": 66,
+    "records": 83,
     "programs": 4,
-    "publishedAmount": 3776800,
-    "neighborhoodAllocatedAmount": 371100,
+    "publishedAmount": 4120277,
+    "neighborhoodAllocatedAmount": 502601,
     "outsideCityAmount": 35000,
-    "unallocatedCincinnatiAmount": 3370700,
+    "unallocatedCincinnatiAmount": 3582676,
     "allWeightedRecordsReconcile": true,
     "warning": "Most published initiative dollars lack record-level neighborhood allocations and remain unallocated. The initiative ledger is not additive to Police ACFR actuals."
   }
